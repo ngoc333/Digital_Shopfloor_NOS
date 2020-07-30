@@ -263,6 +263,7 @@ namespace FORM
             }
         }
 
+        [Obsolete]
         private void CreateChart1(DevExpress.XtraCharts.ChartControl Chart, DataTable dt, string v_p, string v_r, string v_b, string v_c)
         {
             try

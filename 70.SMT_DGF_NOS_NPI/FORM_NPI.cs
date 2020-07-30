@@ -38,9 +38,9 @@ namespace FORM
         [DllImport("user32")]
         static extern bool AnimateWindow(IntPtr hwnd, int time, int flags);
         
-		private readonly IContainer components;
+		private readonly IContainer components = null;
 
-        
+
         private Label lblTitle;
         private Label lblDate;
         private System.Windows.Forms.Timer timer1;
