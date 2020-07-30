@@ -20,12 +20,12 @@ namespace FORM
             InitializeComponent();
         }
 
-        int cnt = 0, i_max = 0, i_min = 0;
-        string str_op = "";
+        int cnt = 0;
+       
         string strCol = "";
        // FORM_TO_PO_WEEK_CHART frm_chart = new FORM_TO_PO_WEEK_CHART();
         #region db
-        Database db = new Database();
+        //Database db = new Database();
         DataTable _dtXML = null;
         #endregion
         #region UC
@@ -139,14 +139,14 @@ namespace FORM
             try
             {
                 
-                int n;
+               // int n;
                 DataTable dtsource = null;
                 DataSet ds = SEL_TO_PO_WEEKLY();
                 dtsource = ds.Tables[0];
                 DataTable dt = ds.Tables[1];
                 if (dtsource != null && dtsource.Rows.Count > 0)
                 {
-                    string name;
+                   // string name;
                  //   bandMon.Caption = dtsource.Rows[0]["MON"].ToString();
                     if (dtsource.Rows.Count > 0)
                     {
@@ -523,7 +523,7 @@ namespace FORM
                     e.Handled = true;
                 }
             }
-            catch (Exception ex)
+            catch 
             {
 
             }

@@ -323,7 +323,7 @@ namespace FORM.UC
                 }
 
             }
-            catch (Exception ex)
+            catch 
             {
                 EnableControl(true);
             }
@@ -394,7 +394,7 @@ namespace FORM.UC
                     this.btnNextMonth.Focus();
                 }
             }
-            catch (Exception ex)
+            catch
             {
                 EnableControl(true);
             }

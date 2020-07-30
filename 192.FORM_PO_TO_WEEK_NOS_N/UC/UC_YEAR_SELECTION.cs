@@ -76,7 +76,7 @@ namespace FORM.UC
                     this.ValueChangeEvent(this, e);
                 }
                 EnableControl(true);
-            } catch(Exception ex)
+            } catch
             {
                 EnableControl(true);
             }

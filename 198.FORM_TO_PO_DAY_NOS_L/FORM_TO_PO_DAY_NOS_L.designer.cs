@@ -1274,7 +1274,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Label lblDateTime;
         private System.Windows.Forms.Panel pnHeader;

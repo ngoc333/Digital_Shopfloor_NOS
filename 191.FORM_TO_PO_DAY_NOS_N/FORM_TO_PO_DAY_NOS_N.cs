@@ -20,13 +20,13 @@ namespace FORM
         }
 
         int cnt = 0;
-        string str_op = "";
+        //string str_op = "";
         public delegate void MenuHandler();
-        public MenuHandler OnClick = null;
+      
 
         #region db
-        Database db = new Database();
-        DataTable _dtXML = null;
+        //Database db = new Database();
+       // DataTable _dtXML = null;
         /// <summary>
         /// Khai báo biến toàn cục kiểu từ điển, sử dụng để gán 1 số giá trị mặc định cho form
         /// </summary>
@@ -130,13 +130,13 @@ namespace FORM
         {
             try
             {
-                int n;
+                //int n;
                 DataTable dtsource = null;
                 gvwView.Columns[0].OwnerBand.Caption = "Nos " + ComVar.Var._strValue4 + " Line " + ComVar.Var._strValue2.Substring(2, 1);
-                dtsource = db.SEL_OS_PROD_MONTH("H", "", "");                
+               // dtsource = db.SEL_OS_PROD_MONTH("H", "", "");                
                 if (dtsource != null && dtsource.Rows.Count > 0)
                 {
-                    string name;
+                    //string name;
                     //bandMon.Caption = dtsource.Rows[0]["MON"].ToString();
                     if (dtsource.Rows.Count > 0)
                     {
@@ -288,7 +288,7 @@ namespace FORM
 
         private void bindingdatachart(string arg_QType, string arg_op)
         {
-            DataTable dt = null;
+           
             
         }
 

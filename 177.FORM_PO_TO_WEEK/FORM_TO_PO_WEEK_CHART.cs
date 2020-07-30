@@ -20,14 +20,14 @@ namespace FORM
         }
 
         int cnt = 0;
-        string str_op = "";
+       // string str_op = "";
         public delegate void MenuHandler();
-        public MenuHandler OnClick = null;
+        public new MenuHandler OnClick = null;
         public DataTable _dt = null;
         public DataTable _dtTotal = null;
         #region db
-        Database db = new Database();
-        DataTable _dtXML = null;
+        //Database db = new Database();
+        //DataTable _dtXML = null;
         /// <summary>
         /// Khai báo biến toàn cục kiểu từ điển, sử dụng để gán 1 số giá trị mặc định cho form
         /// </summary>
@@ -247,7 +247,7 @@ namespace FORM
 
         private void bindingdatachart(string arg_QType, string arg_op)
         {
-            DataTable dt = null;
+           
             
         }
 
