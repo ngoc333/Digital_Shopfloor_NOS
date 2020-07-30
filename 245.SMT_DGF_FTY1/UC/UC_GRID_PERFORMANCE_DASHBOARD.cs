@@ -1,14 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
 using System.Data.OracleClient;
-using System.IO;
-using System.Reflection;
+using System.Diagnostics;
+using System.Windows.Forms;
 
 namespace FORM.UC
 {
@@ -68,7 +62,7 @@ namespace FORM.UC
 
         private void ClearGird(string _title)
         {
-            string[] strHeader = null;
+            //string[] strHeader = null;
             //switch (_title)
             //{ 
             //    case "LEADTIME_FG":
@@ -181,6 +175,7 @@ namespace FORM.UC
             }
             catch (Exception ex)
             {
+                Debug.WriteLine(ex.ToString());
                 progressPanel1.Visible = false;
                 //throw ex;
                // MessageBox.Show("Binding Data Error: " + ex);

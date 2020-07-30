@@ -88,8 +88,8 @@ namespace FORM
 
         int indexScreen;
         string sLine, sMline;
-        DataTable dtsource = null, dtB = null, dtC = null;
-        int cMachine = 0, cQual = 0, cProd = 0, cCount = 0;
+        DataTable dtsource = null;
+        //int cMachine = 0, cQual = 0, cProd = 0, cCount = 0;
         bool flag = false;
         public FRM_ANDON_DATA_ANALYSIS(string Title, int _indexScreen, string _Line, string _Mline)
         {
@@ -277,7 +277,7 @@ namespace FORM
         {
             if (this.Visible)
             {
-                cCount = 29;
+                //cCount = 29;
                 tmrDate.Start();
                 creat_line();
                 creat_station();
@@ -291,7 +291,7 @@ namespace FORM
 
         private void lblTitle_DoubleClick(object sender, EventArgs e)
         {
-            cCount = 29;
+           // cCount = 29;
         }
 
         private void button1_Click(object sender, EventArgs e)

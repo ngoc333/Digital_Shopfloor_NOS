@@ -256,8 +256,8 @@ namespace FORM.UC
         };
         static char[] specChars = new char[] { '.', '\'', ',', '-', ')', '(' };
         public int lockTimerCounter;
-        int visibleSymbolsCount1 = 0, visibleSymbolsCount2 = 0, visibleSymbolsCount3 = 0, visibleSymbolsCount4 = 0, visibleSymbolsCount5 = 0, visibleSymbolsCount6 = 0, visibleSymbolsCount7 = 0, visibleSymbolsCount8 = 0;
-        int substringStartIndex1 = 0, substringStartIndex2 = 0, substringStartIndex3 = 0, substringStartIndex4 = 0, substringStartIndex5 = 0, substringStartIndex6 = 0, substringStartIndex7 = 0, substringStartIndex8 = 0;
+        int visibleSymbolsCount1 = 0;
+        int substringStartIndex1 = 0;
         private bool IsSpecialCharacter(char character)
         {
             return Array.IndexOf(specChars, character) != -1;
@@ -280,7 +280,7 @@ namespace FORM.UC
         {
             try
             {
-                int additionalSymbolsCount1 = 0, additionalSymbolsCount2 = 0, additionalSymbolsCount3 = 0, additionalSymbolsCount4 = 0, additionalSymbolsCount5 = 0, additionalSymbolsCount6 = 0, additionalSymbolsCount7 = 0, additionalSymbolsCount8 = 0;
+                int additionalSymbolsCount1 = 0;
                 additionalSymbolsCount1 = Array.FindAll(FullText[index].Substring(substringStartIndex1, visibleSymbolsCount1).ToCharArray(), IsSpecialCharacter).Length;
                 dgModel.Text = FullText[index].Substring(substringStartIndex1, visibleSymbolsCount1 + additionalSymbolsCount1);
                 substringStartIndex1 += 1;

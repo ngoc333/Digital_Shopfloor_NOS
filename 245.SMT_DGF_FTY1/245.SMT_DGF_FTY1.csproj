@@ -23,6 +23,7 @@
     <WarningLevel>4</WarningLevel>
     <DocumentationFile>
     </DocumentationFile>
+    <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -40,14 +41,6 @@
     <Reference Include="AxInterop.FPUSpreadADO, Version=8.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\MAIN\bin\Debug\AxInterop.FPUSpreadADO.dll</HintPath>
-    </Reference>
-    <Reference Include="COM, Version=1.0.6972.20751, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\MAIN\bin\Debug\COM.dll</HintPath>
-    </Reference>
-    <Reference Include="ComVar, Version=1.0.6984.18247, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\MAIN\bin\Debug\ComVar.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Charts.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -125,14 +118,6 @@
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>True</EmbedInteropTypes>
       <HintPath>C:\Windows\assembly\GAC\MSDATASRC\7.0.3300.0__b03f5f7f11d50a3a\msdatasrc.dll</HintPath>
-    </Reference>
-    <Reference Include="netchartdir_cp, Version=5.1.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\MAIN\bin\Debug\netchartdir_cp.dll</HintPath>
-    </Reference>
-    <Reference Include="ShapeControl, Version=1.0.6374.27716, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\MAIN\bin\Debug\ShapeControl.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -376,6 +361,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\enSel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ComVar\ComVar.csproj">
+      <Project>{1fdd4c55-6914-47c9-89f0-682d023ac3a9}</Project>
+      <Name>ComVar</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\COM\Com.csproj">
+      <Project>{992378c3-66a1-4e98-96f5-ce2b26e0cab2}</Project>
+      <Name>Com</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

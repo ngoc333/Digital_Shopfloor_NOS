@@ -1,12 +1,9 @@
 ﻿using DevExpress.XtraCharts;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.OracleClient;
+using System.Diagnostics;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace FORM
@@ -16,7 +13,7 @@ namespace FORM
         int int_count = 0;
         int indexScreen;
         string line, mline;
-        int i_col_cur = 0;
+        //int i_col_cur = 0;
         Color BackColor1 = Color.FromArgb(232, 246, 247);
         Color BackColor2 = Color.White;
 
@@ -191,6 +188,7 @@ namespace FORM
             {
                 //return "";
                 //log.Error(ex);
+                Debug.WriteLine(ex.ToString());
                 return null;
             }
 

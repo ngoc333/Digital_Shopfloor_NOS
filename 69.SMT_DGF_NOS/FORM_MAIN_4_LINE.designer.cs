@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FORM_MAIN_4_LINE));
-            DevExpress.Utils.SuperToolTip superToolTip1 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem1 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip2 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem2 = new DevExpress.Utils.ToolTipTitleItem();
             this.pnHeader = new System.Windows.Forms.Panel();
             this.cmdEMD = new System.Windows.Forms.Button();
             this.cmdMGL = new System.Windows.Forms.Button();
@@ -251,6 +251,8 @@
             this.a1Panel3 = new FORM.A1Panel();
             this.a1Panel4 = new FORM.A1Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cmdTMS = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.pnHeader.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.digitalGaugeLine1)).BeginInit();
@@ -306,6 +308,8 @@
             // pnHeader
             // 
             this.pnHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.pnHeader.Controls.Add(this.cmdTMS);
+            this.pnHeader.Controls.Add(this.button1);
             this.pnHeader.Controls.Add(this.cmdEMD);
             this.pnHeader.Controls.Add(this.cmdMGL);
             this.pnHeader.Controls.Add(this.cmdQMS);
@@ -471,12 +475,13 @@
             this.cmdFGWH.AppearanceHovered.Options.UseForeColor = true;
             this.cmdFGWH.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
             this.cmdFGWH.ImageOptions.Image = global::FORM.Properties.Resources.whstoreage2;
-            this.cmdFGWH.Location = new System.Drawing.Point(1463, 2);
+            this.cmdFGWH.Location = new System.Drawing.Point(1569, 2);
             this.cmdFGWH.Name = "cmdFGWH";
-            this.cmdFGWH.Size = new System.Drawing.Size(217, 100);
+            this.cmdFGWH.Size = new System.Drawing.Size(18, 19);
             this.cmdFGWH.TabIndex = 50;
             this.cmdFGWH.Tag = "1";
             this.cmdFGWH.Text = "FG W/H";
+            this.cmdFGWH.Visible = false;
             this.cmdFGWH.Click += new System.EventHandler(this.cmdFGWH_Click);
             // 
             // lblDate
@@ -1161,11 +1166,11 @@
             this.bstLine1_Prod.ContentControl = this.backstageViewClientControl2;
             this.bstLine1_Prod.Glyph = ((System.Drawing.Image)(resources.GetObject("bstLine1_Prod.Glyph")));
             this.bstLine1_Prod.Name = "bstLine1_Prod";
-            superToolTip1.AllowHtmlText = DevExpress.Utils.DefaultBoolean.True;
-            superToolTip1.DistanceBetweenItems = 1;
-            toolTipTitleItem1.Text = "Sản Xuất";
-            superToolTip1.Items.Add(toolTipTitleItem1);
-            this.bstLine1_Prod.SuperTip = superToolTip1;
+            superToolTip2.AllowHtmlText = DevExpress.Utils.DefaultBoolean.True;
+            superToolTip2.DistanceBetweenItems = 1;
+            toolTipTitleItem2.Text = "Sản Xuất";
+            superToolTip2.Items.Add(toolTipTitleItem2);
+            this.bstLine1_Prod.SuperTip = superToolTip2;
             // 
             // bstLine1_Equip
             // 
@@ -3992,6 +3997,41 @@
             this.panel1.Size = new System.Drawing.Size(1916, 1080);
             this.panel1.TabIndex = 18;
             // 
+            // cmdTMS
+            // 
+            this.cmdTMS.BackgroundImage = global::FORM.Properties.Resources.PanicButton2;
+            this.cmdTMS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.cmdTMS.FlatAppearance.BorderSize = 0;
+            this.cmdTMS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmdTMS.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
+            this.cmdTMS.ForeColor = System.Drawing.Color.White;
+            this.cmdTMS.Location = new System.Drawing.Point(1461, 2);
+            this.cmdTMS.Name = "cmdTMS";
+            this.cmdTMS.Size = new System.Drawing.Size(109, 103);
+            this.cmdTMS.TabIndex = 62;
+            this.cmdTMS.Tag = "back";
+            this.cmdTMS.Text = "TMS";
+            this.cmdTMS.UseVisualStyleBackColor = true;
+            this.cmdTMS.Visible = false;
+            this.cmdTMS.Click += new System.EventHandler(this.cmdTMS_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImage = global::FORM.Properties.Resources.PanicButton2;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(1569, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(109, 103);
+            this.button1.TabIndex = 61;
+            this.button1.Tag = "back";
+            this.button1.Text = "FG W/H";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.cmdFGWH_Click);
+            // 
             // FORM_MAIN_4_LINE
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -4288,5 +4328,7 @@
         private DevExpress.XtraEditors.SimpleButton cmdInv4_Line3;
         private DevExpress.XtraEditors.SimpleButton cmdInv4_Line4;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button cmdTMS;
+        private System.Windows.Forms.Button button1;
     }
 }

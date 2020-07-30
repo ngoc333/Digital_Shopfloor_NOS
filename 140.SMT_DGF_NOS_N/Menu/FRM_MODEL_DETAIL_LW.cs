@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Data.OracleClient;
 using System.IO;
+using System.Diagnostics;
 
 namespace FORM
 {
@@ -18,8 +19,9 @@ namespace FORM
             InitializeComponent();
         }
 
+        private readonly string _Line;
+        private string _Mline;
 
-        string _Line, _Mline;
         public FRM_MODEL_DETAIL_LW(string Line,string Mline)
         {
             InitializeComponent();
@@ -84,7 +86,7 @@ namespace FORM
                 }
             }
             catch (Exception ex)
-            { }
+            { Debug.WriteLine(ex.ToString()); }
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -144,7 +146,9 @@ namespace FORM
 
                     }
                     catch (Exception ex)
-                    { }
+                    {
+                        Debug.WriteLine(ex.ToString());
+                    }
                     finally
                     {
                         maxrow = layoutView1.RowCount;
@@ -160,7 +164,7 @@ namespace FORM
                 lblTitle.Text = dt.Rows[rows - 1]["MODEL"].ToString() + ": " + dt.Rows[rows - 1]["MONTH"].ToString();
             }
             catch (Exception ex)
-            { }
+            { Debug.WriteLine(ex.ToString()); }
         }
 
         private void FRM_MODEL_DETAIL_LW_VisibleChanged(object sender, EventArgs e)

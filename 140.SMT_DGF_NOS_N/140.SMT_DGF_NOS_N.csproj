@@ -23,6 +23,7 @@
     <WarningLevel>4</WarningLevel>
     <DocumentationFile>
     </DocumentationFile>
+    <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -35,9 +36,11 @@
   <ItemGroup>
     <Reference Include="AxInterop.FPSpreadADO">
       <HintPath>..\MAIN\DLL\AxInterop.FPSpreadADO.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="AxInterop.FPUSpreadADO">
       <HintPath>..\MAIN\DLL\AxInterop.FPUSpreadADO.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="COM, Version=1.0.6972.20751, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>

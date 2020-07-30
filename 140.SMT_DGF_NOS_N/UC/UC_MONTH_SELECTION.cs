@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
+using System.Diagnostics;
 using System.Windows.Forms;
 
 namespace FORM.UC
@@ -22,7 +18,7 @@ namespace FORM.UC
     //    public event EventHandler ValueChangeEvent;
     //   // public event EventHandler ValueYearChangeEvent;
     //   // public event EventHandler ValueMonthChangeEvent;
-       
+
 
     //    public UC_MONTH_SELECTION()
     //    {
@@ -39,7 +35,7 @@ namespace FORM.UC
     //        lblYear.Text = _sYearValue.ToString();
     //        lblMonth.Text = _arrMonthShortName[Convert.ToInt32(sMonthValue) - 1].ToString();
     //    }
-   
+
     //    private void SetValue()
     //    {
     //        lblYear.Text = sValue.ToString();
@@ -116,13 +112,13 @@ namespace FORM.UC
 
     //    private void btnPrevMonth_Click(object sender, EventArgs e)
     //    {
-            
+
     //        if (Convert.ToInt32(sMonthValue) == 1)
     //        {
     //            sMonthValue = "12";
     //            //DO
     //            sYearValue = (Convert.ToInt32(sYearValue) - 1).ToString();
-                
+
     //        }
     //        else
     //        {
@@ -131,7 +127,7 @@ namespace FORM.UC
     //        sValue = sYearValue + sMonthValue;
     //        SetShortName(sYearValue, sMonthValue);
     //        this.btnPrevMonth.Focus();
-            
+
     //    }
 
     //    private void btnNextMonth_Click(object sender, EventArgs e)
@@ -144,12 +140,12 @@ namespace FORM.UC
     //            sMonthValue = "01";
     //            //DO
     //            sYearValue = (Convert.ToInt32(sYearValue) + 1).ToString();
-                
+
     //        }
     //        else
     //        {
     //            sMonthValue = (Convert.ToInt32(sMonthValue) + 1).ToString("00");
-                
+
     //        }
     //        sValue = sYearValue + sMonthValue;
     //        SetShortName(sYearValue, sMonthValue);
@@ -207,9 +203,9 @@ namespace FORM.UC
     //        }
     //    }
 
-        
 
-        
+
+
     //}
     public partial class UC_MONTH_SELECTION : UserControl
     {
@@ -325,6 +321,7 @@ namespace FORM.UC
             }
             catch (Exception ex)
             {
+                Debug.WriteLine(ex.ToString());
                 EnableControl(true);
             }
 
@@ -396,6 +393,7 @@ namespace FORM.UC
             }
             catch (Exception ex)
             {
+                Debug.WriteLine(ex.ToString());
                 EnableControl(true);
             }
         }

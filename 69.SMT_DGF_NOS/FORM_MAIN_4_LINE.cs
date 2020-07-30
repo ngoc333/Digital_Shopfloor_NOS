@@ -139,8 +139,9 @@ namespace FORM
                 _arrNumText[3] = 0;
                 cCount = 58;
 
-                if (_FirstFrom && ComVar.Var._strValue1 == "014") cmdEMD.Visible = true;
-                else cmdEMD.Visible = false;
+                cmdEMD.Visible = _FirstFrom && ComVar.Var._strValue1 == "014";
+
+                cmdTMS.Visible = _FirstFrom && (ComVar.Var._strValue1 == "014" || ComVar.Var._strValue1 == "018");
 
                 tmrText.Start();
                 tmrDate.Start();
@@ -1136,6 +1137,12 @@ cmdQua1_Line2,cmdQua2_Line2,cmdQua3_Line2,cmdQua4_Line2,cmdQua5_Line2,cmdPro1_Li
             {
                 ComVar.Var.callForm = "back";
             }
+        }
+
+        private void cmdTMS_Click(object sender, EventArgs e)
+        {
+            ComVar.Var._IsBack = true;
+            ComVar.Var.callForm = "636";
         }
 
         private void cmdEMD_Click(object sender, EventArgs e)
