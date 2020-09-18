@@ -537,11 +537,12 @@ namespace FORM
         #region Run Text Model
         private void runTextModel()
         {
+            int iNum;
             try
             {
                 for (int i = 0; i < _dtModel.Rows.Count; i++)
                 {
-                    int.TryParse(_dtModel.Rows[i]["LINE"].ToString(), out int iNum);
+                    int.TryParse(_dtModel.Rows[i]["LINE"].ToString(), out iNum);
                     addTextGauge(_dtModel.Rows[i]["MODEL"].ToString(), _arrGaugeText[iNum - 1], i);
                     _arrNumText[i] = _arrNumText[i] + 1;
                 }
@@ -1013,7 +1014,7 @@ cmdQua1_Line2,cmdQua2_Line2,cmdQua3_Line2,cmdQua4_Line2,cmdQua5_Line2,cmdPro1_Li
 
             ComVar.Var._IsBack = true;
             ComVar.Var.callForm = cnt.Tag == null ? "" : cnt.Tag.ToString();
-           
+          
            // ComVar.Var.callForm = "back";
         }
         private void cmdFGWH_Click(object sender, EventArgs e)

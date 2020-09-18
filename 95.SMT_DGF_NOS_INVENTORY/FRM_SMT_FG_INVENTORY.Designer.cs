@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRM_SMT_FG_INVENTORY));
             DevExpress.XtraCharts.XYDiagram xyDiagram1 = new DevExpress.XtraCharts.XYDiagram();
             DevExpress.XtraCharts.SecondaryAxisY secondaryAxisY1 = new DevExpress.XtraCharts.SecondaryAxisY();
@@ -72,8 +73,8 @@
             this.Modelchart = new DevExpress.XtraCharts.ChartControl();
             this.axfpView = new AxFPSpreadADO.AxfpSpread();
             this.ChartByModel = new DevExpress.XtraCharts.ChartControl();
-            this.tmrDate = new System.Windows.Forms.Timer();
-            this.tmr_Blinking = new System.Windows.Forms.Timer();
+            this.tmrDate = new System.Windows.Forms.Timer(this.components);
+            this.tmr_Blinking = new System.Windows.Forms.Timer(this.components);
             this.pnHeader.SuspendLayout();
             this.pnBody.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splMainH)).BeginInit();
