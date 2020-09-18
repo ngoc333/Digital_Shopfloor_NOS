@@ -48,6 +48,8 @@
             this.tblMain2 = new System.Windows.Forms.TableLayoutPanel();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.pic_under = new System.Windows.Forms.PictureBox();
+            this.cmdTMS = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.pnHeader.SuspendLayout();
             this.pn_Menu_Header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_under)).BeginInit();
@@ -67,6 +69,8 @@
             // 
             // pn_Menu_Header
             // 
+            this.pn_Menu_Header.Controls.Add(this.cmdTMS);
+            this.pn_Menu_Header.Controls.Add(this.button1);
             this.pn_Menu_Header.Controls.Add(this.cmdBack);
             this.pn_Menu_Header.Controls.Add(this.cmd_FGWH);
             this.pn_Menu_Header.Controls.Add(this.btnLang);
@@ -119,7 +123,7 @@
             this.cmd_FGWH.ImageOptions.Image = global::FORM.Properties.Resources.whstoreage2;
             this.cmd_FGWH.Location = new System.Drawing.Point(839, -1);
             this.cmd_FGWH.Name = "cmd_FGWH";
-            this.cmd_FGWH.Size = new System.Drawing.Size(224, 100);
+            this.cmd_FGWH.Size = new System.Drawing.Size(59, 49);
             this.cmd_FGWH.TabIndex = 72;
             this.cmd_FGWH.Tag = "1";
             this.cmd_FGWH.Text = "FG W/H";
@@ -329,6 +333,39 @@
             this.pic_under.TabStop = false;
             this.pic_under.Visible = false;
             // 
+            // cmdTMS
+            // 
+            this.cmdTMS.BackgroundImage = global::FORM.Properties.Resources.PanicButton2;
+            this.cmdTMS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.cmdTMS.FlatAppearance.BorderSize = 0;
+            this.cmdTMS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmdTMS.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
+            this.cmdTMS.ForeColor = System.Drawing.Color.White;
+            this.cmdTMS.Location = new System.Drawing.Point(838, -2);
+            this.cmdTMS.Name = "cmdTMS";
+            this.cmdTMS.Size = new System.Drawing.Size(109, 103);
+            this.cmdTMS.TabIndex = 74;
+            this.cmdTMS.Tag = "back";
+            this.cmdTMS.Text = "TMS";
+            this.cmdTMS.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImage = global::FORM.Properties.Resources.PanicButton2;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(946, -2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(109, 103);
+            this.button1.TabIndex = 73;
+            this.button1.Tag = "back";
+            this.button1.Text = "FG W/H";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.cmd_FGWH_Click);
+            // 
             // FORM_MAIN_8_LINE
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -372,5 +409,7 @@
         private System.Windows.Forms.Button btnLang;
         private System.Windows.Forms.Panel pn_Menu_Header;
         private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Button cmdTMS;
+        private System.Windows.Forms.Button button1;
     }
 }
