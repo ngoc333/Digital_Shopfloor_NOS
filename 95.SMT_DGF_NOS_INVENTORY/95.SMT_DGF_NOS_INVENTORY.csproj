@@ -151,6 +151,12 @@
     <Compile Include="ClassLib\TransparentPanel.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="FRM_SMT_FG_INST_SET.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_SMT_FG_INST_SET.Designer.cs">
+      <DependentUpon>FRM_SMT_FG_INST_SET.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRM_SMT_FG_INVENTORY.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,6 +189,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FRM_SMT_FG_INST_SET.resx">
+      <DependentUpon>FRM_SMT_FG_INST_SET.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FRM_SMT_FG_INVENTORY.resx">
       <DependentUpon>FRM_SMT_FG_INVENTORY.cs</DependentUpon>
     </EmbeddedResource>
@@ -223,6 +232,10 @@
     <None Include="Resources\bottom.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\69.SMT_DGF_NOS\69.SMT_DGF_NOS.csproj">
+      <Project>{2861E896-40B0-4D81-8F20-68AFFCF6301B}</Project>
+      <Name>69.SMT_DGF_NOS</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ComVar\ComVar.csproj">
       <Project>{1fdd4c55-6914-47c9-89f0-682d023ac3a9}</Project>
       <Name>ComVar</Name>

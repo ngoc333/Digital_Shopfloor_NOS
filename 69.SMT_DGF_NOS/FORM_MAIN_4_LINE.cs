@@ -537,11 +537,12 @@ namespace FORM
         #region Run Text Model
         private void runTextModel()
         {
+            int iNum;
             try
             {
                 for (int i = 0; i < _dtModel.Rows.Count; i++)
                 {
-                    int.TryParse(_dtModel.Rows[i]["LINE"].ToString(), out int iNum);
+                    int.TryParse(_dtModel.Rows[i]["LINE"].ToString(), out iNum);
                     addTextGauge(_dtModel.Rows[i]["MODEL"].ToString(), _arrGaugeText[iNum - 1], i);
                     _arrNumText[i] = _arrNumText[i] + 1;
                 }
