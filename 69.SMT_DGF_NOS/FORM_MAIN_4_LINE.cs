@@ -1014,7 +1014,7 @@ cmdQua1_Line2,cmdQua2_Line2,cmdQua3_Line2,cmdQua4_Line2,cmdQua5_Line2,cmdPro1_Li
 
             ComVar.Var._IsBack = true;
             ComVar.Var.callForm = cnt.Tag == null ? "" : cnt.Tag.ToString();
-           
+          
            // ComVar.Var.callForm = "back";
         }
         private void cmdFGWH_Click(object sender, EventArgs e)
