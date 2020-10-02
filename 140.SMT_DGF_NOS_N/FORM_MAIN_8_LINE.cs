@@ -735,7 +735,7 @@ namespace FORM
                     string[] strSplit = obj.Split('.');
                     Control[] cnt = this.Controls.Find(strSplit[0], true);
 
-                    if (strSplit[0] == "cmdHrm1")
+                    if (strSplit[0] == "cmdInv6")
                     { }
 
                     for (int i = 0; i < cnt.Length; i++)
@@ -764,6 +764,12 @@ namespace FORM
         {
             ComVar.Var._IsBack = true;
             ComVar.Var.callForm = "215";
+        }
+
+        private void cmdTMS_Click(object sender, EventArgs e)
+        {
+            ComVar.Var._IsBack = true;
+            ComVar.Var.callForm = "641";
         }
 
         private void cmdMGL_Click(object sender, EventArgs e)

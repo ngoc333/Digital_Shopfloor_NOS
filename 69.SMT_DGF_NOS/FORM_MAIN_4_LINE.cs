@@ -28,8 +28,6 @@ namespace FORM
         }
 
 
-
-
         #region Global Variant
         //int _iStartText = 0;
 
@@ -40,7 +38,7 @@ namespace FORM
         // Form_SMT_NPI frm_npi = null;
         //init strline = new init();
 
-        readonly MODEL_LINE lineInstance = new MODEL_LINE(); 
+        readonly MODEL_LINE lineInstance = new MODEL_LINE();
         //MAIN_PRODUCTION_RESULT _Popup_Production = new MAIN_PRODUCTION_RESULT();
 
 
@@ -59,18 +57,18 @@ namespace FORM
         DataTable _dtGMES = null, _dtModel = null;
         int cCount = 0;
         DevExpress.XtraGauges.Win.Gauges.Digital.DigitalGauge[] _arrGaugeText;
-        readonly int[] _arrNumText = {0, 0, 0, 0} ;
+        readonly int[] _arrNumText = { 0, 0, 0, 0 };
         private string _Lang = "En";
-      //  string _Line = "";
+        //  string _Line = "";
         bool _IsMain = true;
         bool _FirstFrom = false;
-       // Dictionary<string, string> _dtnInit = new Dictionary<string, string>();
+        // Dictionary<string, string> _dtnInit = new Dictionary<string, string>();
 
         #endregion
 
 
         #region Load/Visible/Timer
-        private void  FORM_MAIN_Load(object sender, EventArgs e)
+        private void FORM_MAIN_Load(object sender, EventArgs e)
         {
             _arrGaugeText = new DevExpress.XtraGauges.Win.Gauges.Digital.DigitalGauge[4];
             _arrGaugeText[0] = digitalGaugeLine1;
@@ -87,10 +85,10 @@ namespace FORM
                 bstLine3_Qual.Selected = true;
                 bstLine4_Qual.Selected = true;
 
-                
+
 
                 //_IsMain = true;
-              //  formFullScreen();
+                //  formFullScreen();
                 getConfigInfor();
                 //setConfigForm();
                 //initDefault();
@@ -100,32 +98,32 @@ namespace FORM
                 //digitalGaugeLine2.Text = "";
                 //digitalGaugeLine3.Text = "";
                 //digitalGaugeLine4.Text = "";
-                
+
             }
             else
                 ComVar.Var._bValue5 = false;
-            
-           // tmrText.Enabled = true;
-           // cmdMGL.Visible = false;
+
+            // tmrText.Enabled = true;
+            // cmdMGL.Visible = false;
         }
 
         private void HOMEPAGE_V4_VN_VisibleChanged(object sender, EventArgs e)
         {
             if (Visible)
             {
-                
 
-                
+
+
                 if (ComVar.Var._IsBack)
                 {
-                    _IsMain = false;         
-                    
+                    _IsMain = false;
+
                 }
                 else _IsMain = true;
 
-                
 
-               // getConfigInfor();
+
+                // getConfigInfor();
                 setConfigForm();
                 initDataModel();
                 loadLinePicture();
@@ -141,14 +139,14 @@ namespace FORM
 
                 cmdEMD.Visible = _FirstFrom && ComVar.Var._strValue1 == "014";
 
-                cmdTMS.Visible = _FirstFrom && (ComVar.Var._strValue1 == "014" || ComVar.Var._strValue1 == "018");
+                cmdTMS.Visible = _FirstFrom; //&& (ComVar.Var._strValue1 == "014" || ComVar.Var._strValue1 == "018")
 
                 tmrText.Start();
                 tmrDate.Start();
             }
             else
             {
-               // ComVar.Var._strValue1 = _Line;
+                // ComVar.Var._strValue1 = _Line;
                 tmrText.Stop();
                 tmrDate.Stop();
                 _IsMain = ComVar.Var._bValue5;
@@ -201,7 +199,7 @@ namespace FORM
                 MyOraDB.Parameter_Type[3] = (int)OracleType.Cursor;
 
                 MyOraDB.Parameter_Values[0] = ARG_QTYPE;
-                MyOraDB.Parameter_Values[1] =  ComVar.Var._strValue1;
+                MyOraDB.Parameter_Values[1] = ComVar.Var._strValue1;
                 MyOraDB.Parameter_Values[2] = ComVar.Var._Area == "NOS_L2." ? (1 + Convert.ToInt16("004")).ToString("000") : ComVar.Var._strValue2;
                 MyOraDB.Parameter_Values[3] = "";
 
@@ -302,17 +300,17 @@ namespace FORM
 
         #region Function
 
-        
+
 
         private void initDataModel()
         {
             try
             {
-                
+
 
                 _dtModel = SEL_MODEL_NAME("Q");
 
-                if (ComVar.Var._strValue1 == "009" )
+                if (ComVar.Var._strValue1 == "009")
                     groupBox4.Text = "T Line";
                 else if (ComVar.Var._Area == "NOS_L2.")
                 {
@@ -326,10 +324,10 @@ namespace FORM
             {
                 ComVar.Var.writeToLog(this.GetType().Name + "-->initDefault-->Err: " + ex.ToString());
             }
-            
+
 
         }
-    
+
         //private void formFullScreen()
         //{
         //    this.WindowState = FormWindowState.Normal;
@@ -367,8 +365,8 @@ namespace FORM
                 setRateColor();
             }
             catch (Exception ex)
-            { 
-                ComVar.Var.writeToLog( this.GetType().Name + "-->BindingDataLabel -->Err: " + ex.ToString());
+            {
+                ComVar.Var.writeToLog(this.GetType().Name + "-->BindingDataLabel -->Err: " + ex.ToString());
             }
         }
 
@@ -376,11 +374,11 @@ namespace FORM
         {
             try
             {
-              //  _Line = ComVar.Var._strValue1;
+                //  _Line = ComVar.Var._strValue1;
                 if (_IsMain)
                 {
                     //_dtXML = ComVar.Func.ReadXML(Application.StartupPath + @"\Config.xml", this.GetType().Name);
-                   // _dtQMS = ComVar.Func.ReadXML(Application.StartupPath + @"\Config.xml", "QMS");
+                    // _dtQMS = ComVar.Func.ReadXML(Application.StartupPath + @"\Config.xml", "QMS");
                     _dtGMES = ComVar.Func.ReadXML(Application.StartupPath + @"\Config.xml", "GMES");
 
                     CXMLConfig conFig = new CXMLConfig(Application.StartupPath + @"\Config.xml");
@@ -414,13 +412,13 @@ namespace FORM
                 }
                 else
                 {
-                    
+
                 }
             }
             catch (Exception ex)
             {
                 ComVar.Var.writeToLog(this.GetType().Name + "-->getConfigInfor-->Err: " + ex.ToString());
-            }          
+            }
         }
 
         private void loadLinePicture()
@@ -446,20 +444,20 @@ namespace FORM
                         cnt.BackgroundImageLayout = ImageLayout.Stretch;
 
                         cnt = this.Controls.Find(strConName.Replace("pic", "lbl"), true).FirstOrDefault();
-                        cnt.Text = dt.Rows[i]["NAME"].ToString(); 
+                        cnt.Text = dt.Rows[i]["NAME"].ToString();
                     }
                     catch (Exception ex)
                     {
                         ComVar.Var.writeToLog(this.GetType().Name + "-->loadLinePicture" + strConName + "-->Err: " + ex.ToString());
                     }
-                   
+
                 }
-                
+
             }
             catch (Exception ex)
             {
                 ComVar.Var.writeToLog(this.GetType().Name + "-->loadLinePicture-->Err: " + ex.ToString());
-            }          
+            }
         }
 
 
@@ -550,11 +548,11 @@ namespace FORM
                 // addTextGauge(_dtModel.Rows[0]["MODEL"].ToString(), _arrGaugeText[0]);
 
             }
-            catch (Exception ex )
+            catch (Exception ex)
             {
                 ComVar.Var.writeToLog(this.GetType().Name + "-->runTextModel-->Err: " + ex.ToString());
             }
-            
+
         }
         private void addTextGauge(string arg_str, DevExpress.XtraGauges.Win.Gauges.Digital.DigitalGauge gauge, int arg_i)
         {
@@ -573,15 +571,15 @@ namespace FORM
 
                 gauge.Text += arg_str.Substring(_arrNumText[arg_i], 1);
             }
-            catch (Exception ex )
+            catch (Exception ex)
             {
                 ComVar.Var.writeToLog(this.GetType().Name + "-->addTextGauge-->Err: " + ex.ToString());
             }
 
-            
+
         }
 
-        #endregion 
+        #endregion
 
         //Set Language Change
         private void Animation(string Qtype, Control Grid)
@@ -753,7 +751,7 @@ cmdQua1_Line2,cmdQua2_Line2,cmdQua3_Line2,cmdQua4_Line2,cmdQua5_Line2,cmdPro1_Li
                         btn[k].Text = btn_EN[k];
                     }
                     break;
-               
+
             }
 
 
@@ -766,7 +764,7 @@ cmdQua1_Line2,cmdQua2_Line2,cmdQua3_Line2,cmdQua4_Line2,cmdQua5_Line2,cmdPro1_Li
         {
             try
             {
-                 
+
 
                 string[] str = argButtonName.Split('_');
                 if (ComVar.Var._Area == "NOS_L2.")
@@ -778,14 +776,14 @@ cmdQua1_Line2,cmdQua2_Line2,cmdQua3_Line2,cmdQua4_Line2,cmdQua5_Line2,cmdPro1_Li
                     if (argFormat == "000")
                         return str[1].Replace("Line", "").PadLeft(3, '0');
                     else
-                        return str[1].Replace("Line","");
+                        return str[1].Replace("Line", "");
             }
             catch (Exception ex)
             {
                 ComVar.Var.writeToLog(this.GetType().Name + "-->getMline-->" + argButtonName + " -->Err: " + ex.ToString());
                 return "";
             }
-            
+
         }
 
 
@@ -817,8 +815,8 @@ cmdQua1_Line2,cmdQua2_Line2,cmdQua3_Line2,cmdQua4_Line2,cmdQua5_Line2,cmdPro1_Li
             try
             {
                 System.Collections.Generic.Dictionary<string, string> dtnInit = new System.Collections.Generic.Dictionary<string, string>();
-               // dtnInit = ComVar.Func.getInitForm(ComVar.Var._Area + this.GetType().Assembly.GetName().Name, this.GetType().Name);
-               if (_IsMain)
+                // dtnInit = ComVar.Func.getInitForm(ComVar.Var._Area + this.GetType().Assembly.GetName().Name, this.GetType().Name);
+                if (_IsMain)
                     dtnInit = ComVar.Func.getInitForm(ComVar.Var._Area + this.GetType().Assembly.GetName().Name, this.GetType().Name);
                 else
                 {
@@ -842,13 +840,13 @@ cmdQua1_Line2,cmdQua2_Line2,cmdQua3_Line2,cmdQua4_Line2,cmdQua5_Line2,cmdPro1_Li
                 ComVar.Var.writeToLog(this.GetType().Name + "-->setConfigForm-->Err:    " + ex.ToString());
             }
         }
-            
+
         private void setComValue(string obj, string obj_value)
         {
             try
             {
                 if (obj.Contains('.'))
-                {                  
+                {
                     string[] strSplit = obj.Split('.');
                     Control[] cnt = this.Controls.Find(strSplit[0], true);
 
@@ -865,8 +863,8 @@ cmdQua1_Line2,cmdQua2_Line2,cmdQua3_Line2,cmdQua4_Line2,cmdQua5_Line2,cmdPro1_Li
             }
 
         }
-        #endregion 
-      
+        #endregion
+
         #endregion
 
         #region Event
@@ -906,7 +904,7 @@ cmdQua1_Line2,cmdQua2_Line2,cmdQua3_Line2,cmdQua4_Line2,cmdQua5_Line2,cmdPro1_Li
 
         //Open QMS Program
         private void cmdQMS_Click(object sender, EventArgs e)
-        {           
+        {
             string path = Application.StartupPath + @"\QCS\FlexQuality.exe";
             string str_ProcessName = "FlexQuality";
 
@@ -930,7 +928,7 @@ cmdQua1_Line2,cmdQua2_Line2,cmdQua3_Line2,cmdQua4_Line2,cmdQua5_Line2,cmdPro1_Li
         //Click Button PFC
         private void cmdPFC_Click(object sender, EventArgs e)
         {
-            string strLine = getMline(((Control)sender).Name,"");
+            string strLine = getMline(((Control)sender).Name, "");
             if (!Directory.Exists(@"C:\\PFC_LINE" + strLine))
             {
                 DialogResult dl = MessageBox.Show(this, "Can't find this folder, would you like to create folder PFC (Không tìm thấy thư mục PFC, Tạo            mới?)", "Warring!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -977,8 +975,8 @@ cmdQua1_Line2,cmdQua2_Line2,cmdQua3_Line2,cmdQua4_Line2,cmdQua5_Line2,cmdPro1_Li
 
             }
             else
-            {               
-                btnLang.BackgroundImage = Properties.Resources.enSel;                
+            {
+                btnLang.BackgroundImage = Properties.Resources.enSel;
                 _Lang = "En";
                 ComVar.Var._strValue3 = "En";
                 bstLine1_HR.Appearance.Font = new Font("Tahoma", 22, FontStyle.Bold);
@@ -988,21 +986,21 @@ cmdQua1_Line2,cmdQua2_Line2,cmdQua3_Line2,cmdQua4_Line2,cmdQua5_Line2,cmdPro1_Li
                 Animation("En", backstageViewControl1);
                 Animation("En", backstageViewControl2);
                 Animation("En", backstageViewControl3);
-                Animation("En", backstageViewControl4);              
+                Animation("En", backstageViewControl4);
             }
 
             bstLine1_Qual.Selected = true;
             bstLine2_Qual.Selected = true;
             bstLine3_Qual.Selected = true;
             bstLine4_Qual.Selected = true;
-            
+
         }
 
         //Menu Click
-        
+
         private void cmdMenu_Click(object sender, EventArgs e)
         {
-            
+
             Control cnt = (Control)sender;
 
             ComVar.Var._strValue2 = getMline(cnt.Name, "000");
@@ -1014,8 +1012,8 @@ cmdQua1_Line2,cmdQua2_Line2,cmdQua3_Line2,cmdQua4_Line2,cmdQua5_Line2,cmdPro1_Li
 
             ComVar.Var._IsBack = true;
             ComVar.Var.callForm = cnt.Tag == null ? "" : cnt.Tag.ToString();
-          
-           // ComVar.Var.callForm = "back";
+
+            // ComVar.Var.callForm = "back";
         }
         private void cmdFGWH_Click(object sender, EventArgs e)
         {
@@ -1062,8 +1060,8 @@ cmdQua1_Line2,cmdQua2_Line2,cmdQua3_Line2,cmdQua4_Line2,cmdQua5_Line2,cmdPro1_Li
                 f.ShowDialog();
             }
             catch
-            {}
-            
+            { }
+
         }
 
         private void cmdQuaPer_Click(object sender, EventArgs e)
@@ -1075,7 +1073,7 @@ cmdQua1_Line2,cmdQua2_Line2,cmdQua3_Line2,cmdQua4_Line2,cmdQua5_Line2,cmdPro1_Li
                     Caption = "Bảng hiệu suất";
                     break;
                 default:
-                     Caption = "Performance Dashboard";
+                    Caption = "Performance Dashboard";
                     break;
             }
             Form fc = Application.OpenForms["FRM_PERFORMANCE_DASHBOARD"];
@@ -1095,7 +1093,7 @@ cmdQua1_Line2,cmdQua2_Line2,cmdQua3_Line2,cmdQua4_Line2,cmdQua5_Line2,cmdPro1_Li
         {
             if (_FirstFrom)
             {
-                
+
                 switch (ComVar.Var._strValue1)
                 {
                     case "001":
@@ -1143,7 +1141,11 @@ cmdQua1_Line2,cmdQua2_Line2,cmdQua3_Line2,cmdQua4_Line2,cmdQua5_Line2,cmdPro1_Li
         private void cmdTMS_Click(object sender, EventArgs e)
         {
             ComVar.Var._IsBack = true;
-            ComVar.Var.callForm = "636";
+            ComVar.Var._bValue5 =true;
+            if (ComVar.Var._strValue1.Equals("202"))
+                ComVar.Var.callForm = "700";
+            else
+                ComVar.Var.callForm = "641";
         }
 
         private void cmdEMD_Click(object sender, EventArgs e)
@@ -1153,11 +1155,11 @@ cmdQua1_Line2,cmdQua2_Line2,cmdQua3_Line2,cmdQua4_Line2,cmdQua5_Line2,cmdPro1_Li
             ComVar.Var.callForm = "1";
         }
 
-        
 
-        
 
-        
+
+
+
 
 
 

@@ -58,9 +58,9 @@ namespace FORM.UC
         {
             if (_MenuName != null)
             {
-                //if (MoveLeave != null)
-                //    MoveLeave(_lineCD, ((DevExpress.XtraEditors.SimpleButton)sender).Tag.ToString());
-                MoveLeave?.Invoke(_lineCD, ((DevExpress.XtraEditors.SimpleButton)sender).Tag.ToString());
+                if (MoveLeave != null)
+                   MoveLeave(_lineCD, ((DevExpress.XtraEditors.SimpleButton)sender).Tag.ToString());
+               // MoveLeave?.Invoke(_lineCD, ((DevExpress.XtraEditors.SimpleButton)sender).Tag.ToString());
             }
         }
 

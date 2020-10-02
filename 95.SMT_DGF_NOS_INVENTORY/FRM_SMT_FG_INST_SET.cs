@@ -15,7 +15,7 @@ namespace FORM
 {
     public partial class FRM_SMT_FG_INST_SET : Form
     {
-        const int ViewportPointCount = 150;
+        const int ViewportPointCount = 15;
         bool isLoop = false;
         //ObservableCollection<DataPoint> dataPoints = new ObservableCollection<DataPoint>();
         ObservableCollection<DataRealPoint> dataPoints = new ObservableCollection<DataRealPoint>();
@@ -110,22 +110,10 @@ namespace FORM
                 this.Cursor = Cursors.WaitCursor;
                 // chartControl1.Titles.Add(new ChartTitle { Text = "Real-Time Charting" });
                 dataPoints.Clear();
-
                 dt = SEL_SMT_INST_SET_CHART(ComVar.Var._strValue1, ComVar.Var._strValue2);
+
                 BindingGridData(dt);
-                if (dt.Rows.Count >= ViewportPointCount)
-                {
-                    for (int i = 0; i < ViewportPointCount; i++)
-                    {
-                        string setTime = dt.Rows[i]["SET_TIME"].ToString();
-                        int UP_QTY = Convert.ToInt32(dt.Rows[i]["UP_QTY"]);
-                        int FS_QTY = Convert.ToInt32(dt.Rows[i]["FS_QTY"]);
-                        int SET_QTY = Convert.ToInt32(dt.Rows[i]["SET_QTY"]);
-                        double RATIO = Convert.ToDouble(dt.Rows[i]["SET_RATIO"]);
-                        dataPoints.Add(new DataRealPoint(setTime, UP_QTY, FS_QTY, SET_QTY, RATIO));
-                        iCount++;
-                    }
-                }
+
                 DevExpress.XtraCharts.LineSeriesView lineSeriesView1 = new DevExpress.XtraCharts.LineSeriesView();
                 DevExpress.XtraCharts.LineSeriesView lineSeriesView2 = new DevExpress.XtraCharts.LineSeriesView();
                 DevExpress.XtraCharts.LineSeriesView lineSeriesView3 = new DevExpress.XtraCharts.LineSeriesView();
@@ -150,6 +138,7 @@ namespace FORM
                 series2.CrosshairLabelPattern = "{V:#,#} Prs";
                 //format
                 //  lineSeriesView2.MarkerVisibility = DevExpress.Utils.DefaultBoolean.True;
+                lineSeriesView2.Color = Color.Gray;
                 lineSeriesView2.LineStyle.Thickness = 2;
                 series2.View = lineSeriesView2;
 
@@ -174,7 +163,8 @@ namespace FORM
                 series4.LabelsVisibility = DefaultBoolean.True;
                 //format
                 lineSeriesView4.MarkerVisibility = DevExpress.Utils.DefaultBoolean.True;
-                lineSeriesView4.LineStyle.Thickness = 2;
+                lineSeriesView4.LineStyle.Thickness = 4;
+                lineSeriesView4.Color = Color.Orange;
                 series4.View = lineSeriesView4;
 
                 XYDiagram diagram = (XYDiagram)chartControl1.Diagram;
@@ -207,20 +197,36 @@ namespace FORM
                 myAxisY.Title.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                 myAxisY.Title.TextColor = Color.Orange;
                 myAxisY.Title.Visibility = DefaultBoolean.True;
-                //myAxisY.Label.TextPattern = "{V:#.0}";
                 myAxisY.Label.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-                // myAxisY.Title.TextColor = Color.Blue;
-                // myAxisY.Label.TextColor = Color.Blue;
                 myAxisY.Color = Color.Orange;
 
                 //legend
-
                 chartControl1.Legend.AlignmentHorizontal = DevExpress.XtraCharts.LegendAlignmentHorizontal.Center;
                 chartControl1.Legend.AlignmentVertical = DevExpress.XtraCharts.LegendAlignmentVertical.TopOutside;
                 chartControl1.Legend.Direction = DevExpress.XtraCharts.LegendDirection.LeftToRight;
                 chartControl1.Legend.Name = "Default Legend";
                 chartControl1.Legend.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                 chartControl1.Legend.Visibility = DefaultBoolean.True;
+
+                if (dt != null && dt.Rows.Count <= ViewportPointCount)
+                {
+                    for (int i = 0; i < dt.Rows.Count; i++)
+                    {
+                        string setTime1 = dt.Rows[i]["SET_TIME"].ToString();
+                        int UP_QTY1 = Convert.ToInt32(dt.Rows[i]["UP_QTY"]);
+                        int FS_QTY1 = Convert.ToInt32(dt.Rows[i]["FS_QTY"]);
+                        int SET_QTY1 = Convert.ToInt32(dt.Rows[i]["SET_QTY"]);
+                        double RATIO1 = Convert.ToDouble(dt.Rows[i]["SET_RATIO"]);
+                        dataPoints.Add(new DataRealPoint(setTime1, UP_QTY1, FS_QTY1, SET_QTY1, RATIO1));
+                    }
+                    isLoop = true;
+                    tmrDelay.Start();
+                }
+                else
+                { isLoop = false;
+                    timer1.Start(); }
+
+
                 this.Cursor = Cursors.Default;
             }
             catch { this.Cursor = Cursors.Default; }
@@ -241,11 +247,25 @@ namespace FORM
         int iCount = 0;
         private void timer1_Tick(object sender, EventArgs e)
         {
+            if (dt == null) return;
+
             if (iCount >= dt.Rows.Count)
             {
                 iCount = 0;
             }
-            //dataPoints.Add(new DataPoint(iCount.ToString(), GenerateValue(counter++), GenerateValue(counter++), GenerateValue(counter++), GenerateValue(counter++)));
+            if (dataPoints.Count < ViewportPointCount)
+            {
+                for (int i = 0; i < ViewportPointCount; i++)
+                {
+                    string setTime1 = dt.Rows[i]["SET_TIME"].ToString();
+                    int UP_QTY1 = Convert.ToInt32(dt.Rows[i]["UP_QTY"]);
+                    int FS_QTY1 = Convert.ToInt32(dt.Rows[i]["FS_QTY"]);
+                    int SET_QTY1 = Convert.ToInt32(dt.Rows[i]["SET_QTY"]);
+                    double RATIO1 = Convert.ToDouble(dt.Rows[i]["SET_RATIO"]);
+                    dataPoints.Add(new DataRealPoint(setTime1, UP_QTY1, FS_QTY1, SET_QTY1, RATIO1));
+                }
+                iCount = ViewportPointCount;
+            }
             string setTime = dt.Rows[iCount]["SET_TIME"].ToString();
             int UP_QTY = Convert.ToInt32(dt.Rows[iCount]["UP_QTY"]);
             int FS_QTY = Convert.ToInt32(dt.Rows[iCount]["FS_QTY"]);
@@ -256,18 +276,13 @@ namespace FORM
             if (dataPoints.Count > ViewportPointCount)
             {
                 dataPoints.RemoveAt(0);
-                isLoop = true;
             }
-            else if (dataPoints.Count >= dt.Rows.Count && dt.Rows.Count < ViewportPointCount)
+            if (iCount >= dt.Rows.Count)
             {
+                isLoop = false;
                 iCount = 0;
                 timer1.Stop();
-                isLoop = false;
-            }
-            else if (dataPoints.Count >= dt.Rows.Count && dataPoints.Count >= ViewportPointCount)
-            {
-                BindingChartData();
-                timer1.Start();
+                tmrDelay.Start();
             }
         }
 
@@ -280,35 +295,37 @@ namespace FORM
         private void tmr_Tick(object sender, EventArgs e)
         {
             lblDate.Text = string.Format(DateTime.Now.ToString("yyyy-MM-dd\nHH:mm:ss"));
-            if (!isLoop)
+        }
+        private void tmrDelay_Tick(object sender, EventArgs e)
+        {
+            iCounter++;
+            if (iCounter >= 30)
             {
-                iCounter++;
-                if (iCounter >= 30)
+                try
                 {
-                    try
-                    {
-                        iCounter = 0;
-                        BindingChartData();
-                        timer1.Start();
-                    }
-                    catch
-                    {
+                    iCounter = 0;
+                    BindingChartData();
+                    if (!isLoop)
+                        tmrDelay.Stop();
+                }
+                catch
+                {
 
-                    }
                 }
             }
-
         }
 
         private void FRM_SMT_FG_INST_SET_VisibleChanged(object sender, EventArgs e)
         {
             try
             {
-               
-                iCounter = 30;
+                if (this.Visible)
+                    iCounter = 30;
             }
             catch { }
         }
+
+
     }
 
     public class DataRealPoint

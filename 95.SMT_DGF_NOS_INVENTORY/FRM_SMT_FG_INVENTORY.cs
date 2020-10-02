@@ -727,8 +727,6 @@ namespace FORM
             series2.Label.TextPattern = "{V}" + "%";
             (series1.Label as SideBySideBarSeriesLabel).Position = DevExpress.XtraCharts.BarSeriesLabelPosition.Top;
 
-
-
             ((XYDiagram)ChartByModel.Diagram).AxisY.Label.TextPattern = "{V:#,#}";
 
             // Add a title to the chart (if necessary).

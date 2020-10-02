@@ -62,15 +62,16 @@
             this.bsVEquipment = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
             this.bsVInventory = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
             this.bsVHumanResource = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
-            this.grpProd = new FORM.GroupBoxEx();
-            this.axfpSpread1 = new AxFPUSpreadADO.AxfpSpread();
             this.cmdQP = new DevExpress.XtraEditors.SimpleButton();
             this.gaugeControl2 = new DevExpress.XtraGauges.Win.GaugeControl();
-            this.dgModel = new DevExpress.XtraGauges.Win.Gauges.Digital.DigitalGauge();
             this.digitalBackgroundLayerComponent2 = new DevExpress.XtraGauges.Win.Gauges.Digital.DigitalBackgroundLayerComponent();
             this.lbl_Line = new System.Windows.Forms.Label();
             this.picLine = new System.Windows.Forms.PictureBox();
             this.lblLine = new System.Windows.Forms.Label();
+            this.cmdInv6 = new DevExpress.XtraEditors.SimpleButton();
+            this.dgModel = new DevExpress.XtraGauges.Win.Gauges.Digital.DigitalGauge();
+            this.grpProd = new FORM.GroupBoxEx();
+            this.axfpSpread1 = new AxFPUSpreadADO.AxfpSpread();
             ((System.ComponentModel.ISupportInitialize)(this.bsView)).BeginInit();
             this.bsView.SuspendLayout();
             this.backstageViewClientControl1.SuspendLayout();
@@ -79,11 +80,11 @@
             this.backstageViewClientControl4.SuspendLayout();
             this.backstageViewClientControl5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.grpProd.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.axfpSpread1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgModel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.digitalBackgroundLayerComponent2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLine)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgModel)).BeginInit();
+            this.grpProd.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axfpSpread1)).BeginInit();
             this.SuspendLayout();
             // 
             // bsView
@@ -468,6 +469,7 @@
             // 
             // backstageViewClientControl4
             // 
+            this.backstageViewClientControl4.Controls.Add(this.cmdInv6);
             this.backstageViewClientControl4.Controls.Add(this.cmdInv3);
             this.backstageViewClientControl4.Controls.Add(this.cmdInv1);
             this.backstageViewClientControl4.Controls.Add(this.cmdInv5);
@@ -953,36 +955,6 @@
             this.bsVHumanResource.Name = "bsVHumanResource";
             this.bsVHumanResource.ItemPressed += new DevExpress.XtraBars.Ribbon.BackstageViewItemEventHandler(this.bsV_ItemPressed);
             // 
-            // grpProd
-            // 
-            this.grpProd.BackgroundPanelImage = null;
-            this.grpProd.Controls.Add(this.axfpSpread1);
-            this.grpProd.DrawGroupBorder = true;
-            this.grpProd.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Bold);
-            this.grpProd.ForeColor = System.Drawing.Color.White;
-            this.grpProd.GroupBorderColor = System.Drawing.Color.Black;
-            this.grpProd.GroupPanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.grpProd.GroupPanelShape = FORM.GroupBoxEx.PanelType.Rounded;
-            this.grpProd.GroupPanelWith = 1F;
-            this.grpProd.Location = new System.Drawing.Point(297, 268);
-            this.grpProd.Name = "grpProd";
-            this.grpProd.Size = new System.Drawing.Size(171, 212);
-            this.grpProd.TabIndex = 59;
-            this.grpProd.TabStop = false;
-            this.grpProd.Text = "Production Status";
-            this.grpProd.TextBackColor = System.Drawing.Color.RoyalBlue;
-            this.grpProd.TextBorderColor = System.Drawing.Color.Black;
-            this.grpProd.TextBorderWith = 1F;
-            // 
-            // axfpSpread1
-            // 
-            this.axfpSpread1.DataSource = null;
-            this.axfpSpread1.Location = new System.Drawing.Point(4, 30);
-            this.axfpSpread1.Name = "axfpSpread1";
-            this.axfpSpread1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axfpSpread1.OcxState")));
-            this.axfpSpread1.Size = new System.Drawing.Size(160, 175);
-            this.axfpSpread1.TabIndex = 15;
-            // 
             // cmdQP
             // 
             this.cmdQP.Appearance.Font = new System.Drawing.Font("Calibri", 11F, System.Drawing.FontStyle.Bold);
@@ -1009,17 +981,6 @@
             this.gaugeControl2.Size = new System.Drawing.Size(453, 67);
             this.gaugeControl2.TabIndex = 57;
             this.gaugeControl2.Click += new System.EventHandler(this.gaugeControl2_Click);
-            // 
-            // dgModel
-            // 
-            this.dgModel.AppearanceOff.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:Black");
-            this.dgModel.AppearanceOn.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:Yellow");
-            this.dgModel.BackgroundLayers.AddRange(new DevExpress.XtraGauges.Win.Gauges.Digital.DigitalBackgroundLayerComponent[] {
-            this.digitalBackgroundLayerComponent2});
-            this.dgModel.Bounds = new System.Drawing.Rectangle(6, 6, 435, 58);
-            this.dgModel.DigitCount = 20;
-            this.dgModel.Name = "dgModel";
-            this.dgModel.Padding = new DevExpress.XtraGauges.Core.Base.TextSpacing(26, 20, 26, 20);
             // 
             // digitalBackgroundLayerComponent2
             // 
@@ -1059,6 +1020,76 @@
             this.lblLine.TabIndex = 62;
             this.lblLine.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // cmdInv6
+            // 
+            this.cmdInv6.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.cmdInv6.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.cmdInv6.Appearance.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
+            this.cmdInv6.Appearance.ForeColor = System.Drawing.Color.White;
+            this.cmdInv6.Appearance.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.cmdInv6.Appearance.Options.UseBackColor = true;
+            this.cmdInv6.Appearance.Options.UseFont = true;
+            this.cmdInv6.Appearance.Options.UseForeColor = true;
+            this.cmdInv6.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.cmdInv6.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.cmdInv6.AppearanceHovered.Font = new System.Drawing.Font("Calibri", 16F, System.Drawing.FontStyle.Bold);
+            this.cmdInv6.AppearanceHovered.ForeColor = System.Drawing.Color.White;
+            this.cmdInv6.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.cmdInv6.AppearanceHovered.Options.UseBackColor = true;
+            this.cmdInv6.AppearanceHovered.Options.UseFont = true;
+            this.cmdInv6.AppearanceHovered.Options.UseForeColor = true;
+            this.cmdInv6.AppearancePressed.Font = new System.Drawing.Font("Calibri", 16F, System.Drawing.FontStyle.Bold);
+            this.cmdInv6.AppearancePressed.Options.UseFont = true;
+            this.cmdInv6.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
+            this.cmdInv6.Location = new System.Drawing.Point(0, 277);
+            this.cmdInv6.Name = "cmdInv6";
+            this.cmdInv6.Size = new System.Drawing.Size(128, 60);
+            this.cmdInv6.TabIndex = 7;
+            this.cmdInv6.Tag = "10";
+            this.cmdInv6.Text = "Instant Set";
+            this.cmdInv6.Click += new System.EventHandler(this.btnItem_Click);
+            // 
+            // dgModel
+            // 
+            this.dgModel.AppearanceOff.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:Black");
+            this.dgModel.AppearanceOn.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:Yellow");
+            this.dgModel.BackgroundLayers.AddRange(new DevExpress.XtraGauges.Win.Gauges.Digital.DigitalBackgroundLayerComponent[] {
+            this.digitalBackgroundLayerComponent2});
+            this.dgModel.Bounds = new System.Drawing.Rectangle(6, 6, 435, 58);
+            this.dgModel.DigitCount = 20;
+            this.dgModel.Name = "dgModel";
+            this.dgModel.Padding = new DevExpress.XtraGauges.Core.Base.TextSpacing(26, 20, 26, 20);
+            // 
+            // grpProd
+            // 
+            this.grpProd.BackgroundPanelImage = null;
+            this.grpProd.Controls.Add(this.axfpSpread1);
+            this.grpProd.DrawGroupBorder = true;
+            this.grpProd.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Bold);
+            this.grpProd.ForeColor = System.Drawing.Color.White;
+            this.grpProd.GroupBorderColor = System.Drawing.Color.Black;
+            this.grpProd.GroupPanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.grpProd.GroupPanelShape = FORM.GroupBoxEx.PanelType.Rounded;
+            this.grpProd.GroupPanelWith = 1F;
+            this.grpProd.Location = new System.Drawing.Point(297, 268);
+            this.grpProd.Name = "grpProd";
+            this.grpProd.Size = new System.Drawing.Size(171, 212);
+            this.grpProd.TabIndex = 59;
+            this.grpProd.TabStop = false;
+            this.grpProd.Text = "Production Status";
+            this.grpProd.TextBackColor = System.Drawing.Color.RoyalBlue;
+            this.grpProd.TextBorderColor = System.Drawing.Color.Black;
+            this.grpProd.TextBorderWith = 1F;
+            // 
+            // axfpSpread1
+            // 
+            this.axfpSpread1.DataSource = null;
+            this.axfpSpread1.Location = new System.Drawing.Point(4, 30);
+            this.axfpSpread1.Name = "axfpSpread1";
+            this.axfpSpread1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axfpSpread1.OcxState")));
+            this.axfpSpread1.Size = new System.Drawing.Size(160, 175);
+            this.axfpSpread1.TabIndex = 15;
+            // 
             // UC_MENU_DSF_2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1081,11 +1112,11 @@
             this.backstageViewClientControl4.ResumeLayout(false);
             this.backstageViewClientControl5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.grpProd.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.axfpSpread1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgModel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.digitalBackgroundLayerComponent2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLine)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgModel)).EndInit();
+            this.grpProd.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.axfpSpread1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1134,9 +1165,6 @@
         private DevExpress.XtraEditors.SimpleButton cmdInv4;
         private DevExpress.XtraEditors.SimpleButton cmdInv5;
         private GroupBoxEx grpProd;
-
-
-
-
+        private DevExpress.XtraEditors.SimpleButton cmdInv6;
     }
 }

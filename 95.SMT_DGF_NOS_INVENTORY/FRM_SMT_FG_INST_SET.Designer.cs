@@ -46,6 +46,7 @@
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.tmr = new System.Windows.Forms.Timer(this.components);
+            this.tmrDelay = new System.Windows.Forms.Timer(this.components);
             this.tblMain.SuspendLayout();
             this.pnTitle.SuspendLayout();
             this.pnChart.SuspendLayout();
@@ -210,7 +211,7 @@
             // timer1
             // 
             this.timer1.Enabled = true;
-            this.timer1.Interval = 500;
+            this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // tmr
@@ -218,6 +219,12 @@
             this.tmr.Enabled = true;
             this.tmr.Interval = 1000;
             this.tmr.Tick += new System.EventHandler(this.tmr_Tick);
+            // 
+            // tmrDelay
+            // 
+            this.tmrDelay.Enabled = true;
+            this.tmrDelay.Interval = 1000;
+            this.tmrDelay.Tick += new System.EventHandler(this.tmrDelay_Tick);
             // 
             // FRM_SMT_FG_INST_SET
             // 
@@ -258,5 +265,6 @@
         private System.Windows.Forms.Panel pnGrid;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private System.Windows.Forms.Timer tmrDelay;
     }
 }

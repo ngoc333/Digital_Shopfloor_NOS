@@ -869,6 +869,12 @@ namespace FORM
             ComVar.Var.callForm = "215";
         }
 
+        private void cmdTMS_Click(object sender, EventArgs e)
+        {
+            ComVar.Var._IsBack = true;
+            ComVar.Var.callForm = "641";
+        }
+
         private void cmdMGL_Click(object sender, EventArgs e)
         {
             if (_IsMain)
