@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FORM_MAIN_4_LINE));
-            DevExpress.Utils.SuperToolTip superToolTip2 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem2 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip1 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem1 = new DevExpress.Utils.ToolTipTitleItem();
             this.pnHeader = new System.Windows.Forms.Panel();
             this.cmdTMS = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -67,6 +67,7 @@
             this.cmdEqu2_Line1 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdEqu1_Line1 = new DevExpress.XtraEditors.SimpleButton();
             this.backstageViewClientControl5 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
+            this.cmdInv5_Line1 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdInv1_Line1 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdInv4_Line1 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdInv3_Line1 = new DevExpress.XtraEditors.SimpleButton();
@@ -102,6 +103,7 @@
             this.cmdEqu2_Line2 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdEqu1_Line2 = new DevExpress.XtraEditors.SimpleButton();
             this.backstageViewClientControl12 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
+            this.cmdInv5_Line2 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdInv4_Line2 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdInv3_Line2 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdInv1_Line2 = new DevExpress.XtraEditors.SimpleButton();
@@ -132,6 +134,7 @@
             this.cmdEqu1_Line3 = new DevExpress.XtraEditors.SimpleButton();
             this.label26 = new System.Windows.Forms.Label();
             this.backstageViewClientControl16 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
+            this.cmdInv5_Line3 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdInv4_Line3 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdInv3_Line3 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdInv1_Line3 = new DevExpress.XtraEditors.SimpleButton();
@@ -167,6 +170,7 @@
             this.cmdEqu2_Line4 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdEqu1_Line4 = new DevExpress.XtraEditors.SimpleButton();
             this.backstageViewClientControl20 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
+            this.cmdInv5_Line4 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdInv4_Line4 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdInv3_Line4 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdInv1_Line4 = new DevExpress.XtraEditors.SimpleButton();
@@ -208,7 +212,10 @@
             this.label9 = new System.Windows.Forms.Label();
             this.tmrText = new System.Windows.Forms.Timer();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.cmdInv5_Line1 = new DevExpress.XtraEditors.SimpleButton();
+            this.cmdElectric_Line1 = new DevExpress.XtraEditors.SimpleButton();
+            this.cmdElectric_Line2 = new DevExpress.XtraEditors.SimpleButton();
+            this.cmdElectric_Line4 = new DevExpress.XtraEditors.SimpleButton();
+            this.cmdElectric_Line3 = new DevExpress.XtraEditors.SimpleButton();
             this.digitalGaugeLine4 = new DevExpress.XtraGauges.Win.Gauges.Digital.DigitalGauge();
             this.groupBoxEx3 = new FORM.ClassLib.GroupBoxEx();
             this.label27 = new System.Windows.Forms.Label();
@@ -253,9 +260,6 @@
             this.a1Panel2 = new FORM.A1Panel();
             this.a1Panel3 = new FORM.A1Panel();
             this.a1Panel4 = new FORM.A1Panel();
-            this.cmdInv5_Line2 = new DevExpress.XtraEditors.SimpleButton();
-            this.cmdInv5_Line4 = new DevExpress.XtraEditors.SimpleButton();
-            this.cmdInv5_Line3 = new DevExpress.XtraEditors.SimpleButton();
             this.pnHeader.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.digitalBackgroundLayerComponent1)).BeginInit();
@@ -316,7 +320,6 @@
             this.pnHeader.Controls.Add(this.cmdEMD);
             this.pnHeader.Controls.Add(this.cmdMGL);
             this.pnHeader.Controls.Add(this.cmdQMS);
-            this.pnHeader.Controls.Add(this.cmdFEMS);
             this.pnHeader.Controls.Add(this.cmdCMMS);
             this.pnHeader.Controls.Add(this.cmdGMES);
             this.pnHeader.Controls.Add(this.cmdSmartAndon);
@@ -324,6 +327,7 @@
             this.pnHeader.Controls.Add(this.cmdFGWH);
             this.pnHeader.Controls.Add(this.lblDate);
             this.pnHeader.Controls.Add(this.lblTitle);
+            this.pnHeader.Controls.Add(this.cmdFEMS);
             this.pnHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnHeader.Location = new System.Drawing.Point(0, 0);
             this.pnHeader.Name = "pnHeader";
@@ -430,6 +434,7 @@
             this.cmdFEMS.TabIndex = 53;
             this.cmdFEMS.Text = "FEMS";
             this.cmdFEMS.UseVisualStyleBackColor = true;
+            this.cmdFEMS.Visible = false;
             this.cmdFEMS.Click += new System.EventHandler(this.cmdMenu_Click);
             // 
             // cmdCMMS
@@ -440,7 +445,7 @@
             this.cmdCMMS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmdCMMS.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
             this.cmdCMMS.ForeColor = System.Drawing.Color.White;
-            this.cmdCMMS.Location = new System.Drawing.Point(939, 3);
+            this.cmdCMMS.Location = new System.Drawing.Point(1042, 3);
             this.cmdCMMS.Name = "cmdCMMS";
             this.cmdCMMS.Size = new System.Drawing.Size(109, 103);
             this.cmdCMMS.TabIndex = 53;
@@ -456,7 +461,7 @@
             this.cmdGMES.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmdGMES.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
             this.cmdGMES.ForeColor = System.Drawing.Color.White;
-            this.cmdGMES.Location = new System.Drawing.Point(837, 3);
+            this.cmdGMES.Location = new System.Drawing.Point(940, 3);
             this.cmdGMES.Name = "cmdGMES";
             this.cmdGMES.Size = new System.Drawing.Size(109, 103);
             this.cmdGMES.TabIndex = 53;
@@ -472,7 +477,7 @@
             this.cmdSmartAndon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmdSmartAndon.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
             this.cmdSmartAndon.ForeColor = System.Drawing.Color.White;
-            this.cmdSmartAndon.Location = new System.Drawing.Point(734, 3);
+            this.cmdSmartAndon.Location = new System.Drawing.Point(837, 3);
             this.cmdSmartAndon.Name = "cmdSmartAndon";
             this.cmdSmartAndon.Size = new System.Drawing.Size(109, 103);
             this.cmdSmartAndon.TabIndex = 56;
@@ -646,8 +651,8 @@
             this.backstageViewControl1.Location = new System.Drawing.Point(16, 68);
             this.backstageViewControl1.Name = "backstageViewControl1";
             this.backstageViewControl1.Office2013StyleOptions.AllowShowHideAnimation = false;
-            this.backstageViewControl1.SelectedTab = this.bstLine1_Inventory;
-            this.backstageViewControl1.SelectedTabIndex = 3;
+            this.backstageViewControl1.SelectedTab = this.bstLine1_Equip;
+            this.backstageViewControl1.SelectedTabIndex = 2;
             this.backstageViewControl1.Size = new System.Drawing.Size(639, 396);
             this.backstageViewControl1.TabIndex = 10;
             this.backstageViewControl1.Text = "backstageViewControl1";
@@ -884,6 +889,7 @@
             // 
             // backstageViewClientControl4
             // 
+            this.backstageViewClientControl4.Controls.Add(this.cmdElectric_Line1);
             this.backstageViewClientControl4.Controls.Add(this.cmdEqu2_Line1);
             this.backstageViewClientControl4.Controls.Add(this.cmdEqu1_Line1);
             this.backstageViewClientControl4.Location = new System.Drawing.Point(337, 0);
@@ -906,7 +912,7 @@
             this.cmdEqu2_Line1.AppearanceHovered.Options.UseBackColor = true;
             this.cmdEqu2_Line1.AppearanceHovered.Options.UseForeColor = true;
             this.cmdEqu2_Line1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdEqu2_Line1.Location = new System.Drawing.Point(29, 205);
+            this.cmdEqu2_Line1.Location = new System.Drawing.Point(29, 7);
             this.cmdEqu2_Line1.Name = "cmdEqu2_Line1";
             this.cmdEqu2_Line1.Size = new System.Drawing.Size(245, 94);
             this.cmdEqu2_Line1.TabIndex = 6;
@@ -949,6 +955,31 @@
             this.backstageViewClientControl5.Name = "backstageViewClientControl5";
             this.backstageViewClientControl5.Size = new System.Drawing.Size(302, 396);
             this.backstageViewClientControl5.TabIndex = 4;
+            // 
+            // cmdInv5_Line1
+            // 
+            this.cmdInv5_Line1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.cmdInv5_Line1.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdInv5_Line1.Appearance.ForeColor = System.Drawing.Color.White;
+            this.cmdInv5_Line1.Appearance.Options.UseBackColor = true;
+            this.cmdInv5_Line1.Appearance.Options.UseFont = true;
+            this.cmdInv5_Line1.Appearance.Options.UseForeColor = true;
+            this.cmdInv5_Line1.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.cmdInv5_Line1.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.cmdInv5_Line1.AppearanceHovered.Font = new System.Drawing.Font("Tahoma", 17F, System.Drawing.FontStyle.Bold);
+            this.cmdInv5_Line1.AppearanceHovered.ForeColor = System.Drawing.Color.White;
+            this.cmdInv5_Line1.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.cmdInv5_Line1.AppearanceHovered.Options.UseBackColor = true;
+            this.cmdInv5_Line1.AppearanceHovered.Options.UseFont = true;
+            this.cmdInv5_Line1.AppearanceHovered.Options.UseForeColor = true;
+            this.cmdInv5_Line1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.cmdInv5_Line1.Location = new System.Drawing.Point(29, 315);
+            this.cmdInv5_Line1.Name = "cmdInv5_Line1";
+            this.cmdInv5_Line1.Size = new System.Drawing.Size(245, 73);
+            this.cmdInv5_Line1.TabIndex = 10;
+            this.cmdInv5_Line1.Tag = "299";
+            this.cmdInv5_Line1.Text = "Instant Set";
+            this.cmdInv5_Line1.Click += new System.EventHandler(this.cmdMenu_Click);
             // 
             // cmdInv1_Line1
             // 
@@ -1194,11 +1225,11 @@
             this.bstLine1_Prod.ContentControl = this.backstageViewClientControl2;
             this.bstLine1_Prod.Glyph = ((System.Drawing.Image)(resources.GetObject("bstLine1_Prod.Glyph")));
             this.bstLine1_Prod.Name = "bstLine1_Prod";
-            superToolTip2.AllowHtmlText = DevExpress.Utils.DefaultBoolean.True;
-            superToolTip2.DistanceBetweenItems = 1;
-            toolTipTitleItem2.Text = "Sản Xuất";
-            superToolTip2.Items.Add(toolTipTitleItem2);
-            this.bstLine1_Prod.SuperTip = superToolTip2;
+            superToolTip1.AllowHtmlText = DevExpress.Utils.DefaultBoolean.True;
+            superToolTip1.DistanceBetweenItems = 1;
+            toolTipTitleItem1.Text = "Sản Xuất";
+            superToolTip1.Items.Add(toolTipTitleItem1);
+            this.bstLine1_Prod.SuperTip = superToolTip1;
             // 
             // bstLine1_Equip
             // 
@@ -1218,6 +1249,7 @@
             this.bstLine1_Equip.ContentControl = this.backstageViewClientControl4;
             this.bstLine1_Equip.Glyph = ((System.Drawing.Image)(resources.GetObject("bstLine1_Equip.Glyph")));
             this.bstLine1_Equip.Name = "bstLine1_Equip";
+            this.bstLine1_Equip.Selected = true;
             // 
             // bstLine1_Inventory
             // 
@@ -1237,7 +1269,6 @@
             this.bstLine1_Inventory.ContentControl = this.backstageViewClientControl5;
             this.bstLine1_Inventory.Glyph = ((System.Drawing.Image)(resources.GetObject("bstLine1_Inventory.Glyph")));
             this.bstLine1_Inventory.Name = "bstLine1_Inventory";
-            this.bstLine1_Inventory.Selected = true;
             // 
             // bstLine1_HR
             // 
@@ -1345,8 +1376,8 @@
             this.backstageViewControl2.Name = "backstageViewControl2";
             this.backstageViewControl2.Office2013StyleOptions.AllowShowHideAnimation = false;
             this.backstageViewControl2.Office2013StyleOptions.LeftPaneContentVerticalOffset = 60;
-            this.backstageViewControl2.SelectedTab = this.bstLine2_Inventory;
-            this.backstageViewControl2.SelectedTabIndex = 3;
+            this.backstageViewControl2.SelectedTab = this.bstLine2_Equip;
+            this.backstageViewControl2.SelectedTabIndex = 2;
             this.backstageViewControl2.Size = new System.Drawing.Size(639, 396);
             this.backstageViewControl2.TabIndex = 10;
             this.backstageViewControl2.Text = "backstageViewControl2";
@@ -1568,6 +1599,7 @@
             // 
             // backstageViewClientControl8
             // 
+            this.backstageViewClientControl8.Controls.Add(this.cmdElectric_Line2);
             this.backstageViewClientControl8.Controls.Add(this.cmdEqu2_Line2);
             this.backstageViewClientControl8.Controls.Add(this.cmdEqu1_Line2);
             this.backstageViewClientControl8.Location = new System.Drawing.Point(337, 0);
@@ -1633,6 +1665,31 @@
             this.backstageViewClientControl12.Name = "backstageViewClientControl12";
             this.backstageViewClientControl12.Size = new System.Drawing.Size(302, 396);
             this.backstageViewClientControl12.TabIndex = 4;
+            // 
+            // cmdInv5_Line2
+            // 
+            this.cmdInv5_Line2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.cmdInv5_Line2.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdInv5_Line2.Appearance.ForeColor = System.Drawing.Color.White;
+            this.cmdInv5_Line2.Appearance.Options.UseBackColor = true;
+            this.cmdInv5_Line2.Appearance.Options.UseFont = true;
+            this.cmdInv5_Line2.Appearance.Options.UseForeColor = true;
+            this.cmdInv5_Line2.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.cmdInv5_Line2.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.cmdInv5_Line2.AppearanceHovered.Font = new System.Drawing.Font("Tahoma", 17F, System.Drawing.FontStyle.Bold);
+            this.cmdInv5_Line2.AppearanceHovered.ForeColor = System.Drawing.Color.White;
+            this.cmdInv5_Line2.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.cmdInv5_Line2.AppearanceHovered.Options.UseBackColor = true;
+            this.cmdInv5_Line2.AppearanceHovered.Options.UseFont = true;
+            this.cmdInv5_Line2.AppearanceHovered.Options.UseForeColor = true;
+            this.cmdInv5_Line2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.cmdInv5_Line2.Location = new System.Drawing.Point(29, 300);
+            this.cmdInv5_Line2.Name = "cmdInv5_Line2";
+            this.cmdInv5_Line2.Size = new System.Drawing.Size(245, 73);
+            this.cmdInv5_Line2.TabIndex = 16;
+            this.cmdInv5_Line2.Tag = "299";
+            this.cmdInv5_Line2.Text = "Instant Set";
+            this.cmdInv5_Line2.Click += new System.EventHandler(this.cmdMenu_Click);
             // 
             // cmdInv4_Line2
             // 
@@ -1889,6 +1946,7 @@
             this.bstLine2_Equip.ContentControl = this.backstageViewClientControl8;
             this.bstLine2_Equip.Glyph = global::FORM.Properties.Resources.equip;
             this.bstLine2_Equip.Name = "bstLine2_Equip";
+            this.bstLine2_Equip.Selected = true;
             // 
             // bstLine2_Inventory
             // 
@@ -1906,7 +1964,6 @@
             this.bstLine2_Inventory.ContentControl = this.backstageViewClientControl12;
             this.bstLine2_Inventory.Glyph = ((System.Drawing.Image)(resources.GetObject("bstLine2_Inventory.Glyph")));
             this.bstLine2_Inventory.Name = "bstLine2_Inventory";
-            this.bstLine2_Inventory.Selected = true;
             // 
             // bstLine2_HR
             // 
@@ -1940,8 +1997,8 @@
             this.backstageViewControl4.ItemsContentPadding = new System.Windows.Forms.Padding(0, 4, 0, 4);
             this.backstageViewControl4.Location = new System.Drawing.Point(16, 68);
             this.backstageViewControl4.Name = "backstageViewControl4";
-            this.backstageViewControl4.SelectedTab = this.bstLine3_Inventory;
-            this.backstageViewControl4.SelectedTabIndex = 3;
+            this.backstageViewControl4.SelectedTab = this.bstLine3_Equip;
+            this.backstageViewControl4.SelectedTabIndex = 2;
             this.backstageViewControl4.Size = new System.Drawing.Size(639, 414);
             this.backstageViewControl4.TabIndex = 10;
             this.backstageViewControl4.Text = "backstageViewControl4";
@@ -2162,6 +2219,7 @@
             // 
             // backstageViewClientControl15
             // 
+            this.backstageViewClientControl15.Controls.Add(this.cmdElectric_Line3);
             this.backstageViewClientControl15.Controls.Add(this.cmdEqu2_Line3);
             this.backstageViewClientControl15.Controls.Add(this.cmdEqu1_Line3);
             this.backstageViewClientControl15.Controls.Add(this.label26);
@@ -2238,6 +2296,31 @@
             this.backstageViewClientControl16.Name = "backstageViewClientControl16";
             this.backstageViewClientControl16.Size = new System.Drawing.Size(302, 414);
             this.backstageViewClientControl16.TabIndex = 4;
+            // 
+            // cmdInv5_Line3
+            // 
+            this.cmdInv5_Line3.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.cmdInv5_Line3.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdInv5_Line3.Appearance.ForeColor = System.Drawing.Color.White;
+            this.cmdInv5_Line3.Appearance.Options.UseBackColor = true;
+            this.cmdInv5_Line3.Appearance.Options.UseFont = true;
+            this.cmdInv5_Line3.Appearance.Options.UseForeColor = true;
+            this.cmdInv5_Line3.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.cmdInv5_Line3.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.cmdInv5_Line3.AppearanceHovered.Font = new System.Drawing.Font("Tahoma", 17F, System.Drawing.FontStyle.Bold);
+            this.cmdInv5_Line3.AppearanceHovered.ForeColor = System.Drawing.Color.White;
+            this.cmdInv5_Line3.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.cmdInv5_Line3.AppearanceHovered.Options.UseBackColor = true;
+            this.cmdInv5_Line3.AppearanceHovered.Options.UseFont = true;
+            this.cmdInv5_Line3.AppearanceHovered.Options.UseForeColor = true;
+            this.cmdInv5_Line3.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.cmdInv5_Line3.Location = new System.Drawing.Point(29, 302);
+            this.cmdInv5_Line3.Name = "cmdInv5_Line3";
+            this.cmdInv5_Line3.Size = new System.Drawing.Size(245, 73);
+            this.cmdInv5_Line3.TabIndex = 19;
+            this.cmdInv5_Line3.Tag = "299";
+            this.cmdInv5_Line3.Text = "Instant Set";
+            this.cmdInv5_Line3.Click += new System.EventHandler(this.cmdMenu_Click);
             // 
             // cmdInv4_Line3
             // 
@@ -2494,6 +2577,7 @@
             this.bstLine3_Equip.ContentControl = this.backstageViewClientControl15;
             this.bstLine3_Equip.Glyph = global::FORM.Properties.Resources.equip;
             this.bstLine3_Equip.Name = "bstLine3_Equip";
+            this.bstLine3_Equip.Selected = true;
             // 
             // bstLine3_Inventory
             // 
@@ -2511,7 +2595,6 @@
             this.bstLine3_Inventory.ContentControl = this.backstageViewClientControl16;
             this.bstLine3_Inventory.Glyph = ((System.Drawing.Image)(resources.GetObject("bstLine3_Inventory.Glyph")));
             this.bstLine3_Inventory.Name = "bstLine3_Inventory";
-            this.bstLine3_Inventory.Selected = true;
             // 
             // bstLine3_HR
             // 
@@ -2617,8 +2700,8 @@
             this.backstageViewControl3.ItemsContentPadding = new System.Windows.Forms.Padding(0, 4, 0, 4);
             this.backstageViewControl3.Location = new System.Drawing.Point(15, 68);
             this.backstageViewControl3.Name = "backstageViewControl3";
-            this.backstageViewControl3.SelectedTab = this.bstLine4_Inventory;
-            this.backstageViewControl3.SelectedTabIndex = 3;
+            this.backstageViewControl3.SelectedTab = this.bstLine4_Equip;
+            this.backstageViewControl3.SelectedTabIndex = 2;
             this.backstageViewControl3.Size = new System.Drawing.Size(639, 414);
             this.backstageViewControl3.TabIndex = 10;
             this.backstageViewControl3.Text = "backstageViewControl3";
@@ -2839,6 +2922,7 @@
             // 
             // backstageViewClientControl19
             // 
+            this.backstageViewClientControl19.Controls.Add(this.cmdElectric_Line4);
             this.backstageViewClientControl19.Controls.Add(this.cmdEqu2_Line4);
             this.backstageViewClientControl19.Controls.Add(this.cmdEqu1_Line4);
             this.backstageViewClientControl19.Location = new System.Drawing.Point(337, 0);
@@ -2904,6 +2988,31 @@
             this.backstageViewClientControl20.Name = "backstageViewClientControl20";
             this.backstageViewClientControl20.Size = new System.Drawing.Size(302, 414);
             this.backstageViewClientControl20.TabIndex = 4;
+            // 
+            // cmdInv5_Line4
+            // 
+            this.cmdInv5_Line4.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.cmdInv5_Line4.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdInv5_Line4.Appearance.ForeColor = System.Drawing.Color.White;
+            this.cmdInv5_Line4.Appearance.Options.UseBackColor = true;
+            this.cmdInv5_Line4.Appearance.Options.UseFont = true;
+            this.cmdInv5_Line4.Appearance.Options.UseForeColor = true;
+            this.cmdInv5_Line4.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.cmdInv5_Line4.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.cmdInv5_Line4.AppearanceHovered.Font = new System.Drawing.Font("Tahoma", 17F, System.Drawing.FontStyle.Bold);
+            this.cmdInv5_Line4.AppearanceHovered.ForeColor = System.Drawing.Color.White;
+            this.cmdInv5_Line4.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.cmdInv5_Line4.AppearanceHovered.Options.UseBackColor = true;
+            this.cmdInv5_Line4.AppearanceHovered.Options.UseFont = true;
+            this.cmdInv5_Line4.AppearanceHovered.Options.UseForeColor = true;
+            this.cmdInv5_Line4.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.cmdInv5_Line4.Location = new System.Drawing.Point(29, 304);
+            this.cmdInv5_Line4.Name = "cmdInv5_Line4";
+            this.cmdInv5_Line4.Size = new System.Drawing.Size(245, 73);
+            this.cmdInv5_Line4.TabIndex = 18;
+            this.cmdInv5_Line4.Tag = "299";
+            this.cmdInv5_Line4.Text = "Instant Set";
+            this.cmdInv5_Line4.Click += new System.EventHandler(this.cmdMenu_Click);
             // 
             // cmdInv4_Line4
             // 
@@ -3160,6 +3269,7 @@
             this.bstLine4_Equip.ContentControl = this.backstageViewClientControl19;
             this.bstLine4_Equip.Glyph = global::FORM.Properties.Resources.equip;
             this.bstLine4_Equip.Name = "bstLine4_Equip";
+            this.bstLine4_Equip.Selected = true;
             // 
             // bstLine4_Inventory
             // 
@@ -3177,7 +3287,6 @@
             this.bstLine4_Inventory.ContentControl = this.backstageViewClientControl20;
             this.bstLine4_Inventory.Glyph = ((System.Drawing.Image)(resources.GetObject("bstLine4_Inventory.Glyph")));
             this.bstLine4_Inventory.Name = "bstLine4_Inventory";
-            this.bstLine4_Inventory.Selected = true;
             // 
             // bstLine4_HR
             // 
@@ -3483,30 +3592,97 @@
             this.panel1.Size = new System.Drawing.Size(1916, 1080);
             this.panel1.TabIndex = 18;
             // 
-            // cmdInv5_Line1
+            // cmdElectric_Line1
             // 
-            this.cmdInv5_Line1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.cmdInv5_Line1.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdInv5_Line1.Appearance.ForeColor = System.Drawing.Color.White;
-            this.cmdInv5_Line1.Appearance.Options.UseBackColor = true;
-            this.cmdInv5_Line1.Appearance.Options.UseFont = true;
-            this.cmdInv5_Line1.Appearance.Options.UseForeColor = true;
-            this.cmdInv5_Line1.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.cmdInv5_Line1.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.cmdInv5_Line1.AppearanceHovered.Font = new System.Drawing.Font("Tahoma", 17F, System.Drawing.FontStyle.Bold);
-            this.cmdInv5_Line1.AppearanceHovered.ForeColor = System.Drawing.Color.White;
-            this.cmdInv5_Line1.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.cmdInv5_Line1.AppearanceHovered.Options.UseBackColor = true;
-            this.cmdInv5_Line1.AppearanceHovered.Options.UseFont = true;
-            this.cmdInv5_Line1.AppearanceHovered.Options.UseForeColor = true;
-            this.cmdInv5_Line1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdInv5_Line1.Location = new System.Drawing.Point(29, 315);
-            this.cmdInv5_Line1.Name = "cmdInv5_Line1";
-            this.cmdInv5_Line1.Size = new System.Drawing.Size(245, 73);
-            this.cmdInv5_Line1.TabIndex = 10;
-            this.cmdInv5_Line1.Tag = "299";
-            this.cmdInv5_Line1.Text = "Instant Set";
-            this.cmdInv5_Line1.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdElectric_Line1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.cmdElectric_Line1.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdElectric_Line1.Appearance.ForeColor = System.Drawing.Color.White;
+            this.cmdElectric_Line1.Appearance.Options.UseBackColor = true;
+            this.cmdElectric_Line1.Appearance.Options.UseFont = true;
+            this.cmdElectric_Line1.Appearance.Options.UseForeColor = true;
+            this.cmdElectric_Line1.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.cmdElectric_Line1.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.cmdElectric_Line1.AppearanceHovered.ForeColor = System.Drawing.Color.White;
+            this.cmdElectric_Line1.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.cmdElectric_Line1.AppearanceHovered.Options.UseBackColor = true;
+            this.cmdElectric_Line1.AppearanceHovered.Options.UseForeColor = true;
+            this.cmdElectric_Line1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.cmdElectric_Line1.Location = new System.Drawing.Point(29, 196);
+            this.cmdElectric_Line1.Name = "cmdElectric_Line1";
+            this.cmdElectric_Line1.Size = new System.Drawing.Size(245, 94);
+            this.cmdElectric_Line1.TabIndex = 7;
+            this.cmdElectric_Line1.Tag = "189";
+            this.cmdElectric_Line1.Text = "Electric Analysis";
+            this.cmdElectric_Line1.Click += new System.EventHandler(this.cmdMenu_Click);
+            // 
+            // cmdElectric_Line2
+            // 
+            this.cmdElectric_Line2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.cmdElectric_Line2.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdElectric_Line2.Appearance.ForeColor = System.Drawing.Color.White;
+            this.cmdElectric_Line2.Appearance.Options.UseBackColor = true;
+            this.cmdElectric_Line2.Appearance.Options.UseFont = true;
+            this.cmdElectric_Line2.Appearance.Options.UseForeColor = true;
+            this.cmdElectric_Line2.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.cmdElectric_Line2.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.cmdElectric_Line2.AppearanceHovered.ForeColor = System.Drawing.Color.White;
+            this.cmdElectric_Line2.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.cmdElectric_Line2.AppearanceHovered.Options.UseBackColor = true;
+            this.cmdElectric_Line2.AppearanceHovered.Options.UseForeColor = true;
+            this.cmdElectric_Line2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.cmdElectric_Line2.Location = new System.Drawing.Point(32, 196);
+            this.cmdElectric_Line2.Name = "cmdElectric_Line2";
+            this.cmdElectric_Line2.Size = new System.Drawing.Size(245, 94);
+            this.cmdElectric_Line2.TabIndex = 9;
+            this.cmdElectric_Line2.Tag = "189";
+            this.cmdElectric_Line2.Text = "Electric Analysis";
+            this.cmdElectric_Line2.Click += new System.EventHandler(this.cmdMenu_Click);
+            // 
+            // cmdElectric_Line4
+            // 
+            this.cmdElectric_Line4.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.cmdElectric_Line4.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdElectric_Line4.Appearance.ForeColor = System.Drawing.Color.White;
+            this.cmdElectric_Line4.Appearance.Options.UseBackColor = true;
+            this.cmdElectric_Line4.Appearance.Options.UseFont = true;
+            this.cmdElectric_Line4.Appearance.Options.UseForeColor = true;
+            this.cmdElectric_Line4.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.cmdElectric_Line4.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.cmdElectric_Line4.AppearanceHovered.ForeColor = System.Drawing.Color.White;
+            this.cmdElectric_Line4.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.cmdElectric_Line4.AppearanceHovered.Options.UseBackColor = true;
+            this.cmdElectric_Line4.AppearanceHovered.Options.UseForeColor = true;
+            this.cmdElectric_Line4.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.cmdElectric_Line4.Location = new System.Drawing.Point(32, 191);
+            this.cmdElectric_Line4.Name = "cmdElectric_Line4";
+            this.cmdElectric_Line4.Size = new System.Drawing.Size(245, 94);
+            this.cmdElectric_Line4.TabIndex = 10;
+            this.cmdElectric_Line4.Tag = "189";
+            this.cmdElectric_Line4.Text = "Electric Analysis";
+            this.cmdElectric_Line4.Click += new System.EventHandler(this.cmdMenu_Click);
+            // 
+            // cmdElectric_Line3
+            // 
+            this.cmdElectric_Line3.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.cmdElectric_Line3.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdElectric_Line3.Appearance.ForeColor = System.Drawing.Color.White;
+            this.cmdElectric_Line3.Appearance.Options.UseBackColor = true;
+            this.cmdElectric_Line3.Appearance.Options.UseFont = true;
+            this.cmdElectric_Line3.Appearance.Options.UseForeColor = true;
+            this.cmdElectric_Line3.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.cmdElectric_Line3.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.cmdElectric_Line3.AppearanceHovered.ForeColor = System.Drawing.Color.White;
+            this.cmdElectric_Line3.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.cmdElectric_Line3.AppearanceHovered.Options.UseBackColor = true;
+            this.cmdElectric_Line3.AppearanceHovered.Options.UseForeColor = true;
+            this.cmdElectric_Line3.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.cmdElectric_Line3.Location = new System.Drawing.Point(28, 191);
+            this.cmdElectric_Line3.Name = "cmdElectric_Line3";
+            this.cmdElectric_Line3.Size = new System.Drawing.Size(245, 94);
+            this.cmdElectric_Line3.TabIndex = 11;
+            this.cmdElectric_Line3.Tag = "189";
+            this.cmdElectric_Line3.Text = "Electric Analysis";
+            this.cmdElectric_Line3.Click += new System.EventHandler(this.cmdMenu_Click);
             // 
             // digitalGaugeLine4
             // 
@@ -4064,81 +4240,6 @@
             this.a1Panel4.Size = new System.Drawing.Size(257, 355);
             this.a1Panel4.TabIndex = 1;
             // 
-            // cmdInv5_Line2
-            // 
-            this.cmdInv5_Line2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.cmdInv5_Line2.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdInv5_Line2.Appearance.ForeColor = System.Drawing.Color.White;
-            this.cmdInv5_Line2.Appearance.Options.UseBackColor = true;
-            this.cmdInv5_Line2.Appearance.Options.UseFont = true;
-            this.cmdInv5_Line2.Appearance.Options.UseForeColor = true;
-            this.cmdInv5_Line2.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.cmdInv5_Line2.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.cmdInv5_Line2.AppearanceHovered.Font = new System.Drawing.Font("Tahoma", 17F, System.Drawing.FontStyle.Bold);
-            this.cmdInv5_Line2.AppearanceHovered.ForeColor = System.Drawing.Color.White;
-            this.cmdInv5_Line2.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.cmdInv5_Line2.AppearanceHovered.Options.UseBackColor = true;
-            this.cmdInv5_Line2.AppearanceHovered.Options.UseFont = true;
-            this.cmdInv5_Line2.AppearanceHovered.Options.UseForeColor = true;
-            this.cmdInv5_Line2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdInv5_Line2.Location = new System.Drawing.Point(29, 300);
-            this.cmdInv5_Line2.Name = "cmdInv5_Line2";
-            this.cmdInv5_Line2.Size = new System.Drawing.Size(245, 73);
-            this.cmdInv5_Line2.TabIndex = 16;
-            this.cmdInv5_Line2.Tag = "299";
-            this.cmdInv5_Line2.Text = "Instant Set";
-            this.cmdInv5_Line2.Click += new System.EventHandler(this.cmdMenu_Click);
-            // 
-            // cmdInv5_Line4
-            // 
-            this.cmdInv5_Line4.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.cmdInv5_Line4.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdInv5_Line4.Appearance.ForeColor = System.Drawing.Color.White;
-            this.cmdInv5_Line4.Appearance.Options.UseBackColor = true;
-            this.cmdInv5_Line4.Appearance.Options.UseFont = true;
-            this.cmdInv5_Line4.Appearance.Options.UseForeColor = true;
-            this.cmdInv5_Line4.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.cmdInv5_Line4.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.cmdInv5_Line4.AppearanceHovered.Font = new System.Drawing.Font("Tahoma", 17F, System.Drawing.FontStyle.Bold);
-            this.cmdInv5_Line4.AppearanceHovered.ForeColor = System.Drawing.Color.White;
-            this.cmdInv5_Line4.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.cmdInv5_Line4.AppearanceHovered.Options.UseBackColor = true;
-            this.cmdInv5_Line4.AppearanceHovered.Options.UseFont = true;
-            this.cmdInv5_Line4.AppearanceHovered.Options.UseForeColor = true;
-            this.cmdInv5_Line4.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdInv5_Line4.Location = new System.Drawing.Point(29, 304);
-            this.cmdInv5_Line4.Name = "cmdInv5_Line4";
-            this.cmdInv5_Line4.Size = new System.Drawing.Size(245, 73);
-            this.cmdInv5_Line4.TabIndex = 18;
-            this.cmdInv5_Line4.Tag = "299";
-            this.cmdInv5_Line4.Text = "Instant Set";
-            this.cmdInv5_Line4.Click += new System.EventHandler(this.cmdMenu_Click);
-            // 
-            // cmdInv5_Line3
-            // 
-            this.cmdInv5_Line3.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.cmdInv5_Line3.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdInv5_Line3.Appearance.ForeColor = System.Drawing.Color.White;
-            this.cmdInv5_Line3.Appearance.Options.UseBackColor = true;
-            this.cmdInv5_Line3.Appearance.Options.UseFont = true;
-            this.cmdInv5_Line3.Appearance.Options.UseForeColor = true;
-            this.cmdInv5_Line3.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.cmdInv5_Line3.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.cmdInv5_Line3.AppearanceHovered.Font = new System.Drawing.Font("Tahoma", 17F, System.Drawing.FontStyle.Bold);
-            this.cmdInv5_Line3.AppearanceHovered.ForeColor = System.Drawing.Color.White;
-            this.cmdInv5_Line3.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.cmdInv5_Line3.AppearanceHovered.Options.UseBackColor = true;
-            this.cmdInv5_Line3.AppearanceHovered.Options.UseFont = true;
-            this.cmdInv5_Line3.AppearanceHovered.Options.UseForeColor = true;
-            this.cmdInv5_Line3.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdInv5_Line3.Location = new System.Drawing.Point(29, 302);
-            this.cmdInv5_Line3.Name = "cmdInv5_Line3";
-            this.cmdInv5_Line3.Size = new System.Drawing.Size(245, 73);
-            this.cmdInv5_Line3.TabIndex = 19;
-            this.cmdInv5_Line3.Tag = "299";
-            this.cmdInv5_Line3.Text = "Instant Set";
-            this.cmdInv5_Line3.Click += new System.EventHandler(this.cmdMenu_Click);
-            // 
             // FORM_MAIN_4_LINE
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -4441,5 +4542,9 @@
         private DevExpress.XtraEditors.SimpleButton cmdInv5_Line2;
         private DevExpress.XtraEditors.SimpleButton cmdInv5_Line4;
         private DevExpress.XtraEditors.SimpleButton cmdInv5_Line3;
+        private DevExpress.XtraEditors.SimpleButton cmdElectric_Line1;
+        private DevExpress.XtraEditors.SimpleButton cmdElectric_Line2;
+        private DevExpress.XtraEditors.SimpleButton cmdElectric_Line3;
+        private DevExpress.XtraEditors.SimpleButton cmdElectric_Line4;
     }
 }

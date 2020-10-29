@@ -1137,7 +1137,6 @@ cmdQua1_Line2,cmdQua2_Line2,cmdQua3_Line2,cmdQua4_Line2,cmdQua5_Line2,cmdPro1_Li
                 ComVar.Var.callForm = "back";
             }
         }
-
         private void cmdTMS_Click(object sender, EventArgs e)
         {
             ComVar.Var._IsBack = true;
@@ -1154,16 +1153,5 @@ cmdQua1_Line2,cmdQua2_Line2,cmdQua3_Line2,cmdQua4_Line2,cmdQua5_Line2,cmdPro1_Li
             ComVar.Var._bValue1 = true;
             ComVar.Var.callForm = "1";
         }
-        
-
-
-
-
-
-
-
-
-
-
     }
 }
