@@ -1349,7 +1349,7 @@ namespace FORM
             {
                 System.Collections.Generic.Dictionary<string, string> dtnInit = new System.Collections.Generic.Dictionary<string, string>();
                 dtnInit = ComVar.Func.getInitForm(ComVar.Var._Area + this.GetType().Assembly.GetName().Name, this.GetType().Name);
-
+                if (dtnInit == null) return;
                 for (int i = 0; i < dtnInit.Count; i++)
                 {
                     setComValue(dtnInit.ElementAt(i).Key, dtnInit.ElementAt(i).Value);
