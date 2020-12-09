@@ -223,8 +223,10 @@ namespace FORM
                     tmrDelay.Start();
                 }
                 else
-                { isLoop = false;
-                    timer1.Start(); }
+                { 
+                    isLoop = false;
+                    timer1.Start(); 
+                }
 
 
                 this.Cursor = Cursors.Default;

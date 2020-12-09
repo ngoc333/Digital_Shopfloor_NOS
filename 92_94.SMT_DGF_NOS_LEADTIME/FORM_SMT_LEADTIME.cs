@@ -135,7 +135,7 @@ namespace FORM
             {
                 DataTable dt = LOAD_DATA("");
                 pnMain.Visible = true;
-                if (dt == null || dt.Rows.Count == 0) return;
+               // if (dt == null || dt.Rows.Count == 0) return;
                 Create_chart(Dailychart, dt, "");
                 load_data_grid(dt);
                 
@@ -173,143 +173,152 @@ namespace FORM
 
         private void Create_chart(ChartControl arg_chart, DataTable arg_dt, string arg_name)
         {
-            //Reset Chart beforce biding Data
-            arg_chart.Series.Clear();
-            arg_chart.Titles.Clear();
-            // Create an empty chart. (No need).
-            arg_chart.AppearanceNameSerializable = "Slipstream";
-            //create New object
-            DevExpress.XtraCharts.LineSeriesView lineSeriesView1 = new DevExpress.XtraCharts.LineSeriesView();
-            DevExpress.XtraCharts.XYSeriesUnwindAnimation xySeriesUnwindAnimation1 = new DevExpress.XtraCharts.XYSeriesUnwindAnimation();
-            DevExpress.XtraCharts.PowerEasingFunction powerEasingFunction1 = new DevExpress.XtraCharts.PowerEasingFunction();
-
-            // Create the first side-by-side bar series and add points to it.
-            Series series1 = new Series("Lead Time", ViewType.Bar);
-            // Create the second side-by-side bar series and add points to it.
-            Series series2 = new Series("Inventory", ViewType.Line);
-            int iCount = 0, iShow = 0; ;
-            for (int i = 0; i < arg_dt.Rows.Count; i++)
+            try
             {
-                if (arg_dt.Rows[i]["STYLE_CD"].ToString().ToUpper() != "TOTAL")
+
+                //Reset Chart beforce biding Data
+                arg_chart.Series.Clear();
+                arg_chart.Titles.Clear();
+                // Create an empty chart. (No need).
+                arg_chart.AppearanceNameSerializable = "Slipstream";
+                //create New object
+                DevExpress.XtraCharts.LineSeriesView lineSeriesView1 = new DevExpress.XtraCharts.LineSeriesView();
+                DevExpress.XtraCharts.XYSeriesUnwindAnimation xySeriesUnwindAnimation1 = new DevExpress.XtraCharts.XYSeriesUnwindAnimation();
+                DevExpress.XtraCharts.PowerEasingFunction powerEasingFunction1 = new DevExpress.XtraCharts.PowerEasingFunction();
+
+                // Create the first side-by-side bar series and add points to it.
+                Series series1 = new Series("Lead Time", ViewType.Bar);
+                // Create the second side-by-side bar series and add points to it.
+                Series series2 = new Series("Inventory", ViewType.Line);
+                int iCount = 0, iShow = 0; ;
+                for (int i = 0; i < arg_dt.Rows.Count; i++)
                 {
-                    iShow++;
-                    if (iShow == 3)
+                    if (arg_dt.Rows[i]["STYLE_CD"].ToString().ToUpper() != "TOTAL")
                     {
-                        series1.Points.Add(new SeriesPoint(arg_dt.Rows[i]["SUM_GRP_DETAIL"].ToString() + "\n" + arg_dt.Rows[i]["STYLE_CD"].ToString()
-                            , arg_dt.Rows[i]["LT"] == null || arg_dt.Rows[i]["LT"].ToString() == "" ? 0 : arg_dt.Rows[i]["LT"]));
+                        iShow++;
+                        if (iShow == 3)
+                        {
+                            series1.Points.Add(new SeriesPoint(arg_dt.Rows[i]["SUM_GRP_DETAIL"].ToString() + "\n" + arg_dt.Rows[i]["STYLE_CD"].ToString()
+                                , arg_dt.Rows[i]["LT"] == null || arg_dt.Rows[i]["LT"].ToString() == "" ? 0 : arg_dt.Rows[i]["LT"]));
 
-                        series2.Points.Add(new SeriesPoint(arg_dt.Rows[i]["SUM_GRP_DETAIL"].ToString() + "\n" + arg_dt.Rows[i]["STYLE_CD"].ToString()
-                            , arg_dt.Rows[i]["INV"] == null || arg_dt.Rows[i]["INV"].ToString() == "" ? 0 : arg_dt.Rows[i]["INV"]));
-                    }
-                    else
-                    {
-                        series1.Points.Add(new SeriesPoint(arg_dt.Rows[i]["SUM_GRP_DETAIL"].ToString() + "\n" + addBlank(iCount)
-                            , arg_dt.Rows[i]["LT"] == null || arg_dt.Rows[i]["LT"].ToString() == "" ? 0 : arg_dt.Rows[i]["LT"]));
+                            series2.Points.Add(new SeriesPoint(arg_dt.Rows[i]["SUM_GRP_DETAIL"].ToString() + "\n" + arg_dt.Rows[i]["STYLE_CD"].ToString()
+                                , arg_dt.Rows[i]["INV"] == null || arg_dt.Rows[i]["INV"].ToString() == "" ? 0 : arg_dt.Rows[i]["INV"]));
+                        }
+                        else
+                        {
+                            series1.Points.Add(new SeriesPoint(arg_dt.Rows[i]["SUM_GRP_DETAIL"].ToString() + "\n" + addBlank(iCount)
+                                , arg_dt.Rows[i]["LT"] == null || arg_dt.Rows[i]["LT"].ToString() == "" ? 0 : arg_dt.Rows[i]["LT"]));
 
-                        series2.Points.Add(new SeriesPoint(arg_dt.Rows[i]["SUM_GRP_DETAIL"].ToString() + "\n" + addBlank(iCount)
-                            , arg_dt.Rows[i]["INV"] == null || arg_dt.Rows[i]["INV"].ToString() == "" ? 0 : arg_dt.Rows[i]["INV"]));
-                    }
+                            series2.Points.Add(new SeriesPoint(arg_dt.Rows[i]["SUM_GRP_DETAIL"].ToString() + "\n" + addBlank(iCount)
+                                , arg_dt.Rows[i]["INV"] == null || arg_dt.Rows[i]["INV"].ToString() == "" ? 0 : arg_dt.Rows[i]["INV"]));
+                        }
 
 
-                    if (i + 1 < arg_dt.Rows.Count &&
-                        arg_dt.Rows[i + 1]["STYLE_CD"].ToString().ToUpper() != "TOTAL" &&
-                        arg_dt.Rows[i]["STYLE_CD"].ToString() != arg_dt.Rows[i + 1]["STYLE_CD"].ToString())
-                    {
-                        iCount++;
-                        iShow = 0;
-                        series1.Points.Add(new SeriesPoint(addBlank(iCount)));
+                        if (i + 1 < arg_dt.Rows.Count &&
+                            arg_dt.Rows[i + 1]["STYLE_CD"].ToString().ToUpper() != "TOTAL" &&
+                            arg_dt.Rows[i]["STYLE_CD"].ToString() != arg_dt.Rows[i + 1]["STYLE_CD"].ToString())
+                        {
+                            iCount++;
+                            iShow = 0;
+                            series1.Points.Add(new SeriesPoint(addBlank(iCount)));
 
-                        series2.Points.Add(new SeriesPoint(addBlank(iCount)));
+                            series2.Points.Add(new SeriesPoint(addBlank(iCount)));
+                        }
                     }
                 }
+
+                //marker
+                lineSeriesView1.LineMarkerOptions.Color = System.Drawing.Color.Gold;
+
+                lineSeriesView1.MarkerVisibility = DevExpress.Utils.DefaultBoolean.True;
+
+
+                series2.View = lineSeriesView1;
+                // Add the series to the chart.
+                series1.ArgumentScaleType = ScaleType.Qualitative;
+                series2.ArgumentScaleType = ScaleType.Qualitative;
+
+
+
+                arg_chart.SeriesSerializable = new Series[] { series1, series2 };
+
+
+                //arg_chart.Series.Add(series1);
+                //arg_chart.Series.Add(series2);
+                // Create two secondary axes, and add them to the chart's Diagram.
+                SecondaryAxisY axisYSecond = new SecondaryAxisY("my Y-Axis");
+                ((XYDiagram)arg_chart.Diagram).SecondaryAxesY.Clear();
+                ((XYDiagram)arg_chart.Diagram).SecondaryAxesY.Add(axisYSecond);
+                axisYSecond.Label.TextPattern = "{V:#,#}";
+                axisYSecond.Title.TextColor = Color.Orange;
+                axisYSecond.Title.Font = new Font("Tahoma", 16F, FontStyle.Bold);
+                axisYSecond.Title.Text = "Inventory";
+                axisYSecond.Title.Visibility = DevExpress.Utils.DefaultBoolean.Default;
+                axisYSecond.Label.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+
+                ((LineSeriesView)series2.View).AxisY = axisYSecond;
+
+                // Hide the legend (if necessary).
+                arg_chart.Legend.Visibility = DevExpress.Utils.DefaultBoolean.True;
+                arg_chart.Legend.AlignmentVertical = LegendAlignmentVertical.TopOutside;
+                arg_chart.Legend.AlignmentHorizontal = LegendAlignmentHorizontal.Center;
+                arg_chart.Legend.Direction = LegendDirection.LeftToRight;
+
+                // Rotate the diagram (if necessary).
+                ((XYDiagram)arg_chart.Diagram).Rotated = false;
+
+                //ScaleBreak NUmber
+                ((XYDiagram)arg_chart.Diagram).AxisX.NumericScaleOptions.AutoGrid = false;
+
+                //Title
+                ((XYDiagram)arg_chart.Diagram).AxisX.Title.Visibility = DevExpress.Utils.DefaultBoolean.True;
+                ((XYDiagram)arg_chart.Diagram).AxisX.Title.Text = "";
+                if (iCount > 2)
+                    ((XYDiagram)arg_chart.Diagram).AxisX.Label.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
+                else
+                    ((XYDiagram)arg_chart.Diagram).AxisX.Label.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+
+                ((XYDiagram)arg_chart.Diagram).AxisY.Title.Visibility = DevExpress.Utils.DefaultBoolean.True;
+                ((XYDiagram)arg_chart.Diagram).AxisY.Title.TextColor = Color.Orange;
+                ((XYDiagram)arg_chart.Diagram).AxisY.Title.Text = "Lead Time";
+                ((XYDiagram)arg_chart.Diagram).AxisY.Title.Font = new System.Drawing.Font("Tahoma", 16F, System.Drawing.FontStyle.Bold);
+                ((XYDiagram)arg_chart.Diagram).AxisY.Label.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+
+
+                //((XYDiagram)arg_chart.Diagram).AxisY.WholeRange.Auto = true;
+                // ((XYDiagram)arg_chart.Diagram).AxisY.WholeRange.SetMinMaxValues(0, 2);
+
+
+                //Animation Series
+                lineSeriesView1.Color = System.Drawing.Color.DarkOrange;
+                xySeriesUnwindAnimation1.EasingFunction = powerEasingFunction1;
+                lineSeriesView1.SeriesAnimation = xySeriesUnwindAnimation1;
+
+
+
+                ((XYDiagram)arg_chart.Diagram).AxisY.Label.TextPattern = "{V:#,0.##}";
+                //Label
+                series1.LabelsVisibility = DevExpress.Utils.DefaultBoolean.False;
+                series1.Label.TextPattern = "{V:#,#}";
+                (series1.Label as SideBySideBarSeriesLabel).Position = DevExpress.XtraCharts.BarSeriesLabelPosition.Top;
+                series2.LabelsVisibility = DevExpress.Utils.DefaultBoolean.False;
+                series2.Label.TextPattern = "{V:#,#}";
+                // Add a title to the chart (if necessary).
+                ChartTitle chartTitle1 = new ChartTitle();
+                chartTitle1.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Bold);
+                chartTitle1.Text = arg_dt.Rows[0]["CHART_TITLE"].ToString();
+                arg_chart.Titles.Add(chartTitle1);
+
+                // Add the chart to the form.
+
+
+                pnMain.Controls.Add(arg_chart);
+            }
+            catch 
+            {
+
             }
 
-            //marker
-            lineSeriesView1.LineMarkerOptions.Color = System.Drawing.Color.Gold;
-
-            lineSeriesView1.MarkerVisibility = DevExpress.Utils.DefaultBoolean.True;
-
-
-            series2.View = lineSeriesView1;
-            // Add the series to the chart.
-            series1.ArgumentScaleType = ScaleType.Qualitative;
-            series2.ArgumentScaleType = ScaleType.Qualitative;
-
-
-
-            arg_chart.SeriesSerializable = new Series[] { series1, series2 };
-
-
-            //arg_chart.Series.Add(series1);
-            //arg_chart.Series.Add(series2);
-            // Create two secondary axes, and add them to the chart's Diagram.
-            SecondaryAxisY axisYSecond = new SecondaryAxisY("my Y-Axis");
-            ((XYDiagram)arg_chart.Diagram).SecondaryAxesY.Clear();
-            ((XYDiagram)arg_chart.Diagram).SecondaryAxesY.Add(axisYSecond);
-            axisYSecond.Label.TextPattern = "{V:#,#}";
-            axisYSecond.Title.TextColor = Color.Orange;
-            axisYSecond.Title.Font = new Font("Tahoma", 16F, FontStyle.Bold);
-            axisYSecond.Title.Text = "Inventory";
-            axisYSecond.Title.Visibility = DevExpress.Utils.DefaultBoolean.Default;
-            axisYSecond.Label.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
-
-            ((LineSeriesView)series2.View).AxisY = axisYSecond;
-
-            // Hide the legend (if necessary).
-            arg_chart.Legend.Visibility = DevExpress.Utils.DefaultBoolean.True;
-            arg_chart.Legend.AlignmentVertical = LegendAlignmentVertical.TopOutside;
-            arg_chart.Legend.AlignmentHorizontal = LegendAlignmentHorizontal.Center;
-            arg_chart.Legend.Direction = LegendDirection.LeftToRight;
-
-            // Rotate the diagram (if necessary).
-            ((XYDiagram)arg_chart.Diagram).Rotated = false;
-
-            //ScaleBreak NUmber
-            ((XYDiagram)arg_chart.Diagram).AxisX.NumericScaleOptions.AutoGrid = false;
-
-            //Title
-            ((XYDiagram)arg_chart.Diagram).AxisX.Title.Visibility = DevExpress.Utils.DefaultBoolean.True;
-            ((XYDiagram)arg_chart.Diagram).AxisX.Title.Text = "";
-            if (iCount > 2)
-                ((XYDiagram)arg_chart.Diagram).AxisX.Label.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
-            else
-                ((XYDiagram)arg_chart.Diagram).AxisX.Label.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
-
-            ((XYDiagram)arg_chart.Diagram).AxisY.Title.Visibility = DevExpress.Utils.DefaultBoolean.True;
-            ((XYDiagram)arg_chart.Diagram).AxisY.Title.TextColor = Color.Orange;
-            ((XYDiagram)arg_chart.Diagram).AxisY.Title.Text = "Lead Time";
-            ((XYDiagram)arg_chart.Diagram).AxisY.Title.Font = new System.Drawing.Font("Tahoma", 16F, System.Drawing.FontStyle.Bold);
-            ((XYDiagram)arg_chart.Diagram).AxisY.Label.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
-
-
-            //((XYDiagram)arg_chart.Diagram).AxisY.WholeRange.Auto = true;
-            // ((XYDiagram)arg_chart.Diagram).AxisY.WholeRange.SetMinMaxValues(0, 2);
-
-
-            //Animation Series
-            lineSeriesView1.Color = System.Drawing.Color.DarkOrange;
-            xySeriesUnwindAnimation1.EasingFunction = powerEasingFunction1;
-            lineSeriesView1.SeriesAnimation = xySeriesUnwindAnimation1;
-
-
-
-            ((XYDiagram)arg_chart.Diagram).AxisY.Label.TextPattern = "{V:#,0.##}";
-            //Label
-            series1.LabelsVisibility = DevExpress.Utils.DefaultBoolean.False;
-            series1.Label.TextPattern = "{V:#,#}";
-            (series1.Label as SideBySideBarSeriesLabel).Position = DevExpress.XtraCharts.BarSeriesLabelPosition.Top;
-            series2.LabelsVisibility = DevExpress.Utils.DefaultBoolean.False;
-            series2.Label.TextPattern = "{V:#,#}";
-            // Add a title to the chart (if necessary).
-            ChartTitle chartTitle1 = new ChartTitle();
-            chartTitle1.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Bold);
-            chartTitle1.Text = arg_dt.Rows[0]["CHART_TITLE"].ToString();
-            arg_chart.Titles.Add(chartTitle1);
-
-            // Add the chart to the form.
-
-
-            pnMain.Controls.Add(arg_chart);
         }
 
         private void load_data_grid(DataTable arg_dt)
