@@ -56,6 +56,44 @@ namespace FORM
                 return null;
             }
         }
+
+        public DataTable SEL_SMT_ISB_PREDICTION_CHART(string ARG_LINE_CD, string ARG_MLINE_CD)
+        {
+            COM.OraDB MyOraDB = new COM.OraDB();
+            DataSet ds_ret;
+
+            try
+            {
+                string process_name = "MES.PKG_SMT_PHUOC.SP_SMT_ISB_PREDICTION"; //2020-09-18
+
+                MyOraDB.ReDim_Parameter(3);
+                MyOraDB.Process_Name = process_name;
+
+                MyOraDB.Parameter_Name[0] = "ARG_LINE_CD";
+                MyOraDB.Parameter_Name[1] = "ARG_MLINE_CD";
+                MyOraDB.Parameter_Name[2] = "OUT_CURSOR";
+
+                MyOraDB.Parameter_Type[0] = (int)OracleType.VarChar;
+                MyOraDB.Parameter_Type[1] = (int)OracleType.VarChar;
+                MyOraDB.Parameter_Type[2] = (int)OracleType.Cursor;
+
+                MyOraDB.Parameter_Values[0] = ARG_LINE_CD;
+                MyOraDB.Parameter_Values[1] = ARG_MLINE_CD;
+                MyOraDB.Parameter_Values[2] = "";
+
+
+                MyOraDB.Add_Select_Parameter(true);
+                ds_ret = MyOraDB.Exe_Select_Procedure();
+
+                if (ds_ret == null) return null;
+                return ds_ret.Tables[process_name];
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
         public FRM_SMT_FG_INST_SET()
         {
             InitializeComponent();
@@ -67,6 +105,9 @@ namespace FORM
 
 
         }
+
+        
+
         private void BindingGridData(DataTable dt)
         {
             DataView view = new DataView(dt);
@@ -103,6 +144,59 @@ namespace FORM
             gridView1.Columns[1].Visible = false;
             gridView1.Columns[3].Visible = false;
         }
+
+        private void BindingChartISB()
+        {
+            try
+            {
+                this.Cursor = Cursors.WaitCursor;
+                chartControl2.DataSource = null;
+                DataTable dtISB = SEL_SMT_ISB_PREDICTION_CHART(ComVar.Var._strValue1, ComVar.Var._strValue2);
+                string _str1 = "", _str2 = "";
+                if (dtISB != null && dtISB.Rows.Count > 0)
+                {
+                    for (int i = 0; i < dtISB.Rows.Count; i++)
+                    {
+                        if (dtISB.Rows[i]["DIV"].ToString().Equals("Present"))
+                        {
+                            _str1 = dtISB.Rows[i]["HH"].ToString();
+                        }
+                        if (dtISB.Rows[i]["DIV"].ToString().Equals("Present + Prediction"))
+                        {
+                            _str2 = dtISB.Rows[i]["HH"].ToString();
+                        }
+                    }
+                    chartControl2.DataSource = dtISB;
+                    chartControl2.Series[0].ArgumentDataMember = "HH";
+                    chartControl2.Series[0].ValueDataMembers.AddRange(new string[] { "VAL2" });
+                    chartControl2.Series[1].ArgumentDataMember = "HH";
+                    chartControl2.Series[1].ValueDataMembers.AddRange(new string[] { "VAL1" });
+
+                    ((XYDiagram)chartControl2.Diagram).AxisX.ConstantLines[0].AxisValue = _str1;
+                    ((XYDiagram)chartControl2.Diagram).AxisX.ConstantLines[1].AxisValue = _str2;
+                    ((XYDiagram)chartControl2.Diagram).AxisY.ConstantLines[0].AxisValue = 90;
+                    ((XYDiagram)chartControl2.Diagram).AxisY.ConstantLines[1].AxisValue = 60;
+                    ((XYDiagram)chartControl2.Diagram).AxisY.WholeRange.AlwaysShowZeroLevel = false;
+                    //((XYDiagram)chartControl2.Diagram).AxisY.WholeRange.MaxValue = 90;
+                    //((XYDiagram)chartControl2.Diagram).AxisY.WholeRange.MinValue = 30;
+                    //((XYDiagram)chartControl2.Diagram).AxisY.WholeRange.SideMarginsValue = 30;
+                }
+
+                //TrendLineCollection colorizer = new TrendLineCollection();
+                //colorizer.FallingTrendColor = Color.RoyalBlue;
+                //colorizer.RisingTrendColor = Color.Firebrick;
+                //colorizer.FallingTrendLegendText = "Temperature Decrease";
+                //colorizer.RisingTrendLegendText = "Temperature Rise";
+                //colorizer.ShowInLegend = true;
+                //LineSeriesView lineSeriesView = chartControl.Series[0].View as LineSeriesView;
+                //lineSeriesView.SegmentColorizer = colorizer;
+
+
+                this.Cursor = Cursors.Default;
+            }
+            catch { this.Cursor = Cursors.Default; }
+        }
+
         private void BindingChartData()
         {
             try
@@ -223,10 +317,8 @@ namespace FORM
                     tmrDelay.Start();
                 }
                 else
-                { 
-                    isLoop = false;
-                    timer1.Start(); 
-                }
+                { isLoop = false;
+                    timer1.Start(); }
 
 
                 this.Cursor = Cursors.Default;
@@ -249,6 +341,7 @@ namespace FORM
         int iCount = 0;
         private void timer1_Tick(object sender, EventArgs e)
         {
+            //tam dong
             if (dt == null) return;
 
             if (iCount >= dt.Rows.Count)
@@ -306,6 +399,7 @@ namespace FORM
                 try
                 {
                     iCounter = 0;
+                    //tam dong
                     BindingChartData();
                     if (!isLoop)
                         tmrDelay.Stop();
@@ -321,16 +415,69 @@ namespace FORM
         {
             try
             {
+                //lblTitle.Text = "ISB Prediction";
                 if (this.Visible)
                     iCounter = 30;
             }
             catch { }
         }
 
-        private void btnPrediction_Click(object sender, EventArgs e)
+        private void btn_Click(object sender, EventArgs e)
         {
-            ComVar.Var._IsBack = true;
-            ComVar.Var.callForm = "298";
+            string _tag = ((DevExpress.XtraEditors.SimpleButton)sender).Tag.ToString();
+            switch (_tag)
+            {
+                case "1":
+                    navFrame1.SelectedPage = navPage1;
+                    break;
+                case "2":
+                    navFrame1.SelectedPage = navPage2;
+                    BindingChartISB();
+                    break;
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            BindingChartISB();
+        }
+
+        private void chartControl2_CustomDrawAxisLabel(object sender, CustomDrawAxisLabelEventArgs e)
+        {
+            try
+            {
+                if (e.Item.Axis is AxisX)
+                {
+                    e.Item.Text = e.Item.Text.Replace("_", "\n");
+                }
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void chartControl1_CustomDrawSeriesPoint(object sender, CustomDrawSeriesPointEventArgs e)
+        {
+           
+        }
+
+        private void chartControl2_CustomDrawSeriesPoint(object sender, CustomDrawSeriesPointEventArgs e)
+        {
+            //LineDrawOptions drawOptions = e.SeriesDrawOptions as LineDrawOptions;
+            //if (drawOptions == null || e.LabelText == "")
+            //    return;
+
+            //double sRating = double.Parse(e.SeriesPoint.Argument.Split('\n')[0].Replace(":", ""));   //e.LegendText.ToUpper();
+            //if (sRating <= 1400)
+            //{
+            //    drawOptions.Color = Color.LimeGreen;
+            //}
+            //else
+            //{
+            //    drawOptions.Color = Color.Red;
+            //}
+
         }
     }
 

@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{1F43B532-9539-4733-9126-32EA6639D0B4}</ProjectGuid>
+    <ProjectGuid>{871FA01A-D9A6-448D-946A-48CB2EC1E61F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>FORM</RootNamespace>
@@ -151,12 +151,6 @@
     <Compile Include="ClassLib\TransparentPanel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="FRM_SMT_FG_PREDICTION.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FRM_SMT_FG_PREDICTION.Designer.cs">
-      <DependentUpon>FRM_SMT_FG_PREDICTION.cs</DependentUpon>
-    </Compile>
     <Compile Include="FRM_SMT_FG_INST_SET.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -195,9 +189,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="FRM_SMT_FG_PREDICTION.resx">
-      <DependentUpon>FRM_SMT_FG_PREDICTION.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FRM_SMT_FG_INST_SET.resx">
       <DependentUpon>FRM_SMT_FG_INST_SET.cs</DependentUpon>
     </EmbeddedResource>
@@ -253,9 +244,6 @@
       <Project>{992378c3-66a1-4e98-96f5-ce2b26e0cab2}</Project>
       <Name>Com</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\FtyButton.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

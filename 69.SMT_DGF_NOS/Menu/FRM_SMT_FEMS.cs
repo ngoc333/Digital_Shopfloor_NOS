@@ -265,6 +265,9 @@ namespace FORM
                     chartControl1.Series[2].ArgumentDataMember = "DAY";
                     chartControl1.Series[2].ValueDataMembers.AddRange(new string[] { "PAIRS" });
 
+                    chartControl1.Series[3].ArgumentDataMember = "DAY";
+                    chartControl1.Series[3].ValueDataMembers.AddRange(new string[] { "COST" });
+
                 }
                 else
                 {
