@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FORM_MAIN_6_LINE));
             this.pnHeader = new System.Windows.Forms.Panel();
             this.pn_Menu_Header = new System.Windows.Forms.Panel();
@@ -46,9 +45,9 @@
             this.lblDateTime = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
             this.tblMain1 = new System.Windows.Forms.TableLayoutPanel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer1 = new System.Windows.Forms.Timer();
             this.tblMain2 = new System.Windows.Forms.TableLayoutPanel();
-            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.timer2 = new System.Windows.Forms.Timer();
             this.pic_under = new System.Windows.Forms.PictureBox();
             this.pnHeader.SuspendLayout();
             this.pn_Menu_Header.SuspendLayout();
@@ -93,7 +92,7 @@
             this.cmdTMS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmdTMS.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
             this.cmdTMS.ForeColor = System.Drawing.Color.White;
-            this.cmdTMS.Location = new System.Drawing.Point(839, -2);
+            this.cmdTMS.Location = new System.Drawing.Point(832, -1);
             this.cmdTMS.Name = "cmdTMS";
             this.cmdTMS.Size = new System.Drawing.Size(109, 103);
             this.cmdTMS.TabIndex = 74;
@@ -161,6 +160,7 @@
             this.cmd_FGWH.TabIndex = 72;
             this.cmd_FGWH.Tag = "1";
             this.cmd_FGWH.Text = "FG W/H";
+            this.cmd_FGWH.Visible = false;
             this.cmd_FGWH.Click += new System.EventHandler(this.cmd_FGWH_Click);
             this.cmd_FGWH.MouseLeave += new System.EventHandler(this.simpleButton29_MouseLeave);
             // 

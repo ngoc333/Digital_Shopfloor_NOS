@@ -68,6 +68,10 @@ namespace FORM
                 else
                 {
                     _IsMain = false;
+                    cmdBack.Visible = ComVar.Var._Frm_Back == "900";
+                    cmdMGL.Visible = !(ComVar.Var._Frm_Back == "900");
+                    cmdQMS.Visible = !(ComVar.Var._Frm_Back == "900");
+                    cmdTMS.Visible = !(ComVar.Var._Frm_Back == "900");
                 }
                 // add_Event_Click_Menu_Line();
                 //set_Header_Menu_And_Text();

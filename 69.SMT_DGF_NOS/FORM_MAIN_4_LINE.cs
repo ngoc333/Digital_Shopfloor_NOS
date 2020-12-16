@@ -86,7 +86,6 @@ namespace FORM
                 bstLine4_Qual.Selected = true;
 
 
-
                 //_IsMain = true;
                 //  formFullScreen();
                 getConfigInfor();
@@ -117,11 +116,14 @@ namespace FORM
                 if (ComVar.Var._IsBack)
                 {
                     _IsMain = false;
+                    cmdBack.Visible = true;
+                }
+                else
+                {
+                    cmdBack.Visible = false;
+                    _IsMain = true;
 
                 }
-                else _IsMain = true;
-
-
 
                 // getConfigInfor();
                 setConfigForm();
@@ -138,7 +140,8 @@ namespace FORM
                 cCount = 58;
 
                 cmdEMD.Visible = _FirstFrom && ComVar.Var._strValue1 == "014";
-
+                cmdMGL.Visible = _FirstFrom && ComVar.Var._Frm_Back == "900";
+                cmdQMS.Visible = _FirstFrom && ComVar.Var._Frm_Back == "900";
                 cmdTMS.Visible = _FirstFrom; //&& (ComVar.Var._strValue1 == "014" || ComVar.Var._strValue1 == "018")
 
                 tmrText.Start();
@@ -830,6 +833,7 @@ cmdQua1_Line2,cmdQua2_Line2,cmdQua3_Line2,cmdQua4_Line2,cmdQua5_Line2,cmdPro1_Li
                             break;
                     }
                 }
+                if (dtnInit == null) return;
                 for (int i = 0; i < dtnInit.Count; i++)
                 {
                     setComValue(dtnInit.ElementAt(i).Key, dtnInit.ElementAt(i).Value);
@@ -1137,6 +1141,7 @@ cmdQua1_Line2,cmdQua2_Line2,cmdQua3_Line2,cmdQua4_Line2,cmdQua5_Line2,cmdPro1_Li
                 ComVar.Var.callForm = "back";
             }
         }
+
         private void cmdTMS_Click(object sender, EventArgs e)
         {
             ComVar.Var._IsBack = true;
@@ -1147,11 +1152,27 @@ cmdQua1_Line2,cmdQua2_Line2,cmdQua3_Line2,cmdQua4_Line2,cmdQua5_Line2,cmdPro1_Li
                 ComVar.Var.callForm = "641";
         }
 
+        private void cmdBack_Click(object sender, EventArgs e)
+        {
+            ComVar.Var.callForm = "back";
+        }
+
         private void cmdEMD_Click(object sender, EventArgs e)
         {
             ComVar.Var._IsBack = true;
             ComVar.Var._bValue1 = true;
             ComVar.Var.callForm = "1";
         }
+        
+
+
+
+
+
+
+
+
+
+
     }
 }
