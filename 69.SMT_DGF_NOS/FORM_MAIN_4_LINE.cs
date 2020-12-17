@@ -139,9 +139,9 @@ namespace FORM
                 _arrNumText[3] = 0;
                 cCount = 58;
 
-                cmdEMD.Visible = _FirstFrom && ComVar.Var._strValue1 == "014";
+                cmdEMD.Visible = false; //_FirstFrom && ComVar.Var._strValue1 == "014";
                 cmdMGL.Visible = _FirstFrom && ComVar.Var._Frm_Back == "900";
-                cmdQMS.Visible = _FirstFrom && ComVar.Var._Frm_Back == "900";
+                cmdQMS.Visible = false; //_FirstFrom && ComVar.Var._Frm_Back == "900";
                 cmdTMS.Visible = _FirstFrom; //&& (ComVar.Var._strValue1 == "014" || ComVar.Var._strValue1 == "018")
 
                 tmrText.Start();
@@ -257,7 +257,39 @@ namespace FORM
                 return null;
             }
         }
+        private DataTable SEL_LINE_NM()
+        {
+            COM.OraDB MyOraDB = new COM.OraDB();
+            DataSet ds_ret;
 
+            try
+            {
+                string process_name = "MES.PKG_SMT_PHUOC.SP_SMT_GET_LINE_NM";
+
+                MyOraDB.ReDim_Parameter(2);
+                MyOraDB.Process_Name = process_name;
+
+                MyOraDB.Parameter_Name[0] = "ARG_LINE_CD";
+                MyOraDB.Parameter_Name[1] = "OUT_CURSOR";
+
+                MyOraDB.Parameter_Type[0] = (int)OracleType.VarChar;
+                MyOraDB.Parameter_Type[1] = (int)OracleType.Cursor;
+
+                MyOraDB.Parameter_Values[0] = ComVar.Var._strValue1;
+                MyOraDB.Parameter_Values[1] = "";
+
+                MyOraDB.Add_Select_Parameter(true);
+                ds_ret = MyOraDB.Exe_Select_Procedure();
+
+                if (ds_ret == null) return null;
+                return ds_ret.Tables[process_name];
+            }
+            catch (Exception ex)
+            {
+                ComVar.Var.writeToLog(this.GetType().Name + "-->DB-->SEL_PROD_MDI -->Err: " + ex.ToString());
+                return null;
+            }
+        }
         public DataTable SEL_IMG()
         {
             COM.OraDB MyOraDB = new COM.OraDB();
@@ -1155,6 +1187,40 @@ cmdQua1_Line2,cmdQua2_Line2,cmdQua3_Line2,cmdQua4_Line2,cmdQua5_Line2,cmdPro1_Li
         private void cmdBack_Click(object sender, EventArgs e)
         {
             ComVar.Var.callForm = "back";
+        }
+        
+        private void btnDoc_Click(object sender, EventArgs e)
+        {
+            try
+            {
+            //    DataTable dt = SEL_LINE_NM();
+                //string FOLDER_NAME = dt.Rows[0]["LINE_NM"].ToString();
+
+                OpenFileDialog theDialog = new OpenFileDialog
+                {
+                    Title = "Open All File",
+                    Filter = "All files|*",
+                    //InitialDirectory = "\\211.54.128.14\\VJ_Document\\" + FOLDER_NAME
+                    InitialDirectory = @"X:\"
+                };
+
+                if (theDialog.ShowDialog() == DialogResult.OK)
+                {
+                    if (!theDialog.FileName.ToString().Equals(""))
+                    {
+                        var process = new System.Diagnostics.Process
+                        {
+                            StartInfo = new System.Diagnostics.ProcessStartInfo(theDialog.FileName)
+                        };
+                        process.Start();
+                    }
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
         }
 
         private void cmdEMD_Click(object sender, EventArgs e)

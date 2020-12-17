@@ -129,7 +129,7 @@ namespace FORM
                         //axfpSpread.set_ColWidth(i + 2, 240 / 27 + 0.3);
                         //axfpSpread.set_ColWidth(i + 2, (axfpSpread.Width-axfpSpread.get_ColWidth(1))/dt.Rows.Count);
                     }
-                    axfpSpread.set_ColWidth(1, 18 + 217 - axfpSpread.get_ColWidth(i + 1) * dt.Rows.Count);
+                    axfpSpread.set_ColWidth(1, 18 + 220 - axfpSpread.get_ColWidth(i + 1) * dt.Rows.Count);
                     //axfpSpread.AddCellSpan(dt.Rows.Count + 1, 1, 1, 2);
                     //axfpSpread.AddCellSpan(dt.Rows.Count, 1, 1, 2);
                     //axfpSpread.AddCellSpan(dt.Rows.Count - 1, 1, 1, 2);

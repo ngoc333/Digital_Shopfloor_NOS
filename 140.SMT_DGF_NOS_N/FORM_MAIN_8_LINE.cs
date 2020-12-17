@@ -74,7 +74,7 @@ namespace FORM
                     cmdMGL.Visible = true;
                     cmdBack.Visible = ComVar.Var._Frm_Back=="900";
                     cmdTMS.Visible = !(ComVar.Var._Frm_Back=="900");
-                    cmdQMS.Visible = !(ComVar.Var._Frm_Back=="900");
+                    cmdQMS.Visible = false;// !(ComVar.Var._Frm_Back=="900");
                     cmdMGL.Visible = !(ComVar.Var._Frm_Back=="900");
                 }
                 // add_Event_Click_Menu_Line();
@@ -774,6 +774,39 @@ namespace FORM
         {
             ComVar.Var._IsBack = true;
             ComVar.Var.callForm = "641";
+        }
+
+        private void btnDoc_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //    DataTable dt = SEL_LINE_NM();
+                //string FOLDER_NAME = dt.Rows[0]["LINE_NM"].ToString();
+
+                OpenFileDialog theDialog = new OpenFileDialog
+                {
+                    Title = "Open All File",
+                    Filter = "All files|*",
+                    //InitialDirectory = "\\211.54.128.14\\VJ_Document\\" + FOLDER_NAME
+                    InitialDirectory = @"X:\"
+                };
+
+                if (theDialog.ShowDialog() == DialogResult.OK)
+                {
+                    if (!theDialog.FileName.ToString().Equals(""))
+                    {
+                        var process = new System.Diagnostics.Process
+                        {
+                            StartInfo = new System.Diagnostics.ProcessStartInfo(theDialog.FileName)
+                        };
+                        process.Start();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void cmdMGL_Click(object sender, EventArgs e)

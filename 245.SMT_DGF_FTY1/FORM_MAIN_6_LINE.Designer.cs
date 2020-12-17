@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FORM_MAIN_6_LINE));
             this.pnHeader = new System.Windows.Forms.Panel();
             this.pn_Menu_Header = new System.Windows.Forms.Panel();
@@ -45,10 +46,11 @@
             this.lblDateTime = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
             this.tblMain1 = new System.Windows.Forms.TableLayoutPanel();
-            this.timer1 = new System.Windows.Forms.Timer();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.tblMain2 = new System.Windows.Forms.TableLayoutPanel();
-            this.timer2 = new System.Windows.Forms.Timer();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.pic_under = new System.Windows.Forms.PictureBox();
+            this.btnDoc = new System.Windows.Forms.Button();
             this.pnHeader.SuspendLayout();
             this.pn_Menu_Header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_under)).BeginInit();
@@ -57,6 +59,8 @@
             // pnHeader
             // 
             this.pnHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.pnHeader.Controls.Add(this.cmdQMS);
+            this.pnHeader.Controls.Add(this.cmdMGL);
             this.pnHeader.Controls.Add(this.pn_Menu_Header);
             this.pnHeader.Controls.Add(this.lblDateTime);
             this.pnHeader.Controls.Add(this.lblTitle);
@@ -68,13 +72,12 @@
             // 
             // pn_Menu_Header
             // 
+            this.pn_Menu_Header.Controls.Add(this.btnDoc);
             this.pn_Menu_Header.Controls.Add(this.cmdTMS);
             this.pn_Menu_Header.Controls.Add(this.button1);
             this.pn_Menu_Header.Controls.Add(this.cmdBack);
             this.pn_Menu_Header.Controls.Add(this.cmd_FGWH);
             this.pn_Menu_Header.Controls.Add(this.btnLang);
-            this.pn_Menu_Header.Controls.Add(this.cmdMGL);
-            this.pn_Menu_Header.Controls.Add(this.cmdQMS);
             this.pn_Menu_Header.Controls.Add(this.btn_WS4);
             this.pn_Menu_Header.Controls.Add(this.btn_WS1);
             this.pn_Menu_Header.Controls.Add(this.btn_WS3);
@@ -92,7 +95,7 @@
             this.cmdTMS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmdTMS.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
             this.cmdTMS.ForeColor = System.Drawing.Color.White;
-            this.cmdTMS.Location = new System.Drawing.Point(832, -1);
+            this.cmdTMS.Location = new System.Drawing.Point(514, -3);
             this.cmdTMS.Name = "cmdTMS";
             this.cmdTMS.Size = new System.Drawing.Size(109, 103);
             this.cmdTMS.TabIndex = 74;
@@ -109,7 +112,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(947, -2);
+            this.button1.Location = new System.Drawing.Point(621, -4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(109, 103);
             this.button1.TabIndex = 73;
@@ -126,7 +129,7 @@
             this.cmdBack.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
             this.cmdBack.FlatAppearance.BorderSize = 0;
             this.cmdBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmdBack.Location = new System.Drawing.Point(725, 0);
+            this.cmdBack.Location = new System.Drawing.Point(842, -2);
             this.cmdBack.Name = "cmdBack";
             this.cmdBack.Size = new System.Drawing.Size(108, 101);
             this.cmdBack.TabIndex = 66;
@@ -189,7 +192,7 @@
             this.cmdMGL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmdMGL.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
             this.cmdMGL.ForeColor = System.Drawing.Color.White;
-            this.cmdMGL.Location = new System.Drawing.Point(628, 2);
+            this.cmdMGL.Location = new System.Drawing.Point(449, 2);
             this.cmdMGL.Name = "cmdMGL";
             this.cmdMGL.Size = new System.Drawing.Size(102, 94);
             this.cmdMGL.TabIndex = 1;
@@ -207,12 +210,13 @@
             this.cmdQMS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmdQMS.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
             this.cmdQMS.ForeColor = System.Drawing.Color.White;
-            this.cmdQMS.Location = new System.Drawing.Point(526, 3);
+            this.cmdQMS.Location = new System.Drawing.Point(347, 3);
             this.cmdQMS.Name = "cmdQMS";
             this.cmdQMS.Size = new System.Drawing.Size(102, 94);
             this.cmdQMS.TabIndex = 1;
             this.cmdQMS.Text = "QMS/NPI";
             this.cmdQMS.UseVisualStyleBackColor = false;
+            this.cmdQMS.Visible = false;
             this.cmdQMS.Click += new System.EventHandler(this.cmdQMS_Click);
             // 
             // btn_WS4
@@ -224,7 +228,7 @@
             this.btn_WS4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_WS4.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
             this.btn_WS4.ForeColor = System.Drawing.Color.White;
-            this.btn_WS4.Location = new System.Drawing.Point(424, 3);
+            this.btn_WS4.Location = new System.Drawing.Point(415, 3);
             this.btn_WS4.Name = "btn_WS4";
             this.btn_WS4.Size = new System.Drawing.Size(102, 94);
             this.btn_WS4.TabIndex = 70;
@@ -366,6 +370,23 @@
             this.pic_under.TabStop = false;
             this.pic_under.Visible = false;
             // 
+            // btnDoc
+            // 
+            this.btnDoc.BackgroundImage = global::FORM.Properties.Resources.PanicButton2;
+            this.btnDoc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDoc.FlatAppearance.BorderSize = 0;
+            this.btnDoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDoc.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            this.btnDoc.ForeColor = System.Drawing.Color.White;
+            this.btnDoc.Location = new System.Drawing.Point(727, -4);
+            this.btnDoc.Name = "btnDoc";
+            this.btnDoc.Size = new System.Drawing.Size(109, 103);
+            this.btnDoc.TabIndex = 76;
+            this.btnDoc.Tag = "back";
+            this.btnDoc.Text = "DOCUMENT";
+            this.btnDoc.UseVisualStyleBackColor = true;
+            this.btnDoc.Click += new System.EventHandler(this.btnDoc_Click);
+            // 
             // FORM_MAIN_6_LINE
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -411,5 +432,6 @@
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Button cmdTMS;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnDoc;
     }
 }
