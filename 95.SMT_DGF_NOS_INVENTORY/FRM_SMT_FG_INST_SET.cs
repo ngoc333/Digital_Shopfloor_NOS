@@ -128,7 +128,9 @@ namespace FORM
                 series.CrosshairLabelPattern = "{V:#,#} Prs";
                 //format
                 //lineSeriesView1.MarkerVisibility = DevExpress.Utils.DefaultBoolean.True;
-                lineSeriesView1.LineStyle.Thickness = 2;
+                lineSeriesView1.LineStyle.Thickness = 4;
+                lineSeriesView1.Color = Color.DodgerBlue;
+
                 series.View = lineSeriesView1;
                 Series series2 = new Series("Finish Sole", ViewType.Line);
                 series2.ChangeView(ViewType.Line);
@@ -139,7 +141,7 @@ namespace FORM
                 //format
                 //  lineSeriesView2.MarkerVisibility = DevExpress.Utils.DefaultBoolean.True;
                 lineSeriesView2.Color = Color.Gray;
-                lineSeriesView2.LineStyle.Thickness = 2;
+                lineSeriesView2.LineStyle.Thickness = 4;
                 series2.View = lineSeriesView2;
 
                 Series series3 = new Series("Set Balance", ViewType.Line);
@@ -150,7 +152,8 @@ namespace FORM
                 series3.CrosshairLabelPattern = "{V:#,#} Prs";
                 //format
                 // lineSeriesView3.MarkerVisibility = DevExpress.Utils.DefaultBoolean.True;
-                lineSeriesView3.LineStyle.Thickness = 2;
+                lineSeriesView3.LineStyle.Thickness = 4;
+                lineSeriesView3.Color = Color.LimeGreen;
                 series3.View = lineSeriesView3;
 
                 Series series4 = new Series("Set Ratio", ViewType.Line);
@@ -163,7 +166,7 @@ namespace FORM
                 series4.LabelsVisibility = DefaultBoolean.True;
                 //format
                 lineSeriesView4.MarkerVisibility = DevExpress.Utils.DefaultBoolean.True;
-                lineSeriesView4.LineStyle.Thickness = 4;
+                lineSeriesView4.LineStyle.Thickness = 7;
                 lineSeriesView4.Color = Color.Orange;
                 series4.View = lineSeriesView4;
 

@@ -30,10 +30,14 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRM_SMT_FG_INST_SET));
-            DevExpress.XtraCharts.XYDiagram xyDiagram2 = new DevExpress.XtraCharts.XYDiagram();
-            DevExpress.XtraCharts.Series series2 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.PointSeriesLabel pointSeriesLabel2 = new DevExpress.XtraCharts.PointSeriesLabel();
-            DevExpress.XtraCharts.LineSeriesView lineSeriesView2 = new DevExpress.XtraCharts.LineSeriesView();
+            DevExpress.XtraCharts.XYDiagram xyDiagram1 = new DevExpress.XtraCharts.XYDiagram();
+            DevExpress.XtraCharts.CustomLegendItem customLegendItem1 = new DevExpress.XtraCharts.CustomLegendItem();
+            DevExpress.XtraCharts.CustomLegendItem customLegendItem2 = new DevExpress.XtraCharts.CustomLegendItem();
+            DevExpress.XtraCharts.CustomLegendItem customLegendItem3 = new DevExpress.XtraCharts.CustomLegendItem();
+            DevExpress.XtraCharts.CustomLegendItem customLegendItem4 = new DevExpress.XtraCharts.CustomLegendItem();
+            DevExpress.XtraCharts.Series series1 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.PointSeriesLabel pointSeriesLabel1 = new DevExpress.XtraCharts.PointSeriesLabel();
+            DevExpress.XtraCharts.LineSeriesView lineSeriesView1 = new DevExpress.XtraCharts.LineSeriesView();
             this.tblMain = new System.Windows.Forms.TableLayoutPanel();
             this.pnTitle = new System.Windows.Forms.Panel();
             this.btnPrediction = new System.Windows.Forms.Button();
@@ -52,10 +56,10 @@
             this.pnTitle.SuspendLayout();
             this.pnChart.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pointSeriesLabel2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(lineSeriesView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pointSeriesLabel1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(lineSeriesView1)).BeginInit();
             this.pnGrid.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
@@ -103,7 +107,7 @@
             this.btnPrediction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPrediction.Font = new System.Drawing.Font("Calibri", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrediction.ForeColor = System.Drawing.Color.White;
-            this.btnPrediction.Location = new System.Drawing.Point(1512, 0);
+            this.btnPrediction.Location = new System.Drawing.Point(1453, 0);
             this.btnPrediction.Name = "btnPrediction";
             this.btnPrediction.Size = new System.Drawing.Size(109, 94);
             this.btnPrediction.TabIndex = 53;
@@ -132,7 +136,7 @@
             this.cmdBack.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
             this.cmdBack.FlatAppearance.BorderSize = 0;
             this.cmdBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmdBack.Location = new System.Drawing.Point(1402, 0);
+            this.cmdBack.Location = new System.Drawing.Point(1343, 0);
             this.cmdBack.Name = "cmdBack";
             this.cmdBack.Size = new System.Drawing.Size(108, 101);
             this.cmdBack.TabIndex = 51;
@@ -170,29 +174,46 @@
             // chartControl1
             // 
             this.chartControl1.DataBindings = null;
-            xyDiagram2.AxisX.VisibleInPanesSerializable = "-1";
-            xyDiagram2.AxisY.Interlaced = true;
-            xyDiagram2.AxisY.Label.TextPattern = "{V:#,#}";
-            xyDiagram2.AxisY.VisibleInPanesSerializable = "-1";
-            this.chartControl1.Diagram = xyDiagram2;
+            xyDiagram1.AxisX.VisibleInPanesSerializable = "-1";
+            xyDiagram1.AxisY.Interlaced = true;
+            xyDiagram1.AxisY.Label.TextPattern = "{V:#,#}";
+            xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
+            this.chartControl1.Diagram = xyDiagram1;
             this.chartControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chartControl1.Legend.AlignmentHorizontal = DevExpress.XtraCharts.LegendAlignmentHorizontal.Center;
             this.chartControl1.Legend.AlignmentVertical = DevExpress.XtraCharts.LegendAlignmentVertical.TopOutside;
+            customLegendItem1.MarkerColor = System.Drawing.Color.DodgerBlue;
+            customLegendItem1.Name = "Custom Legend Item 1";
+            customLegendItem1.Text = "Upper";
+            customLegendItem2.MarkerColor = System.Drawing.Color.Gray;
+            customLegendItem2.Name = "Custom Legend Item 2";
+            customLegendItem2.Text = "Finish Sole";
+            customLegendItem3.MarkerColor = System.Drawing.Color.LimeGreen;
+            customLegendItem3.Name = "Custom Legend Item 3";
+            customLegendItem3.Text = "Set Balance";
+            customLegendItem4.MarkerColor = System.Drawing.Color.Orange;
+            customLegendItem4.Name = "Custom Legend Item 4";
+            customLegendItem4.Text = "Set Ratio";
+            this.chartControl1.Legend.CustomItems.AddRange(new DevExpress.XtraCharts.CustomLegendItem[] {
+            customLegendItem1,
+            customLegendItem2,
+            customLegendItem3,
+            customLegendItem4});
             this.chartControl1.Legend.Direction = DevExpress.XtraCharts.LegendDirection.LeftToRight;
             this.chartControl1.Legend.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chartControl1.Legend.Name = "Default Legend";
             this.chartControl1.Location = new System.Drawing.Point(0, 0);
             this.chartControl1.Name = "chartControl1";
-            series2.CrosshairLabelPattern = "{V:#,#}";
-            pointSeriesLabel2.TextPattern = "{V:#.0}";
-            series2.Label = pointSeriesLabel2;
-            series2.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
-            series2.Name = "Series 1";
-            lineSeriesView2.LineStyle.Thickness = 3;
-            lineSeriesView2.MarkerVisibility = DevExpress.Utils.DefaultBoolean.True;
-            series2.View = lineSeriesView2;
+            series1.CrosshairLabelPattern = "{V:#,#}";
+            pointSeriesLabel1.TextPattern = "{V:#.0}";
+            series1.Label = pointSeriesLabel1;
+            series1.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
+            series1.Name = "Series 1";
+            lineSeriesView1.LineStyle.Thickness = 3;
+            lineSeriesView1.MarkerVisibility = DevExpress.Utils.DefaultBoolean.True;
+            series1.View = lineSeriesView1;
             this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series2};
+        series1};
             this.chartControl1.Size = new System.Drawing.Size(1918, 665);
             this.chartControl1.TabIndex = 0;
             // 
@@ -259,10 +280,10 @@
             this.tblMain.ResumeLayout(false);
             this.pnTitle.ResumeLayout(false);
             this.pnChart.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pointSeriesLabel2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(lineSeriesView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pointSeriesLabel1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(lineSeriesView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
             this.pnGrid.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
