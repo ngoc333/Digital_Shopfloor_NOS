@@ -12,6 +12,7 @@
     <AssemblyName>SMT_DGF_NOS_HR</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -24,6 +25,7 @@
     <DocumentationFile>
     </DocumentationFile>
     <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -32,6 +34,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AxInterop.FPSpreadADO, Version=8.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -157,6 +160,12 @@
     <Compile Include="FORM_MOLD_HR_ABSENT.Designer.cs">
       <DependentUpon>FORM_MOLD_HR_ABSENT.cs</DependentUpon>
     </Compile>
+    <Compile Include="FORM_KAIZEN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM_KAIZEN.Designer.cs">
+      <DependentUpon>FORM_KAIZEN.cs</DependentUpon>
+    </Compile>
     <Compile Include="FORM_SMT_MULTI_SKILL_RATIO.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -203,6 +212,9 @@
   <ItemGroup>
     <EmbeddedResource Include="FORM_MOLD_HR_ABSENT.resx">
       <DependentUpon>FORM_MOLD_HR_ABSENT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM_KAIZEN.resx">
+      <DependentUpon>FORM_KAIZEN.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FORM_SMT_MULTI_SKILL_RATIO.resx">
       <DependentUpon>FORM_SMT_MULTI_SKILL_RATIO.cs</DependentUpon>

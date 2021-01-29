@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Base>
 	<MAIN>
-		<grpForm>DSF_NOS_FTY1</grpForm>
+		<grpForm>DSF_NOS_N</grpForm>
 		<FlashScreen>true</FlashScreen>
 		<Auto_Download>false</Auto_Download>
 		<AREA>NOS</AREA>
 		<Type>2</Type>
 		<SCREEN>2</SCREEN>
-		<WH_CD>000</WH_CD>
 	</MAIN>
   
 	<Auto_Download>
-		<grpForm>DSF_NOS_FTY1</grpForm>
+		<grpForm>DSF_NOS_N</grpForm>
 	</Auto_Download>
 	<GMES>
 		<PROCESS_NAME>JBrowser6</PROCESS_NAME>
@@ -24,9 +23,9 @@
 
   
 	<LANG>VN</LANG>
-	<MENU_BUTTON>T/T/T/T/T/F</MENU_BUTTON>
-	<LINE_CD>FTY1</LINE_CD>	
-	<LINE_NAME>Factory 1</LINE_NAME>
+	<MENU_BUTTON>T/T/T/T/T/T</MENU_BUTTON>
+	<LINE_CD>099</LINE_CD>	
+	<LINE_NAME>N</LINE_NAME>
 	<NUMBER_MLINE>4</NUMBER_MLINE>
 	<FRM_MAIN>
 		<frmMain>69</frmMain>
