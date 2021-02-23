@@ -100,9 +100,9 @@ namespace FORM
         {
             try
             {
-                SetData("CHART_COL", DateTime.Now.ToString("yyyy"), line, mline);
-                setDataChart1("CHART_PIE1", DateTime.Now.ToString("yyyy"), line, mline);
-                setDataChart1("CHART_PIE2", DateTime.Now.ToString("yyyy"), line, mline);
+                SetData("CHART_COL", DateTime.Now.ToString("yyyy"), line, "000");
+                setDataChart1("CHART_PIE1", DateTime.Now.ToString("yyyy"), line, "000");
+                setDataChart1("CHART_PIE2", DateTime.Now.ToString("yyyy"), line, "000");
                 //DataTable dt1 = SEL_SMT_KAIZEN("CHART_PIE1", line, mline, "");
                 //if (dt != null && dt.Rows.Count > 0)
                 //{

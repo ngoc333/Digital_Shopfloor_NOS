@@ -35,6 +35,7 @@
             this.pnHeader = new System.Windows.Forms.Panel();
             this.cmdBack = new System.Windows.Forms.Button();
             this.cmdTMS = new System.Windows.Forms.Button();
+            this.btnDoc = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.cmdEMD = new System.Windows.Forms.Button();
             this.cmdMGL = new System.Windows.Forms.Button();
@@ -214,7 +215,18 @@
             this.label9 = new System.Windows.Forms.Label();
             this.tmrText = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnDoc = new System.Windows.Forms.Button();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton7 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton8 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton9 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton10 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton11 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton12 = new DevExpress.XtraEditors.SimpleButton();
             this.digitalGaugeLine4 = new DevExpress.XtraGauges.Win.Gauges.Digital.DigitalGauge();
             this.groupBoxEx3 = new FORM.ClassLib.GroupBoxEx();
             this.label27 = new System.Windows.Forms.Label();
@@ -367,6 +379,23 @@
             this.cmdTMS.UseVisualStyleBackColor = true;
             this.cmdTMS.Visible = false;
             this.cmdTMS.Click += new System.EventHandler(this.cmdTMS_Click);
+            // 
+            // btnDoc
+            // 
+            this.btnDoc.BackgroundImage = global::FORM.Properties.Resources.PanicButton2;
+            this.btnDoc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDoc.FlatAppearance.BorderSize = 0;
+            this.btnDoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDoc.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            this.btnDoc.ForeColor = System.Drawing.Color.White;
+            this.btnDoc.Location = new System.Drawing.Point(1462, 4);
+            this.btnDoc.Name = "btnDoc";
+            this.btnDoc.Size = new System.Drawing.Size(109, 103);
+            this.btnDoc.TabIndex = 61;
+            this.btnDoc.Tag = "back";
+            this.btnDoc.Text = "DOCUMENT";
+            this.btnDoc.UseVisualStyleBackColor = true;
+            this.btnDoc.Click += new System.EventHandler(this.btnDoc_Click);
             // 
             // button1
             // 
@@ -666,8 +695,8 @@
             this.backstageViewControl1.Location = new System.Drawing.Point(16, 68);
             this.backstageViewControl1.Name = "backstageViewControl1";
             this.backstageViewControl1.Office2013StyleOptions.AllowShowHideAnimation = false;
-            this.backstageViewControl1.SelectedTab = this.bstLine1_Qual;
-            this.backstageViewControl1.SelectedTabIndex = 0;
+            this.backstageViewControl1.SelectedTab = this.bstLine1_Prod;
+            this.backstageViewControl1.SelectedTabIndex = 1;
             this.backstageViewControl1.Size = new System.Drawing.Size(639, 396);
             this.backstageViewControl1.TabIndex = 10;
             this.backstageViewControl1.Text = "backstageViewControl1";
@@ -811,6 +840,8 @@
             // 
             // backstageViewClientControl2
             // 
+            this.backstageViewClientControl2.Controls.Add(this.simpleButton2);
+            this.backstageViewClientControl2.Controls.Add(this.simpleButton1);
             this.backstageViewClientControl2.Controls.Add(this.cmdPro3_Line1);
             this.backstageViewClientControl2.Controls.Add(this.cmdPro2_Line1);
             this.backstageViewClientControl2.Controls.Add(this.cmdPro1_Line1);
@@ -838,9 +869,9 @@
             this.cmdPro3_Line1.AppearanceHovered.Options.UseBackColor = true;
             this.cmdPro3_Line1.AppearanceHovered.Options.UseForeColor = true;
             this.cmdPro3_Line1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdPro3_Line1.Location = new System.Drawing.Point(31, 286);
+            this.cmdPro3_Line1.Location = new System.Drawing.Point(31, 146);
             this.cmdPro3_Line1.Name = "cmdPro3_Line1";
-            this.cmdPro3_Line1.Size = new System.Drawing.Size(245, 89);
+            this.cmdPro3_Line1.Size = new System.Drawing.Size(245, 68);
             this.cmdPro3_Line1.TabIndex = 6;
             this.cmdPro3_Line1.Tag = "3";
             this.cmdPro3_Line1.Text = "BTS";
@@ -861,9 +892,9 @@
             this.cmdPro2_Line1.AppearanceHovered.Options.UseBackColor = true;
             this.cmdPro2_Line1.AppearanceHovered.Options.UseForeColor = true;
             this.cmdPro2_Line1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdPro2_Line1.Location = new System.Drawing.Point(31, 157);
+            this.cmdPro2_Line1.Location = new System.Drawing.Point(31, 72);
             this.cmdPro2_Line1.Name = "cmdPro2_Line1";
-            this.cmdPro2_Line1.Size = new System.Drawing.Size(245, 94);
+            this.cmdPro2_Line1.Size = new System.Drawing.Size(245, 68);
             this.cmdPro2_Line1.TabIndex = 5;
             this.cmdPro2_Line1.Tag = "2";
             this.cmdPro2_Line1.Text = "Productivity";
@@ -886,9 +917,9 @@
             this.cmdPro1_Line1.AppearanceHovered.Options.UseFont = true;
             this.cmdPro1_Line1.AppearanceHovered.Options.UseForeColor = true;
             this.cmdPro1_Line1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdPro1_Line1.Location = new System.Drawing.Point(31, 25);
+            this.cmdPro1_Line1.Location = new System.Drawing.Point(31, 0);
             this.cmdPro1_Line1.Name = "cmdPro1_Line1";
-            this.cmdPro1_Line1.Size = new System.Drawing.Size(245, 94);
+            this.cmdPro1_Line1.Size = new System.Drawing.Size(245, 68);
             this.cmdPro1_Line1.TabIndex = 4;
             this.cmdPro1_Line1.Tag = "1";
             this.cmdPro1_Line1.Text = "Prod. Result\r\n";
@@ -1096,6 +1127,7 @@
             // backstageViewClientControl21
             // 
             this.backstageViewClientControl21.Controls.Add(this.cmdHrm4_Line1);
+            this.backstageViewClientControl21.Controls.Add(this.simpleButton9);
             this.backstageViewClientControl21.Controls.Add(this.cmdHrm3_Line1);
             this.backstageViewClientControl21.Controls.Add(this.cmdHrm2_Line1);
             this.backstageViewClientControl21.Controls.Add(this.cmdHrm1_Line1);
@@ -1121,9 +1153,9 @@
             this.cmdHrm4_Line1.AppearanceHovered.Options.UseFont = true;
             this.cmdHrm4_Line1.AppearanceHovered.Options.UseForeColor = true;
             this.cmdHrm4_Line1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdHrm4_Line1.Location = new System.Drawing.Point(29, 6);
+            this.cmdHrm4_Line1.Location = new System.Drawing.Point(29, 0);
             this.cmdHrm4_Line1.Name = "cmdHrm4_Line1";
-            this.cmdHrm4_Line1.Size = new System.Drawing.Size(245, 94);
+            this.cmdHrm4_Line1.Size = new System.Drawing.Size(245, 68);
             this.cmdHrm4_Line1.TabIndex = 12;
             this.cmdHrm4_Line1.Tag = "1";
             this.cmdHrm4_Line1.Text = "TO/PO";
@@ -1146,9 +1178,9 @@
             this.cmdHrm3_Line1.AppearanceHovered.Options.UseFont = true;
             this.cmdHrm3_Line1.AppearanceHovered.Options.UseForeColor = true;
             this.cmdHrm3_Line1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdHrm3_Line1.Location = new System.Drawing.Point(29, 298);
+            this.cmdHrm3_Line1.Location = new System.Drawing.Point(29, 221);
             this.cmdHrm3_Line1.Name = "cmdHrm3_Line1";
-            this.cmdHrm3_Line1.Size = new System.Drawing.Size(245, 94);
+            this.cmdHrm3_Line1.Size = new System.Drawing.Size(245, 68);
             this.cmdHrm3_Line1.TabIndex = 10;
             this.cmdHrm3_Line1.Tag = "1";
             this.cmdHrm3_Line1.Text = "Multi Skill Ratio";
@@ -1169,9 +1201,9 @@
             this.cmdHrm2_Line1.AppearanceHovered.Options.UseBackColor = true;
             this.cmdHrm2_Line1.AppearanceHovered.Options.UseForeColor = true;
             this.cmdHrm2_Line1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdHrm2_Line1.Location = new System.Drawing.Point(29, 204);
+            this.cmdHrm2_Line1.Location = new System.Drawing.Point(29, 146);
             this.cmdHrm2_Line1.Name = "cmdHrm2_Line1";
-            this.cmdHrm2_Line1.Size = new System.Drawing.Size(245, 89);
+            this.cmdHrm2_Line1.Size = new System.Drawing.Size(245, 68);
             this.cmdHrm2_Line1.TabIndex = 9;
             this.cmdHrm2_Line1.Tag = "3";
             this.cmdHrm2_Line1.Text = "Multi skill\r\n";
@@ -1192,9 +1224,9 @@
             this.cmdHrm1_Line1.AppearanceHovered.Options.UseBackColor = true;
             this.cmdHrm1_Line1.AppearanceHovered.Options.UseForeColor = true;
             this.cmdHrm1_Line1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdHrm1_Line1.Location = new System.Drawing.Point(29, 105);
+            this.cmdHrm1_Line1.Location = new System.Drawing.Point(29, 74);
             this.cmdHrm1_Line1.Name = "cmdHrm1_Line1";
-            this.cmdHrm1_Line1.Size = new System.Drawing.Size(245, 94);
+            this.cmdHrm1_Line1.Size = new System.Drawing.Size(245, 68);
             this.cmdHrm1_Line1.TabIndex = 8;
             this.cmdHrm1_Line1.Tag = "2";
             this.cmdHrm1_Line1.Text = "Absenteeism";
@@ -1218,7 +1250,6 @@
             this.bstLine1_Qual.ContentControl = this.backstageViewClientControl3;
             this.bstLine1_Qual.Glyph = ((System.Drawing.Image)(resources.GetObject("bstLine1_Qual.Glyph")));
             this.bstLine1_Qual.Name = "bstLine1_Qual";
-            this.bstLine1_Qual.Selected = true;
             // 
             // bstLine1_Prod
             // 
@@ -1240,6 +1271,7 @@
             this.bstLine1_Prod.ContentControl = this.backstageViewClientControl2;
             this.bstLine1_Prod.Glyph = ((System.Drawing.Image)(resources.GetObject("bstLine1_Prod.Glyph")));
             this.bstLine1_Prod.Name = "bstLine1_Prod";
+            this.bstLine1_Prod.Selected = true;
             superToolTip1.AllowHtmlText = DevExpress.Utils.DefaultBoolean.True;
             superToolTip1.DistanceBetweenItems = 1;
             toolTipTitleItem1.Text = "Sản Xuất";
@@ -1390,8 +1422,8 @@
             this.backstageViewControl2.Name = "backstageViewControl2";
             this.backstageViewControl2.Office2013StyleOptions.AllowShowHideAnimation = false;
             this.backstageViewControl2.Office2013StyleOptions.LeftPaneContentVerticalOffset = 60;
-            this.backstageViewControl2.SelectedTab = this.bstLine2_Inventory;
-            this.backstageViewControl2.SelectedTabIndex = 3;
+            this.backstageViewControl2.SelectedTab = this.bstLine2_Prod;
+            this.backstageViewControl2.SelectedTabIndex = 1;
             this.backstageViewControl2.Size = new System.Drawing.Size(639, 396);
             this.backstageViewControl2.TabIndex = 10;
             this.backstageViewControl2.Text = "backstageViewControl2";
@@ -1531,6 +1563,8 @@
             // 
             // backstageViewClientControl6
             // 
+            this.backstageViewClientControl6.Controls.Add(this.simpleButton4);
+            this.backstageViewClientControl6.Controls.Add(this.simpleButton3);
             this.backstageViewClientControl6.Controls.Add(this.cmdPro3_Line2);
             this.backstageViewClientControl6.Controls.Add(this.cmdPro2_Line2);
             this.backstageViewClientControl6.Controls.Add(this.cmdPro1_Line2);
@@ -1555,9 +1589,9 @@
             this.cmdPro3_Line2.AppearanceHovered.Options.UseBackColor = true;
             this.cmdPro3_Line2.AppearanceHovered.Options.UseForeColor = true;
             this.cmdPro3_Line2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdPro3_Line2.Location = new System.Drawing.Point(29, 284);
+            this.cmdPro3_Line2.Location = new System.Drawing.Point(29, 146);
             this.cmdPro3_Line2.Name = "cmdPro3_Line2";
-            this.cmdPro3_Line2.Size = new System.Drawing.Size(245, 89);
+            this.cmdPro3_Line2.Size = new System.Drawing.Size(245, 68);
             this.cmdPro3_Line2.TabIndex = 12;
             this.cmdPro3_Line2.Tag = "3";
             this.cmdPro3_Line2.Text = "BTS";
@@ -1578,9 +1612,9 @@
             this.cmdPro2_Line2.AppearanceHovered.Options.UseBackColor = true;
             this.cmdPro2_Line2.AppearanceHovered.Options.UseForeColor = true;
             this.cmdPro2_Line2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdPro2_Line2.Location = new System.Drawing.Point(29, 155);
+            this.cmdPro2_Line2.Location = new System.Drawing.Point(29, 72);
             this.cmdPro2_Line2.Name = "cmdPro2_Line2";
-            this.cmdPro2_Line2.Size = new System.Drawing.Size(245, 94);
+            this.cmdPro2_Line2.Size = new System.Drawing.Size(245, 68);
             this.cmdPro2_Line2.TabIndex = 11;
             this.cmdPro2_Line2.Tag = "2";
             this.cmdPro2_Line2.Text = "Productivity";
@@ -1603,9 +1637,9 @@
             this.cmdPro1_Line2.AppearanceHovered.Options.UseFont = true;
             this.cmdPro1_Line2.AppearanceHovered.Options.UseForeColor = true;
             this.cmdPro1_Line2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdPro1_Line2.Location = new System.Drawing.Point(29, 23);
+            this.cmdPro1_Line2.Location = new System.Drawing.Point(29, 0);
             this.cmdPro1_Line2.Name = "cmdPro1_Line2";
-            this.cmdPro1_Line2.Size = new System.Drawing.Size(245, 94);
+            this.cmdPro1_Line2.Size = new System.Drawing.Size(245, 68);
             this.cmdPro1_Line2.TabIndex = 10;
             this.cmdPro1_Line2.Tag = "1";
             this.cmdPro1_Line2.Text = "Prod. Result\r\n";
@@ -1805,6 +1839,7 @@
             // backstageViewClientControl22
             // 
             this.backstageViewClientControl22.Controls.Add(this.cmdHrm4_Line2);
+            this.backstageViewClientControl22.Controls.Add(this.simpleButton10);
             this.backstageViewClientControl22.Controls.Add(this.cmdHrm3_Line2);
             this.backstageViewClientControl22.Controls.Add(this.cmdHrm2_Line2);
             this.backstageViewClientControl22.Controls.Add(this.cmdHrm1_Line2);
@@ -1830,9 +1865,9 @@
             this.cmdHrm4_Line2.AppearanceHovered.Options.UseFont = true;
             this.cmdHrm4_Line2.AppearanceHovered.Options.UseForeColor = true;
             this.cmdHrm4_Line2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdHrm4_Line2.Location = new System.Drawing.Point(28, 6);
+            this.cmdHrm4_Line2.Location = new System.Drawing.Point(28, 0);
             this.cmdHrm4_Line2.Name = "cmdHrm4_Line2";
-            this.cmdHrm4_Line2.Size = new System.Drawing.Size(245, 94);
+            this.cmdHrm4_Line2.Size = new System.Drawing.Size(245, 68);
             this.cmdHrm4_Line2.TabIndex = 13;
             this.cmdHrm4_Line2.Tag = "1";
             this.cmdHrm4_Line2.Text = "TO/PO";
@@ -1855,9 +1890,9 @@
             this.cmdHrm3_Line2.AppearanceHovered.Options.UseFont = true;
             this.cmdHrm3_Line2.AppearanceHovered.Options.UseForeColor = true;
             this.cmdHrm3_Line2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdHrm3_Line2.Location = new System.Drawing.Point(28, 299);
+            this.cmdHrm3_Line2.Location = new System.Drawing.Point(30, 221);
             this.cmdHrm3_Line2.Name = "cmdHrm3_Line2";
-            this.cmdHrm3_Line2.Size = new System.Drawing.Size(245, 94);
+            this.cmdHrm3_Line2.Size = new System.Drawing.Size(245, 68);
             this.cmdHrm3_Line2.TabIndex = 10;
             this.cmdHrm3_Line2.Tag = "1";
             this.cmdHrm3_Line2.Text = "Multi Skill Ratio";
@@ -1878,9 +1913,9 @@
             this.cmdHrm2_Line2.AppearanceHovered.Options.UseBackColor = true;
             this.cmdHrm2_Line2.AppearanceHovered.Options.UseForeColor = true;
             this.cmdHrm2_Line2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdHrm2_Line2.Location = new System.Drawing.Point(28, 205);
+            this.cmdHrm2_Line2.Location = new System.Drawing.Point(30, 148);
             this.cmdHrm2_Line2.Name = "cmdHrm2_Line2";
-            this.cmdHrm2_Line2.Size = new System.Drawing.Size(245, 89);
+            this.cmdHrm2_Line2.Size = new System.Drawing.Size(245, 68);
             this.cmdHrm2_Line2.TabIndex = 12;
             this.cmdHrm2_Line2.Tag = "3";
             this.cmdHrm2_Line2.Text = "Multi skill\r\n";
@@ -1901,9 +1936,9 @@
             this.cmdHrm1_Line2.AppearanceHovered.Options.UseBackColor = true;
             this.cmdHrm1_Line2.AppearanceHovered.Options.UseForeColor = true;
             this.cmdHrm1_Line2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdHrm1_Line2.Location = new System.Drawing.Point(28, 106);
+            this.cmdHrm1_Line2.Location = new System.Drawing.Point(28, 74);
             this.cmdHrm1_Line2.Name = "cmdHrm1_Line2";
-            this.cmdHrm1_Line2.Size = new System.Drawing.Size(245, 94);
+            this.cmdHrm1_Line2.Size = new System.Drawing.Size(245, 68);
             this.cmdHrm1_Line2.TabIndex = 11;
             this.cmdHrm1_Line2.Tag = "2";
             this.cmdHrm1_Line2.Text = "Absenteeism\r\n";
@@ -1942,6 +1977,7 @@
             this.bstLine2_Prod.ContentControl = this.backstageViewClientControl6;
             this.bstLine2_Prod.Glyph = global::FORM.Properties.Resources.shoeProd;
             this.bstLine2_Prod.Name = "bstLine2_Prod";
+            this.bstLine2_Prod.Selected = true;
             // 
             // bstLine2_Equip
             // 
@@ -1976,7 +2012,6 @@
             this.bstLine2_Inventory.ContentControl = this.backstageViewClientControl12;
             this.bstLine2_Inventory.Glyph = ((System.Drawing.Image)(resources.GetObject("bstLine2_Inventory.Glyph")));
             this.bstLine2_Inventory.Name = "bstLine2_Inventory";
-            this.bstLine2_Inventory.Selected = true;
             // 
             // bstLine2_HR
             // 
@@ -2010,8 +2045,8 @@
             this.backstageViewControl4.ItemsContentPadding = new System.Windows.Forms.Padding(0, 4, 0, 4);
             this.backstageViewControl4.Location = new System.Drawing.Point(16, 68);
             this.backstageViewControl4.Name = "backstageViewControl4";
-            this.backstageViewControl4.SelectedTab = this.bstLine3_Inventory;
-            this.backstageViewControl4.SelectedTabIndex = 3;
+            this.backstageViewControl4.SelectedTab = this.bstLine3_Prod;
+            this.backstageViewControl4.SelectedTabIndex = 1;
             this.backstageViewControl4.Size = new System.Drawing.Size(639, 414);
             this.backstageViewControl4.TabIndex = 10;
             this.backstageViewControl4.Text = "backstageViewControl4";
@@ -2151,6 +2186,8 @@
             // 
             // backstageViewClientControl13
             // 
+            this.backstageViewClientControl13.Controls.Add(this.simpleButton6);
+            this.backstageViewClientControl13.Controls.Add(this.simpleButton5);
             this.backstageViewClientControl13.Controls.Add(this.cmdPro3_Line3);
             this.backstageViewClientControl13.Controls.Add(this.cmdPro2_Line3);
             this.backstageViewClientControl13.Controls.Add(this.cmdPro1_Line3);
@@ -2174,9 +2211,9 @@
             this.cmdPro3_Line3.AppearanceHovered.Options.UseBackColor = true;
             this.cmdPro3_Line3.AppearanceHovered.Options.UseForeColor = true;
             this.cmdPro3_Line3.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdPro3_Line3.Location = new System.Drawing.Point(29, 285);
+            this.cmdPro3_Line3.Location = new System.Drawing.Point(31, 148);
             this.cmdPro3_Line3.Name = "cmdPro3_Line3";
-            this.cmdPro3_Line3.Size = new System.Drawing.Size(245, 89);
+            this.cmdPro3_Line3.Size = new System.Drawing.Size(245, 68);
             this.cmdPro3_Line3.TabIndex = 9;
             this.cmdPro3_Line3.Tag = "3";
             this.cmdPro3_Line3.Text = "BTS";
@@ -2197,9 +2234,9 @@
             this.cmdPro2_Line3.AppearanceHovered.Options.UseBackColor = true;
             this.cmdPro2_Line3.AppearanceHovered.Options.UseForeColor = true;
             this.cmdPro2_Line3.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdPro2_Line3.Location = new System.Drawing.Point(29, 156);
+            this.cmdPro2_Line3.Location = new System.Drawing.Point(31, 74);
             this.cmdPro2_Line3.Name = "cmdPro2_Line3";
-            this.cmdPro2_Line3.Size = new System.Drawing.Size(245, 94);
+            this.cmdPro2_Line3.Size = new System.Drawing.Size(245, 68);
             this.cmdPro2_Line3.TabIndex = 8;
             this.cmdPro2_Line3.Tag = "2";
             this.cmdPro2_Line3.Text = "Productivity\r\n";
@@ -2222,9 +2259,9 @@
             this.cmdPro1_Line3.AppearanceHovered.Options.UseFont = true;
             this.cmdPro1_Line3.AppearanceHovered.Options.UseForeColor = true;
             this.cmdPro1_Line3.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdPro1_Line3.Location = new System.Drawing.Point(29, 24);
+            this.cmdPro1_Line3.Location = new System.Drawing.Point(31, 0);
             this.cmdPro1_Line3.Name = "cmdPro1_Line3";
-            this.cmdPro1_Line3.Size = new System.Drawing.Size(245, 94);
+            this.cmdPro1_Line3.Size = new System.Drawing.Size(245, 68);
             this.cmdPro1_Line3.TabIndex = 7;
             this.cmdPro1_Line3.Tag = "1";
             this.cmdPro1_Line3.Text = "Prod. Result\r\n";
@@ -2435,6 +2472,7 @@
             // backstageViewClientControl23
             // 
             this.backstageViewClientControl23.Controls.Add(this.cmdHrm4_Line3);
+            this.backstageViewClientControl23.Controls.Add(this.simpleButton11);
             this.backstageViewClientControl23.Controls.Add(this.cmdHrm3_Line3);
             this.backstageViewClientControl23.Controls.Add(this.cmdHrm2_Line3);
             this.backstageViewClientControl23.Controls.Add(this.cmdHrm1_Line3);
@@ -2460,9 +2498,9 @@
             this.cmdHrm4_Line3.AppearanceHovered.Options.UseFont = true;
             this.cmdHrm4_Line3.AppearanceHovered.Options.UseForeColor = true;
             this.cmdHrm4_Line3.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdHrm4_Line3.Location = new System.Drawing.Point(29, 6);
+            this.cmdHrm4_Line3.Location = new System.Drawing.Point(29, 0);
             this.cmdHrm4_Line3.Name = "cmdHrm4_Line3";
-            this.cmdHrm4_Line3.Size = new System.Drawing.Size(245, 94);
+            this.cmdHrm4_Line3.Size = new System.Drawing.Size(245, 68);
             this.cmdHrm4_Line3.TabIndex = 15;
             this.cmdHrm4_Line3.Tag = "1";
             this.cmdHrm4_Line3.Text = "TO/PO";
@@ -2485,9 +2523,9 @@
             this.cmdHrm3_Line3.AppearanceHovered.Options.UseFont = true;
             this.cmdHrm3_Line3.AppearanceHovered.Options.UseForeColor = true;
             this.cmdHrm3_Line3.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdHrm3_Line3.Location = new System.Drawing.Point(29, 305);
+            this.cmdHrm3_Line3.Location = new System.Drawing.Point(29, 222);
             this.cmdHrm3_Line3.Name = "cmdHrm3_Line3";
-            this.cmdHrm3_Line3.Size = new System.Drawing.Size(245, 94);
+            this.cmdHrm3_Line3.Size = new System.Drawing.Size(245, 68);
             this.cmdHrm3_Line3.TabIndex = 14;
             this.cmdHrm3_Line3.Tag = "1";
             this.cmdHrm3_Line3.Text = "Multi Skill Ratio";
@@ -2508,9 +2546,9 @@
             this.cmdHrm2_Line3.AppearanceHovered.Options.UseBackColor = true;
             this.cmdHrm2_Line3.AppearanceHovered.Options.UseForeColor = true;
             this.cmdHrm2_Line3.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdHrm2_Line3.Location = new System.Drawing.Point(29, 208);
+            this.cmdHrm2_Line3.Location = new System.Drawing.Point(29, 148);
             this.cmdHrm2_Line3.Name = "cmdHrm2_Line3";
-            this.cmdHrm2_Line3.Size = new System.Drawing.Size(245, 89);
+            this.cmdHrm2_Line3.Size = new System.Drawing.Size(245, 68);
             this.cmdHrm2_Line3.TabIndex = 9;
             this.cmdHrm2_Line3.Tag = "3";
             this.cmdHrm2_Line3.Text = "Multi skill";
@@ -2531,9 +2569,9 @@
             this.cmdHrm1_Line3.AppearanceHovered.Options.UseBackColor = true;
             this.cmdHrm1_Line3.AppearanceHovered.Options.UseForeColor = true;
             this.cmdHrm1_Line3.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdHrm1_Line3.Location = new System.Drawing.Point(29, 106);
+            this.cmdHrm1_Line3.Location = new System.Drawing.Point(29, 74);
             this.cmdHrm1_Line3.Name = "cmdHrm1_Line3";
-            this.cmdHrm1_Line3.Size = new System.Drawing.Size(245, 94);
+            this.cmdHrm1_Line3.Size = new System.Drawing.Size(245, 68);
             this.cmdHrm1_Line3.TabIndex = 8;
             this.cmdHrm1_Line3.Tag = "2";
             this.cmdHrm1_Line3.Text = "Absenteeism";
@@ -2572,6 +2610,7 @@
             this.bstLine3_Prod.ContentControl = this.backstageViewClientControl13;
             this.bstLine3_Prod.Glyph = global::FORM.Properties.Resources.shoeProd;
             this.bstLine3_Prod.Name = "bstLine3_Prod";
+            this.bstLine3_Prod.Selected = true;
             // 
             // bstLine3_Equip
             // 
@@ -2606,7 +2645,6 @@
             this.bstLine3_Inventory.ContentControl = this.backstageViewClientControl16;
             this.bstLine3_Inventory.Glyph = ((System.Drawing.Image)(resources.GetObject("bstLine3_Inventory.Glyph")));
             this.bstLine3_Inventory.Name = "bstLine3_Inventory";
-            this.bstLine3_Inventory.Selected = true;
             // 
             // bstLine3_HR
             // 
@@ -2712,8 +2750,8 @@
             this.backstageViewControl3.ItemsContentPadding = new System.Windows.Forms.Padding(0, 4, 0, 4);
             this.backstageViewControl3.Location = new System.Drawing.Point(15, 68);
             this.backstageViewControl3.Name = "backstageViewControl3";
-            this.backstageViewControl3.SelectedTab = this.bstLine4_Inventory;
-            this.backstageViewControl3.SelectedTabIndex = 3;
+            this.backstageViewControl3.SelectedTab = this.bstLine4_Prod;
+            this.backstageViewControl3.SelectedTabIndex = 1;
             this.backstageViewControl3.Size = new System.Drawing.Size(639, 414);
             this.backstageViewControl3.TabIndex = 10;
             this.backstageViewControl3.Text = "backstageViewControl3";
@@ -2853,6 +2891,8 @@
             // 
             // backstageViewClientControl17
             // 
+            this.backstageViewClientControl17.Controls.Add(this.simpleButton8);
+            this.backstageViewClientControl17.Controls.Add(this.simpleButton7);
             this.backstageViewClientControl17.Controls.Add(this.cmdPro3_Line4);
             this.backstageViewClientControl17.Controls.Add(this.cmdPro2_Line4);
             this.backstageViewClientControl17.Controls.Add(this.cmdPro1_Line4);
@@ -2876,9 +2916,9 @@
             this.cmdPro3_Line4.AppearanceHovered.Options.UseBackColor = true;
             this.cmdPro3_Line4.AppearanceHovered.Options.UseForeColor = true;
             this.cmdPro3_Line4.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdPro3_Line4.Location = new System.Drawing.Point(29, 287);
+            this.cmdPro3_Line4.Location = new System.Drawing.Point(30, 148);
             this.cmdPro3_Line4.Name = "cmdPro3_Line4";
-            this.cmdPro3_Line4.Size = new System.Drawing.Size(245, 89);
+            this.cmdPro3_Line4.Size = new System.Drawing.Size(245, 68);
             this.cmdPro3_Line4.TabIndex = 15;
             this.cmdPro3_Line4.Tag = "3";
             this.cmdPro3_Line4.Text = "BTS";
@@ -2899,9 +2939,9 @@
             this.cmdPro2_Line4.AppearanceHovered.Options.UseBackColor = true;
             this.cmdPro2_Line4.AppearanceHovered.Options.UseForeColor = true;
             this.cmdPro2_Line4.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdPro2_Line4.Location = new System.Drawing.Point(29, 158);
+            this.cmdPro2_Line4.Location = new System.Drawing.Point(30, 74);
             this.cmdPro2_Line4.Name = "cmdPro2_Line4";
-            this.cmdPro2_Line4.Size = new System.Drawing.Size(245, 94);
+            this.cmdPro2_Line4.Size = new System.Drawing.Size(245, 68);
             this.cmdPro2_Line4.TabIndex = 14;
             this.cmdPro2_Line4.Tag = "2";
             this.cmdPro2_Line4.Text = "Productivity";
@@ -2924,9 +2964,9 @@
             this.cmdPro1_Line4.AppearanceHovered.Options.UseFont = true;
             this.cmdPro1_Line4.AppearanceHovered.Options.UseForeColor = true;
             this.cmdPro1_Line4.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdPro1_Line4.Location = new System.Drawing.Point(29, 26);
+            this.cmdPro1_Line4.Location = new System.Drawing.Point(30, 0);
             this.cmdPro1_Line4.Name = "cmdPro1_Line4";
-            this.cmdPro1_Line4.Size = new System.Drawing.Size(245, 94);
+            this.cmdPro1_Line4.Size = new System.Drawing.Size(245, 68);
             this.cmdPro1_Line4.TabIndex = 13;
             this.cmdPro1_Line4.Tag = "1";
             this.cmdPro1_Line4.Text = "Prod. Result";
@@ -3126,6 +3166,7 @@
             // backstageViewClientControl24
             // 
             this.backstageViewClientControl24.Controls.Add(this.cmdHrm4_Line4);
+            this.backstageViewClientControl24.Controls.Add(this.simpleButton12);
             this.backstageViewClientControl24.Controls.Add(this.cmdHrm3_Line4);
             this.backstageViewClientControl24.Controls.Add(this.cmdHrm2_Line4);
             this.backstageViewClientControl24.Controls.Add(this.cmdHrm1_Line4);
@@ -3151,9 +3192,9 @@
             this.cmdHrm4_Line4.AppearanceHovered.Options.UseFont = true;
             this.cmdHrm4_Line4.AppearanceHovered.Options.UseForeColor = true;
             this.cmdHrm4_Line4.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdHrm4_Line4.Location = new System.Drawing.Point(28, 7);
+            this.cmdHrm4_Line4.Location = new System.Drawing.Point(28, 0);
             this.cmdHrm4_Line4.Name = "cmdHrm4_Line4";
-            this.cmdHrm4_Line4.Size = new System.Drawing.Size(245, 94);
+            this.cmdHrm4_Line4.Size = new System.Drawing.Size(245, 68);
             this.cmdHrm4_Line4.TabIndex = 14;
             this.cmdHrm4_Line4.Tag = "1";
             this.cmdHrm4_Line4.Text = "TO/PO";
@@ -3176,9 +3217,9 @@
             this.cmdHrm3_Line4.AppearanceHovered.Options.UseFont = true;
             this.cmdHrm3_Line4.AppearanceHovered.Options.UseForeColor = true;
             this.cmdHrm3_Line4.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdHrm3_Line4.Location = new System.Drawing.Point(28, 308);
+            this.cmdHrm3_Line4.Location = new System.Drawing.Point(28, 222);
             this.cmdHrm3_Line4.Name = "cmdHrm3_Line4";
-            this.cmdHrm3_Line4.Size = new System.Drawing.Size(245, 94);
+            this.cmdHrm3_Line4.Size = new System.Drawing.Size(245, 68);
             this.cmdHrm3_Line4.TabIndex = 13;
             this.cmdHrm3_Line4.Tag = "1";
             this.cmdHrm3_Line4.Text = "Multi Skill Ratio";
@@ -3199,9 +3240,9 @@
             this.cmdHrm2_Line4.AppearanceHovered.Options.UseBackColor = true;
             this.cmdHrm2_Line4.AppearanceHovered.Options.UseForeColor = true;
             this.cmdHrm2_Line4.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdHrm2_Line4.Location = new System.Drawing.Point(28, 213);
+            this.cmdHrm2_Line4.Location = new System.Drawing.Point(28, 148);
             this.cmdHrm2_Line4.Name = "cmdHrm2_Line4";
-            this.cmdHrm2_Line4.Size = new System.Drawing.Size(245, 89);
+            this.cmdHrm2_Line4.Size = new System.Drawing.Size(245, 68);
             this.cmdHrm2_Line4.TabIndex = 12;
             this.cmdHrm2_Line4.Tag = "3";
             this.cmdHrm2_Line4.Text = "Multi skill\r\n";
@@ -3222,9 +3263,9 @@
             this.cmdHrm1_Line4.AppearanceHovered.Options.UseBackColor = true;
             this.cmdHrm1_Line4.AppearanceHovered.Options.UseForeColor = true;
             this.cmdHrm1_Line4.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdHrm1_Line4.Location = new System.Drawing.Point(28, 113);
+            this.cmdHrm1_Line4.Location = new System.Drawing.Point(28, 74);
             this.cmdHrm1_Line4.Name = "cmdHrm1_Line4";
-            this.cmdHrm1_Line4.Size = new System.Drawing.Size(245, 94);
+            this.cmdHrm1_Line4.Size = new System.Drawing.Size(245, 68);
             this.cmdHrm1_Line4.TabIndex = 11;
             this.cmdHrm1_Line4.Tag = "2";
             this.cmdHrm1_Line4.Text = "Absenteeism";
@@ -3263,6 +3304,7 @@
             this.bstLine4_Prod.ContentControl = this.backstageViewClientControl17;
             this.bstLine4_Prod.Glyph = global::FORM.Properties.Resources.shoeProd;
             this.bstLine4_Prod.Name = "bstLine4_Prod";
+            this.bstLine4_Prod.Selected = true;
             // 
             // bstLine4_Equip
             // 
@@ -3297,7 +3339,6 @@
             this.bstLine4_Inventory.ContentControl = this.backstageViewClientControl20;
             this.bstLine4_Inventory.Glyph = ((System.Drawing.Image)(resources.GetObject("bstLine4_Inventory.Glyph")));
             this.bstLine4_Inventory.Name = "bstLine4_Inventory";
-            this.bstLine4_Inventory.Selected = true;
             // 
             // bstLine4_HR
             // 
@@ -3603,22 +3644,289 @@
             this.panel1.Size = new System.Drawing.Size(1916, 1080);
             this.panel1.TabIndex = 18;
             // 
-            // btnDoc
+            // simpleButton1
             // 
-            this.btnDoc.BackgroundImage = global::FORM.Properties.Resources.PanicButton2;
-            this.btnDoc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnDoc.FlatAppearance.BorderSize = 0;
-            this.btnDoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDoc.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            this.btnDoc.ForeColor = System.Drawing.Color.White;
-            this.btnDoc.Location = new System.Drawing.Point(1462, 4);
-            this.btnDoc.Name = "btnDoc";
-            this.btnDoc.Size = new System.Drawing.Size(109, 103);
-            this.btnDoc.TabIndex = 61;
-            this.btnDoc.Tag = "back";
-            this.btnDoc.Text = "DOCUMENT";
-            this.btnDoc.UseVisualStyleBackColor = true;
-            this.btnDoc.Click += new System.EventHandler(this.btnDoc_Click);
+            this.simpleButton1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
+            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton1.Appearance.ForeColor = System.Drawing.Color.White;
+            this.simpleButton1.Appearance.Options.UseBackColor = true;
+            this.simpleButton1.Appearance.Options.UseFont = true;
+            this.simpleButton1.Appearance.Options.UseForeColor = true;
+            this.simpleButton1.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.simpleButton1.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.simpleButton1.AppearanceHovered.ForeColor = System.Drawing.Color.White;
+            this.simpleButton1.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.simpleButton1.AppearanceHovered.Options.UseBackColor = true;
+            this.simpleButton1.AppearanceHovered.Options.UseForeColor = true;
+            this.simpleButton1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.simpleButton1.Location = new System.Drawing.Point(31, 217);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(245, 68);
+            this.simpleButton1.TabIndex = 6;
+            this.simpleButton1.Tag = "3";
+            this.simpleButton1.Text = "LOB";
+            this.simpleButton1.Click += new System.EventHandler(this.cmdMenu_Click);
+            // 
+            // simpleButton2
+            // 
+            this.simpleButton2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(84)))), ((int)(((byte)(106)))));
+            this.simpleButton2.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton2.Appearance.ForeColor = System.Drawing.Color.White;
+            this.simpleButton2.Appearance.Options.UseBackColor = true;
+            this.simpleButton2.Appearance.Options.UseFont = true;
+            this.simpleButton2.Appearance.Options.UseForeColor = true;
+            this.simpleButton2.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.simpleButton2.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.simpleButton2.AppearanceHovered.ForeColor = System.Drawing.Color.White;
+            this.simpleButton2.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.simpleButton2.AppearanceHovered.Options.UseBackColor = true;
+            this.simpleButton2.AppearanceHovered.Options.UseForeColor = true;
+            this.simpleButton2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.simpleButton2.Location = new System.Drawing.Point(31, 289);
+            this.simpleButton2.Name = "simpleButton2";
+            this.simpleButton2.Size = new System.Drawing.Size(245, 68);
+            this.simpleButton2.TabIndex = 6;
+            this.simpleButton2.Tag = "3";
+            this.simpleButton2.Text = "Computer OEE";
+            this.simpleButton2.Click += new System.EventHandler(this.cmdMenu_Click);
+            // 
+            // simpleButton3
+            // 
+            this.simpleButton3.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
+            this.simpleButton3.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton3.Appearance.ForeColor = System.Drawing.Color.White;
+            this.simpleButton3.Appearance.Options.UseBackColor = true;
+            this.simpleButton3.Appearance.Options.UseFont = true;
+            this.simpleButton3.Appearance.Options.UseForeColor = true;
+            this.simpleButton3.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.simpleButton3.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.simpleButton3.AppearanceHovered.ForeColor = System.Drawing.Color.White;
+            this.simpleButton3.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.simpleButton3.AppearanceHovered.Options.UseBackColor = true;
+            this.simpleButton3.AppearanceHovered.Options.UseForeColor = true;
+            this.simpleButton3.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.simpleButton3.Location = new System.Drawing.Point(30, 217);
+            this.simpleButton3.Name = "simpleButton3";
+            this.simpleButton3.Size = new System.Drawing.Size(245, 68);
+            this.simpleButton3.TabIndex = 12;
+            this.simpleButton3.Tag = "3";
+            this.simpleButton3.Text = "LOB";
+            this.simpleButton3.Click += new System.EventHandler(this.cmdMenu_Click);
+            // 
+            // simpleButton4
+            // 
+            this.simpleButton4.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(84)))), ((int)(((byte)(106)))));
+            this.simpleButton4.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton4.Appearance.ForeColor = System.Drawing.Color.White;
+            this.simpleButton4.Appearance.Options.UseBackColor = true;
+            this.simpleButton4.Appearance.Options.UseFont = true;
+            this.simpleButton4.Appearance.Options.UseForeColor = true;
+            this.simpleButton4.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.simpleButton4.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.simpleButton4.AppearanceHovered.ForeColor = System.Drawing.Color.White;
+            this.simpleButton4.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.simpleButton4.AppearanceHovered.Options.UseBackColor = true;
+            this.simpleButton4.AppearanceHovered.Options.UseForeColor = true;
+            this.simpleButton4.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.simpleButton4.Location = new System.Drawing.Point(30, 289);
+            this.simpleButton4.Name = "simpleButton4";
+            this.simpleButton4.Size = new System.Drawing.Size(245, 68);
+            this.simpleButton4.TabIndex = 12;
+            this.simpleButton4.Tag = "3";
+            this.simpleButton4.Text = "Computer OEE";
+            this.simpleButton4.Click += new System.EventHandler(this.cmdMenu_Click);
+            // 
+            // simpleButton5
+            // 
+            this.simpleButton5.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
+            this.simpleButton5.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton5.Appearance.ForeColor = System.Drawing.Color.White;
+            this.simpleButton5.Appearance.Options.UseBackColor = true;
+            this.simpleButton5.Appearance.Options.UseFont = true;
+            this.simpleButton5.Appearance.Options.UseForeColor = true;
+            this.simpleButton5.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.simpleButton5.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.simpleButton5.AppearanceHovered.ForeColor = System.Drawing.Color.White;
+            this.simpleButton5.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.simpleButton5.AppearanceHovered.Options.UseBackColor = true;
+            this.simpleButton5.AppearanceHovered.Options.UseForeColor = true;
+            this.simpleButton5.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.simpleButton5.Location = new System.Drawing.Point(31, 222);
+            this.simpleButton5.Name = "simpleButton5";
+            this.simpleButton5.Size = new System.Drawing.Size(245, 68);
+            this.simpleButton5.TabIndex = 9;
+            this.simpleButton5.Tag = "3";
+            this.simpleButton5.Text = "LOB";
+            this.simpleButton5.Click += new System.EventHandler(this.cmdMenu_Click);
+            // 
+            // simpleButton6
+            // 
+            this.simpleButton6.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(84)))), ((int)(((byte)(106)))));
+            this.simpleButton6.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton6.Appearance.ForeColor = System.Drawing.Color.White;
+            this.simpleButton6.Appearance.Options.UseBackColor = true;
+            this.simpleButton6.Appearance.Options.UseFont = true;
+            this.simpleButton6.Appearance.Options.UseForeColor = true;
+            this.simpleButton6.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.simpleButton6.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.simpleButton6.AppearanceHovered.ForeColor = System.Drawing.Color.White;
+            this.simpleButton6.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.simpleButton6.AppearanceHovered.Options.UseBackColor = true;
+            this.simpleButton6.AppearanceHovered.Options.UseForeColor = true;
+            this.simpleButton6.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.simpleButton6.Location = new System.Drawing.Point(31, 296);
+            this.simpleButton6.Name = "simpleButton6";
+            this.simpleButton6.Size = new System.Drawing.Size(245, 68);
+            this.simpleButton6.TabIndex = 9;
+            this.simpleButton6.Tag = "3";
+            this.simpleButton6.Text = "Computer OEE";
+            this.simpleButton6.Click += new System.EventHandler(this.cmdMenu_Click);
+            // 
+            // simpleButton7
+            // 
+            this.simpleButton7.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
+            this.simpleButton7.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton7.Appearance.ForeColor = System.Drawing.Color.White;
+            this.simpleButton7.Appearance.Options.UseBackColor = true;
+            this.simpleButton7.Appearance.Options.UseFont = true;
+            this.simpleButton7.Appearance.Options.UseForeColor = true;
+            this.simpleButton7.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.simpleButton7.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.simpleButton7.AppearanceHovered.ForeColor = System.Drawing.Color.White;
+            this.simpleButton7.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.simpleButton7.AppearanceHovered.Options.UseBackColor = true;
+            this.simpleButton7.AppearanceHovered.Options.UseForeColor = true;
+            this.simpleButton7.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.simpleButton7.Location = new System.Drawing.Point(30, 222);
+            this.simpleButton7.Name = "simpleButton7";
+            this.simpleButton7.Size = new System.Drawing.Size(245, 68);
+            this.simpleButton7.TabIndex = 15;
+            this.simpleButton7.Tag = "3";
+            this.simpleButton7.Text = "LOB";
+            this.simpleButton7.Click += new System.EventHandler(this.cmdMenu_Click);
+            // 
+            // simpleButton8
+            // 
+            this.simpleButton8.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(84)))), ((int)(((byte)(106)))));
+            this.simpleButton8.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton8.Appearance.ForeColor = System.Drawing.Color.White;
+            this.simpleButton8.Appearance.Options.UseBackColor = true;
+            this.simpleButton8.Appearance.Options.UseFont = true;
+            this.simpleButton8.Appearance.Options.UseForeColor = true;
+            this.simpleButton8.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.simpleButton8.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.simpleButton8.AppearanceHovered.ForeColor = System.Drawing.Color.White;
+            this.simpleButton8.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.simpleButton8.AppearanceHovered.Options.UseBackColor = true;
+            this.simpleButton8.AppearanceHovered.Options.UseForeColor = true;
+            this.simpleButton8.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.simpleButton8.Location = new System.Drawing.Point(30, 296);
+            this.simpleButton8.Name = "simpleButton8";
+            this.simpleButton8.Size = new System.Drawing.Size(245, 68);
+            this.simpleButton8.TabIndex = 15;
+            this.simpleButton8.Tag = "3";
+            this.simpleButton8.Text = "Computer OEE";
+            this.simpleButton8.Click += new System.EventHandler(this.cmdMenu_Click);
+            // 
+            // simpleButton9
+            // 
+            this.simpleButton9.Appearance.BackColor = System.Drawing.Color.IndianRed;
+            this.simpleButton9.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton9.Appearance.ForeColor = System.Drawing.Color.White;
+            this.simpleButton9.Appearance.Options.UseBackColor = true;
+            this.simpleButton9.Appearance.Options.UseFont = true;
+            this.simpleButton9.Appearance.Options.UseForeColor = true;
+            this.simpleButton9.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.simpleButton9.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.simpleButton9.AppearanceHovered.Font = new System.Drawing.Font("Tahoma", 17F, System.Drawing.FontStyle.Bold);
+            this.simpleButton9.AppearanceHovered.ForeColor = System.Drawing.Color.White;
+            this.simpleButton9.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.simpleButton9.AppearanceHovered.Options.UseBackColor = true;
+            this.simpleButton9.AppearanceHovered.Options.UseFont = true;
+            this.simpleButton9.AppearanceHovered.Options.UseForeColor = true;
+            this.simpleButton9.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.simpleButton9.Location = new System.Drawing.Point(27, 293);
+            this.simpleButton9.Name = "simpleButton9";
+            this.simpleButton9.Size = new System.Drawing.Size(245, 68);
+            this.simpleButton9.TabIndex = 10;
+            this.simpleButton9.Tag = "1681";
+            this.simpleButton9.Text = "Kaizen";
+            this.simpleButton9.Click += new System.EventHandler(this.cmdMenu_Click);
+            // 
+            // simpleButton10
+            // 
+            this.simpleButton10.Appearance.BackColor = System.Drawing.Color.IndianRed;
+            this.simpleButton10.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton10.Appearance.ForeColor = System.Drawing.Color.White;
+            this.simpleButton10.Appearance.Options.UseBackColor = true;
+            this.simpleButton10.Appearance.Options.UseFont = true;
+            this.simpleButton10.Appearance.Options.UseForeColor = true;
+            this.simpleButton10.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.simpleButton10.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.simpleButton10.AppearanceHovered.Font = new System.Drawing.Font("Tahoma", 17F, System.Drawing.FontStyle.Bold);
+            this.simpleButton10.AppearanceHovered.ForeColor = System.Drawing.Color.White;
+            this.simpleButton10.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.simpleButton10.AppearanceHovered.Options.UseBackColor = true;
+            this.simpleButton10.AppearanceHovered.Options.UseFont = true;
+            this.simpleButton10.AppearanceHovered.Options.UseForeColor = true;
+            this.simpleButton10.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.simpleButton10.Location = new System.Drawing.Point(30, 295);
+            this.simpleButton10.Name = "simpleButton10";
+            this.simpleButton10.Size = new System.Drawing.Size(245, 68);
+            this.simpleButton10.TabIndex = 10;
+            this.simpleButton10.Tag = "1681";
+            this.simpleButton10.Text = "Kaizen";
+            this.simpleButton10.Click += new System.EventHandler(this.cmdMenu_Click);
+            // 
+            // simpleButton11
+            // 
+            this.simpleButton11.Appearance.BackColor = System.Drawing.Color.IndianRed;
+            this.simpleButton11.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton11.Appearance.ForeColor = System.Drawing.Color.White;
+            this.simpleButton11.Appearance.Options.UseBackColor = true;
+            this.simpleButton11.Appearance.Options.UseFont = true;
+            this.simpleButton11.Appearance.Options.UseForeColor = true;
+            this.simpleButton11.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.simpleButton11.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.simpleButton11.AppearanceHovered.Font = new System.Drawing.Font("Tahoma", 17F, System.Drawing.FontStyle.Bold);
+            this.simpleButton11.AppearanceHovered.ForeColor = System.Drawing.Color.White;
+            this.simpleButton11.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.simpleButton11.AppearanceHovered.Options.UseBackColor = true;
+            this.simpleButton11.AppearanceHovered.Options.UseFont = true;
+            this.simpleButton11.AppearanceHovered.Options.UseForeColor = true;
+            this.simpleButton11.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.simpleButton11.Location = new System.Drawing.Point(29, 296);
+            this.simpleButton11.Name = "simpleButton11";
+            this.simpleButton11.Size = new System.Drawing.Size(245, 68);
+            this.simpleButton11.TabIndex = 14;
+            this.simpleButton11.Tag = "1681";
+            this.simpleButton11.Text = "Kaizen";
+            this.simpleButton11.Click += new System.EventHandler(this.cmdMenu_Click);
+            // 
+            // simpleButton12
+            // 
+            this.simpleButton12.Appearance.BackColor = System.Drawing.Color.IndianRed;
+            this.simpleButton12.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton12.Appearance.ForeColor = System.Drawing.Color.White;
+            this.simpleButton12.Appearance.Options.UseBackColor = true;
+            this.simpleButton12.Appearance.Options.UseFont = true;
+            this.simpleButton12.Appearance.Options.UseForeColor = true;
+            this.simpleButton12.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.simpleButton12.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.simpleButton12.AppearanceHovered.Font = new System.Drawing.Font("Tahoma", 17F, System.Drawing.FontStyle.Bold);
+            this.simpleButton12.AppearanceHovered.ForeColor = System.Drawing.Color.White;
+            this.simpleButton12.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.simpleButton12.AppearanceHovered.Options.UseBackColor = true;
+            this.simpleButton12.AppearanceHovered.Options.UseFont = true;
+            this.simpleButton12.AppearanceHovered.Options.UseForeColor = true;
+            this.simpleButton12.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.simpleButton12.Location = new System.Drawing.Point(30, 296);
+            this.simpleButton12.Name = "simpleButton12";
+            this.simpleButton12.Size = new System.Drawing.Size(245, 68);
+            this.simpleButton12.TabIndex = 13;
+            this.simpleButton12.Tag = "1681";
+            this.simpleButton12.Text = "Kaizen";
+            this.simpleButton12.Click += new System.EventHandler(this.cmdMenu_Click);
             // 
             // digitalGaugeLine4
             // 
@@ -4480,5 +4788,17 @@
         private DevExpress.XtraEditors.SimpleButton cmdInv5_Line3;
         private System.Windows.Forms.Button cmdBack;
         private System.Windows.Forms.Button btnDoc;
+        private DevExpress.XtraEditors.SimpleButton simpleButton2;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.SimpleButton simpleButton9;
+        private DevExpress.XtraEditors.SimpleButton simpleButton4;
+        private DevExpress.XtraEditors.SimpleButton simpleButton3;
+        private DevExpress.XtraEditors.SimpleButton simpleButton10;
+        private DevExpress.XtraEditors.SimpleButton simpleButton6;
+        private DevExpress.XtraEditors.SimpleButton simpleButton5;
+        private DevExpress.XtraEditors.SimpleButton simpleButton11;
+        private DevExpress.XtraEditors.SimpleButton simpleButton8;
+        private DevExpress.XtraEditors.SimpleButton simpleButton7;
+        private DevExpress.XtraEditors.SimpleButton simpleButton12;
     }
 }
