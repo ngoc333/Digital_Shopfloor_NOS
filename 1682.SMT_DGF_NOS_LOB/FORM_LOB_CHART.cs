@@ -269,7 +269,7 @@ namespace FORM
                 {
                     if (type == "LOB_RESULT")
                     {
-                        lblLobChart.Text = dt.Rows[0]["LOB_RESULT"].ToString();
+                        lblLobChart.Text = dt.Rows[0]["LOB_RESULT"].ToString() + "%";
 
                         lblLC_002.Text = dt1.Rows[0]["LOB_RESULT"].ToString();
                     }
