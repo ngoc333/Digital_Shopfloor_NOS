@@ -271,7 +271,7 @@ namespace FORM
                     {
                         lblLobChart.Text = dt.Rows[0]["LOB_RESULT"].ToString() + "%";
 
-                        lblLC_002.Text = dt1.Rows[0]["LOB_RESULT"].ToString();
+                        lblLC_002.Text = dt1.Rows[0]["LOB_RESULT"].ToString() + "%";
                     }
 
                     if (type == "MODEL")
