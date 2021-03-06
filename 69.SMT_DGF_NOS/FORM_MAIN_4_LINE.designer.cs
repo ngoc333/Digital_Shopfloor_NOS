@@ -62,6 +62,8 @@
             this.cmdQua4_Line1 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdQua3_Line1 = new DevExpress.XtraEditors.SimpleButton();
             this.backstageViewClientControl2 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
+            this.cmdLOBUPS_Line1 = new DevExpress.XtraEditors.SimpleButton();
+            this.cmdLOB_Line1 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdPro3_Line1 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdPro2_Line1 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdPro1_Line1 = new DevExpress.XtraEditors.SimpleButton();
@@ -77,6 +79,7 @@
             this.cmdInv2_Line1 = new DevExpress.XtraEditors.SimpleButton();
             this.backstageViewClientControl21 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
             this.cmdHrm4_Line1 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton9 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdHrm3_Line1 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdHrm2_Line1 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdHrm1_Line1 = new DevExpress.XtraEditors.SimpleButton();
@@ -99,6 +102,8 @@
             this.cmdQua4_Line2 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdQua3_Line2 = new DevExpress.XtraEditors.SimpleButton();
             this.backstageViewClientControl6 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
+            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdPro3_Line2 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdPro2_Line2 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdPro1_Line2 = new DevExpress.XtraEditors.SimpleButton();
@@ -113,6 +118,7 @@
             this.cmdInv2_Line2 = new DevExpress.XtraEditors.SimpleButton();
             this.backstageViewClientControl22 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
             this.cmdHrm4_Line2 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton10 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdHrm3_Line2 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdHrm2_Line2 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdHrm1_Line2 = new DevExpress.XtraEditors.SimpleButton();
@@ -129,6 +135,8 @@
             this.cmdQua4_Line3 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdQua3_Line3 = new DevExpress.XtraEditors.SimpleButton();
             this.backstageViewClientControl13 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
+            this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdPro3_Line3 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdPro2_Line3 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdPro1_Line3 = new DevExpress.XtraEditors.SimpleButton();
@@ -144,6 +152,7 @@
             this.cmdInv2_Line3 = new DevExpress.XtraEditors.SimpleButton();
             this.backstageViewClientControl23 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
             this.cmdHrm4_Line3 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton11 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdHrm3_Line3 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdHrm2_Line3 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdHrm1_Line3 = new DevExpress.XtraEditors.SimpleButton();
@@ -166,6 +175,8 @@
             this.cmdQua4_Line4 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdQua3_Line4 = new DevExpress.XtraEditors.SimpleButton();
             this.backstageViewClientControl17 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
+            this.simpleButton8 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton7 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdPro3_Line4 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdPro2_Line4 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdPro1_Line4 = new DevExpress.XtraEditors.SimpleButton();
@@ -180,6 +191,7 @@
             this.cmdInv2_Line4 = new DevExpress.XtraEditors.SimpleButton();
             this.backstageViewClientControl24 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
             this.cmdHrm4_Line4 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton12 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdHrm3_Line4 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdHrm2_Line4 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdHrm1_Line4 = new DevExpress.XtraEditors.SimpleButton();
@@ -215,18 +227,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.tmrText = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton7 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton8 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton9 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton10 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton11 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton12 = new DevExpress.XtraEditors.SimpleButton();
             this.digitalGaugeLine4 = new DevExpress.XtraGauges.Win.Gauges.Digital.DigitalGauge();
             this.groupBoxEx3 = new FORM.ClassLib.GroupBoxEx();
             this.label27 = new System.Windows.Forms.Label();
@@ -479,7 +479,7 @@
             this.cmdFEMS.TabIndex = 53;
             this.cmdFEMS.Text = "FEMS";
             this.cmdFEMS.UseVisualStyleBackColor = true;
-            this.cmdFEMS.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdFEMS.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdCMMS
             // 
@@ -495,7 +495,7 @@
             this.cmdCMMS.TabIndex = 53;
             this.cmdCMMS.Text = "CMMS";
             this.cmdCMMS.UseVisualStyleBackColor = true;
-            this.cmdCMMS.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdCMMS.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdGMES
             // 
@@ -527,7 +527,7 @@
             this.cmdSmartAndon.TabIndex = 56;
             this.cmdSmartAndon.Text = "SMART ANDON";
             this.cmdSmartAndon.UseVisualStyleBackColor = true;
-            this.cmdSmartAndon.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdSmartAndon.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // btnLang
             // 
@@ -586,7 +586,7 @@
             this.lblDate.Tag = "Exit";
             this.lblDate.Text = "2019-09-14\r\n10:00:00";
             this.lblDate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lblDate.DoubleClick += new System.EventHandler(this.cmdMenu_Click);
+            this.lblDate.DoubleClick += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // lblTitle
             // 
@@ -604,7 +604,7 @@
             this.lblTitle.TabIndex = 2;
             this.lblTitle.Tag = "Minimized";
             this.lblTitle.Text = "Digital Shop Floor";
-            this.lblTitle.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.lblTitle.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // groupBox1
             // 
@@ -736,7 +736,7 @@
             this.cmdQua2_Line1.TabIndex = 8;
             this.cmdQua2_Line1.Tag = "2";
             this.cmdQua2_Line1.Text = "NPI";
-            this.cmdQua2_Line1.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdQua2_Line1.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdQua1_Line1
             // 
@@ -786,7 +786,7 @@
             this.cmdQua5_Line1.TabIndex = 7;
             this.cmdQua5_Line1.Tag = "3";
             this.cmdQua5_Line1.Text = "Market Quality\r\n";
-            this.cmdQua5_Line1.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdQua5_Line1.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdQua4_Line1
             // 
@@ -811,7 +811,7 @@
             this.cmdQua4_Line1.TabIndex = 7;
             this.cmdQua4_Line1.Tag = "3";
             this.cmdQua4_Line1.Text = "OS&&D\r\n";
-            this.cmdQua4_Line1.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdQua4_Line1.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdQua3_Line1
             // 
@@ -836,12 +836,12 @@
             this.cmdQua3_Line1.TabIndex = 5;
             this.cmdQua3_Line1.Tag = "1";
             this.cmdQua3_Line1.Text = "Quality Rate";
-            this.cmdQua3_Line1.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdQua3_Line1.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // backstageViewClientControl2
             // 
-            this.backstageViewClientControl2.Controls.Add(this.simpleButton2);
-            this.backstageViewClientControl2.Controls.Add(this.simpleButton1);
+            this.backstageViewClientControl2.Controls.Add(this.cmdLOBUPS_Line1);
+            this.backstageViewClientControl2.Controls.Add(this.cmdLOB_Line1);
             this.backstageViewClientControl2.Controls.Add(this.cmdPro3_Line1);
             this.backstageViewClientControl2.Controls.Add(this.cmdPro2_Line1);
             this.backstageViewClientControl2.Controls.Add(this.cmdPro1_Line1);
@@ -853,6 +853,52 @@
             this.backstageViewClientControl2.Name = "backstageViewClientControl2";
             this.backstageViewClientControl2.Size = new System.Drawing.Size(302, 396);
             this.backstageViewClientControl2.TabIndex = 1;
+            // 
+            // cmdLOBUPS_Line1
+            // 
+            this.cmdLOBUPS_Line1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(84)))), ((int)(((byte)(106)))));
+            this.cmdLOBUPS_Line1.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdLOBUPS_Line1.Appearance.ForeColor = System.Drawing.Color.White;
+            this.cmdLOBUPS_Line1.Appearance.Options.UseBackColor = true;
+            this.cmdLOBUPS_Line1.Appearance.Options.UseFont = true;
+            this.cmdLOBUPS_Line1.Appearance.Options.UseForeColor = true;
+            this.cmdLOBUPS_Line1.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.cmdLOBUPS_Line1.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.cmdLOBUPS_Line1.AppearanceHovered.ForeColor = System.Drawing.Color.White;
+            this.cmdLOBUPS_Line1.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.cmdLOBUPS_Line1.AppearanceHovered.Options.UseBackColor = true;
+            this.cmdLOBUPS_Line1.AppearanceHovered.Options.UseForeColor = true;
+            this.cmdLOBUPS_Line1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.cmdLOBUPS_Line1.Location = new System.Drawing.Point(31, 289);
+            this.cmdLOBUPS_Line1.Name = "cmdLOBUPS_Line1";
+            this.cmdLOBUPS_Line1.Size = new System.Drawing.Size(245, 68);
+            this.cmdLOBUPS_Line1.TabIndex = 6;
+            this.cmdLOBUPS_Line1.Tag = "1684";
+            this.cmdLOBUPS_Line1.Text = "Monthly LOB Chart";
+            this.cmdLOBUPS_Line1.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
+            // 
+            // cmdLOB_Line1
+            // 
+            this.cmdLOB_Line1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
+            this.cmdLOB_Line1.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdLOB_Line1.Appearance.ForeColor = System.Drawing.Color.White;
+            this.cmdLOB_Line1.Appearance.Options.UseBackColor = true;
+            this.cmdLOB_Line1.Appearance.Options.UseFont = true;
+            this.cmdLOB_Line1.Appearance.Options.UseForeColor = true;
+            this.cmdLOB_Line1.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.cmdLOB_Line1.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.cmdLOB_Line1.AppearanceHovered.ForeColor = System.Drawing.Color.White;
+            this.cmdLOB_Line1.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.cmdLOB_Line1.AppearanceHovered.Options.UseBackColor = true;
+            this.cmdLOB_Line1.AppearanceHovered.Options.UseForeColor = true;
+            this.cmdLOB_Line1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.cmdLOB_Line1.Location = new System.Drawing.Point(31, 217);
+            this.cmdLOB_Line1.Name = "cmdLOB_Line1";
+            this.cmdLOB_Line1.Size = new System.Drawing.Size(245, 68);
+            this.cmdLOB_Line1.TabIndex = 6;
+            this.cmdLOB_Line1.Tag = "1682";
+            this.cmdLOB_Line1.Text = "Daily LOB Chart";
+            this.cmdLOB_Line1.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdPro3_Line1
             // 
@@ -875,7 +921,7 @@
             this.cmdPro3_Line1.TabIndex = 6;
             this.cmdPro3_Line1.Tag = "3";
             this.cmdPro3_Line1.Text = "BTS";
-            this.cmdPro3_Line1.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdPro3_Line1.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdPro2_Line1
             // 
@@ -898,7 +944,7 @@
             this.cmdPro2_Line1.TabIndex = 5;
             this.cmdPro2_Line1.Tag = "2";
             this.cmdPro2_Line1.Text = "Productivity";
-            this.cmdPro2_Line1.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdPro2_Line1.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdPro1_Line1
             // 
@@ -923,7 +969,7 @@
             this.cmdPro1_Line1.TabIndex = 4;
             this.cmdPro1_Line1.Tag = "1";
             this.cmdPro1_Line1.Text = "Prod. Result\r\n";
-            this.cmdPro1_Line1.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdPro1_Line1.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // xtraUserControl1
             // 
@@ -964,7 +1010,7 @@
             this.cmdEqu2_Line1.Tag = "2";
             this.cmdEqu2_Line1.Text = "Alert Log";
             this.cmdEqu2_Line1.Visible = false;
-            this.cmdEqu2_Line1.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdEqu2_Line1.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdEqu1_Line1
             // 
@@ -987,7 +1033,7 @@
             this.cmdEqu1_Line1.TabIndex = 6;
             this.cmdEqu1_Line1.Tag = "2";
             this.cmdEqu1_Line1.Text = "Smart Andon";
-            this.cmdEqu1_Line1.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdEqu1_Line1.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // backstageViewClientControl5
             // 
@@ -1024,7 +1070,7 @@
             this.cmdInv5_Line1.TabIndex = 10;
             this.cmdInv5_Line1.Tag = "299";
             this.cmdInv5_Line1.Text = "Instant Set";
-            this.cmdInv5_Line1.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdInv5_Line1.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdInv1_Line1
             // 
@@ -1047,7 +1093,7 @@
             this.cmdInv1_Line1.TabIndex = 9;
             this.cmdInv1_Line1.Tag = "3";
             this.cmdInv1_Line1.Text = "Leadtime";
-            this.cmdInv1_Line1.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdInv1_Line1.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdInv4_Line1
             // 
@@ -1072,7 +1118,7 @@
             this.cmdInv4_Line1.TabIndex = 8;
             this.cmdInv4_Line1.Tag = "1";
             this.cmdInv4_Line1.Text = "Assembly Input Set";
-            this.cmdInv4_Line1.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdInv4_Line1.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdInv3_Line1
             // 
@@ -1097,7 +1143,7 @@
             this.cmdInv3_Line1.TabIndex = 8;
             this.cmdInv3_Line1.Tag = "1";
             this.cmdInv3_Line1.Text = "Bottom Inv Set";
-            this.cmdInv3_Line1.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdInv3_Line1.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdInv2_Line1
             // 
@@ -1122,7 +1168,7 @@
             this.cmdInv2_Line1.TabIndex = 8;
             this.cmdInv2_Line1.Tag = "1";
             this.cmdInv2_Line1.Text = "FG Inventory";
-            this.cmdInv2_Line1.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdInv2_Line1.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // backstageViewClientControl21
             // 
@@ -1159,7 +1205,32 @@
             this.cmdHrm4_Line1.TabIndex = 12;
             this.cmdHrm4_Line1.Tag = "1";
             this.cmdHrm4_Line1.Text = "TO/PO";
-            this.cmdHrm4_Line1.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdHrm4_Line1.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
+            // 
+            // simpleButton9
+            // 
+            this.simpleButton9.Appearance.BackColor = System.Drawing.Color.IndianRed;
+            this.simpleButton9.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton9.Appearance.ForeColor = System.Drawing.Color.White;
+            this.simpleButton9.Appearance.Options.UseBackColor = true;
+            this.simpleButton9.Appearance.Options.UseFont = true;
+            this.simpleButton9.Appearance.Options.UseForeColor = true;
+            this.simpleButton9.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.simpleButton9.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.simpleButton9.AppearanceHovered.Font = new System.Drawing.Font("Tahoma", 17F, System.Drawing.FontStyle.Bold);
+            this.simpleButton9.AppearanceHovered.ForeColor = System.Drawing.Color.White;
+            this.simpleButton9.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.simpleButton9.AppearanceHovered.Options.UseBackColor = true;
+            this.simpleButton9.AppearanceHovered.Options.UseFont = true;
+            this.simpleButton9.AppearanceHovered.Options.UseForeColor = true;
+            this.simpleButton9.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.simpleButton9.Location = new System.Drawing.Point(27, 293);
+            this.simpleButton9.Name = "simpleButton9";
+            this.simpleButton9.Size = new System.Drawing.Size(245, 68);
+            this.simpleButton9.TabIndex = 10;
+            this.simpleButton9.Tag = "1681";
+            this.simpleButton9.Text = "Kaizen";
+            this.simpleButton9.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdHrm3_Line1
             // 
@@ -1184,7 +1255,7 @@
             this.cmdHrm3_Line1.TabIndex = 10;
             this.cmdHrm3_Line1.Tag = "1";
             this.cmdHrm3_Line1.Text = "Multi Skill Ratio";
-            this.cmdHrm3_Line1.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdHrm3_Line1.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdHrm2_Line1
             // 
@@ -1207,7 +1278,7 @@
             this.cmdHrm2_Line1.TabIndex = 9;
             this.cmdHrm2_Line1.Tag = "3";
             this.cmdHrm2_Line1.Text = "Multi skill\r\n";
-            this.cmdHrm2_Line1.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdHrm2_Line1.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdHrm1_Line1
             // 
@@ -1230,7 +1301,7 @@
             this.cmdHrm1_Line1.TabIndex = 8;
             this.cmdHrm1_Line1.Tag = "2";
             this.cmdHrm1_Line1.Text = "Absenteeism";
-            this.cmdHrm1_Line1.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdHrm1_Line1.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // bstLine1_Qual
             // 
@@ -1463,7 +1534,7 @@
             this.cmdQua5_Line2.TabIndex = 14;
             this.cmdQua5_Line2.Tag = "3";
             this.cmdQua5_Line2.Text = "Market Quality\r\n";
-            this.cmdQua5_Line2.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdQua5_Line2.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdQua2_Line2
             // 
@@ -1488,7 +1559,7 @@
             this.cmdQua2_Line2.TabIndex = 13;
             this.cmdQua2_Line2.Tag = "2";
             this.cmdQua2_Line2.Text = "NPI";
-            this.cmdQua2_Line2.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdQua2_Line2.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdQua1_Line2
             // 
@@ -1534,7 +1605,7 @@
             this.cmdQua4_Line2.TabIndex = 9;
             this.cmdQua4_Line2.Tag = "3";
             this.cmdQua4_Line2.Text = "OS&&D";
-            this.cmdQua4_Line2.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdQua4_Line2.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdQua3_Line2
             // 
@@ -1559,7 +1630,7 @@
             this.cmdQua3_Line2.TabIndex = 8;
             this.cmdQua3_Line2.Tag = "1";
             this.cmdQua3_Line2.Text = "Quality Rate\r\n";
-            this.cmdQua3_Line2.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdQua3_Line2.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // backstageViewClientControl6
             // 
@@ -1573,6 +1644,52 @@
             this.backstageViewClientControl6.Name = "backstageViewClientControl6";
             this.backstageViewClientControl6.Size = new System.Drawing.Size(302, 396);
             this.backstageViewClientControl6.TabIndex = 1;
+            // 
+            // simpleButton4
+            // 
+            this.simpleButton4.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(84)))), ((int)(((byte)(106)))));
+            this.simpleButton4.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton4.Appearance.ForeColor = System.Drawing.Color.White;
+            this.simpleButton4.Appearance.Options.UseBackColor = true;
+            this.simpleButton4.Appearance.Options.UseFont = true;
+            this.simpleButton4.Appearance.Options.UseForeColor = true;
+            this.simpleButton4.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.simpleButton4.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.simpleButton4.AppearanceHovered.ForeColor = System.Drawing.Color.White;
+            this.simpleButton4.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.simpleButton4.AppearanceHovered.Options.UseBackColor = true;
+            this.simpleButton4.AppearanceHovered.Options.UseForeColor = true;
+            this.simpleButton4.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.simpleButton4.Location = new System.Drawing.Point(30, 289);
+            this.simpleButton4.Name = "simpleButton4";
+            this.simpleButton4.Size = new System.Drawing.Size(245, 68);
+            this.simpleButton4.TabIndex = 12;
+            this.simpleButton4.Tag = "1684";
+            this.simpleButton4.Text = "Monthly LOB Chart";
+            this.simpleButton4.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
+            // 
+            // simpleButton3
+            // 
+            this.simpleButton3.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
+            this.simpleButton3.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton3.Appearance.ForeColor = System.Drawing.Color.White;
+            this.simpleButton3.Appearance.Options.UseBackColor = true;
+            this.simpleButton3.Appearance.Options.UseFont = true;
+            this.simpleButton3.Appearance.Options.UseForeColor = true;
+            this.simpleButton3.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.simpleButton3.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.simpleButton3.AppearanceHovered.ForeColor = System.Drawing.Color.White;
+            this.simpleButton3.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.simpleButton3.AppearanceHovered.Options.UseBackColor = true;
+            this.simpleButton3.AppearanceHovered.Options.UseForeColor = true;
+            this.simpleButton3.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.simpleButton3.Location = new System.Drawing.Point(30, 217);
+            this.simpleButton3.Name = "simpleButton3";
+            this.simpleButton3.Size = new System.Drawing.Size(245, 68);
+            this.simpleButton3.TabIndex = 12;
+            this.simpleButton3.Tag = "1682";
+            this.simpleButton3.Text = "Daily LOB Chart";
+            this.simpleButton3.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdPro3_Line2
             // 
@@ -1595,7 +1712,7 @@
             this.cmdPro3_Line2.TabIndex = 12;
             this.cmdPro3_Line2.Tag = "3";
             this.cmdPro3_Line2.Text = "BTS";
-            this.cmdPro3_Line2.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdPro3_Line2.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdPro2_Line2
             // 
@@ -1618,7 +1735,7 @@
             this.cmdPro2_Line2.TabIndex = 11;
             this.cmdPro2_Line2.Tag = "2";
             this.cmdPro2_Line2.Text = "Productivity";
-            this.cmdPro2_Line2.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdPro2_Line2.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdPro1_Line2
             // 
@@ -1643,7 +1760,7 @@
             this.cmdPro1_Line2.TabIndex = 10;
             this.cmdPro1_Line2.Tag = "1";
             this.cmdPro1_Line2.Text = "Prod. Result\r\n";
-            this.cmdPro1_Line2.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdPro1_Line2.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // backstageViewClientControl8
             // 
@@ -1676,7 +1793,7 @@
             this.cmdEqu2_Line2.Tag = "2";
             this.cmdEqu2_Line2.Text = "Alert Log";
             this.cmdEqu2_Line2.Visible = false;
-            this.cmdEqu2_Line2.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdEqu2_Line2.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdEqu1_Line2
             // 
@@ -1699,7 +1816,7 @@
             this.cmdEqu1_Line2.TabIndex = 7;
             this.cmdEqu1_Line2.Tag = "2";
             this.cmdEqu1_Line2.Text = "Smart Andon";
-            this.cmdEqu1_Line2.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdEqu1_Line2.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // backstageViewClientControl12
             // 
@@ -1736,7 +1853,7 @@
             this.cmdInv5_Line2.TabIndex = 16;
             this.cmdInv5_Line2.Tag = "299";
             this.cmdInv5_Line2.Text = "Instant Set";
-            this.cmdInv5_Line2.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdInv5_Line2.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdInv4_Line2
             // 
@@ -1761,7 +1878,7 @@
             this.cmdInv4_Line2.TabIndex = 15;
             this.cmdInv4_Line2.Tag = "1";
             this.cmdInv4_Line2.Text = "Assembly Input Set";
-            this.cmdInv4_Line2.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdInv4_Line2.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdInv3_Line2
             // 
@@ -1786,7 +1903,7 @@
             this.cmdInv3_Line2.TabIndex = 14;
             this.cmdInv3_Line2.Tag = "1";
             this.cmdInv3_Line2.Text = "Bottom Inv Set";
-            this.cmdInv3_Line2.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdInv3_Line2.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdInv1_Line2
             // 
@@ -1809,7 +1926,7 @@
             this.cmdInv1_Line2.TabIndex = 13;
             this.cmdInv1_Line2.Tag = "3";
             this.cmdInv1_Line2.Text = "Leadtime";
-            this.cmdInv1_Line2.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdInv1_Line2.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdInv2_Line2
             // 
@@ -1834,7 +1951,7 @@
             this.cmdInv2_Line2.TabIndex = 12;
             this.cmdInv2_Line2.Tag = "1";
             this.cmdInv2_Line2.Text = "FG Inventory";
-            this.cmdInv2_Line2.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdInv2_Line2.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // backstageViewClientControl22
             // 
@@ -1871,7 +1988,32 @@
             this.cmdHrm4_Line2.TabIndex = 13;
             this.cmdHrm4_Line2.Tag = "1";
             this.cmdHrm4_Line2.Text = "TO/PO";
-            this.cmdHrm4_Line2.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdHrm4_Line2.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
+            // 
+            // simpleButton10
+            // 
+            this.simpleButton10.Appearance.BackColor = System.Drawing.Color.IndianRed;
+            this.simpleButton10.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton10.Appearance.ForeColor = System.Drawing.Color.White;
+            this.simpleButton10.Appearance.Options.UseBackColor = true;
+            this.simpleButton10.Appearance.Options.UseFont = true;
+            this.simpleButton10.Appearance.Options.UseForeColor = true;
+            this.simpleButton10.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.simpleButton10.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.simpleButton10.AppearanceHovered.Font = new System.Drawing.Font("Tahoma", 17F, System.Drawing.FontStyle.Bold);
+            this.simpleButton10.AppearanceHovered.ForeColor = System.Drawing.Color.White;
+            this.simpleButton10.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.simpleButton10.AppearanceHovered.Options.UseBackColor = true;
+            this.simpleButton10.AppearanceHovered.Options.UseFont = true;
+            this.simpleButton10.AppearanceHovered.Options.UseForeColor = true;
+            this.simpleButton10.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.simpleButton10.Location = new System.Drawing.Point(30, 295);
+            this.simpleButton10.Name = "simpleButton10";
+            this.simpleButton10.Size = new System.Drawing.Size(245, 68);
+            this.simpleButton10.TabIndex = 10;
+            this.simpleButton10.Tag = "1681";
+            this.simpleButton10.Text = "Kaizen";
+            this.simpleButton10.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdHrm3_Line2
             // 
@@ -1896,7 +2038,7 @@
             this.cmdHrm3_Line2.TabIndex = 10;
             this.cmdHrm3_Line2.Tag = "1";
             this.cmdHrm3_Line2.Text = "Multi Skill Ratio";
-            this.cmdHrm3_Line2.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdHrm3_Line2.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdHrm2_Line2
             // 
@@ -1919,7 +2061,7 @@
             this.cmdHrm2_Line2.TabIndex = 12;
             this.cmdHrm2_Line2.Tag = "3";
             this.cmdHrm2_Line2.Text = "Multi skill\r\n";
-            this.cmdHrm2_Line2.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdHrm2_Line2.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdHrm1_Line2
             // 
@@ -1942,7 +2084,7 @@
             this.cmdHrm1_Line2.TabIndex = 11;
             this.cmdHrm1_Line2.Tag = "2";
             this.cmdHrm1_Line2.Text = "Absenteeism\r\n";
-            this.cmdHrm1_Line2.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdHrm1_Line2.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // bstLine2_Qual
             // 
@@ -2086,7 +2228,7 @@
             this.cmdQua5_Line3.TabIndex = 16;
             this.cmdQua5_Line3.Tag = "3";
             this.cmdQua5_Line3.Text = "Market Quality\r\n";
-            this.cmdQua5_Line3.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdQua5_Line3.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdQua2_Line3
             // 
@@ -2111,7 +2253,7 @@
             this.cmdQua2_Line3.TabIndex = 15;
             this.cmdQua2_Line3.Tag = "2";
             this.cmdQua2_Line3.Text = "NPI\r\n";
-            this.cmdQua2_Line3.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdQua2_Line3.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdQua1_Line3
             // 
@@ -2157,7 +2299,7 @@
             this.cmdQua4_Line3.TabIndex = 9;
             this.cmdQua4_Line3.Tag = "3";
             this.cmdQua4_Line3.Text = "OS&&D";
-            this.cmdQua4_Line3.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdQua4_Line3.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdQua3_Line3
             // 
@@ -2182,7 +2324,7 @@
             this.cmdQua3_Line3.TabIndex = 8;
             this.cmdQua3_Line3.Tag = "1";
             this.cmdQua3_Line3.Text = "Quality Rate";
-            this.cmdQua3_Line3.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdQua3_Line3.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // backstageViewClientControl13
             // 
@@ -2195,6 +2337,52 @@
             this.backstageViewClientControl13.Name = "backstageViewClientControl13";
             this.backstageViewClientControl13.Size = new System.Drawing.Size(302, 414);
             this.backstageViewClientControl13.TabIndex = 1;
+            // 
+            // simpleButton6
+            // 
+            this.simpleButton6.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(84)))), ((int)(((byte)(106)))));
+            this.simpleButton6.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton6.Appearance.ForeColor = System.Drawing.Color.White;
+            this.simpleButton6.Appearance.Options.UseBackColor = true;
+            this.simpleButton6.Appearance.Options.UseFont = true;
+            this.simpleButton6.Appearance.Options.UseForeColor = true;
+            this.simpleButton6.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.simpleButton6.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.simpleButton6.AppearanceHovered.ForeColor = System.Drawing.Color.White;
+            this.simpleButton6.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.simpleButton6.AppearanceHovered.Options.UseBackColor = true;
+            this.simpleButton6.AppearanceHovered.Options.UseForeColor = true;
+            this.simpleButton6.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.simpleButton6.Location = new System.Drawing.Point(31, 296);
+            this.simpleButton6.Name = "simpleButton6";
+            this.simpleButton6.Size = new System.Drawing.Size(245, 68);
+            this.simpleButton6.TabIndex = 9;
+            this.simpleButton6.Tag = "1684";
+            this.simpleButton6.Text = "Monthly LOB Chart";
+            this.simpleButton6.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
+            // 
+            // simpleButton5
+            // 
+            this.simpleButton5.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
+            this.simpleButton5.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton5.Appearance.ForeColor = System.Drawing.Color.White;
+            this.simpleButton5.Appearance.Options.UseBackColor = true;
+            this.simpleButton5.Appearance.Options.UseFont = true;
+            this.simpleButton5.Appearance.Options.UseForeColor = true;
+            this.simpleButton5.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.simpleButton5.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.simpleButton5.AppearanceHovered.ForeColor = System.Drawing.Color.White;
+            this.simpleButton5.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.simpleButton5.AppearanceHovered.Options.UseBackColor = true;
+            this.simpleButton5.AppearanceHovered.Options.UseForeColor = true;
+            this.simpleButton5.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.simpleButton5.Location = new System.Drawing.Point(31, 222);
+            this.simpleButton5.Name = "simpleButton5";
+            this.simpleButton5.Size = new System.Drawing.Size(245, 68);
+            this.simpleButton5.TabIndex = 9;
+            this.simpleButton5.Tag = "1682";
+            this.simpleButton5.Text = "Daily LOB Chart";
+            this.simpleButton5.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdPro3_Line3
             // 
@@ -2217,7 +2405,7 @@
             this.cmdPro3_Line3.TabIndex = 9;
             this.cmdPro3_Line3.Tag = "3";
             this.cmdPro3_Line3.Text = "BTS";
-            this.cmdPro3_Line3.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdPro3_Line3.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdPro2_Line3
             // 
@@ -2240,7 +2428,7 @@
             this.cmdPro2_Line3.TabIndex = 8;
             this.cmdPro2_Line3.Tag = "2";
             this.cmdPro2_Line3.Text = "Productivity\r\n";
-            this.cmdPro2_Line3.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdPro2_Line3.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdPro1_Line3
             // 
@@ -2265,7 +2453,7 @@
             this.cmdPro1_Line3.TabIndex = 7;
             this.cmdPro1_Line3.Tag = "1";
             this.cmdPro1_Line3.Text = "Prod. Result\r\n";
-            this.cmdPro1_Line3.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdPro1_Line3.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // backstageViewClientControl15
             // 
@@ -2299,7 +2487,7 @@
             this.cmdEqu2_Line3.Tag = "2";
             this.cmdEqu2_Line3.Text = "Alert Log";
             this.cmdEqu2_Line3.Visible = false;
-            this.cmdEqu2_Line3.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdEqu2_Line3.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdEqu1_Line3
             // 
@@ -2322,7 +2510,7 @@
             this.cmdEqu1_Line3.TabIndex = 9;
             this.cmdEqu1_Line3.Tag = "2";
             this.cmdEqu1_Line3.Text = "Smart Andon";
-            this.cmdEqu1_Line3.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdEqu1_Line3.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // label26
             // 
@@ -2369,7 +2557,7 @@
             this.cmdInv5_Line3.TabIndex = 19;
             this.cmdInv5_Line3.Tag = "299";
             this.cmdInv5_Line3.Text = "Instant Set";
-            this.cmdInv5_Line3.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdInv5_Line3.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdInv4_Line3
             // 
@@ -2394,7 +2582,7 @@
             this.cmdInv4_Line3.TabIndex = 13;
             this.cmdInv4_Line3.Tag = "1";
             this.cmdInv4_Line3.Text = "Assembly Input Set";
-            this.cmdInv4_Line3.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdInv4_Line3.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdInv3_Line3
             // 
@@ -2419,7 +2607,7 @@
             this.cmdInv3_Line3.TabIndex = 12;
             this.cmdInv3_Line3.Tag = "1";
             this.cmdInv3_Line3.Text = "Bottom Inv Set";
-            this.cmdInv3_Line3.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdInv3_Line3.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdInv1_Line3
             // 
@@ -2442,7 +2630,7 @@
             this.cmdInv1_Line3.TabIndex = 11;
             this.cmdInv1_Line3.Tag = "3";
             this.cmdInv1_Line3.Text = "Leadtime";
-            this.cmdInv1_Line3.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdInv1_Line3.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdInv2_Line3
             // 
@@ -2467,7 +2655,7 @@
             this.cmdInv2_Line3.TabIndex = 10;
             this.cmdInv2_Line3.Tag = "1";
             this.cmdInv2_Line3.Text = "FG Inventory";
-            this.cmdInv2_Line3.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdInv2_Line3.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // backstageViewClientControl23
             // 
@@ -2504,7 +2692,32 @@
             this.cmdHrm4_Line3.TabIndex = 15;
             this.cmdHrm4_Line3.Tag = "1";
             this.cmdHrm4_Line3.Text = "TO/PO";
-            this.cmdHrm4_Line3.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdHrm4_Line3.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
+            // 
+            // simpleButton11
+            // 
+            this.simpleButton11.Appearance.BackColor = System.Drawing.Color.IndianRed;
+            this.simpleButton11.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton11.Appearance.ForeColor = System.Drawing.Color.White;
+            this.simpleButton11.Appearance.Options.UseBackColor = true;
+            this.simpleButton11.Appearance.Options.UseFont = true;
+            this.simpleButton11.Appearance.Options.UseForeColor = true;
+            this.simpleButton11.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.simpleButton11.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.simpleButton11.AppearanceHovered.Font = new System.Drawing.Font("Tahoma", 17F, System.Drawing.FontStyle.Bold);
+            this.simpleButton11.AppearanceHovered.ForeColor = System.Drawing.Color.White;
+            this.simpleButton11.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.simpleButton11.AppearanceHovered.Options.UseBackColor = true;
+            this.simpleButton11.AppearanceHovered.Options.UseFont = true;
+            this.simpleButton11.AppearanceHovered.Options.UseForeColor = true;
+            this.simpleButton11.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.simpleButton11.Location = new System.Drawing.Point(29, 296);
+            this.simpleButton11.Name = "simpleButton11";
+            this.simpleButton11.Size = new System.Drawing.Size(245, 68);
+            this.simpleButton11.TabIndex = 14;
+            this.simpleButton11.Tag = "1681";
+            this.simpleButton11.Text = "Kaizen";
+            this.simpleButton11.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdHrm3_Line3
             // 
@@ -2529,7 +2742,7 @@
             this.cmdHrm3_Line3.TabIndex = 14;
             this.cmdHrm3_Line3.Tag = "1";
             this.cmdHrm3_Line3.Text = "Multi Skill Ratio";
-            this.cmdHrm3_Line3.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdHrm3_Line3.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdHrm2_Line3
             // 
@@ -2552,7 +2765,7 @@
             this.cmdHrm2_Line3.TabIndex = 9;
             this.cmdHrm2_Line3.Tag = "3";
             this.cmdHrm2_Line3.Text = "Multi skill";
-            this.cmdHrm2_Line3.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdHrm2_Line3.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdHrm1_Line3
             // 
@@ -2575,7 +2788,7 @@
             this.cmdHrm1_Line3.TabIndex = 8;
             this.cmdHrm1_Line3.Tag = "2";
             this.cmdHrm1_Line3.Text = "Absenteeism";
-            this.cmdHrm1_Line3.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdHrm1_Line3.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // bstLine3_Qual
             // 
@@ -2791,7 +3004,7 @@
             this.cmdQua5_Line4.TabIndex = 17;
             this.cmdQua5_Line4.Tag = "3";
             this.cmdQua5_Line4.Text = "Market Quality";
-            this.cmdQua5_Line4.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdQua5_Line4.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdQua2_Line4
             // 
@@ -2816,7 +3029,7 @@
             this.cmdQua2_Line4.TabIndex = 16;
             this.cmdQua2_Line4.Tag = "2";
             this.cmdQua2_Line4.Text = "NPI";
-            this.cmdQua2_Line4.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdQua2_Line4.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdQua1_Line4
             // 
@@ -2862,7 +3075,7 @@
             this.cmdQua4_Line4.TabIndex = 11;
             this.cmdQua4_Line4.Tag = "3";
             this.cmdQua4_Line4.Text = "OS&&D";
-            this.cmdQua4_Line4.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdQua4_Line4.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdQua3_Line4
             // 
@@ -2887,7 +3100,7 @@
             this.cmdQua3_Line4.TabIndex = 10;
             this.cmdQua3_Line4.Tag = "1";
             this.cmdQua3_Line4.Text = "Quality Rate\r\n";
-            this.cmdQua3_Line4.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdQua3_Line4.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // backstageViewClientControl17
             // 
@@ -2900,6 +3113,52 @@
             this.backstageViewClientControl17.Name = "backstageViewClientControl17";
             this.backstageViewClientControl17.Size = new System.Drawing.Size(302, 414);
             this.backstageViewClientControl17.TabIndex = 1;
+            // 
+            // simpleButton8
+            // 
+            this.simpleButton8.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(84)))), ((int)(((byte)(106)))));
+            this.simpleButton8.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton8.Appearance.ForeColor = System.Drawing.Color.White;
+            this.simpleButton8.Appearance.Options.UseBackColor = true;
+            this.simpleButton8.Appearance.Options.UseFont = true;
+            this.simpleButton8.Appearance.Options.UseForeColor = true;
+            this.simpleButton8.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.simpleButton8.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.simpleButton8.AppearanceHovered.ForeColor = System.Drawing.Color.White;
+            this.simpleButton8.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.simpleButton8.AppearanceHovered.Options.UseBackColor = true;
+            this.simpleButton8.AppearanceHovered.Options.UseForeColor = true;
+            this.simpleButton8.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.simpleButton8.Location = new System.Drawing.Point(30, 296);
+            this.simpleButton8.Name = "simpleButton8";
+            this.simpleButton8.Size = new System.Drawing.Size(245, 68);
+            this.simpleButton8.TabIndex = 15;
+            this.simpleButton8.Tag = "1684";
+            this.simpleButton8.Text = "Monthly LOB Chart";
+            this.simpleButton8.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
+            // 
+            // simpleButton7
+            // 
+            this.simpleButton7.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
+            this.simpleButton7.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton7.Appearance.ForeColor = System.Drawing.Color.White;
+            this.simpleButton7.Appearance.Options.UseBackColor = true;
+            this.simpleButton7.Appearance.Options.UseFont = true;
+            this.simpleButton7.Appearance.Options.UseForeColor = true;
+            this.simpleButton7.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.simpleButton7.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.simpleButton7.AppearanceHovered.ForeColor = System.Drawing.Color.White;
+            this.simpleButton7.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.simpleButton7.AppearanceHovered.Options.UseBackColor = true;
+            this.simpleButton7.AppearanceHovered.Options.UseForeColor = true;
+            this.simpleButton7.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.simpleButton7.Location = new System.Drawing.Point(30, 222);
+            this.simpleButton7.Name = "simpleButton7";
+            this.simpleButton7.Size = new System.Drawing.Size(245, 68);
+            this.simpleButton7.TabIndex = 15;
+            this.simpleButton7.Tag = "1682";
+            this.simpleButton7.Text = "Daily LOB Chart";
+            this.simpleButton7.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdPro3_Line4
             // 
@@ -2922,7 +3181,7 @@
             this.cmdPro3_Line4.TabIndex = 15;
             this.cmdPro3_Line4.Tag = "3";
             this.cmdPro3_Line4.Text = "BTS";
-            this.cmdPro3_Line4.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdPro3_Line4.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdPro2_Line4
             // 
@@ -2945,7 +3204,7 @@
             this.cmdPro2_Line4.TabIndex = 14;
             this.cmdPro2_Line4.Tag = "2";
             this.cmdPro2_Line4.Text = "Productivity";
-            this.cmdPro2_Line4.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdPro2_Line4.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdPro1_Line4
             // 
@@ -2970,7 +3229,7 @@
             this.cmdPro1_Line4.TabIndex = 13;
             this.cmdPro1_Line4.Tag = "1";
             this.cmdPro1_Line4.Text = "Prod. Result";
-            this.cmdPro1_Line4.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdPro1_Line4.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // backstageViewClientControl19
             // 
@@ -3003,7 +3262,7 @@
             this.cmdEqu2_Line4.Tag = "2";
             this.cmdEqu2_Line4.Text = "Alert Log";
             this.cmdEqu2_Line4.Visible = false;
-            this.cmdEqu2_Line4.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdEqu2_Line4.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdEqu1_Line4
             // 
@@ -3026,7 +3285,7 @@
             this.cmdEqu1_Line4.TabIndex = 8;
             this.cmdEqu1_Line4.Tag = "2";
             this.cmdEqu1_Line4.Text = "Smart Andon";
-            this.cmdEqu1_Line4.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdEqu1_Line4.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // backstageViewClientControl20
             // 
@@ -3063,7 +3322,7 @@
             this.cmdInv5_Line4.TabIndex = 18;
             this.cmdInv5_Line4.Tag = "299";
             this.cmdInv5_Line4.Text = "Instant Set";
-            this.cmdInv5_Line4.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdInv5_Line4.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdInv4_Line4
             // 
@@ -3088,7 +3347,7 @@
             this.cmdInv4_Line4.TabIndex = 17;
             this.cmdInv4_Line4.Tag = "1";
             this.cmdInv4_Line4.Text = "Assembly Input Set";
-            this.cmdInv4_Line4.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdInv4_Line4.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdInv3_Line4
             // 
@@ -3113,7 +3372,7 @@
             this.cmdInv3_Line4.TabIndex = 16;
             this.cmdInv3_Line4.Tag = "1";
             this.cmdInv3_Line4.Text = "Bottom Inv Set";
-            this.cmdInv3_Line4.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdInv3_Line4.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdInv1_Line4
             // 
@@ -3136,7 +3395,7 @@
             this.cmdInv1_Line4.TabIndex = 15;
             this.cmdInv1_Line4.Tag = "3";
             this.cmdInv1_Line4.Text = "Leadtime";
-            this.cmdInv1_Line4.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdInv1_Line4.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdInv2_Line4
             // 
@@ -3161,7 +3420,7 @@
             this.cmdInv2_Line4.TabIndex = 14;
             this.cmdInv2_Line4.Tag = "1";
             this.cmdInv2_Line4.Text = "FG Inventory";
-            this.cmdInv2_Line4.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdInv2_Line4.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // backstageViewClientControl24
             // 
@@ -3198,7 +3457,32 @@
             this.cmdHrm4_Line4.TabIndex = 14;
             this.cmdHrm4_Line4.Tag = "1";
             this.cmdHrm4_Line4.Text = "TO/PO";
-            this.cmdHrm4_Line4.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdHrm4_Line4.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
+            // 
+            // simpleButton12
+            // 
+            this.simpleButton12.Appearance.BackColor = System.Drawing.Color.IndianRed;
+            this.simpleButton12.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton12.Appearance.ForeColor = System.Drawing.Color.White;
+            this.simpleButton12.Appearance.Options.UseBackColor = true;
+            this.simpleButton12.Appearance.Options.UseFont = true;
+            this.simpleButton12.Appearance.Options.UseForeColor = true;
+            this.simpleButton12.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.simpleButton12.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.simpleButton12.AppearanceHovered.Font = new System.Drawing.Font("Tahoma", 17F, System.Drawing.FontStyle.Bold);
+            this.simpleButton12.AppearanceHovered.ForeColor = System.Drawing.Color.White;
+            this.simpleButton12.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.simpleButton12.AppearanceHovered.Options.UseBackColor = true;
+            this.simpleButton12.AppearanceHovered.Options.UseFont = true;
+            this.simpleButton12.AppearanceHovered.Options.UseForeColor = true;
+            this.simpleButton12.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.simpleButton12.Location = new System.Drawing.Point(30, 296);
+            this.simpleButton12.Name = "simpleButton12";
+            this.simpleButton12.Size = new System.Drawing.Size(245, 68);
+            this.simpleButton12.TabIndex = 13;
+            this.simpleButton12.Tag = "1681";
+            this.simpleButton12.Text = "Kaizen";
+            this.simpleButton12.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdHrm3_Line4
             // 
@@ -3223,7 +3507,7 @@
             this.cmdHrm3_Line4.TabIndex = 13;
             this.cmdHrm3_Line4.Tag = "1";
             this.cmdHrm3_Line4.Text = "Multi Skill Ratio";
-            this.cmdHrm3_Line4.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdHrm3_Line4.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdHrm2_Line4
             // 
@@ -3246,7 +3530,7 @@
             this.cmdHrm2_Line4.TabIndex = 12;
             this.cmdHrm2_Line4.Tag = "3";
             this.cmdHrm2_Line4.Text = "Multi skill\r\n";
-            this.cmdHrm2_Line4.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdHrm2_Line4.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdHrm1_Line4
             // 
@@ -3269,7 +3553,7 @@
             this.cmdHrm1_Line4.TabIndex = 11;
             this.cmdHrm1_Line4.Tag = "2";
             this.cmdHrm1_Line4.Text = "Absenteeism";
-            this.cmdHrm1_Line4.Click += new System.EventHandler(this.cmdMenu_Click);
+            this.cmdHrm1_Line4.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // bstLine4_Qual
             // 
@@ -3643,290 +3927,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1916, 1080);
             this.panel1.TabIndex = 18;
-            // 
-            // simpleButton1
-            // 
-            this.simpleButton1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
-            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton1.Appearance.ForeColor = System.Drawing.Color.White;
-            this.simpleButton1.Appearance.Options.UseBackColor = true;
-            this.simpleButton1.Appearance.Options.UseFont = true;
-            this.simpleButton1.Appearance.Options.UseForeColor = true;
-            this.simpleButton1.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.simpleButton1.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.simpleButton1.AppearanceHovered.ForeColor = System.Drawing.Color.White;
-            this.simpleButton1.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.simpleButton1.AppearanceHovered.Options.UseBackColor = true;
-            this.simpleButton1.AppearanceHovered.Options.UseForeColor = true;
-            this.simpleButton1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.simpleButton1.Location = new System.Drawing.Point(31, 217);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(245, 68);
-            this.simpleButton1.TabIndex = 6;
-            this.simpleButton1.Tag = "3";
-            this.simpleButton1.Text = "LOB";
-            this.simpleButton1.Click += new System.EventHandler(this.cmdMenu_Click);
-            // 
-            // simpleButton2
-            // 
-            this.simpleButton2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(84)))), ((int)(((byte)(106)))));
-            this.simpleButton2.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton2.Appearance.ForeColor = System.Drawing.Color.White;
-            this.simpleButton2.Appearance.Options.UseBackColor = true;
-            this.simpleButton2.Appearance.Options.UseFont = true;
-            this.simpleButton2.Appearance.Options.UseForeColor = true;
-            this.simpleButton2.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.simpleButton2.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.simpleButton2.AppearanceHovered.ForeColor = System.Drawing.Color.White;
-            this.simpleButton2.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.simpleButton2.AppearanceHovered.Options.UseBackColor = true;
-            this.simpleButton2.AppearanceHovered.Options.UseForeColor = true;
-            this.simpleButton2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.simpleButton2.Location = new System.Drawing.Point(31, 289);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(245, 68);
-            this.simpleButton2.TabIndex = 6;
-            this.simpleButton2.Tag = "3";
-            this.simpleButton2.Text = "Computer OEE";
-            this.simpleButton2.Click += new System.EventHandler(this.cmdMenu_Click);
-            // 
-            // simpleButton3
-            // 
-            this.simpleButton3.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
-            this.simpleButton3.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton3.Appearance.ForeColor = System.Drawing.Color.White;
-            this.simpleButton3.Appearance.Options.UseBackColor = true;
-            this.simpleButton3.Appearance.Options.UseFont = true;
-            this.simpleButton3.Appearance.Options.UseForeColor = true;
-            this.simpleButton3.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.simpleButton3.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.simpleButton3.AppearanceHovered.ForeColor = System.Drawing.Color.White;
-            this.simpleButton3.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.simpleButton3.AppearanceHovered.Options.UseBackColor = true;
-            this.simpleButton3.AppearanceHovered.Options.UseForeColor = true;
-            this.simpleButton3.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.simpleButton3.Location = new System.Drawing.Point(30, 217);
-            this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(245, 68);
-            this.simpleButton3.TabIndex = 12;
-            this.simpleButton3.Tag = "3";
-            this.simpleButton3.Text = "LOB";
-            this.simpleButton3.Click += new System.EventHandler(this.cmdMenu_Click);
-            // 
-            // simpleButton4
-            // 
-            this.simpleButton4.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(84)))), ((int)(((byte)(106)))));
-            this.simpleButton4.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton4.Appearance.ForeColor = System.Drawing.Color.White;
-            this.simpleButton4.Appearance.Options.UseBackColor = true;
-            this.simpleButton4.Appearance.Options.UseFont = true;
-            this.simpleButton4.Appearance.Options.UseForeColor = true;
-            this.simpleButton4.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.simpleButton4.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.simpleButton4.AppearanceHovered.ForeColor = System.Drawing.Color.White;
-            this.simpleButton4.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.simpleButton4.AppearanceHovered.Options.UseBackColor = true;
-            this.simpleButton4.AppearanceHovered.Options.UseForeColor = true;
-            this.simpleButton4.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.simpleButton4.Location = new System.Drawing.Point(30, 289);
-            this.simpleButton4.Name = "simpleButton4";
-            this.simpleButton4.Size = new System.Drawing.Size(245, 68);
-            this.simpleButton4.TabIndex = 12;
-            this.simpleButton4.Tag = "3";
-            this.simpleButton4.Text = "Computer OEE";
-            this.simpleButton4.Click += new System.EventHandler(this.cmdMenu_Click);
-            // 
-            // simpleButton5
-            // 
-            this.simpleButton5.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
-            this.simpleButton5.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton5.Appearance.ForeColor = System.Drawing.Color.White;
-            this.simpleButton5.Appearance.Options.UseBackColor = true;
-            this.simpleButton5.Appearance.Options.UseFont = true;
-            this.simpleButton5.Appearance.Options.UseForeColor = true;
-            this.simpleButton5.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.simpleButton5.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.simpleButton5.AppearanceHovered.ForeColor = System.Drawing.Color.White;
-            this.simpleButton5.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.simpleButton5.AppearanceHovered.Options.UseBackColor = true;
-            this.simpleButton5.AppearanceHovered.Options.UseForeColor = true;
-            this.simpleButton5.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.simpleButton5.Location = new System.Drawing.Point(31, 222);
-            this.simpleButton5.Name = "simpleButton5";
-            this.simpleButton5.Size = new System.Drawing.Size(245, 68);
-            this.simpleButton5.TabIndex = 9;
-            this.simpleButton5.Tag = "3";
-            this.simpleButton5.Text = "LOB";
-            this.simpleButton5.Click += new System.EventHandler(this.cmdMenu_Click);
-            // 
-            // simpleButton6
-            // 
-            this.simpleButton6.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(84)))), ((int)(((byte)(106)))));
-            this.simpleButton6.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton6.Appearance.ForeColor = System.Drawing.Color.White;
-            this.simpleButton6.Appearance.Options.UseBackColor = true;
-            this.simpleButton6.Appearance.Options.UseFont = true;
-            this.simpleButton6.Appearance.Options.UseForeColor = true;
-            this.simpleButton6.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.simpleButton6.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.simpleButton6.AppearanceHovered.ForeColor = System.Drawing.Color.White;
-            this.simpleButton6.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.simpleButton6.AppearanceHovered.Options.UseBackColor = true;
-            this.simpleButton6.AppearanceHovered.Options.UseForeColor = true;
-            this.simpleButton6.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.simpleButton6.Location = new System.Drawing.Point(31, 296);
-            this.simpleButton6.Name = "simpleButton6";
-            this.simpleButton6.Size = new System.Drawing.Size(245, 68);
-            this.simpleButton6.TabIndex = 9;
-            this.simpleButton6.Tag = "3";
-            this.simpleButton6.Text = "Computer OEE";
-            this.simpleButton6.Click += new System.EventHandler(this.cmdMenu_Click);
-            // 
-            // simpleButton7
-            // 
-            this.simpleButton7.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
-            this.simpleButton7.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton7.Appearance.ForeColor = System.Drawing.Color.White;
-            this.simpleButton7.Appearance.Options.UseBackColor = true;
-            this.simpleButton7.Appearance.Options.UseFont = true;
-            this.simpleButton7.Appearance.Options.UseForeColor = true;
-            this.simpleButton7.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.simpleButton7.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.simpleButton7.AppearanceHovered.ForeColor = System.Drawing.Color.White;
-            this.simpleButton7.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.simpleButton7.AppearanceHovered.Options.UseBackColor = true;
-            this.simpleButton7.AppearanceHovered.Options.UseForeColor = true;
-            this.simpleButton7.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.simpleButton7.Location = new System.Drawing.Point(30, 222);
-            this.simpleButton7.Name = "simpleButton7";
-            this.simpleButton7.Size = new System.Drawing.Size(245, 68);
-            this.simpleButton7.TabIndex = 15;
-            this.simpleButton7.Tag = "3";
-            this.simpleButton7.Text = "LOB";
-            this.simpleButton7.Click += new System.EventHandler(this.cmdMenu_Click);
-            // 
-            // simpleButton8
-            // 
-            this.simpleButton8.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(84)))), ((int)(((byte)(106)))));
-            this.simpleButton8.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton8.Appearance.ForeColor = System.Drawing.Color.White;
-            this.simpleButton8.Appearance.Options.UseBackColor = true;
-            this.simpleButton8.Appearance.Options.UseFont = true;
-            this.simpleButton8.Appearance.Options.UseForeColor = true;
-            this.simpleButton8.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.simpleButton8.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.simpleButton8.AppearanceHovered.ForeColor = System.Drawing.Color.White;
-            this.simpleButton8.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.simpleButton8.AppearanceHovered.Options.UseBackColor = true;
-            this.simpleButton8.AppearanceHovered.Options.UseForeColor = true;
-            this.simpleButton8.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.simpleButton8.Location = new System.Drawing.Point(30, 296);
-            this.simpleButton8.Name = "simpleButton8";
-            this.simpleButton8.Size = new System.Drawing.Size(245, 68);
-            this.simpleButton8.TabIndex = 15;
-            this.simpleButton8.Tag = "3";
-            this.simpleButton8.Text = "Computer OEE";
-            this.simpleButton8.Click += new System.EventHandler(this.cmdMenu_Click);
-            // 
-            // simpleButton9
-            // 
-            this.simpleButton9.Appearance.BackColor = System.Drawing.Color.IndianRed;
-            this.simpleButton9.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton9.Appearance.ForeColor = System.Drawing.Color.White;
-            this.simpleButton9.Appearance.Options.UseBackColor = true;
-            this.simpleButton9.Appearance.Options.UseFont = true;
-            this.simpleButton9.Appearance.Options.UseForeColor = true;
-            this.simpleButton9.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.simpleButton9.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.simpleButton9.AppearanceHovered.Font = new System.Drawing.Font("Tahoma", 17F, System.Drawing.FontStyle.Bold);
-            this.simpleButton9.AppearanceHovered.ForeColor = System.Drawing.Color.White;
-            this.simpleButton9.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.simpleButton9.AppearanceHovered.Options.UseBackColor = true;
-            this.simpleButton9.AppearanceHovered.Options.UseFont = true;
-            this.simpleButton9.AppearanceHovered.Options.UseForeColor = true;
-            this.simpleButton9.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.simpleButton9.Location = new System.Drawing.Point(27, 293);
-            this.simpleButton9.Name = "simpleButton9";
-            this.simpleButton9.Size = new System.Drawing.Size(245, 68);
-            this.simpleButton9.TabIndex = 10;
-            this.simpleButton9.Tag = "1681";
-            this.simpleButton9.Text = "Kaizen";
-            this.simpleButton9.Click += new System.EventHandler(this.cmdMenu_Click);
-            // 
-            // simpleButton10
-            // 
-            this.simpleButton10.Appearance.BackColor = System.Drawing.Color.IndianRed;
-            this.simpleButton10.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton10.Appearance.ForeColor = System.Drawing.Color.White;
-            this.simpleButton10.Appearance.Options.UseBackColor = true;
-            this.simpleButton10.Appearance.Options.UseFont = true;
-            this.simpleButton10.Appearance.Options.UseForeColor = true;
-            this.simpleButton10.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.simpleButton10.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.simpleButton10.AppearanceHovered.Font = new System.Drawing.Font("Tahoma", 17F, System.Drawing.FontStyle.Bold);
-            this.simpleButton10.AppearanceHovered.ForeColor = System.Drawing.Color.White;
-            this.simpleButton10.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.simpleButton10.AppearanceHovered.Options.UseBackColor = true;
-            this.simpleButton10.AppearanceHovered.Options.UseFont = true;
-            this.simpleButton10.AppearanceHovered.Options.UseForeColor = true;
-            this.simpleButton10.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.simpleButton10.Location = new System.Drawing.Point(30, 295);
-            this.simpleButton10.Name = "simpleButton10";
-            this.simpleButton10.Size = new System.Drawing.Size(245, 68);
-            this.simpleButton10.TabIndex = 10;
-            this.simpleButton10.Tag = "1681";
-            this.simpleButton10.Text = "Kaizen";
-            this.simpleButton10.Click += new System.EventHandler(this.cmdMenu_Click);
-            // 
-            // simpleButton11
-            // 
-            this.simpleButton11.Appearance.BackColor = System.Drawing.Color.IndianRed;
-            this.simpleButton11.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton11.Appearance.ForeColor = System.Drawing.Color.White;
-            this.simpleButton11.Appearance.Options.UseBackColor = true;
-            this.simpleButton11.Appearance.Options.UseFont = true;
-            this.simpleButton11.Appearance.Options.UseForeColor = true;
-            this.simpleButton11.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.simpleButton11.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.simpleButton11.AppearanceHovered.Font = new System.Drawing.Font("Tahoma", 17F, System.Drawing.FontStyle.Bold);
-            this.simpleButton11.AppearanceHovered.ForeColor = System.Drawing.Color.White;
-            this.simpleButton11.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.simpleButton11.AppearanceHovered.Options.UseBackColor = true;
-            this.simpleButton11.AppearanceHovered.Options.UseFont = true;
-            this.simpleButton11.AppearanceHovered.Options.UseForeColor = true;
-            this.simpleButton11.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.simpleButton11.Location = new System.Drawing.Point(29, 296);
-            this.simpleButton11.Name = "simpleButton11";
-            this.simpleButton11.Size = new System.Drawing.Size(245, 68);
-            this.simpleButton11.TabIndex = 14;
-            this.simpleButton11.Tag = "1681";
-            this.simpleButton11.Text = "Kaizen";
-            this.simpleButton11.Click += new System.EventHandler(this.cmdMenu_Click);
-            // 
-            // simpleButton12
-            // 
-            this.simpleButton12.Appearance.BackColor = System.Drawing.Color.IndianRed;
-            this.simpleButton12.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton12.Appearance.ForeColor = System.Drawing.Color.White;
-            this.simpleButton12.Appearance.Options.UseBackColor = true;
-            this.simpleButton12.Appearance.Options.UseFont = true;
-            this.simpleButton12.Appearance.Options.UseForeColor = true;
-            this.simpleButton12.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.simpleButton12.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.simpleButton12.AppearanceHovered.Font = new System.Drawing.Font("Tahoma", 17F, System.Drawing.FontStyle.Bold);
-            this.simpleButton12.AppearanceHovered.ForeColor = System.Drawing.Color.White;
-            this.simpleButton12.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.simpleButton12.AppearanceHovered.Options.UseBackColor = true;
-            this.simpleButton12.AppearanceHovered.Options.UseFont = true;
-            this.simpleButton12.AppearanceHovered.Options.UseForeColor = true;
-            this.simpleButton12.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.simpleButton12.Location = new System.Drawing.Point(30, 296);
-            this.simpleButton12.Name = "simpleButton12";
-            this.simpleButton12.Size = new System.Drawing.Size(245, 68);
-            this.simpleButton12.TabIndex = 13;
-            this.simpleButton12.Tag = "1681";
-            this.simpleButton12.Text = "Kaizen";
-            this.simpleButton12.Click += new System.EventHandler(this.cmdMenu_Click);
             // 
             // digitalGaugeLine4
             // 
@@ -4788,8 +4788,8 @@
         private DevExpress.XtraEditors.SimpleButton cmdInv5_Line3;
         private System.Windows.Forms.Button cmdBack;
         private System.Windows.Forms.Button btnDoc;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.SimpleButton cmdLOBUPS_Line1;
+        private DevExpress.XtraEditors.SimpleButton cmdLOB_Line1;
         private DevExpress.XtraEditors.SimpleButton simpleButton9;
         private DevExpress.XtraEditors.SimpleButton simpleButton4;
         private DevExpress.XtraEditors.SimpleButton simpleButton3;

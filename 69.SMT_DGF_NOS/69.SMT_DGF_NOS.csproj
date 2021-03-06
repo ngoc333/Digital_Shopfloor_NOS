@@ -214,6 +214,12 @@
     <Compile Include="UC\UC_MONTH_SELECTION.designer.cs">
       <DependentUpon>UC_MONTH_SELECTION.cs</DependentUpon>
     </Compile>
+    <Compile Include="UC\UC_YEAR_SELECTION.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UC_YEAR_SELECTION.Designer.cs">
+      <DependentUpon>UC_YEAR_SELECTION.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="FORM_MAIN_4_LINE.resx">
@@ -247,6 +253,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UC\UC_MONTH_SELECTION.resx">
       <DependentUpon>UC_MONTH_SELECTION.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UC_YEAR_SELECTION.resx">
+      <DependentUpon>UC_YEAR_SELECTION.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

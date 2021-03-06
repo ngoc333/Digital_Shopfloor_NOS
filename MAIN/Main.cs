@@ -33,14 +33,6 @@ namespace MAIN
             {
                 _dtXML = ComVar.Func.ReadXML(Application.StartupPath + "\\Config.XML", "MAIN");
                 GoFullscreen();
-                
-
-                /// Run 1 form using Test
-             //  runSingleForm();
-
-                ///Run Group form by Config file
-
-                
                 runGroupForm();
                 
                 

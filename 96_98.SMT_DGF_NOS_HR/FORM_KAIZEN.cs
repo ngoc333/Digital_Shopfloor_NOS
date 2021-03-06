@@ -101,7 +101,7 @@ namespace FORM
             try
             {
                 SetData("CHART_COL", DateTime.Now.ToString("yyyy"), line, "000");
-                setDataChart1("CHART_PIE1", DateTime.Now.ToString("yyyy"), line, "000");
+                setDataChart1("CHART_PIE1", DateTime.Now.ToString("yyyy"), line, "000");//DateTime.Now.ToString("yyyyMM")
                 setDataChart1("CHART_PIE2", DateTime.Now.ToString("yyyy"), line, "000");
                 //DataTable dt1 = SEL_SMT_KAIZEN("CHART_PIE1", line, mline, "");
                 //if (dt != null && dt.Rows.Count > 0)
@@ -237,6 +237,10 @@ namespace FORM
                 chartControl2.Series[0].ArgumentDataMember = "DIV";
                 chartControl2.Series[0].ValueDataMembers.AddRange(new string[] { "CATALOG" });
             }
+        }
+        private void setDataChart2(string arg_type, string total, string date, string line, string mline)
+        {
+            
         }
         private void fnProcess(DataTable dt, string type)
         {
