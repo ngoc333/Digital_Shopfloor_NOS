@@ -67,6 +67,14 @@
     <Reference Include="AxInterop.FPUSpreadADO">
       <HintPath>DLL\AxInterop.FPUSpreadADO.dll</HintPath>
     </Reference>
+    <Reference Include="COM, Version=1.0.7378.15998, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\debug\COM.dll</HintPath>
+    </Reference>
+    <Reference Include="ComVar, Version=1.0.7735.26844, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\debug\ComVar.dll</HintPath>
+    </Reference>
     <Reference Include="DevExpress.Charts.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\DevExpress.Charts.v17.1.Core.dll</HintPath>
@@ -211,16 +219,6 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ComVar\ComVar.csproj">
-      <Project>{1fdd4c55-6914-47c9-89f0-682d023ac3a9}</Project>
-      <Name>ComVar</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\COM\Com.csproj">
-      <Project>{992378c3-66a1-4e98-96f5-ce2b26e0cab2}</Project>
-      <Name>Com</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DLL\" />

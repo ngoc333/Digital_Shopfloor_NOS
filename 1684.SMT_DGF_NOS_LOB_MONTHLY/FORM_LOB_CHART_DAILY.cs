@@ -151,8 +151,7 @@ namespace FORM
             COM.OraDB MyOraDB = new COM.OraDB();
             DataSet ds_ret;
           
-            MyOraDB.ShowErr = true;
-            MyOraDB.ConnectName = COM.OraDB.ConnectDB.SEPHIROTH;
+           // MyOraDB.ShowErr = true;
 
             try
             {

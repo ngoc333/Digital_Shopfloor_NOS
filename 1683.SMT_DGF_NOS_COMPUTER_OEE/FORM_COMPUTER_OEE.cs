@@ -135,8 +135,10 @@ namespace FORM
                     chart9.Series[0].LegendTextPattern = "{A}";
                 }
             }
-            catch
-            { }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
 
@@ -184,9 +186,6 @@ namespace FORM
         {
             COM.OraDB MyOraDB = new COM.OraDB();
             DataSet ds_ret;
-          
-            MyOraDB.ShowErr = true;
-            MyOraDB.ConnectName = COM.OraDB.ConnectDB.SEPHIROTH;
 
             try
             {
