@@ -9,9 +9,10 @@ using System.Windows.Forms;
 using System.Data.OracleClient;
 using System.Runtime.InteropServices;
 using DevExpress.XtraCharts;
+using System.Diagnostics;
 
 namespace FORM
-{
+{ 
     public partial class FORM_EXT_OSD : Form
     {
         public FORM_EXT_OSD()
@@ -382,80 +383,107 @@ namespace FORM
                 switch (Comp_Name)
                 {
                     case "IN":
-                        chartIN.DataSource = SP_SMT_OSD_DAILY(Comp_Name, line, Mline, UC_MONTH.GetValue());
-                        chartIN.Series[0].ArgumentDataMember = "STYLE_NAME";
-                        chartIN.Series[0].ValueDataMembers.AddRange(new string[] { "QTY" });
-                        chartIN.Series[0].ArgumentScaleType = DevExpress.XtraCharts.ScaleType.Qualitative;
+                        LoadDataChart(chartIN, SP_SMT_OSD_DAILY(Comp_Name, line, Mline, UC_MONTH.GetValue()));
+                        //chartIN.DataSource = SP_SMT_OSD_DAILY(Comp_Name, line, Mline, UC_MONTH.GetValue());
+                        //chartIN.Series[0].ArgumentDataMember = "STYLE_NAME";
+                        //chartIN.Series[0].ValueDataMembers.AddRange(new string[] { "QTY" });
+                        //chartIN.Series[0].ArgumentScaleType = DevExpress.XtraCharts.ScaleType.Qualitative;
 
-                        chartIN.Series[1].ArgumentDataMember = "STYLE_NAME";
-                        chartIN.Series[1].ValueDataMembers.AddRange(new string[] { "PER" });
-                        chartIN.Series[1].ArgumentScaleType = DevExpress.XtraCharts.ScaleType.Qualitative;
-                        ((XYDiagram)chartIN.Diagram).AxisX.Label.Angle = -35;
+                        //chartIN.Series[1].ArgumentDataMember = "STYLE_NAME";
+                        //chartIN.Series[1].ValueDataMembers.AddRange(new string[] { "PER" });
+                        //chartIN.Series[1].ArgumentScaleType = DevExpress.XtraCharts.ScaleType.Qualitative;
+                        //((XYDiagram)chartIN.Diagram).AxisX.Label.Angle = -35;
 
                         break;
                     case "IP":
-                        chartIPPH.DataSource = SP_SMT_OSD_DAILY(Comp_Name, line, Mline, UC_MONTH.GetValue());
-                        chartIPPH.Series[0].ArgumentDataMember = "STYLE_NAME";
-                        chartIPPH.Series[0].ValueDataMembers.AddRange(new string[] { "QTY" });
-                        chartIPPH.Series[0].ArgumentScaleType = DevExpress.XtraCharts.ScaleType.Qualitative;
+                        LoadDataChart(chartIPPH, SP_SMT_OSD_DAILY(Comp_Name, line, Mline, UC_MONTH.GetValue()));
+                        //chartIPPH.DataSource = SP_SMT_OSD_DAILY(Comp_Name, line, Mline, UC_MONTH.GetValue());
+                        //chartIPPH.Series[0].ArgumentDataMember = "STYLE_NAME";
+                        //chartIPPH.Series[0].ValueDataMembers.AddRange(new string[] { "QTY" });
+                        //chartIPPH.Series[0].ArgumentScaleType = DevExpress.XtraCharts.ScaleType.Qualitative;
 
-                        chartIPPH.Series[1].ArgumentDataMember = "STYLE_NAME";
-                        chartIPPH.Series[1].ValueDataMembers.AddRange(new string[] { "PER" });
-                        chartIPPH.Series[1].ArgumentScaleType = DevExpress.XtraCharts.ScaleType.Qualitative;
+                        //chartIPPH.Series[1].ArgumentDataMember = "STYLE_NAME";
+                        //chartIPPH.Series[1].ValueDataMembers.AddRange(new string[] { "PER" });
+                        //chartIPPH.Series[1].ArgumentScaleType = DevExpress.XtraCharts.ScaleType.Qualitative;
 
-                        ((XYDiagram)chartIPPH.Diagram).AxisX.Label.Angle = -35;
+                        //((XYDiagram)chartIPPH.Diagram).AxisX.Label.Angle = -35;
                         break;
                     case "PH":
-                        chartPH.DataSource = SP_SMT_OSD_DAILY(Comp_Name, line, Mline, UC_MONTH.GetValue());
-                        chartPH.Series[0].ArgumentDataMember = "STYLE_NAME";
-                        chartPH.Series[0].ValueDataMembers.AddRange(new string[] { "QTY" });
-                        chartPH.Series[0].ArgumentScaleType = DevExpress.XtraCharts.ScaleType.Qualitative;
+                        LoadDataChart(chartPH, SP_SMT_OSD_DAILY(Comp_Name, line, Mline, UC_MONTH.GetValue()));
+                        //chartPH.DataSource = SP_SMT_OSD_DAILY(Comp_Name, line, Mline, UC_MONTH.GetValue());
+                        //chartPH.Series[0].ArgumentDataMember = "STYLE_NAME";
+                        //chartPH.Series[0].ValueDataMembers.AddRange(new string[] { "QTY" });
+                        //chartPH.Series[0].ArgumentScaleType = DevExpress.XtraCharts.ScaleType.Qualitative;
 
-                        chartPH.Series[1].ArgumentDataMember = "STYLE_NAME";
-                        chartPH.Series[1].ValueDataMembers.AddRange(new string[] { "PER" });
-                        chartPH.Series[1].ArgumentScaleType = DevExpress.XtraCharts.ScaleType.Qualitative;
+                        //chartPH.Series[1].ArgumentDataMember = "STYLE_NAME";
+                        //chartPH.Series[1].ValueDataMembers.AddRange(new string[] { "PER" });
+                        //chartPH.Series[1].ArgumentScaleType = DevExpress.XtraCharts.ScaleType.Qualitative;
 
-                        ((XYDiagram)chartPH.Diagram).AxisX.Label.Angle = -35;
+                        //((XYDiagram)chartPH.Diagram).AxisX.Label.Angle = -35;
                         break;
                     case "DMP":
-                        chartDMPPU.DataSource = SP_SMT_OSD_DAILY(Comp_Name, line, Mline, UC_MONTH.GetValue());
-                        chartDMPPU.Series[0].ArgumentDataMember = "STYLE_NAME";
-                        chartDMPPU.Series[0].ValueDataMembers.AddRange(new string[] { "QTY" });
-                        chartDMPPU.Series[0].ArgumentScaleType = DevExpress.XtraCharts.ScaleType.Qualitative;
+                        LoadDataChart(chartDMPPU, SP_SMT_OSD_DAILY(Comp_Name, line, Mline, UC_MONTH.GetValue()));
+                        //chartDMPPU.DataSource = SP_SMT_OSD_DAILY(Comp_Name, line, Mline, UC_MONTH.GetValue());
+                        //chartDMPPU.Series[0].ArgumentDataMember = "STYLE_NAME";
+                        //chartDMPPU.Series[0].ValueDataMembers.AddRange(new string[] { "QTY" });
+                        //chartDMPPU.Series[0].ArgumentScaleType = DevExpress.XtraCharts.ScaleType.Qualitative;
 
-                        chartDMPPU.Series[1].ArgumentDataMember = "STYLE_NAME";
-                        chartDMPPU.Series[1].ValueDataMembers.AddRange(new string[] { "PER" });
-                        chartDMPPU.Series[1].ArgumentScaleType = DevExpress.XtraCharts.ScaleType.Qualitative;
+                        //chartDMPPU.Series[1].ArgumentDataMember = "STYLE_NAME";
+                        //chartDMPPU.Series[1].ValueDataMembers.AddRange(new string[] { "PER" });
+                        //chartDMPPU.Series[1].ArgumentScaleType = DevExpress.XtraCharts.ScaleType.Qualitative;
 
-                        ((XYDiagram)chartDMPPU.Diagram).AxisX.Label.Angle = -35;
+                        //((XYDiagram)chartDMPPU.Diagram).AxisX.Label.Angle = -35;
                         break;
                     case "PU":
-                        chartPU.DataSource = SP_SMT_OSD_DAILY(Comp_Name, line, Mline, UC_MONTH.GetValue());
-                        chartPU.Series[0].ArgumentDataMember = "STYLE_NAME";
-                        chartPU.Series[0].ValueDataMembers.AddRange(new string[] { "QTY" });
-                        chartPU.Series[0].ArgumentScaleType = DevExpress.XtraCharts.ScaleType.Qualitative;
+                        LoadDataChart(chartPU, SP_SMT_OSD_DAILY(Comp_Name, line, Mline, UC_MONTH.GetValue()));
+                        //chartPU.DataSource = SP_SMT_OSD_DAILY(Comp_Name, line, Mline, UC_MONTH.GetValue());
+                        //chartPU.Series[0].ArgumentDataMember = "STYLE_NAME";
+                        //chartPU.Series[0].ValueDataMembers.AddRange(new string[] { "QTY" });
+                        //chartPU.Series[0].ArgumentScaleType = DevExpress.XtraCharts.ScaleType.Qualitative;
 
-                        chartPU.Series[1].ArgumentDataMember = "STYLE_NAME";
-                        chartPU.Series[1].ValueDataMembers.AddRange(new string[] { "PER" });
-                        chartPU.Series[1].ArgumentScaleType = DevExpress.XtraCharts.ScaleType.Qualitative;
-                        ((XYDiagram)chartPU.Diagram).AxisX.Label.Angle = -35;
+                        //chartPU.Series[1].ArgumentDataMember = "STYLE_NAME";
+                        //chartPU.Series[1].ValueDataMembers.AddRange(new string[] { "PER" });
+                        //chartPU.Series[1].ArgumentScaleType = DevExpress.XtraCharts.ScaleType.Qualitative;
+                        //((XYDiagram)chartPU.Diagram).AxisX.Label.Angle = -35;
                         break;
                     case "OS":
-                        chartOS.DataSource = SP_SMT_OSD_DAILY(Comp_Name, line, Mline, UC_MONTH.GetValue());
-                        chartOS.Series[0].ArgumentDataMember = "STYLE_NAME";
-                        chartOS.Series[0].ValueDataMembers.AddRange(new string[] { "QTY" });
-                        chartOS.Series[0].ArgumentScaleType = DevExpress.XtraCharts.ScaleType.Qualitative;
+                        LoadDataChart(chartOS, SP_SMT_OSD_DAILY(Comp_Name, line, Mline, UC_MONTH.GetValue()));
+                        //chartOS.DataSource = SP_SMT_OSD_DAILY(Comp_Name, line, Mline, UC_MONTH.GetValue());
+                        //chartOS.Series[0].ArgumentDataMember = "STYLE_NAME";
+                        //chartOS.Series[0].ValueDataMembers.AddRange(new string[] { "QTY" });
+                        //chartOS.Series[0].ArgumentScaleType = DevExpress.XtraCharts.ScaleType.Qualitative;
 
-                        chartOS.Series[1].ArgumentDataMember = "STYLE_NAME";
-                        chartOS.Series[1].ValueDataMembers.AddRange(new string[] { "PER" });
-                        chartOS.Series[1].ArgumentScaleType = DevExpress.XtraCharts.ScaleType.Qualitative;
-                        ((XYDiagram)chartOS.Diagram).AxisX.Label.Angle = -35;
+                        //chartOS.Series[1].ArgumentDataMember = "STYLE_NAME";
+                        //chartOS.Series[1].ValueDataMembers.AddRange(new string[] { "PER" });
+                        //chartOS.Series[1].ArgumentScaleType = DevExpress.XtraCharts.ScaleType.Qualitative;
+                        //((XYDiagram)chartOS.Diagram).AxisX.Label.Angle = -35;
                         break;
 
                 }
             }
             catch 
             { }
+        }
+
+        private void LoadDataChart(ChartControl arg_Chart, DataTable arg_Data)
+        {
+            try
+            {
+                arg_Chart.DataSource = arg_Data;
+                arg_Chart.Series[0].ArgumentDataMember = "STYLE_NAME";
+                arg_Chart.Series[0].ValueDataMembers.AddRange(new string[] { "QTY" });
+                arg_Chart.Series[0].ArgumentScaleType = DevExpress.XtraCharts.ScaleType.Qualitative;
+
+                arg_Chart.Series[1].ArgumentDataMember = "STYLE_NAME";
+                arg_Chart.Series[1].ValueDataMembers.AddRange(new string[] { "PER" });
+                arg_Chart.Series[1].ArgumentScaleType = DevExpress.XtraCharts.ScaleType.Qualitative;
+                ((XYDiagram)arg_Chart.Diagram).AxisX.Label.Angle = -35;
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex);
+            }
+            
         }
 
         private void load_data()

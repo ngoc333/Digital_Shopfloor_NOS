@@ -255,8 +255,15 @@ namespace FORM
         {
             try
             {
+                foreach(Series series in ChartControl.Series)
+                {
+                    series.Points.Clear();
+                }
+                if (dt == null || dt.Rows.Count ==0)
+                {
+                    return;
+                }
                 DataTable dtChart;
-
                 switch (sChart)
                 {
                     case "TOT":
