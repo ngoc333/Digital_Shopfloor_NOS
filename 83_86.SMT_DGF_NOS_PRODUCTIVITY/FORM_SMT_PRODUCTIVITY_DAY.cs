@@ -279,7 +279,15 @@ namespace FORM
             ((XYDiagram)arg_chart.Diagram).AxisX.Title.Visibility = DevExpress.Utils.DefaultBoolean.Default;
             ((XYDiagram)arg_chart.Diagram).AxisX.Title.TextColor = System.Drawing.Color.Orange;
 
-
+            double maxValue;
+            double.TryParse(arg_dt.Compute("MAX(ACTUAL)", "").ToString(), out maxValue);
+            double target;
+            double.TryParse(arg_dt.Rows[0]["TAR"].ToString(), out target);
+            if (target > maxValue)
+            {
+                maxValue = target;
+            }
+            ((XYDiagram)arg_chart.Diagram).AxisY.WholeRange.MaxValue = maxValue + 5;
 
 
 

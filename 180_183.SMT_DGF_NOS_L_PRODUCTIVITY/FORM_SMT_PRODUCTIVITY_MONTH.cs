@@ -180,6 +180,8 @@ namespace FORM
             arg_chart.SeriesSerializable = new DevExpress.XtraCharts.Series[] { series2 };
 
 
+            
+
             // format Series 
             splineSeriesView1.MarkerVisibility = DevExpress.Utils.DefaultBoolean.True;
             splineSeriesView1.Color = System.Drawing.Color.DodgerBlue;
@@ -235,9 +237,18 @@ namespace FORM
             ((XYDiagram)arg_chart.Diagram).AxisX.Title.TextColor = System.Drawing.Color.Orange;
 
 
+            double maxValue;
+            double.TryParse(arg_dt.Compute("MAX(POD)", "").ToString(), out maxValue);
+            double target;
+            double.TryParse(arg_dt.Rows[0]["TARGET"].ToString(), out target);
+            if (target > maxValue)
+            {
+                maxValue = target;
+            }
+            ((XYDiagram)arg_chart.Diagram).AxisY.WholeRange.MaxValue = maxValue + 5;
 
 
-            
+
             //---------------add chart in panel
             pn_body.Controls.Add(arg_chart);
         }
