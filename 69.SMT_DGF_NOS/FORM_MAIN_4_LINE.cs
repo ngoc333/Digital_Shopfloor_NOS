@@ -62,6 +62,7 @@ namespace FORM
         //  string _Line = "";
         bool _IsMain = true;
         bool _FirstFrom = false;
+        bool _IsBack = false;
         // Dictionary<string, string> _dtnInit = new Dictionary<string, string>();
 
         #endregion
@@ -75,6 +76,7 @@ namespace FORM
             _arrGaugeText[1] = digitalGaugeLine2;
             _arrGaugeText[2] = digitalGaugeLine3;
             _arrGaugeText[3] = digitalGaugeLine4;
+            _IsBack = ComVar.Var._IsBack;
             if (ComVar.Var._Frm_Back == null || ComVar.Var._Frm_Back == "")
             {
                 ComVar.Var._bValue5 = true;
@@ -88,6 +90,18 @@ namespace FORM
 
                 //_IsMain = true;
                 //  formFullScreen();
+                if (_IsBack)
+                {
+                    _IsMain = false;
+                    cmdBack.Visible = true;
+                }
+                else
+                {
+                    cmdBack.Visible = false;
+                    _IsMain = true;
+
+                }
+                setConfigForm();
                 getConfigInfor();
                 //setConfigForm();
                 //initDefault();
@@ -111,9 +125,7 @@ namespace FORM
             if (Visible)
             {
 
-
-
-                if (ComVar.Var._IsBack)
+                if (_IsBack)
                 {
                     _IsMain = false;
                     cmdBack.Visible = true;
