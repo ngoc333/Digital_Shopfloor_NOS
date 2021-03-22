@@ -33,18 +33,18 @@ namespace FORM
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FORM_LOB_CHART));
-            DevExpress.XtraCharts.XYDiagram xyDiagram3 = new DevExpress.XtraCharts.XYDiagram();
-            DevExpress.XtraCharts.ConstantLine constantLine3 = new DevExpress.XtraCharts.ConstantLine();
-            DevExpress.XtraCharts.Series series3 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.StackedBarSeriesLabel stackedBarSeriesLabel3 = new DevExpress.XtraCharts.StackedBarSeriesLabel();
-            DevExpress.XtraCharts.StackedBarSeriesView stackedBarSeriesView3 = new DevExpress.XtraCharts.StackedBarSeriesView();
-            DevExpress.XtraCharts.ChartTitle chartTitle3 = new DevExpress.XtraCharts.ChartTitle();
-            DevExpress.XtraCharts.XYDiagram xyDiagram4 = new DevExpress.XtraCharts.XYDiagram();
-            DevExpress.XtraCharts.ConstantLine constantLine4 = new DevExpress.XtraCharts.ConstantLine();
-            DevExpress.XtraCharts.Series series4 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.StackedBarSeriesLabel stackedBarSeriesLabel4 = new DevExpress.XtraCharts.StackedBarSeriesLabel();
-            DevExpress.XtraCharts.StackedBarSeriesView stackedBarSeriesView4 = new DevExpress.XtraCharts.StackedBarSeriesView();
-            DevExpress.XtraCharts.ChartTitle chartTitle4 = new DevExpress.XtraCharts.ChartTitle();
+            DevExpress.XtraCharts.XYDiagram xyDiagram11 = new DevExpress.XtraCharts.XYDiagram();
+            DevExpress.XtraCharts.ConstantLine constantLine11 = new DevExpress.XtraCharts.ConstantLine();
+            DevExpress.XtraCharts.Series series11 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.StackedBarSeriesLabel stackedBarSeriesLabel11 = new DevExpress.XtraCharts.StackedBarSeriesLabel();
+            DevExpress.XtraCharts.StackedBarSeriesView stackedBarSeriesView11 = new DevExpress.XtraCharts.StackedBarSeriesView();
+            DevExpress.XtraCharts.ChartTitle chartTitle11 = new DevExpress.XtraCharts.ChartTitle();
+            DevExpress.XtraCharts.XYDiagram xyDiagram12 = new DevExpress.XtraCharts.XYDiagram();
+            DevExpress.XtraCharts.ConstantLine constantLine12 = new DevExpress.XtraCharts.ConstantLine();
+            DevExpress.XtraCharts.Series series12 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.StackedBarSeriesLabel stackedBarSeriesLabel12 = new DevExpress.XtraCharts.StackedBarSeriesLabel();
+            DevExpress.XtraCharts.StackedBarSeriesView stackedBarSeriesView12 = new DevExpress.XtraCharts.StackedBarSeriesView();
+            DevExpress.XtraCharts.ChartTitle chartTitle12 = new DevExpress.XtraCharts.ChartTitle();
             DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions3 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject9 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject10 = new DevExpress.Utils.SerializableAppearanceObject();
@@ -98,7 +98,10 @@ namespace FORM
             this.chart1 = new DevExpress.XtraCharts.ChartControl();
             this.dtpDate = new DevExpress.XtraEditors.DateEdit();
             this.label5 = new System.Windows.Forms.Label();
-            this.btn_Search = new System.Windows.Forms.Button();
+            this.lblFGALine = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.pnHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -115,10 +118,10 @@ namespace FORM
             this.splitContainer3.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesLabel3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesLabel11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesView11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer4)).BeginInit();
             this.splitContainer4.Panel1.SuspendLayout();
             this.splitContainer4.Panel2.SuspendLayout();
@@ -129,10 +132,10 @@ namespace FORM
             this.splitContainer5.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesLabel4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesView4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesLabel12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesView12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtpDate.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtpDate.Properties)).BeginInit();
             this.SuspendLayout();
@@ -150,7 +153,7 @@ namespace FORM
             this.pnHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnHeader.Location = new System.Drawing.Point(0, 0);
             this.pnHeader.Name = "pnHeader";
-            this.pnHeader.Size = new System.Drawing.Size(1924, 110);
+            this.pnHeader.Size = new System.Drawing.Size(1916, 110);
             this.pnHeader.TabIndex = 12;
             // 
             // simpleButton4
@@ -248,7 +251,7 @@ namespace FORM
             this.lblDate.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.lblDate.Location = new System.Drawing.Point(1660, 0);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(273, 106);
+            this.lblDate.Size = new System.Drawing.Size(265, 106);
             this.lblDate.TabIndex = 49;
             this.lblDate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -267,7 +270,7 @@ namespace FORM
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(1901, 107);
             this.lblTitle.TabIndex = 2;
-            this.lblTitle.Text = "LOB CHART - LINE 1";
+            this.lblTitle.Text = "LOB Chart By Day";
             // 
             // tmrDate
             // 
@@ -330,6 +333,7 @@ namespace FORM
             // 
             // splitContainer2.Panel2
             // 
+            this.splitContainer2.Panel2.Controls.Add(this.label11);
             this.splitContainer2.Panel2.Controls.Add(this.chart);
             this.splitContainer2.Size = new System.Drawing.Size(931, 890);
             this.splitContainer2.SplitterDistance = 249;
@@ -369,7 +373,7 @@ namespace FORM
             this.label.Name = "label";
             this.label.Size = new System.Drawing.Size(222, 37);
             this.label.TabIndex = 0;
-            this.label.Text = "LOB RESULT :";
+            this.label.Text = "LOB Result :";
             this.label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblLobChart
@@ -380,7 +384,7 @@ namespace FORM
             this.lblLobChart.Name = "lblLobChart";
             this.lblLobChart.Size = new System.Drawing.Size(166, 35);
             this.lblLobChart.TabIndex = 11;
-            this.lblLobChart.Text = "0";
+            this.lblLobChart.Tag = ".";
             this.lblLobChart.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblHighest
@@ -403,7 +407,7 @@ namespace FORM
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(192, 49);
             this.label4.TabIndex = 10;
-            this.label4.Text = "TAKTTIME";
+            this.label4.Text = "Takt time";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblStyle
@@ -448,7 +452,7 @@ namespace FORM
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(194, 49);
             this.label9.TabIndex = 10;
-            this.label9.Text = "HIGHEST C.T";
+            this.label9.Text = "Highest C/T";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
@@ -460,7 +464,7 @@ namespace FORM
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(119, 49);
             this.label3.TabIndex = 10;
-            this.label3.Text = "STYLE";
+            this.label3.Text = "Style";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
@@ -472,7 +476,7 @@ namespace FORM
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(120, 49);
             this.label2.TabIndex = 10;
-            this.label2.Text = "MODEL";
+            this.label2.Text = "Model";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1
@@ -491,46 +495,49 @@ namespace FORM
             this.label1.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(357, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(219, 33);
+            this.label1.Size = new System.Drawing.Size(258, 33);
             this.label1.TabIndex = 0;
-            this.label1.Text = "MINI LINE 001";
+            this.label1.Text = "Stitching Line 001";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // chart
             // 
             this.chart.DataBindings = null;
-            xyDiagram3.AxisX.VisibleInPanesSerializable = "-1";
-            constantLine3.AxisValueSerializable = "1";
-            constantLine3.Color = System.Drawing.Color.LimeGreen;
-            constantLine3.LegendText = "TAKTTIME";
-            constantLine3.LineStyle.Thickness = 3;
-            constantLine3.Name = "";
-            xyDiagram3.AxisY.ConstantLines.AddRange(new DevExpress.XtraCharts.ConstantLine[] {
-            constantLine3});
-            xyDiagram3.AxisY.VisibleInPanesSerializable = "-1";
-            this.chart.Diagram = xyDiagram3;
+            xyDiagram11.AxisX.VisibleInPanesSerializable = "-1";
+            constantLine11.AxisValueSerializable = "1";
+            constantLine11.Color = System.Drawing.Color.LimeGreen;
+            constantLine11.LegendText = "Takt time";
+            constantLine11.LineStyle.Thickness = 3;
+            constantLine11.Name = "";
+            xyDiagram11.AxisY.ConstantLines.AddRange(new DevExpress.XtraCharts.ConstantLine[] {
+            constantLine11});
+            xyDiagram11.AxisY.VisibleInPanesSerializable = "-1";
+            this.chart.Diagram = xyDiagram11;
             this.chart.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chart.Legend.AlignmentHorizontal = DevExpress.XtraCharts.LegendAlignmentHorizontal.Center;
+            this.chart.Legend.AlignmentHorizontal = DevExpress.XtraCharts.LegendAlignmentHorizontal.Right;
             this.chart.Legend.AlignmentVertical = DevExpress.XtraCharts.LegendAlignmentVertical.TopOutside;
             this.chart.Legend.Direction = DevExpress.XtraCharts.LegendDirection.LeftToRight;
             this.chart.Legend.Name = "Default Legend";
             this.chart.Legend.Visibility = DevExpress.Utils.DefaultBoolean.True;
             this.chart.Location = new System.Drawing.Point(0, 0);
             this.chart.Name = "chart";
-            stackedBarSeriesLabel3.TextPattern = "{V:#,0}";
-            series3.Label = stackedBarSeriesLabel3;
-            series3.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
-            series3.Name = "CYCLE TIME";
-            series3.View = stackedBarSeriesView3;
+            stackedBarSeriesLabel11.EnableAntialiasing = DevExpress.Utils.DefaultBoolean.True;
+            stackedBarSeriesLabel11.Position = DevExpress.XtraCharts.BarSeriesLabelPosition.TopInside;
+            stackedBarSeriesLabel11.TextPattern = "{V:#,0}";
+            series11.Label = stackedBarSeriesLabel11;
+            series11.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
+            series11.Name = "Cycle time";
+            series11.View = stackedBarSeriesView11;
             this.chart.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series3};
+        series11};
             this.chart.Size = new System.Drawing.Size(931, 637);
             this.chart.TabIndex = 0;
-            chartTitle3.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartTitle3.Text = "Yamazumi\r\n";
-            chartTitle3.Visibility = DevExpress.Utils.DefaultBoolean.True;
+            chartTitle11.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartTitle11.Indent = 2;
+            chartTitle11.Text = "Yamazumi\r\n";
+            chartTitle11.Visibility = DevExpress.Utils.DefaultBoolean.True;
             this.chart.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
-            chartTitle3});
+            chartTitle11});
             // 
             // splitContainer4
             // 
@@ -545,6 +552,7 @@ namespace FORM
             // 
             // splitContainer4.Panel2
             // 
+            this.splitContainer4.Panel2.Controls.Add(this.label12);
             this.splitContainer4.Panel2.Controls.Add(this.chart1);
             this.splitContainer4.Size = new System.Drawing.Size(989, 890);
             this.splitContainer4.SplitterDistance = 248;
@@ -585,7 +593,7 @@ namespace FORM
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(222, 37);
             this.label7.TabIndex = 12;
-            this.label7.Text = "LOB RESULT :";
+            this.label7.Text = "LOB Result :";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblLC_002
@@ -615,9 +623,9 @@ namespace FORM
             this.label6.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(489, 11);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(219, 33);
+            this.label6.Size = new System.Drawing.Size(258, 33);
             this.label6.TabIndex = 1;
-            this.label6.Text = "MINI LINE 002";
+            this.label6.Text = "Stitching Line 002";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblHighest_002
@@ -640,7 +648,7 @@ namespace FORM
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(243, 49);
             this.label10.TabIndex = 13;
-            this.label10.Text = "TAKTTIME";
+            this.label10.Text = "Takt time";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblStyle_002
@@ -685,7 +693,7 @@ namespace FORM
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(243, 49);
             this.label14.TabIndex = 14;
-            this.label14.Text = "HIGHEST C.T";
+            this.label14.Text = "Highest C.T";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label15
@@ -697,7 +705,7 @@ namespace FORM
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(119, 49);
             this.label15.TabIndex = 15;
-            this.label15.Text = "STYLE";
+            this.label15.Text = "Style";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label16
@@ -709,50 +717,53 @@ namespace FORM
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(120, 49);
             this.label16.TabIndex = 16;
-            this.label16.Text = "MODEL";
+            this.label16.Text = "Model";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // chart1
             // 
             this.chart1.DataBindings = null;
-            xyDiagram4.AxisX.VisibleInPanesSerializable = "-1";
-            constantLine4.AxisValueSerializable = "1";
-            constantLine4.Color = System.Drawing.Color.LimeGreen;
-            constantLine4.LegendText = "TAKTTIME";
-            constantLine4.LineStyle.Thickness = 3;
-            constantLine4.Name = "";
-            xyDiagram4.AxisY.ConstantLines.AddRange(new DevExpress.XtraCharts.ConstantLine[] {
-            constantLine4});
-            xyDiagram4.AxisY.VisibleInPanesSerializable = "-1";
-            this.chart1.Diagram = xyDiagram4;
+            xyDiagram12.AxisX.VisibleInPanesSerializable = "-1";
+            constantLine12.AxisValueSerializable = "1";
+            constantLine12.Color = System.Drawing.Color.LimeGreen;
+            constantLine12.LegendText = "Takt time";
+            constantLine12.LineStyle.Thickness = 3;
+            constantLine12.Name = "";
+            xyDiagram12.AxisY.ConstantLines.AddRange(new DevExpress.XtraCharts.ConstantLine[] {
+            constantLine12});
+            xyDiagram12.AxisY.VisibleInPanesSerializable = "-1";
+            this.chart1.Diagram = xyDiagram12;
             this.chart1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chart1.Legend.AlignmentHorizontal = DevExpress.XtraCharts.LegendAlignmentHorizontal.Center;
+            this.chart1.Legend.AlignmentHorizontal = DevExpress.XtraCharts.LegendAlignmentHorizontal.Right;
             this.chart1.Legend.AlignmentVertical = DevExpress.XtraCharts.LegendAlignmentVertical.TopOutside;
             this.chart1.Legend.Direction = DevExpress.XtraCharts.LegendDirection.LeftToRight;
             this.chart1.Legend.Name = "Default Legend";
             this.chart1.Legend.Visibility = DevExpress.Utils.DefaultBoolean.True;
             this.chart1.Location = new System.Drawing.Point(0, 0);
             this.chart1.Name = "chart1";
-            stackedBarSeriesLabel4.TextPattern = "{V:#,0}";
-            series4.Label = stackedBarSeriesLabel4;
-            series4.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
-            series4.Name = "CYCLE TIME";
-            series4.View = stackedBarSeriesView4;
+            stackedBarSeriesLabel12.LineVisibility = DevExpress.Utils.DefaultBoolean.True;
+            stackedBarSeriesLabel12.Position = DevExpress.XtraCharts.BarSeriesLabelPosition.TopInside;
+            stackedBarSeriesLabel12.TextPattern = "{V:#,0}";
+            series12.Label = stackedBarSeriesLabel12;
+            series12.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
+            series12.Name = "Cycle time";
+            series12.View = stackedBarSeriesView12;
             this.chart1.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series4};
+        series12};
             this.chart1.Size = new System.Drawing.Size(989, 638);
             this.chart1.TabIndex = 1;
-            chartTitle4.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartTitle4.Text = "Yamazumi\r\n";
-            chartTitle4.Visibility = DevExpress.Utils.DefaultBoolean.True;
+            chartTitle12.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartTitle12.Indent = 2;
+            chartTitle12.Text = "Yamazumi\r\n";
+            chartTitle12.Visibility = DevExpress.Utils.DefaultBoolean.True;
             this.chart1.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
-            chartTitle4});
+            chartTitle12});
             // 
             // dtpDate
             // 
             this.dtpDate.Cursor = System.Windows.Forms.Cursors.Default;
             this.dtpDate.EditValue = new System.DateTime(2017, 12, 15, 16, 0, 56, 917);
-            this.dtpDate.Location = new System.Drawing.Point(156, 116);
+            this.dtpDate.Location = new System.Drawing.Point(106, 116);
             this.dtpDate.Name = "dtpDate";
             this.dtpDate.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.False;
             this.dtpDate.Properties.Appearance.Font = new System.Drawing.Font("Calibri", 23F, System.Drawing.FontStyle.Bold);
@@ -869,6 +880,7 @@ namespace FORM
             this.dtpDate.TabIndex = 304;
             this.dtpDate.ToolTipIconType = DevExpress.Utils.ToolTipIconType.Information;
             this.dtpDate.ToolTipTitle = "Click vào để chọn ngày";
+            this.dtpDate.EditValueChanged += new System.EventHandler(this.dtpDate_EditValueChanged);
             // 
             // label5
             // 
@@ -877,32 +889,69 @@ namespace FORM
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(7, 116);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(148, 41);
+            this.label5.Size = new System.Drawing.Size(95, 41);
             this.label5.TabIndex = 303;
-            this.label5.Text = "DATE";
+            this.label5.Text = "Date:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // btn_Search
+            // lblFGALine
             // 
-            this.btn_Search.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Search.BackgroundImage")));
-            this.btn_Search.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_Search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Search.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Search.ForeColor = System.Drawing.Color.Transparent;
-            this.btn_Search.Location = new System.Drawing.Point(416, 116);
-            this.btn_Search.Name = "btn_Search";
-            this.btn_Search.Size = new System.Drawing.Size(141, 41);
-            this.btn_Search.TabIndex = 680;
-            this.btn_Search.UseVisualStyleBackColor = true;
-            this.btn_Search.Click += new System.EventHandler(this.btn_Search_Click);
+            this.lblFGALine.BackColor = System.Drawing.Color.Transparent;
+            this.lblFGALine.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblFGALine.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Bold);
+            this.lblFGALine.ForeColor = System.Drawing.Color.Black;
+            this.lblFGALine.Location = new System.Drawing.Point(547, 116);
+            this.lblFGALine.Name = "lblFGALine";
+            this.lblFGALine.Size = new System.Drawing.Size(148, 41);
+            this.lblFGALine.TabIndex = 305;
+            this.lblFGALine.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label8
+            // 
+            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.label8.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Bold);
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(366, 116);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(175, 41);
+            this.label8.TabIndex = 306;
+            this.label8.Text = "Asembly Line:";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label11
+            // 
+            this.label11.BackColor = System.Drawing.Color.Red;
+            this.label11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label11.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Bold);
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(248, 75);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(431, 25);
+            this.label11.TabIndex = 682;
+            this.label11.Text = "Cycle time > Takt time or Cycle time < Takt time * 50%";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label12
+            // 
+            this.label12.BackColor = System.Drawing.Color.Red;
+            this.label12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label12.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Bold);
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(268, 76);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(431, 25);
+            this.label12.TabIndex = 683;
+            this.label12.Text = "Cycle time > Takt time or Cycle time < Takt time * 50%";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FORM_LOB_CHART
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1924, 1061);
-            this.Controls.Add(this.btn_Search);
+            this.ClientSize = new System.Drawing.Size(1916, 1054);
+            this.Controls.Add(this.lblFGALine);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.dtpDate);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.splitContainer1);
@@ -928,10 +977,10 @@ namespace FORM
             this.splitContainer3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesLabel3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesLabel11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesView11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart)).EndInit();
             this.splitContainer4.Panel1.ResumeLayout(false);
             this.splitContainer4.Panel2.ResumeLayout(false);
@@ -943,10 +992,10 @@ namespace FORM
             this.splitContainer5.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesLabel4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesView4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesLabel12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesView12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtpDate.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtpDate.Properties)).EndInit();
@@ -980,7 +1029,6 @@ namespace FORM
         private System.Windows.Forms.Label label3;
         private ChartControl chart;
         private DateEdit dtpDate;
-        private System.Windows.Forms.Button btn_Search;
         private System.Windows.Forms.Label lblHighest;
         private System.Windows.Forms.Label lblStyle;
         private System.Windows.Forms.Label lblModel;
@@ -1000,5 +1048,9 @@ namespace FORM
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private ChartControl chart1;
+        private System.Windows.Forms.Label lblFGALine;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
     }
 }
