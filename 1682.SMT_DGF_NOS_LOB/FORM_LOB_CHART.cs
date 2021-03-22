@@ -277,10 +277,10 @@ namespace FORM
                     if (type == "MODEL")
                     {
                         lblModel.Text = dt.Rows[0]["MODEL_NAME"].ToString();
-                        lblStyle.Text = dt.Rows[0]["STYLE_NAME"].ToString();
+                        lblStyle.Text = dt.Rows[0]["STYLE_CD"].ToString();
 
                         lblModel_002.Text = dt1.Rows[0]["MODEL_NAME"].ToString();
-                        lblStyle_002.Text = dt1.Rows[0]["STYLE_NAME"].ToString();
+                        lblStyle_002.Text = dt1.Rows[0]["STYLE_CD"].ToString();
                     }
                     if (type == "TAKTTIME")
                     {
