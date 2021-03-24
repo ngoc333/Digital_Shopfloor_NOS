@@ -477,9 +477,9 @@ namespace FORM
         private void FORM_LOB_CHART_Load(object sender, EventArgs e)
         {
            // lblTitle.Text = "Daily LOB Chart - Line 1";
-            simpleButton1.Enabled = true;
+            simpleButton1.Enabled = false;
             simpleButton2.Enabled = false;
-            simpleButton3.Enabled = false;
+            simpleButton3.Enabled = true;
             simpleButton4.Enabled = false;
             lblDate.Text = string.Format(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
             dtpDate.DateTime = DateTime.Now;
@@ -524,6 +524,7 @@ namespace FORM
 
         private void FORM_LOB_CHART_VisibleChanged(object sender, EventArgs e)
         {
+            cmdBack.Tag = ComVar.Var._Frm_Back;
             if (this.Visible)
             {
                 string ymd = dtpDate.DateTime.ToString("yyyyMMdd");
@@ -597,7 +598,8 @@ namespace FORM
 
         private void menu_Click(object sender, EventArgs e)
         {
-
+            Control cnt = (Control)sender;
+            ComVar.Var.callForm = cnt.Tag == null ? "" : cnt.Tag.ToString();
         }
 
         private void cboLine_EditValueChanged(object sender, EventArgs e)

@@ -28,10 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FORM_MAIN_4_LINE));
-            DevExpress.Utils.SuperToolTip superToolTip2 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem2 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip1 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem1 = new DevExpress.Utils.ToolTipTitleItem();
             this.pnHeader = new System.Windows.Forms.Panel();
             this.cmdBack = new System.Windows.Forms.Button();
             this.cmdTMS = new System.Windows.Forms.Button();
@@ -67,6 +66,8 @@
             this.cmdPro1_Line1 = new DevExpress.XtraEditors.SimpleButton();
             this.xtraUserControl1 = new DevExpress.XtraEditors.XtraUserControl();
             this.backstageViewClientControl4 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
+            this.cmdComputerOEE_Line1 = new DevExpress.XtraEditors.SimpleButton();
+            this.cmdLOB_Line1 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdEqu2_Line1 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdEqu1_Line1 = new DevExpress.XtraEditors.SimpleButton();
             this.backstageViewClientControl5 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
@@ -104,6 +105,8 @@
             this.cmdPro2_Line2 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdPro1_Line2 = new DevExpress.XtraEditors.SimpleButton();
             this.backstageViewClientControl8 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
+            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdEqu2_Line2 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdEqu1_Line2 = new DevExpress.XtraEditors.SimpleButton();
             this.backstageViewClientControl12 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
@@ -135,6 +138,8 @@
             this.cmdPro2_Line3 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdPro1_Line3 = new DevExpress.XtraEditors.SimpleButton();
             this.backstageViewClientControl15 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
+            this.simpleButton13 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdEqu2_Line3 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdEqu1_Line3 = new DevExpress.XtraEditors.SimpleButton();
             this.label26 = new System.Windows.Forms.Label();
@@ -173,6 +178,8 @@
             this.cmdPro2_Line4 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdPro1_Line4 = new DevExpress.XtraEditors.SimpleButton();
             this.backstageViewClientControl19 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
+            this.simpleButton14 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton7 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdEqu2_Line4 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdEqu1_Line4 = new DevExpress.XtraEditors.SimpleButton();
             this.backstageViewClientControl20 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
@@ -200,7 +207,7 @@
             this.cmdQuaPer_Line4 = new DevExpress.XtraEditors.SimpleButton();
             this.bstLine1_Inv = new DevExpress.XtraBars.Ribbon.BackstageViewButtonItem();
             this.bstLine1_Qua = new DevExpress.XtraBars.Ribbon.BackstageViewButtonItem();
-            this.tmrDate = new System.Windows.Forms.Timer(this.components);
+            this.tmrDate = new System.Windows.Forms.Timer();
             this.label11 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -217,20 +224,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.tmrText = new System.Windows.Forms.Timer(this.components);
+            this.tmrText = new System.Windows.Forms.Timer();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.cmdComputerOEE_Line1 = new DevExpress.XtraEditors.SimpleButton();
-            this.cmdLOBUPS_Line1 = new DevExpress.XtraEditors.SimpleButton();
-            this.cmdLOB_Line1 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton13 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton14 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton8 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton7 = new DevExpress.XtraEditors.SimpleButton();
             this.digitalGaugeLine4 = new DevExpress.XtraGauges.Win.Gauges.Digital.DigitalGauge();
             this.groupBoxEx3 = new FORM.ClassLib.GroupBoxEx();
             this.label27 = new System.Windows.Forms.Label();
@@ -699,8 +694,8 @@
             this.backstageViewControl1.Location = new System.Drawing.Point(16, 68);
             this.backstageViewControl1.Name = "backstageViewControl1";
             this.backstageViewControl1.Office2013StyleOptions.AllowShowHideAnimation = false;
-            this.backstageViewControl1.SelectedTab = this.bstLine1_Qual;
-            this.backstageViewControl1.SelectedTabIndex = 0;
+            this.backstageViewControl1.SelectedTab = this.bstLine1_Equip;
+            this.backstageViewControl1.SelectedTabIndex = 2;
             this.backstageViewControl1.Size = new System.Drawing.Size(639, 396);
             this.backstageViewControl1.TabIndex = 10;
             this.backstageViewControl1.Text = "backstageViewControl1";
@@ -938,7 +933,6 @@
             // backstageViewClientControl4
             // 
             this.backstageViewClientControl4.Controls.Add(this.cmdComputerOEE_Line1);
-            this.backstageViewClientControl4.Controls.Add(this.cmdLOBUPS_Line1);
             this.backstageViewClientControl4.Controls.Add(this.cmdLOB_Line1);
             this.backstageViewClientControl4.Controls.Add(this.cmdEqu2_Line1);
             this.backstageViewClientControl4.Controls.Add(this.cmdEqu1_Line1);
@@ -946,6 +940,52 @@
             this.backstageViewClientControl4.Name = "backstageViewClientControl4";
             this.backstageViewClientControl4.Size = new System.Drawing.Size(302, 396);
             this.backstageViewClientControl4.TabIndex = 3;
+            // 
+            // cmdComputerOEE_Line1
+            // 
+            this.cmdComputerOEE_Line1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.cmdComputerOEE_Line1.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdComputerOEE_Line1.Appearance.ForeColor = System.Drawing.Color.White;
+            this.cmdComputerOEE_Line1.Appearance.Options.UseBackColor = true;
+            this.cmdComputerOEE_Line1.Appearance.Options.UseFont = true;
+            this.cmdComputerOEE_Line1.Appearance.Options.UseForeColor = true;
+            this.cmdComputerOEE_Line1.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.cmdComputerOEE_Line1.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.cmdComputerOEE_Line1.AppearanceHovered.ForeColor = System.Drawing.Color.White;
+            this.cmdComputerOEE_Line1.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.cmdComputerOEE_Line1.AppearanceHovered.Options.UseBackColor = true;
+            this.cmdComputerOEE_Line1.AppearanceHovered.Options.UseForeColor = true;
+            this.cmdComputerOEE_Line1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.cmdComputerOEE_Line1.Location = new System.Drawing.Point(36, 208);
+            this.cmdComputerOEE_Line1.Name = "cmdComputerOEE_Line1";
+            this.cmdComputerOEE_Line1.Size = new System.Drawing.Size(245, 63);
+            this.cmdComputerOEE_Line1.TabIndex = 7;
+            this.cmdComputerOEE_Line1.Tag = "1683";
+            this.cmdComputerOEE_Line1.Text = "Computer OEE";
+            this.cmdComputerOEE_Line1.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
+            // 
+            // cmdLOB_Line1
+            // 
+            this.cmdLOB_Line1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
+            this.cmdLOB_Line1.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdLOB_Line1.Appearance.ForeColor = System.Drawing.Color.White;
+            this.cmdLOB_Line1.Appearance.Options.UseBackColor = true;
+            this.cmdLOB_Line1.Appearance.Options.UseFont = true;
+            this.cmdLOB_Line1.Appearance.Options.UseForeColor = true;
+            this.cmdLOB_Line1.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.cmdLOB_Line1.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.cmdLOB_Line1.AppearanceHovered.ForeColor = System.Drawing.Color.White;
+            this.cmdLOB_Line1.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.cmdLOB_Line1.AppearanceHovered.Options.UseBackColor = true;
+            this.cmdLOB_Line1.AppearanceHovered.Options.UseForeColor = true;
+            this.cmdLOB_Line1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.cmdLOB_Line1.Location = new System.Drawing.Point(36, 133);
+            this.cmdLOB_Line1.Name = "cmdLOB_Line1";
+            this.cmdLOB_Line1.Size = new System.Drawing.Size(245, 63);
+            this.cmdLOB_Line1.TabIndex = 9;
+            this.cmdLOB_Line1.Tag = "1682";
+            this.cmdLOB_Line1.Text = "LOB Chart";
+            this.cmdLOB_Line1.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdEqu2_Line1
             // 
@@ -1280,7 +1320,6 @@
             this.bstLine1_Qual.ContentControl = this.backstageViewClientControl3;
             this.bstLine1_Qual.Glyph = ((System.Drawing.Image)(resources.GetObject("bstLine1_Qual.Glyph")));
             this.bstLine1_Qual.Name = "bstLine1_Qual";
-            this.bstLine1_Qual.Selected = true;
             // 
             // bstLine1_Prod
             // 
@@ -1302,11 +1341,11 @@
             this.bstLine1_Prod.ContentControl = this.backstageViewClientControl2;
             this.bstLine1_Prod.Glyph = ((System.Drawing.Image)(resources.GetObject("bstLine1_Prod.Glyph")));
             this.bstLine1_Prod.Name = "bstLine1_Prod";
-            superToolTip2.AllowHtmlText = DevExpress.Utils.DefaultBoolean.True;
-            superToolTip2.DistanceBetweenItems = 1;
-            toolTipTitleItem2.Text = "Sản Xuất";
-            superToolTip2.Items.Add(toolTipTitleItem2);
-            this.bstLine1_Prod.SuperTip = superToolTip2;
+            superToolTip1.AllowHtmlText = DevExpress.Utils.DefaultBoolean.True;
+            superToolTip1.DistanceBetweenItems = 1;
+            toolTipTitleItem1.Text = "Sản Xuất";
+            superToolTip1.Items.Add(toolTipTitleItem1);
+            this.bstLine1_Prod.SuperTip = superToolTip1;
             // 
             // bstLine1_Equip
             // 
@@ -1326,6 +1365,7 @@
             this.bstLine1_Equip.ContentControl = this.backstageViewClientControl4;
             this.bstLine1_Equip.Glyph = ((System.Drawing.Image)(resources.GetObject("bstLine1_Equip.Glyph")));
             this.bstLine1_Equip.Name = "bstLine1_Equip";
+            this.bstLine1_Equip.Selected = true;
             // 
             // bstLine1_Inventory
             // 
@@ -1452,8 +1492,8 @@
             this.backstageViewControl2.Name = "backstageViewControl2";
             this.backstageViewControl2.Office2013StyleOptions.AllowShowHideAnimation = false;
             this.backstageViewControl2.Office2013StyleOptions.LeftPaneContentVerticalOffset = 60;
-            this.backstageViewControl2.SelectedTab = this.bstLine2_Qual;
-            this.backstageViewControl2.SelectedTabIndex = 0;
+            this.backstageViewControl2.SelectedTab = this.bstLine2_Equip;
+            this.backstageViewControl2.SelectedTabIndex = 2;
             this.backstageViewControl2.Size = new System.Drawing.Size(639, 396);
             this.backstageViewControl2.TabIndex = 10;
             this.backstageViewControl2.Text = "backstageViewControl2";
@@ -1676,7 +1716,6 @@
             // backstageViewClientControl8
             // 
             this.backstageViewClientControl8.Controls.Add(this.simpleButton2);
-            this.backstageViewClientControl8.Controls.Add(this.simpleButton4);
             this.backstageViewClientControl8.Controls.Add(this.simpleButton3);
             this.backstageViewClientControl8.Controls.Add(this.cmdEqu2_Line2);
             this.backstageViewClientControl8.Controls.Add(this.cmdEqu1_Line2);
@@ -1684,6 +1723,52 @@
             this.backstageViewClientControl8.Name = "backstageViewClientControl8";
             this.backstageViewClientControl8.Size = new System.Drawing.Size(302, 396);
             this.backstageViewClientControl8.TabIndex = 3;
+            // 
+            // simpleButton2
+            // 
+            this.simpleButton2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.simpleButton2.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton2.Appearance.ForeColor = System.Drawing.Color.White;
+            this.simpleButton2.Appearance.Options.UseBackColor = true;
+            this.simpleButton2.Appearance.Options.UseFont = true;
+            this.simpleButton2.Appearance.Options.UseForeColor = true;
+            this.simpleButton2.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.simpleButton2.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.simpleButton2.AppearanceHovered.ForeColor = System.Drawing.Color.White;
+            this.simpleButton2.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.simpleButton2.AppearanceHovered.Options.UseBackColor = true;
+            this.simpleButton2.AppearanceHovered.Options.UseForeColor = true;
+            this.simpleButton2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.simpleButton2.Location = new System.Drawing.Point(30, 208);
+            this.simpleButton2.Name = "simpleButton2";
+            this.simpleButton2.Size = new System.Drawing.Size(245, 63);
+            this.simpleButton2.TabIndex = 13;
+            this.simpleButton2.Tag = "1683";
+            this.simpleButton2.Text = "Computer OEE";
+            this.simpleButton2.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
+            // 
+            // simpleButton3
+            // 
+            this.simpleButton3.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
+            this.simpleButton3.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton3.Appearance.ForeColor = System.Drawing.Color.White;
+            this.simpleButton3.Appearance.Options.UseBackColor = true;
+            this.simpleButton3.Appearance.Options.UseFont = true;
+            this.simpleButton3.Appearance.Options.UseForeColor = true;
+            this.simpleButton3.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.simpleButton3.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.simpleButton3.AppearanceHovered.ForeColor = System.Drawing.Color.White;
+            this.simpleButton3.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.simpleButton3.AppearanceHovered.Options.UseBackColor = true;
+            this.simpleButton3.AppearanceHovered.Options.UseForeColor = true;
+            this.simpleButton3.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.simpleButton3.Location = new System.Drawing.Point(30, 133);
+            this.simpleButton3.Name = "simpleButton3";
+            this.simpleButton3.Size = new System.Drawing.Size(245, 63);
+            this.simpleButton3.TabIndex = 15;
+            this.simpleButton3.Tag = "1682";
+            this.simpleButton3.Text = "LOB Chart";
+            this.simpleButton3.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdEqu2_Line2
             // 
@@ -2016,7 +2101,6 @@
             this.bstLine2_Qual.ContentControl = this.backstageViewClientControl7;
             this.bstLine2_Qual.Glyph = global::FORM.Properties.Resources.Qua;
             this.bstLine2_Qual.Name = "bstLine2_Qual";
-            this.bstLine2_Qual.Selected = true;
             // 
             // bstLine2_Prod
             // 
@@ -2051,6 +2135,7 @@
             this.bstLine2_Equip.ContentControl = this.backstageViewClientControl8;
             this.bstLine2_Equip.Glyph = global::FORM.Properties.Resources.equip;
             this.bstLine2_Equip.Name = "bstLine2_Equip";
+            this.bstLine2_Equip.Selected = true;
             // 
             // bstLine2_Inventory
             // 
@@ -2324,7 +2409,6 @@
             // backstageViewClientControl15
             // 
             this.backstageViewClientControl15.Controls.Add(this.simpleButton13);
-            this.backstageViewClientControl15.Controls.Add(this.simpleButton6);
             this.backstageViewClientControl15.Controls.Add(this.simpleButton5);
             this.backstageViewClientControl15.Controls.Add(this.cmdEqu2_Line3);
             this.backstageViewClientControl15.Controls.Add(this.cmdEqu1_Line3);
@@ -2333,6 +2417,52 @@
             this.backstageViewClientControl15.Name = "backstageViewClientControl15";
             this.backstageViewClientControl15.Size = new System.Drawing.Size(302, 414);
             this.backstageViewClientControl15.TabIndex = 3;
+            // 
+            // simpleButton13
+            // 
+            this.simpleButton13.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.simpleButton13.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton13.Appearance.ForeColor = System.Drawing.Color.White;
+            this.simpleButton13.Appearance.Options.UseBackColor = true;
+            this.simpleButton13.Appearance.Options.UseFont = true;
+            this.simpleButton13.Appearance.Options.UseForeColor = true;
+            this.simpleButton13.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.simpleButton13.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.simpleButton13.AppearanceHovered.ForeColor = System.Drawing.Color.White;
+            this.simpleButton13.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.simpleButton13.AppearanceHovered.Options.UseBackColor = true;
+            this.simpleButton13.AppearanceHovered.Options.UseForeColor = true;
+            this.simpleButton13.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.simpleButton13.Location = new System.Drawing.Point(27, 211);
+            this.simpleButton13.Name = "simpleButton13";
+            this.simpleButton13.Size = new System.Drawing.Size(245, 63);
+            this.simpleButton13.TabIndex = 11;
+            this.simpleButton13.Tag = "1683";
+            this.simpleButton13.Text = "Computer OEE";
+            this.simpleButton13.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
+            // 
+            // simpleButton5
+            // 
+            this.simpleButton5.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
+            this.simpleButton5.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton5.Appearance.ForeColor = System.Drawing.Color.White;
+            this.simpleButton5.Appearance.Options.UseBackColor = true;
+            this.simpleButton5.Appearance.Options.UseFont = true;
+            this.simpleButton5.Appearance.Options.UseForeColor = true;
+            this.simpleButton5.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.simpleButton5.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.simpleButton5.AppearanceHovered.ForeColor = System.Drawing.Color.White;
+            this.simpleButton5.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.simpleButton5.AppearanceHovered.Options.UseBackColor = true;
+            this.simpleButton5.AppearanceHovered.Options.UseForeColor = true;
+            this.simpleButton5.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.simpleButton5.Location = new System.Drawing.Point(27, 135);
+            this.simpleButton5.Name = "simpleButton5";
+            this.simpleButton5.Size = new System.Drawing.Size(245, 63);
+            this.simpleButton5.TabIndex = 13;
+            this.simpleButton5.Tag = "1682";
+            this.simpleButton5.Text = "LOB Chart";
+            this.simpleButton5.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdEqu2_Line3
             // 
@@ -3055,7 +3185,6 @@
             // backstageViewClientControl19
             // 
             this.backstageViewClientControl19.Controls.Add(this.simpleButton14);
-            this.backstageViewClientControl19.Controls.Add(this.simpleButton8);
             this.backstageViewClientControl19.Controls.Add(this.simpleButton7);
             this.backstageViewClientControl19.Controls.Add(this.cmdEqu2_Line4);
             this.backstageViewClientControl19.Controls.Add(this.cmdEqu1_Line4);
@@ -3063,6 +3192,52 @@
             this.backstageViewClientControl19.Name = "backstageViewClientControl19";
             this.backstageViewClientControl19.Size = new System.Drawing.Size(302, 414);
             this.backstageViewClientControl19.TabIndex = 3;
+            // 
+            // simpleButton14
+            // 
+            this.simpleButton14.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.simpleButton14.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton14.Appearance.ForeColor = System.Drawing.Color.White;
+            this.simpleButton14.Appearance.Options.UseBackColor = true;
+            this.simpleButton14.Appearance.Options.UseFont = true;
+            this.simpleButton14.Appearance.Options.UseForeColor = true;
+            this.simpleButton14.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.simpleButton14.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.simpleButton14.AppearanceHovered.ForeColor = System.Drawing.Color.White;
+            this.simpleButton14.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.simpleButton14.AppearanceHovered.Options.UseBackColor = true;
+            this.simpleButton14.AppearanceHovered.Options.UseForeColor = true;
+            this.simpleButton14.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.simpleButton14.Location = new System.Drawing.Point(36, 211);
+            this.simpleButton14.Name = "simpleButton14";
+            this.simpleButton14.Size = new System.Drawing.Size(245, 63);
+            this.simpleButton14.TabIndex = 16;
+            this.simpleButton14.Tag = "1683";
+            this.simpleButton14.Text = "Computer OEE";
+            this.simpleButton14.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
+            // 
+            // simpleButton7
+            // 
+            this.simpleButton7.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
+            this.simpleButton7.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton7.Appearance.ForeColor = System.Drawing.Color.White;
+            this.simpleButton7.Appearance.Options.UseBackColor = true;
+            this.simpleButton7.Appearance.Options.UseFont = true;
+            this.simpleButton7.Appearance.Options.UseForeColor = true;
+            this.simpleButton7.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.simpleButton7.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.simpleButton7.AppearanceHovered.ForeColor = System.Drawing.Color.White;
+            this.simpleButton7.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.simpleButton7.AppearanceHovered.Options.UseBackColor = true;
+            this.simpleButton7.AppearanceHovered.Options.UseForeColor = true;
+            this.simpleButton7.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.simpleButton7.Location = new System.Drawing.Point(36, 135);
+            this.simpleButton7.Name = "simpleButton7";
+            this.simpleButton7.Size = new System.Drawing.Size(245, 63);
+            this.simpleButton7.TabIndex = 18;
+            this.simpleButton7.Tag = "1682";
+            this.simpleButton7.Text = "LOB Chart";
+            this.simpleButton7.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdEqu2_Line4
             // 
@@ -3751,282 +3926,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1916, 1080);
             this.panel1.TabIndex = 18;
-            // 
-            // cmdComputerOEE_Line1
-            // 
-            this.cmdComputerOEE_Line1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.cmdComputerOEE_Line1.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdComputerOEE_Line1.Appearance.ForeColor = System.Drawing.Color.White;
-            this.cmdComputerOEE_Line1.Appearance.Options.UseBackColor = true;
-            this.cmdComputerOEE_Line1.Appearance.Options.UseFont = true;
-            this.cmdComputerOEE_Line1.Appearance.Options.UseForeColor = true;
-            this.cmdComputerOEE_Line1.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.cmdComputerOEE_Line1.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.cmdComputerOEE_Line1.AppearanceHovered.ForeColor = System.Drawing.Color.White;
-            this.cmdComputerOEE_Line1.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.cmdComputerOEE_Line1.AppearanceHovered.Options.UseBackColor = true;
-            this.cmdComputerOEE_Line1.AppearanceHovered.Options.UseForeColor = true;
-            this.cmdComputerOEE_Line1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdComputerOEE_Line1.Location = new System.Drawing.Point(36, 271);
-            this.cmdComputerOEE_Line1.Name = "cmdComputerOEE_Line1";
-            this.cmdComputerOEE_Line1.Size = new System.Drawing.Size(245, 63);
-            this.cmdComputerOEE_Line1.TabIndex = 7;
-            this.cmdComputerOEE_Line1.Tag = "1683";
-            this.cmdComputerOEE_Line1.Text = "Computer OEE";
-            this.cmdComputerOEE_Line1.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
-            // 
-            // cmdLOBUPS_Line1
-            // 
-            this.cmdLOBUPS_Line1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(84)))), ((int)(((byte)(106)))));
-            this.cmdLOBUPS_Line1.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdLOBUPS_Line1.Appearance.ForeColor = System.Drawing.Color.White;
-            this.cmdLOBUPS_Line1.Appearance.Options.UseBackColor = true;
-            this.cmdLOBUPS_Line1.Appearance.Options.UseFont = true;
-            this.cmdLOBUPS_Line1.Appearance.Options.UseForeColor = true;
-            this.cmdLOBUPS_Line1.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.cmdLOBUPS_Line1.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.cmdLOBUPS_Line1.AppearanceHovered.ForeColor = System.Drawing.Color.White;
-            this.cmdLOBUPS_Line1.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.cmdLOBUPS_Line1.AppearanceHovered.Options.UseBackColor = true;
-            this.cmdLOBUPS_Line1.AppearanceHovered.Options.UseForeColor = true;
-            this.cmdLOBUPS_Line1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdLOBUPS_Line1.Location = new System.Drawing.Point(36, 202);
-            this.cmdLOBUPS_Line1.Name = "cmdLOBUPS_Line1";
-            this.cmdLOBUPS_Line1.Size = new System.Drawing.Size(245, 63);
-            this.cmdLOBUPS_Line1.TabIndex = 8;
-            this.cmdLOBUPS_Line1.Tag = "1684";
-            this.cmdLOBUPS_Line1.Text = "Monthly LOB Chart";
-            this.cmdLOBUPS_Line1.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
-            // 
-            // cmdLOB_Line1
-            // 
-            this.cmdLOB_Line1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
-            this.cmdLOB_Line1.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdLOB_Line1.Appearance.ForeColor = System.Drawing.Color.White;
-            this.cmdLOB_Line1.Appearance.Options.UseBackColor = true;
-            this.cmdLOB_Line1.Appearance.Options.UseFont = true;
-            this.cmdLOB_Line1.Appearance.Options.UseForeColor = true;
-            this.cmdLOB_Line1.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.cmdLOB_Line1.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.cmdLOB_Line1.AppearanceHovered.ForeColor = System.Drawing.Color.White;
-            this.cmdLOB_Line1.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.cmdLOB_Line1.AppearanceHovered.Options.UseBackColor = true;
-            this.cmdLOB_Line1.AppearanceHovered.Options.UseForeColor = true;
-            this.cmdLOB_Line1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdLOB_Line1.Location = new System.Drawing.Point(36, 133);
-            this.cmdLOB_Line1.Name = "cmdLOB_Line1";
-            this.cmdLOB_Line1.Size = new System.Drawing.Size(245, 63);
-            this.cmdLOB_Line1.TabIndex = 9;
-            this.cmdLOB_Line1.Tag = "1682";
-            this.cmdLOB_Line1.Text = "Daily LOB Chart";
-            this.cmdLOB_Line1.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
-            // 
-            // simpleButton2
-            // 
-            this.simpleButton2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.simpleButton2.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton2.Appearance.ForeColor = System.Drawing.Color.White;
-            this.simpleButton2.Appearance.Options.UseBackColor = true;
-            this.simpleButton2.Appearance.Options.UseFont = true;
-            this.simpleButton2.Appearance.Options.UseForeColor = true;
-            this.simpleButton2.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.simpleButton2.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.simpleButton2.AppearanceHovered.ForeColor = System.Drawing.Color.White;
-            this.simpleButton2.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.simpleButton2.AppearanceHovered.Options.UseBackColor = true;
-            this.simpleButton2.AppearanceHovered.Options.UseForeColor = true;
-            this.simpleButton2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.simpleButton2.Location = new System.Drawing.Point(28, 270);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(245, 63);
-            this.simpleButton2.TabIndex = 13;
-            this.simpleButton2.Tag = "1683";
-            this.simpleButton2.Text = "Computer OEE";
-            this.simpleButton2.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
-            // 
-            // simpleButton4
-            // 
-            this.simpleButton4.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(84)))), ((int)(((byte)(106)))));
-            this.simpleButton4.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton4.Appearance.ForeColor = System.Drawing.Color.White;
-            this.simpleButton4.Appearance.Options.UseBackColor = true;
-            this.simpleButton4.Appearance.Options.UseFont = true;
-            this.simpleButton4.Appearance.Options.UseForeColor = true;
-            this.simpleButton4.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.simpleButton4.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.simpleButton4.AppearanceHovered.ForeColor = System.Drawing.Color.White;
-            this.simpleButton4.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.simpleButton4.AppearanceHovered.Options.UseBackColor = true;
-            this.simpleButton4.AppearanceHovered.Options.UseForeColor = true;
-            this.simpleButton4.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.simpleButton4.Location = new System.Drawing.Point(28, 201);
-            this.simpleButton4.Name = "simpleButton4";
-            this.simpleButton4.Size = new System.Drawing.Size(245, 63);
-            this.simpleButton4.TabIndex = 14;
-            this.simpleButton4.Tag = "1684";
-            this.simpleButton4.Text = "Monthly LOB Chart";
-            this.simpleButton4.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
-            // 
-            // simpleButton3
-            // 
-            this.simpleButton3.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
-            this.simpleButton3.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton3.Appearance.ForeColor = System.Drawing.Color.White;
-            this.simpleButton3.Appearance.Options.UseBackColor = true;
-            this.simpleButton3.Appearance.Options.UseFont = true;
-            this.simpleButton3.Appearance.Options.UseForeColor = true;
-            this.simpleButton3.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.simpleButton3.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.simpleButton3.AppearanceHovered.ForeColor = System.Drawing.Color.White;
-            this.simpleButton3.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.simpleButton3.AppearanceHovered.Options.UseBackColor = true;
-            this.simpleButton3.AppearanceHovered.Options.UseForeColor = true;
-            this.simpleButton3.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.simpleButton3.Location = new System.Drawing.Point(28, 132);
-            this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(245, 63);
-            this.simpleButton3.TabIndex = 15;
-            this.simpleButton3.Tag = "1682";
-            this.simpleButton3.Text = "Daily LOB Chart";
-            this.simpleButton3.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
-            // 
-            // simpleButton13
-            // 
-            this.simpleButton13.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.simpleButton13.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton13.Appearance.ForeColor = System.Drawing.Color.White;
-            this.simpleButton13.Appearance.Options.UseBackColor = true;
-            this.simpleButton13.Appearance.Options.UseFont = true;
-            this.simpleButton13.Appearance.Options.UseForeColor = true;
-            this.simpleButton13.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.simpleButton13.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.simpleButton13.AppearanceHovered.ForeColor = System.Drawing.Color.White;
-            this.simpleButton13.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.simpleButton13.AppearanceHovered.Options.UseBackColor = true;
-            this.simpleButton13.AppearanceHovered.Options.UseForeColor = true;
-            this.simpleButton13.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.simpleButton13.Location = new System.Drawing.Point(27, 273);
-            this.simpleButton13.Name = "simpleButton13";
-            this.simpleButton13.Size = new System.Drawing.Size(245, 63);
-            this.simpleButton13.TabIndex = 11;
-            this.simpleButton13.Tag = "1683";
-            this.simpleButton13.Text = "Computer OEE";
-            this.simpleButton13.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
-            // 
-            // simpleButton6
-            // 
-            this.simpleButton6.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(84)))), ((int)(((byte)(106)))));
-            this.simpleButton6.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton6.Appearance.ForeColor = System.Drawing.Color.White;
-            this.simpleButton6.Appearance.Options.UseBackColor = true;
-            this.simpleButton6.Appearance.Options.UseFont = true;
-            this.simpleButton6.Appearance.Options.UseForeColor = true;
-            this.simpleButton6.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.simpleButton6.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.simpleButton6.AppearanceHovered.ForeColor = System.Drawing.Color.White;
-            this.simpleButton6.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.simpleButton6.AppearanceHovered.Options.UseBackColor = true;
-            this.simpleButton6.AppearanceHovered.Options.UseForeColor = true;
-            this.simpleButton6.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.simpleButton6.Location = new System.Drawing.Point(27, 204);
-            this.simpleButton6.Name = "simpleButton6";
-            this.simpleButton6.Size = new System.Drawing.Size(245, 63);
-            this.simpleButton6.TabIndex = 12;
-            this.simpleButton6.Tag = "1684";
-            this.simpleButton6.Text = "Monthly LOB Chart";
-            this.simpleButton6.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
-            // 
-            // simpleButton5
-            // 
-            this.simpleButton5.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
-            this.simpleButton5.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton5.Appearance.ForeColor = System.Drawing.Color.White;
-            this.simpleButton5.Appearance.Options.UseBackColor = true;
-            this.simpleButton5.Appearance.Options.UseFont = true;
-            this.simpleButton5.Appearance.Options.UseForeColor = true;
-            this.simpleButton5.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.simpleButton5.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.simpleButton5.AppearanceHovered.ForeColor = System.Drawing.Color.White;
-            this.simpleButton5.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.simpleButton5.AppearanceHovered.Options.UseBackColor = true;
-            this.simpleButton5.AppearanceHovered.Options.UseForeColor = true;
-            this.simpleButton5.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.simpleButton5.Location = new System.Drawing.Point(27, 135);
-            this.simpleButton5.Name = "simpleButton5";
-            this.simpleButton5.Size = new System.Drawing.Size(245, 63);
-            this.simpleButton5.TabIndex = 13;
-            this.simpleButton5.Tag = "1682";
-            this.simpleButton5.Text = "Daily LOB Chart";
-            this.simpleButton5.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
-            // 
-            // simpleButton14
-            // 
-            this.simpleButton14.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.simpleButton14.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton14.Appearance.ForeColor = System.Drawing.Color.White;
-            this.simpleButton14.Appearance.Options.UseBackColor = true;
-            this.simpleButton14.Appearance.Options.UseFont = true;
-            this.simpleButton14.Appearance.Options.UseForeColor = true;
-            this.simpleButton14.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.simpleButton14.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.simpleButton14.AppearanceHovered.ForeColor = System.Drawing.Color.White;
-            this.simpleButton14.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.simpleButton14.AppearanceHovered.Options.UseBackColor = true;
-            this.simpleButton14.AppearanceHovered.Options.UseForeColor = true;
-            this.simpleButton14.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.simpleButton14.Location = new System.Drawing.Point(34, 272);
-            this.simpleButton14.Name = "simpleButton14";
-            this.simpleButton14.Size = new System.Drawing.Size(245, 63);
-            this.simpleButton14.TabIndex = 16;
-            this.simpleButton14.Tag = "1683";
-            this.simpleButton14.Text = "Computer OEE";
-            this.simpleButton14.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
-            // 
-            // simpleButton8
-            // 
-            this.simpleButton8.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(84)))), ((int)(((byte)(106)))));
-            this.simpleButton8.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton8.Appearance.ForeColor = System.Drawing.Color.White;
-            this.simpleButton8.Appearance.Options.UseBackColor = true;
-            this.simpleButton8.Appearance.Options.UseFont = true;
-            this.simpleButton8.Appearance.Options.UseForeColor = true;
-            this.simpleButton8.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.simpleButton8.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.simpleButton8.AppearanceHovered.ForeColor = System.Drawing.Color.White;
-            this.simpleButton8.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.simpleButton8.AppearanceHovered.Options.UseBackColor = true;
-            this.simpleButton8.AppearanceHovered.Options.UseForeColor = true;
-            this.simpleButton8.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.simpleButton8.Location = new System.Drawing.Point(34, 203);
-            this.simpleButton8.Name = "simpleButton8";
-            this.simpleButton8.Size = new System.Drawing.Size(245, 63);
-            this.simpleButton8.TabIndex = 17;
-            this.simpleButton8.Tag = "1684";
-            this.simpleButton8.Text = "Monthly LOB Chart";
-            this.simpleButton8.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
-            // 
-            // simpleButton7
-            // 
-            this.simpleButton7.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
-            this.simpleButton7.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton7.Appearance.ForeColor = System.Drawing.Color.White;
-            this.simpleButton7.Appearance.Options.UseBackColor = true;
-            this.simpleButton7.Appearance.Options.UseFont = true;
-            this.simpleButton7.Appearance.Options.UseForeColor = true;
-            this.simpleButton7.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.simpleButton7.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.simpleButton7.AppearanceHovered.ForeColor = System.Drawing.Color.White;
-            this.simpleButton7.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.simpleButton7.AppearanceHovered.Options.UseBackColor = true;
-            this.simpleButton7.AppearanceHovered.Options.UseForeColor = true;
-            this.simpleButton7.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.simpleButton7.Location = new System.Drawing.Point(34, 134);
-            this.simpleButton7.Name = "simpleButton7";
-            this.simpleButton7.Size = new System.Drawing.Size(245, 63);
-            this.simpleButton7.TabIndex = 18;
-            this.simpleButton7.Tag = "1682";
-            this.simpleButton7.Text = "Daily LOB Chart";
-            this.simpleButton7.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // digitalGaugeLine4
             // 
@@ -4894,16 +4793,12 @@
         private DevExpress.XtraEditors.SimpleButton simpleButton11;
         private DevExpress.XtraEditors.SimpleButton simpleButton12;
         private DevExpress.XtraEditors.SimpleButton cmdComputerOEE_Line1;
-        private DevExpress.XtraEditors.SimpleButton cmdLOBUPS_Line1;
         private DevExpress.XtraEditors.SimpleButton cmdLOB_Line1;
         private DevExpress.XtraEditors.SimpleButton simpleButton2;
-        private DevExpress.XtraEditors.SimpleButton simpleButton4;
         private DevExpress.XtraEditors.SimpleButton simpleButton3;
         private DevExpress.XtraEditors.SimpleButton simpleButton13;
-        private DevExpress.XtraEditors.SimpleButton simpleButton6;
         private DevExpress.XtraEditors.SimpleButton simpleButton5;
         private DevExpress.XtraEditors.SimpleButton simpleButton14;
-        private DevExpress.XtraEditors.SimpleButton simpleButton8;
         private DevExpress.XtraEditors.SimpleButton simpleButton7;
     }
 }
