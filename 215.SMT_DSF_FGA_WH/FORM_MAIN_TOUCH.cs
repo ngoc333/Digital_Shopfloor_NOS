@@ -36,7 +36,7 @@ namespace FORM
 
             }
             insert_from(mold_prod);
-            if (ComVar.Var._strValue1 == "099")
+            if (ComVar.Var._strValue1 == "099" || ComVar.Var._iValue4 == 8)
                 insert_from(incoming_status_N);
             else
                 insert_from(incoming_status);
@@ -179,7 +179,7 @@ namespace FORM
         private void cmd_incoming_status_Click(object sender, EventArgs e)
         {
             clickButton(cmd_incoming_status);
-            if (ComVar.Var._strValue1 == "099")
+            if (ComVar.Var._strValue1 == "099" || ComVar.Var._iValue4 == 8)
                 showform("FORM_INCOMING_STATUS_N");
             else
                 showform("FORM_INCOMING_STATUS");
