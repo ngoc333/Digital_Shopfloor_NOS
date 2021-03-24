@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FORM_SMT_ANDON_ANALYSIS));
             this.pnHeader = new System.Windows.Forms.Panel();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
@@ -40,8 +41,8 @@
             this.ovalShape24 = new Microsoft.VisualBasic.PowerPacks.OvalShape();
             this.ovalShape23 = new Microsoft.VisualBasic.PowerPacks.OvalShape();
             this.ovalShape22 = new Microsoft.VisualBasic.PowerPacks.OvalShape();
-            this.tmrDate = new System.Windows.Forms.Timer();
-            this.tmrCount = new System.Windows.Forms.Timer();
+            this.tmrDate = new System.Windows.Forms.Timer(this.components);
+            this.tmrCount = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.cboProcess = new DevExpress.XtraEditors.LookUpEdit();
             this.cboStation = new DevExpress.XtraEditors.LookUpEdit();
@@ -239,7 +240,7 @@
             this.labelControl8.Name = "labelControl8";
             this.labelControl8.Size = new System.Drawing.Size(247, 32);
             this.labelControl8.TabIndex = 52;
-            this.labelControl8.Text = " CHAY CHUYEN (MTL. Handler)";
+            this.labelControl8.Text = "CHAT LUONG (Quality)";
             // 
             // cmdBack
             // 
