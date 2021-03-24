@@ -187,8 +187,9 @@ namespace FORM
             this.simpleButton3.Name = "simpleButton3";
             this.simpleButton3.Size = new System.Drawing.Size(175, 48);
             this.simpleButton3.TabIndex = 51;
+            this.simpleButton3.Tag = "1684";
             this.simpleButton3.Text = "Month";
-            this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
+            this.simpleButton3.Click += new System.EventHandler(this.menu_Click);
             // 
             // simpleButton2
             // 
