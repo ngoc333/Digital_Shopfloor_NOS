@@ -30,8 +30,17 @@ namespace FORM
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FORM_COMPUTER_OEE));
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions5 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject17 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject18 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject19 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject20 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions6 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject21 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject22 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject23 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject24 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
@@ -42,56 +51,46 @@ namespace FORM
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject6 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject7 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject8 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions3 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject9 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject10 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject11 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject12 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions4 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject13 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject14 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject15 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject16 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraCharts.Series series1 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.PieSeriesLabel pieSeriesLabel1 = new DevExpress.XtraCharts.PieSeriesLabel();
-            DevExpress.XtraCharts.PieSeriesView pieSeriesView1 = new DevExpress.XtraCharts.PieSeriesView();
-            DevExpress.XtraCharts.ChartTitle chartTitle1 = new DevExpress.XtraCharts.ChartTitle();
-            DevExpress.XtraCharts.Series series2 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.PieSeriesLabel pieSeriesLabel2 = new DevExpress.XtraCharts.PieSeriesLabel();
-            DevExpress.XtraCharts.PieSeriesView pieSeriesView2 = new DevExpress.XtraCharts.PieSeriesView();
-            DevExpress.XtraCharts.ChartTitle chartTitle2 = new DevExpress.XtraCharts.ChartTitle();
-            DevExpress.XtraCharts.Series series3 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.PieSeriesLabel pieSeriesLabel3 = new DevExpress.XtraCharts.PieSeriesLabel();
-            DevExpress.XtraCharts.PieSeriesView pieSeriesView3 = new DevExpress.XtraCharts.PieSeriesView();
-            DevExpress.XtraCharts.ChartTitle chartTitle3 = new DevExpress.XtraCharts.ChartTitle();
-            DevExpress.XtraCharts.Series series4 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.PieSeriesLabel pieSeriesLabel4 = new DevExpress.XtraCharts.PieSeriesLabel();
-            DevExpress.XtraCharts.PieSeriesView pieSeriesView4 = new DevExpress.XtraCharts.PieSeriesView();
-            DevExpress.XtraCharts.ChartTitle chartTitle4 = new DevExpress.XtraCharts.ChartTitle();
-            DevExpress.XtraCharts.Series series5 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.PieSeriesLabel pieSeriesLabel5 = new DevExpress.XtraCharts.PieSeriesLabel();
-            DevExpress.XtraCharts.PieSeriesView pieSeriesView5 = new DevExpress.XtraCharts.PieSeriesView();
-            DevExpress.XtraCharts.ChartTitle chartTitle5 = new DevExpress.XtraCharts.ChartTitle();
-            DevExpress.XtraCharts.Series series6 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.PieSeriesLabel pieSeriesLabel6 = new DevExpress.XtraCharts.PieSeriesLabel();
-            DevExpress.XtraCharts.PieSeriesView pieSeriesView6 = new DevExpress.XtraCharts.PieSeriesView();
-            DevExpress.XtraCharts.ChartTitle chartTitle6 = new DevExpress.XtraCharts.ChartTitle();
-            DevExpress.XtraCharts.Series series7 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.PieSeriesLabel pieSeriesLabel7 = new DevExpress.XtraCharts.PieSeriesLabel();
-            DevExpress.XtraCharts.PieSeriesView pieSeriesView7 = new DevExpress.XtraCharts.PieSeriesView();
-            DevExpress.XtraCharts.ChartTitle chartTitle7 = new DevExpress.XtraCharts.ChartTitle();
-            DevExpress.XtraCharts.Series series8 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.PieSeriesLabel pieSeriesLabel8 = new DevExpress.XtraCharts.PieSeriesLabel();
-            DevExpress.XtraCharts.PieSeriesView pieSeriesView8 = new DevExpress.XtraCharts.PieSeriesView();
-            DevExpress.XtraCharts.ChartTitle chartTitle8 = new DevExpress.XtraCharts.ChartTitle();
-            DevExpress.XtraCharts.Series series9 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.PieSeriesLabel pieSeriesLabel9 = new DevExpress.XtraCharts.PieSeriesLabel();
-            DevExpress.XtraCharts.PieSeriesView pieSeriesView9 = new DevExpress.XtraCharts.PieSeriesView();
-            DevExpress.XtraCharts.ChartTitle chartTitle9 = new DevExpress.XtraCharts.ChartTitle();
-            DevExpress.XtraCharts.Series series10 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.PieSeriesLabel pieSeriesLabel10 = new DevExpress.XtraCharts.PieSeriesLabel();
-            DevExpress.XtraCharts.PieSeriesView pieSeriesView10 = new DevExpress.XtraCharts.PieSeriesView();
-            DevExpress.XtraCharts.ChartTitle chartTitle10 = new DevExpress.XtraCharts.ChartTitle();
+            DevExpress.XtraCharts.Series series11 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.PieSeriesLabel pieSeriesLabel11 = new DevExpress.XtraCharts.PieSeriesLabel();
+            DevExpress.XtraCharts.PieSeriesView pieSeriesView11 = new DevExpress.XtraCharts.PieSeriesView();
+            DevExpress.XtraCharts.ChartTitle chartTitle11 = new DevExpress.XtraCharts.ChartTitle();
+            DevExpress.XtraCharts.Series series12 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.PieSeriesLabel pieSeriesLabel12 = new DevExpress.XtraCharts.PieSeriesLabel();
+            DevExpress.XtraCharts.PieSeriesView pieSeriesView12 = new DevExpress.XtraCharts.PieSeriesView();
+            DevExpress.XtraCharts.ChartTitle chartTitle12 = new DevExpress.XtraCharts.ChartTitle();
+            DevExpress.XtraCharts.Series series13 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.PieSeriesLabel pieSeriesLabel13 = new DevExpress.XtraCharts.PieSeriesLabel();
+            DevExpress.XtraCharts.PieSeriesView pieSeriesView13 = new DevExpress.XtraCharts.PieSeriesView();
+            DevExpress.XtraCharts.ChartTitle chartTitle13 = new DevExpress.XtraCharts.ChartTitle();
+            DevExpress.XtraCharts.Series series14 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.PieSeriesLabel pieSeriesLabel14 = new DevExpress.XtraCharts.PieSeriesLabel();
+            DevExpress.XtraCharts.PieSeriesView pieSeriesView14 = new DevExpress.XtraCharts.PieSeriesView();
+            DevExpress.XtraCharts.ChartTitle chartTitle14 = new DevExpress.XtraCharts.ChartTitle();
+            DevExpress.XtraCharts.Series series15 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.PieSeriesLabel pieSeriesLabel15 = new DevExpress.XtraCharts.PieSeriesLabel();
+            DevExpress.XtraCharts.PieSeriesView pieSeriesView15 = new DevExpress.XtraCharts.PieSeriesView();
+            DevExpress.XtraCharts.ChartTitle chartTitle15 = new DevExpress.XtraCharts.ChartTitle();
+            DevExpress.XtraCharts.Series series16 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.PieSeriesLabel pieSeriesLabel16 = new DevExpress.XtraCharts.PieSeriesLabel();
+            DevExpress.XtraCharts.PieSeriesView pieSeriesView16 = new DevExpress.XtraCharts.PieSeriesView();
+            DevExpress.XtraCharts.ChartTitle chartTitle16 = new DevExpress.XtraCharts.ChartTitle();
+            DevExpress.XtraCharts.Series series17 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.PieSeriesLabel pieSeriesLabel17 = new DevExpress.XtraCharts.PieSeriesLabel();
+            DevExpress.XtraCharts.PieSeriesView pieSeriesView17 = new DevExpress.XtraCharts.PieSeriesView();
+            DevExpress.XtraCharts.ChartTitle chartTitle17 = new DevExpress.XtraCharts.ChartTitle();
+            DevExpress.XtraCharts.Series series18 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.PieSeriesLabel pieSeriesLabel18 = new DevExpress.XtraCharts.PieSeriesLabel();
+            DevExpress.XtraCharts.PieSeriesView pieSeriesView18 = new DevExpress.XtraCharts.PieSeriesView();
+            DevExpress.XtraCharts.ChartTitle chartTitle18 = new DevExpress.XtraCharts.ChartTitle();
+            DevExpress.XtraCharts.Series series19 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.PieSeriesLabel pieSeriesLabel19 = new DevExpress.XtraCharts.PieSeriesLabel();
+            DevExpress.XtraCharts.PieSeriesView pieSeriesView19 = new DevExpress.XtraCharts.PieSeriesView();
+            DevExpress.XtraCharts.ChartTitle chartTitle19 = new DevExpress.XtraCharts.ChartTitle();
+            DevExpress.XtraCharts.Series series20 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.PieSeriesLabel pieSeriesLabel20 = new DevExpress.XtraCharts.PieSeriesLabel();
+            DevExpress.XtraCharts.PieSeriesView pieSeriesView20 = new DevExpress.XtraCharts.PieSeriesView();
+            DevExpress.XtraCharts.ChartTitle chartTitle20 = new DevExpress.XtraCharts.ChartTitle();
             this.pnHeader = new System.Windows.Forms.Panel();
             this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
@@ -100,13 +99,12 @@ namespace FORM
             this.cmdBack = new System.Windows.Forms.Button();
             this.lblDate = new System.Windows.Forms.Label();
             this.lblTitle = new DevExpress.XtraEditors.LabelControl();
-            this.tmrDate = new System.Windows.Forms.Timer(this.components);
+            this.tmrDate = new System.Windows.Forms.Timer();
             this.arcScaleComponent2 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent();
             this.panel1 = new System.Windows.Forms.Panel();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.label32 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
-            this.lblFGALine = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.dtpDateT = new DevExpress.XtraEditors.DateEdit();
             this.label1 = new System.Windows.Forms.Label();
             this.dtpDateF = new DevExpress.XtraEditors.DateEdit();
@@ -153,7 +151,6 @@ namespace FORM
             this.lbl_W10 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.lbl_Idle10 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
             this.chart1 = new DevExpress.XtraCharts.ChartControl();
             this.chart2 = new DevExpress.XtraCharts.ChartControl();
             this.chart3 = new DevExpress.XtraCharts.ChartControl();
@@ -176,9 +173,9 @@ namespace FORM
             ((System.ComponentModel.ISupportInitialize)(this.dtpDateF.Properties)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesView11)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
@@ -190,41 +187,41 @@ namespace FORM
             this.tableLayoutPanel10.SuspendLayout();
             this.tableLayoutPanel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesView12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesView13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesView4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesView14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesView5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesView15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesView6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesView16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesView7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesView17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesView8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesView18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesView9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesView19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesView10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesView20)).BeginInit();
             this.SuspendLayout();
             // 
             // pnHeader
@@ -358,6 +355,7 @@ namespace FORM
             // 
             // tmrDate
             // 
+            this.tmrDate.Enabled = true;
             this.tmrDate.Interval = 1000;
             this.tmrDate.Tick += new System.EventHandler(this.tmrDate_Tick);
             // 
@@ -407,8 +405,6 @@ namespace FORM
             // 
             this.splitContainer1.Panel1.Controls.Add(this.label32);
             this.splitContainer1.Panel1.Controls.Add(this.label31);
-            this.splitContainer1.Panel1.Controls.Add(this.lblFGALine);
-            this.splitContainer1.Panel1.Controls.Add(this.label3);
             this.splitContainer1.Panel1.Controls.Add(this.dtpDateT);
             this.splitContainer1.Panel1.Controls.Add(this.label1);
             this.splitContainer1.Panel1.Controls.Add(this.dtpDateF);
@@ -421,6 +417,18 @@ namespace FORM
             this.splitContainer1.SplitterDistance = 84;
             this.splitContainer1.TabIndex = 0;
             // 
+            // label32
+            // 
+            this.label32.BackColor = System.Drawing.Color.Green;
+            this.label32.Font = new System.Drawing.Font("Calibri", 16F);
+            this.label32.ForeColor = System.Drawing.Color.White;
+            this.label32.Location = new System.Drawing.Point(1619, 18);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(293, 26);
+            this.label32.TabIndex = 684;
+            this.label32.Text = "Machine working time >= 90%";
+            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // label31
             // 
             this.label31.BackColor = System.Drawing.Color.Red;
@@ -432,30 +440,6 @@ namespace FORM
             this.label31.TabIndex = 684;
             this.label31.Text = "Machine working time < 90%";
             this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblFGALine
-            // 
-            this.lblFGALine.BackColor = System.Drawing.Color.Transparent;
-            this.lblFGALine.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblFGALine.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Bold);
-            this.lblFGALine.ForeColor = System.Drawing.Color.Black;
-            this.lblFGALine.Location = new System.Drawing.Point(807, 22);
-            this.lblFGALine.Name = "lblFGALine";
-            this.lblFGALine.Size = new System.Drawing.Size(148, 41);
-            this.lblFGALine.TabIndex = 682;
-            this.lblFGALine.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label3
-            // 
-            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.label3.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(600, 22);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(202, 41);
-            this.label3.TabIndex = 683;
-            this.label3.Text = "ASSEMBLY LINE:";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // dtpDateT
             // 
@@ -522,20 +506,20 @@ namespace FORM
             this.dtpDateT.Properties.AppearanceReadOnly.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold);
             this.dtpDateT.Properties.AppearanceReadOnly.Options.UseFont = true;
             this.dtpDateT.Properties.AutoHeight = false;
-            editorButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions1.Image")));
-            serializableAppearanceObject1.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold);
-            serializableAppearanceObject1.Options.UseFont = true;
-            serializableAppearanceObject2.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold);
-            serializableAppearanceObject2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            serializableAppearanceObject2.Options.UseFont = true;
-            serializableAppearanceObject3.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold);
-            serializableAppearanceObject3.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            serializableAppearanceObject3.Options.UseFont = true;
-            serializableAppearanceObject4.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold);
-            serializableAppearanceObject4.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            serializableAppearanceObject4.Options.UseFont = true;
+            editorButtonImageOptions5.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions5.Image")));
+            serializableAppearanceObject17.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold);
+            serializableAppearanceObject17.Options.UseFont = true;
+            serializableAppearanceObject18.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold);
+            serializableAppearanceObject18.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            serializableAppearanceObject18.Options.UseFont = true;
+            serializableAppearanceObject19.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold);
+            serializableAppearanceObject19.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            serializableAppearanceObject19.Options.UseFont = true;
+            serializableAppearanceObject20.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold);
+            serializableAppearanceObject20.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            serializableAppearanceObject20.Options.UseFont = true;
             this.dtpDateT.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", 50, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", 50, true, true, false, editorButtonImageOptions5, new DevExpress.Utils.KeyShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)), serializableAppearanceObject17, serializableAppearanceObject18, serializableAppearanceObject19, serializableAppearanceObject20, "", null, null)});
             this.dtpDateT.Properties.ButtonsStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
             this.dtpDateT.Properties.CalendarTimeProperties.AllowNullInput = DevExpress.Utils.DefaultBoolean.False;
             this.dtpDateT.Properties.CalendarTimeProperties.Appearance.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold);
@@ -547,18 +531,18 @@ namespace FORM
             this.dtpDateT.Properties.CalendarTimeProperties.AppearanceReadOnly.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold);
             this.dtpDateT.Properties.CalendarTimeProperties.AppearanceReadOnly.Options.UseFont = true;
             this.dtpDateT.Properties.CalendarTimeProperties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
-            editorButtonImageOptions2.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions2.Image")));
-            editorButtonImageOptions2.Location = DevExpress.XtraEditors.ImageLocation.Default;
-            serializableAppearanceObject5.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold);
-            serializableAppearanceObject5.Options.UseFont = true;
-            serializableAppearanceObject6.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold);
-            serializableAppearanceObject6.Options.UseFont = true;
-            serializableAppearanceObject7.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold);
-            serializableAppearanceObject7.Options.UseFont = true;
-            serializableAppearanceObject8.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold);
-            serializableAppearanceObject8.Options.UseFont = true;
+            editorButtonImageOptions6.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions6.Image")));
+            editorButtonImageOptions6.Location = DevExpress.XtraEditors.ImageLocation.Default;
+            serializableAppearanceObject21.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold);
+            serializableAppearanceObject21.Options.UseFont = true;
+            serializableAppearanceObject22.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold);
+            serializableAppearanceObject22.Options.UseFont = true;
+            serializableAppearanceObject23.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold);
+            serializableAppearanceObject23.Options.UseFont = true;
+            serializableAppearanceObject24.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold);
+            serializableAppearanceObject24.Options.UseFont = true;
             this.dtpDateT.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Close, "", 50, true, true, false, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", null, null)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Close, "", 50, true, true, false, editorButtonImageOptions6, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject21, serializableAppearanceObject22, serializableAppearanceObject23, serializableAppearanceObject24, "", null, null)});
             this.dtpDateT.Properties.CalendarTimeProperties.ButtonsStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
             this.dtpDateT.Properties.CalendarTimeProperties.DisplayFormat.FormatString = "yyyy-MM-dd";
             this.dtpDateT.Properties.CalendarTimeProperties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
@@ -664,20 +648,20 @@ namespace FORM
             this.dtpDateF.Properties.AppearanceReadOnly.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold);
             this.dtpDateF.Properties.AppearanceReadOnly.Options.UseFont = true;
             this.dtpDateF.Properties.AutoHeight = false;
-            editorButtonImageOptions3.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions3.Image")));
-            serializableAppearanceObject9.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold);
-            serializableAppearanceObject9.Options.UseFont = true;
-            serializableAppearanceObject10.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold);
-            serializableAppearanceObject10.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            serializableAppearanceObject10.Options.UseFont = true;
-            serializableAppearanceObject11.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold);
-            serializableAppearanceObject11.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            serializableAppearanceObject11.Options.UseFont = true;
-            serializableAppearanceObject12.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold);
-            serializableAppearanceObject12.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            serializableAppearanceObject12.Options.UseFont = true;
+            editorButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions1.Image")));
+            serializableAppearanceObject1.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold);
+            serializableAppearanceObject1.Options.UseFont = true;
+            serializableAppearanceObject2.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold);
+            serializableAppearanceObject2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            serializableAppearanceObject2.Options.UseFont = true;
+            serializableAppearanceObject3.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold);
+            serializableAppearanceObject3.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            serializableAppearanceObject3.Options.UseFont = true;
+            serializableAppearanceObject4.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold);
+            serializableAppearanceObject4.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            serializableAppearanceObject4.Options.UseFont = true;
             this.dtpDateF.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", 50, true, true, false, editorButtonImageOptions3, new DevExpress.Utils.KeyShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)), serializableAppearanceObject9, serializableAppearanceObject10, serializableAppearanceObject11, serializableAppearanceObject12, "", null, null)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", 50, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null)});
             this.dtpDateF.Properties.ButtonsStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
             this.dtpDateF.Properties.CalendarTimeProperties.AllowNullInput = DevExpress.Utils.DefaultBoolean.False;
             this.dtpDateF.Properties.CalendarTimeProperties.Appearance.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold);
@@ -689,18 +673,18 @@ namespace FORM
             this.dtpDateF.Properties.CalendarTimeProperties.AppearanceReadOnly.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold);
             this.dtpDateF.Properties.CalendarTimeProperties.AppearanceReadOnly.Options.UseFont = true;
             this.dtpDateF.Properties.CalendarTimeProperties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
-            editorButtonImageOptions4.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions4.Image")));
-            editorButtonImageOptions4.Location = DevExpress.XtraEditors.ImageLocation.Default;
-            serializableAppearanceObject13.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold);
-            serializableAppearanceObject13.Options.UseFont = true;
-            serializableAppearanceObject14.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold);
-            serializableAppearanceObject14.Options.UseFont = true;
-            serializableAppearanceObject15.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold);
-            serializableAppearanceObject15.Options.UseFont = true;
-            serializableAppearanceObject16.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold);
-            serializableAppearanceObject16.Options.UseFont = true;
+            editorButtonImageOptions2.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions2.Image")));
+            editorButtonImageOptions2.Location = DevExpress.XtraEditors.ImageLocation.Default;
+            serializableAppearanceObject5.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold);
+            serializableAppearanceObject5.Options.UseFont = true;
+            serializableAppearanceObject6.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold);
+            serializableAppearanceObject6.Options.UseFont = true;
+            serializableAppearanceObject7.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold);
+            serializableAppearanceObject7.Options.UseFont = true;
+            serializableAppearanceObject8.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold);
+            serializableAppearanceObject8.Options.UseFont = true;
             this.dtpDateF.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Close, "", 50, true, true, false, editorButtonImageOptions4, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject13, serializableAppearanceObject14, serializableAppearanceObject15, serializableAppearanceObject16, "", null, null)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Close, "", 50, true, true, false, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", null, null)});
             this.dtpDateF.Properties.CalendarTimeProperties.ButtonsStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
             this.dtpDateF.Properties.CalendarTimeProperties.DisplayFormat.FormatString = "yyyy-MM-dd";
             this.dtpDateF.Properties.CalendarTimeProperties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
@@ -799,19 +783,19 @@ namespace FORM
             this.chart.PaletteRepository.Add("Palette 1", new DevExpress.XtraCharts.Palette("Palette 1", DevExpress.XtraCharts.PaletteScaleMode.Repeat, new DevExpress.XtraCharts.PaletteEntry[] {
                 new DevExpress.XtraCharts.PaletteEntry(System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(125)))), ((int)(((byte)(49))))), System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(125)))), ((int)(((byte)(49)))))),
                 new DevExpress.XtraCharts.PaletteEntry(System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(64))))), System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(64))))))}));
-            pieSeriesLabel1.TextPattern = "{V:#,0 }s : {VP:0%}";
-            series1.Label = pieSeriesLabel1;
-            series1.LegendName = "Default Legend";
-            series1.Name = "Computer1";
-            series1.View = pieSeriesView1;
+            pieSeriesLabel11.TextPattern = "{V:#,0 }s : {VP:0%}";
+            series11.Label = pieSeriesLabel11;
+            series11.LegendName = "Default Legend";
+            series11.Name = "Computer1";
+            series11.View = pieSeriesView11;
             this.chart.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series1};
+        series11};
             this.chart.Size = new System.Drawing.Size(377, 337);
             this.chart.TabIndex = 0;
-            chartTitle1.Text = "Computer #1";
-            chartTitle1.Visibility = DevExpress.Utils.DefaultBoolean.False;
+            chartTitle11.Text = "Computer #1";
+            chartTitle11.Visibility = DevExpress.Utils.DefaultBoolean.False;
             this.chart.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
-            chartTitle1});
+            chartTitle11});
             this.chart.CustomDrawSeriesPoint += new DevExpress.XtraCharts.CustomDrawSeriesPointEventHandler(this.chart_CustomDrawSeriesPoint);
             // 
             // tableLayoutPanel2
@@ -820,7 +804,7 @@ namespace FORM
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 82.24299F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.75701F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 57F));
             this.tableLayoutPanel2.Controls.Add(this.lbl_W1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.lbl_Tittle1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.lbl_Idle1, 1, 0);
@@ -838,7 +822,7 @@ namespace FORM
             this.lbl_W1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_W1.Font = new System.Drawing.Font("Calibri", 10F);
             this.lbl_W1.ForeColor = System.Drawing.Color.White;
-            this.lbl_W1.Location = new System.Drawing.Point(266, 1);
+            this.lbl_W1.Location = new System.Drawing.Point(264, 1);
             this.lbl_W1.Name = "lbl_W1";
             this.lbl_W1.Size = new System.Drawing.Size(50, 55);
             this.lbl_W1.TabIndex = 2;
@@ -852,7 +836,7 @@ namespace FORM
             this.lbl_Tittle1.ForeColor = System.Drawing.Color.Blue;
             this.lbl_Tittle1.Location = new System.Drawing.Point(4, 1);
             this.lbl_Tittle1.Name = "lbl_Tittle1";
-            this.lbl_Tittle1.Size = new System.Drawing.Size(255, 55);
+            this.lbl_Tittle1.Size = new System.Drawing.Size(253, 55);
             this.lbl_Tittle1.TabIndex = 1;
             this.lbl_Tittle1.Text = "Computer #1";
             this.lbl_Tittle1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -864,9 +848,9 @@ namespace FORM
             this.lbl_Idle1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_Idle1.Font = new System.Drawing.Font("Calibri", 10F);
             this.lbl_Idle1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl_Idle1.Location = new System.Drawing.Point(323, 1);
+            this.lbl_Idle1.Location = new System.Drawing.Point(321, 1);
             this.lbl_Idle1.Name = "lbl_Idle1";
-            this.lbl_Idle1.Size = new System.Drawing.Size(50, 55);
+            this.lbl_Idle1.Size = new System.Drawing.Size(52, 55);
             this.lbl_Idle1.TabIndex = 0;
             this.lbl_Idle1.Text = "MC Idle 10%";
             this.lbl_Idle1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -877,7 +861,7 @@ namespace FORM
             this.tableLayoutPanel3.ColumnCount = 3;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 82.24299F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.75701F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 57F));
             this.tableLayoutPanel3.Controls.Add(this.lbl_W2, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.label4, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.lbl_Idle2, 1, 0);
@@ -895,7 +879,7 @@ namespace FORM
             this.lbl_W2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_W2.Font = new System.Drawing.Font("Calibri", 10F);
             this.lbl_W2.ForeColor = System.Drawing.Color.White;
-            this.lbl_W2.Location = new System.Drawing.Point(266, 1);
+            this.lbl_W2.Location = new System.Drawing.Point(264, 1);
             this.lbl_W2.Name = "lbl_W2";
             this.lbl_W2.Size = new System.Drawing.Size(50, 55);
             this.lbl_W2.TabIndex = 2;
@@ -909,7 +893,7 @@ namespace FORM
             this.label4.ForeColor = System.Drawing.Color.Blue;
             this.label4.Location = new System.Drawing.Point(4, 1);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(255, 55);
+            this.label4.Size = new System.Drawing.Size(253, 55);
             this.label4.TabIndex = 1;
             this.label4.Text = "Computer #2";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -921,9 +905,9 @@ namespace FORM
             this.lbl_Idle2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_Idle2.Font = new System.Drawing.Font("Calibri", 10F);
             this.lbl_Idle2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl_Idle2.Location = new System.Drawing.Point(323, 1);
+            this.lbl_Idle2.Location = new System.Drawing.Point(321, 1);
             this.lbl_Idle2.Name = "lbl_Idle2";
-            this.lbl_Idle2.Size = new System.Drawing.Size(50, 55);
+            this.lbl_Idle2.Size = new System.Drawing.Size(52, 55);
             this.lbl_Idle2.TabIndex = 0;
             this.lbl_Idle2.Text = "MC Idle 10%";
             this.lbl_Idle2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -934,7 +918,7 @@ namespace FORM
             this.tableLayoutPanel4.ColumnCount = 3;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 82.24299F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.75701F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 57F));
             this.tableLayoutPanel4.Controls.Add(this.lbl_W3, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.label8, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.lbl_Idle3, 1, 0);
@@ -952,7 +936,7 @@ namespace FORM
             this.lbl_W3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_W3.Font = new System.Drawing.Font("Calibri", 10F);
             this.lbl_W3.ForeColor = System.Drawing.Color.White;
-            this.lbl_W3.Location = new System.Drawing.Point(266, 1);
+            this.lbl_W3.Location = new System.Drawing.Point(264, 1);
             this.lbl_W3.Name = "lbl_W3";
             this.lbl_W3.Size = new System.Drawing.Size(50, 55);
             this.lbl_W3.TabIndex = 2;
@@ -966,7 +950,7 @@ namespace FORM
             this.label8.ForeColor = System.Drawing.Color.Blue;
             this.label8.Location = new System.Drawing.Point(4, 1);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(255, 55);
+            this.label8.Size = new System.Drawing.Size(253, 55);
             this.label8.TabIndex = 1;
             this.label8.Text = "Computer #3";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -978,9 +962,9 @@ namespace FORM
             this.lbl_Idle3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_Idle3.Font = new System.Drawing.Font("Calibri", 10F);
             this.lbl_Idle3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl_Idle3.Location = new System.Drawing.Point(323, 1);
+            this.lbl_Idle3.Location = new System.Drawing.Point(321, 1);
             this.lbl_Idle3.Name = "lbl_Idle3";
-            this.lbl_Idle3.Size = new System.Drawing.Size(50, 55);
+            this.lbl_Idle3.Size = new System.Drawing.Size(52, 55);
             this.lbl_Idle3.TabIndex = 0;
             this.lbl_Idle3.Text = "MC Idle 10%";
             this.lbl_Idle3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -991,7 +975,7 @@ namespace FORM
             this.tableLayoutPanel5.ColumnCount = 3;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 82.24299F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.75701F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 57F));
             this.tableLayoutPanel5.Controls.Add(this.lbl_W4, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.label11, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.lbl_Idle4, 1, 0);
@@ -1009,7 +993,7 @@ namespace FORM
             this.lbl_W4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_W4.Font = new System.Drawing.Font("Calibri", 10F);
             this.lbl_W4.ForeColor = System.Drawing.Color.White;
-            this.lbl_W4.Location = new System.Drawing.Point(266, 1);
+            this.lbl_W4.Location = new System.Drawing.Point(264, 1);
             this.lbl_W4.Name = "lbl_W4";
             this.lbl_W4.Size = new System.Drawing.Size(50, 55);
             this.lbl_W4.TabIndex = 2;
@@ -1023,7 +1007,7 @@ namespace FORM
             this.label11.ForeColor = System.Drawing.Color.Blue;
             this.label11.Location = new System.Drawing.Point(4, 1);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(255, 55);
+            this.label11.Size = new System.Drawing.Size(253, 55);
             this.label11.TabIndex = 1;
             this.label11.Text = "Computer #4";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1035,9 +1019,9 @@ namespace FORM
             this.lbl_Idle4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_Idle4.Font = new System.Drawing.Font("Calibri", 10F);
             this.lbl_Idle4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl_Idle4.Location = new System.Drawing.Point(323, 1);
+            this.lbl_Idle4.Location = new System.Drawing.Point(321, 1);
             this.lbl_Idle4.Name = "lbl_Idle4";
-            this.lbl_Idle4.Size = new System.Drawing.Size(50, 55);
+            this.lbl_Idle4.Size = new System.Drawing.Size(52, 55);
             this.lbl_Idle4.TabIndex = 0;
             this.lbl_Idle4.Text = "MC Idle 10%";
             this.lbl_Idle4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1048,7 +1032,7 @@ namespace FORM
             this.tableLayoutPanel6.ColumnCount = 3;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 82.24299F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.75701F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 57F));
             this.tableLayoutPanel6.Controls.Add(this.lbl_W5, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.label14, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.lbl_Idle5, 1, 0);
@@ -1066,7 +1050,7 @@ namespace FORM
             this.lbl_W5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_W5.Font = new System.Drawing.Font("Calibri", 10F);
             this.lbl_W5.ForeColor = System.Drawing.Color.White;
-            this.lbl_W5.Location = new System.Drawing.Point(266, 1);
+            this.lbl_W5.Location = new System.Drawing.Point(264, 1);
             this.lbl_W5.Name = "lbl_W5";
             this.lbl_W5.Size = new System.Drawing.Size(50, 55);
             this.lbl_W5.TabIndex = 2;
@@ -1080,7 +1064,7 @@ namespace FORM
             this.label14.ForeColor = System.Drawing.Color.Blue;
             this.label14.Location = new System.Drawing.Point(4, 1);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(255, 55);
+            this.label14.Size = new System.Drawing.Size(253, 55);
             this.label14.TabIndex = 1;
             this.label14.Text = "Computer #5";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1092,9 +1076,9 @@ namespace FORM
             this.lbl_Idle5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_Idle5.Font = new System.Drawing.Font("Calibri", 10F);
             this.lbl_Idle5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl_Idle5.Location = new System.Drawing.Point(323, 1);
+            this.lbl_Idle5.Location = new System.Drawing.Point(321, 1);
             this.lbl_Idle5.Name = "lbl_Idle5";
-            this.lbl_Idle5.Size = new System.Drawing.Size(50, 55);
+            this.lbl_Idle5.Size = new System.Drawing.Size(52, 55);
             this.lbl_Idle5.TabIndex = 0;
             this.lbl_Idle5.Text = "MC Idle 10%";
             this.lbl_Idle5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1105,7 +1089,7 @@ namespace FORM
             this.tableLayoutPanel7.ColumnCount = 3;
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 82.24299F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.75701F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 57F));
             this.tableLayoutPanel7.Controls.Add(this.lbl_W6, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.label17, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.lbl_Idle6, 1, 0);
@@ -1123,7 +1107,7 @@ namespace FORM
             this.lbl_W6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_W6.Font = new System.Drawing.Font("Calibri", 10F);
             this.lbl_W6.ForeColor = System.Drawing.Color.White;
-            this.lbl_W6.Location = new System.Drawing.Point(266, 1);
+            this.lbl_W6.Location = new System.Drawing.Point(264, 1);
             this.lbl_W6.Name = "lbl_W6";
             this.lbl_W6.Size = new System.Drawing.Size(50, 55);
             this.lbl_W6.TabIndex = 2;
@@ -1137,7 +1121,7 @@ namespace FORM
             this.label17.ForeColor = System.Drawing.Color.Blue;
             this.label17.Location = new System.Drawing.Point(4, 1);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(255, 55);
+            this.label17.Size = new System.Drawing.Size(253, 55);
             this.label17.TabIndex = 1;
             this.label17.Text = "Computer #6";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1149,9 +1133,9 @@ namespace FORM
             this.lbl_Idle6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_Idle6.Font = new System.Drawing.Font("Calibri", 10F);
             this.lbl_Idle6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl_Idle6.Location = new System.Drawing.Point(323, 1);
+            this.lbl_Idle6.Location = new System.Drawing.Point(321, 1);
             this.lbl_Idle6.Name = "lbl_Idle6";
-            this.lbl_Idle6.Size = new System.Drawing.Size(50, 55);
+            this.lbl_Idle6.Size = new System.Drawing.Size(52, 55);
             this.lbl_Idle6.TabIndex = 0;
             this.lbl_Idle6.Text = "MC Idle 10%";
             this.lbl_Idle6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1162,7 +1146,7 @@ namespace FORM
             this.tableLayoutPanel8.ColumnCount = 3;
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 82.24299F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.75701F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 57F));
             this.tableLayoutPanel8.Controls.Add(this.lbl_W7, 0, 0);
             this.tableLayoutPanel8.Controls.Add(this.label20, 0, 0);
             this.tableLayoutPanel8.Controls.Add(this.lbl_Idle7, 1, 0);
@@ -1180,7 +1164,7 @@ namespace FORM
             this.lbl_W7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_W7.Font = new System.Drawing.Font("Calibri", 10F);
             this.lbl_W7.ForeColor = System.Drawing.Color.White;
-            this.lbl_W7.Location = new System.Drawing.Point(266, 1);
+            this.lbl_W7.Location = new System.Drawing.Point(264, 1);
             this.lbl_W7.Name = "lbl_W7";
             this.lbl_W7.Size = new System.Drawing.Size(50, 55);
             this.lbl_W7.TabIndex = 2;
@@ -1194,7 +1178,7 @@ namespace FORM
             this.label20.ForeColor = System.Drawing.Color.Blue;
             this.label20.Location = new System.Drawing.Point(4, 1);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(255, 55);
+            this.label20.Size = new System.Drawing.Size(253, 55);
             this.label20.TabIndex = 1;
             this.label20.Text = "Computer #7";
             this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1206,9 +1190,9 @@ namespace FORM
             this.lbl_Idle7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_Idle7.Font = new System.Drawing.Font("Calibri", 10F);
             this.lbl_Idle7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl_Idle7.Location = new System.Drawing.Point(323, 1);
+            this.lbl_Idle7.Location = new System.Drawing.Point(321, 1);
             this.lbl_Idle7.Name = "lbl_Idle7";
-            this.lbl_Idle7.Size = new System.Drawing.Size(50, 55);
+            this.lbl_Idle7.Size = new System.Drawing.Size(52, 55);
             this.lbl_Idle7.TabIndex = 0;
             this.lbl_Idle7.Text = "MC Idle 10%";
             this.lbl_Idle7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1219,7 +1203,7 @@ namespace FORM
             this.tableLayoutPanel9.ColumnCount = 3;
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 82.24299F));
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.75701F));
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 57F));
             this.tableLayoutPanel9.Controls.Add(this.lbl_W8, 0, 0);
             this.tableLayoutPanel9.Controls.Add(this.label23, 0, 0);
             this.tableLayoutPanel9.Controls.Add(this.lbl_Idle8, 1, 0);
@@ -1237,7 +1221,7 @@ namespace FORM
             this.lbl_W8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_W8.Font = new System.Drawing.Font("Calibri", 10F);
             this.lbl_W8.ForeColor = System.Drawing.Color.White;
-            this.lbl_W8.Location = new System.Drawing.Point(266, 1);
+            this.lbl_W8.Location = new System.Drawing.Point(264, 1);
             this.lbl_W8.Name = "lbl_W8";
             this.lbl_W8.Size = new System.Drawing.Size(50, 55);
             this.lbl_W8.TabIndex = 2;
@@ -1251,7 +1235,7 @@ namespace FORM
             this.label23.ForeColor = System.Drawing.Color.Blue;
             this.label23.Location = new System.Drawing.Point(4, 1);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(255, 55);
+            this.label23.Size = new System.Drawing.Size(253, 55);
             this.label23.TabIndex = 1;
             this.label23.Text = "Computer #8";
             this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1263,9 +1247,9 @@ namespace FORM
             this.lbl_Idle8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_Idle8.Font = new System.Drawing.Font("Calibri", 10F);
             this.lbl_Idle8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl_Idle8.Location = new System.Drawing.Point(323, 1);
+            this.lbl_Idle8.Location = new System.Drawing.Point(321, 1);
             this.lbl_Idle8.Name = "lbl_Idle8";
-            this.lbl_Idle8.Size = new System.Drawing.Size(50, 55);
+            this.lbl_Idle8.Size = new System.Drawing.Size(52, 55);
             this.lbl_Idle8.TabIndex = 0;
             this.lbl_Idle8.Text = "MC Idle 10%";
             this.lbl_Idle8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1276,7 +1260,7 @@ namespace FORM
             this.tableLayoutPanel10.ColumnCount = 3;
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 82.24299F));
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.75701F));
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 57F));
             this.tableLayoutPanel10.Controls.Add(this.lbl_W9, 0, 0);
             this.tableLayoutPanel10.Controls.Add(this.label26, 0, 0);
             this.tableLayoutPanel10.Controls.Add(this.lbl_Idle9, 1, 0);
@@ -1294,7 +1278,7 @@ namespace FORM
             this.lbl_W9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_W9.Font = new System.Drawing.Font("Calibri", 10F);
             this.lbl_W9.ForeColor = System.Drawing.Color.White;
-            this.lbl_W9.Location = new System.Drawing.Point(266, 1);
+            this.lbl_W9.Location = new System.Drawing.Point(264, 1);
             this.lbl_W9.Name = "lbl_W9";
             this.lbl_W9.Size = new System.Drawing.Size(50, 55);
             this.lbl_W9.TabIndex = 2;
@@ -1308,7 +1292,7 @@ namespace FORM
             this.label26.ForeColor = System.Drawing.Color.Blue;
             this.label26.Location = new System.Drawing.Point(4, 1);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(255, 55);
+            this.label26.Size = new System.Drawing.Size(253, 55);
             this.label26.TabIndex = 1;
             this.label26.Text = "Computer #9";
             this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1320,9 +1304,9 @@ namespace FORM
             this.lbl_Idle9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_Idle9.Font = new System.Drawing.Font("Calibri", 10F);
             this.lbl_Idle9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl_Idle9.Location = new System.Drawing.Point(323, 1);
+            this.lbl_Idle9.Location = new System.Drawing.Point(321, 1);
             this.lbl_Idle9.Name = "lbl_Idle9";
-            this.lbl_Idle9.Size = new System.Drawing.Size(50, 55);
+            this.lbl_Idle9.Size = new System.Drawing.Size(52, 55);
             this.lbl_Idle9.TabIndex = 0;
             this.lbl_Idle9.Text = "MC Idle 10%";
             this.lbl_Idle9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1333,7 +1317,7 @@ namespace FORM
             this.tableLayoutPanel11.ColumnCount = 3;
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 82.24299F));
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.75701F));
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 53F));
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 55F));
             this.tableLayoutPanel11.Controls.Add(this.lbl_W10, 0, 0);
             this.tableLayoutPanel11.Controls.Add(this.label29, 0, 0);
             this.tableLayoutPanel11.Controls.Add(this.lbl_Idle10, 1, 0);
@@ -1351,7 +1335,7 @@ namespace FORM
             this.lbl_W10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_W10.Font = new System.Drawing.Font("Calibri", 10F);
             this.lbl_W10.ForeColor = System.Drawing.Color.White;
-            this.lbl_W10.Location = new System.Drawing.Point(268, 1);
+            this.lbl_W10.Location = new System.Drawing.Point(266, 1);
             this.lbl_W10.Name = "lbl_W10";
             this.lbl_W10.Size = new System.Drawing.Size(50, 55);
             this.lbl_W10.TabIndex = 2;
@@ -1365,7 +1349,7 @@ namespace FORM
             this.label29.ForeColor = System.Drawing.Color.Blue;
             this.label29.Location = new System.Drawing.Point(4, 1);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(257, 55);
+            this.label29.Size = new System.Drawing.Size(255, 55);
             this.label29.TabIndex = 1;
             this.label29.Text = "Computer #10";
             this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1377,24 +1361,12 @@ namespace FORM
             this.lbl_Idle10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_Idle10.Font = new System.Drawing.Font("Calibri", 10F);
             this.lbl_Idle10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl_Idle10.Location = new System.Drawing.Point(325, 1);
+            this.lbl_Idle10.Location = new System.Drawing.Point(323, 1);
             this.lbl_Idle10.Name = "lbl_Idle10";
-            this.lbl_Idle10.Size = new System.Drawing.Size(48, 55);
+            this.lbl_Idle10.Size = new System.Drawing.Size(50, 55);
             this.lbl_Idle10.TabIndex = 0;
             this.lbl_Idle10.Text = "MC Idle 10%";
             this.lbl_Idle10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label32
-            // 
-            this.label32.BackColor = System.Drawing.Color.Green;
-            this.label32.Font = new System.Drawing.Font("Calibri", 16F);
-            this.label32.ForeColor = System.Drawing.Color.White;
-            this.label32.Location = new System.Drawing.Point(1619, 18);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(293, 26);
-            this.label32.TabIndex = 684;
-            this.label32.Text = "Machine working time >= 90%";
-            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // chart1
             // 
@@ -1412,19 +1384,19 @@ namespace FORM
             this.chart1.PaletteRepository.Add("Palette 1", new DevExpress.XtraCharts.Palette("Palette 1", DevExpress.XtraCharts.PaletteScaleMode.Repeat, new DevExpress.XtraCharts.PaletteEntry[] {
                 new DevExpress.XtraCharts.PaletteEntry(System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(125)))), ((int)(((byte)(49))))), System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(125)))), ((int)(((byte)(49)))))),
                 new DevExpress.XtraCharts.PaletteEntry(System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(64))))), System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(64))))))}));
-            pieSeriesLabel2.TextPattern = "{V:#,0 }s : {VP:0%}";
-            series2.Label = pieSeriesLabel2;
-            series2.LegendName = "Default Legend";
-            series2.Name = "Computer1";
-            series2.View = pieSeriesView2;
+            pieSeriesLabel12.TextPattern = "{V:#,0 }s : {VP:0%}";
+            series12.Label = pieSeriesLabel12;
+            series12.LegendName = "Default Legend";
+            series12.Name = "Computer1";
+            series12.View = pieSeriesView12;
             this.chart1.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series2};
+        series12};
             this.chart1.Size = new System.Drawing.Size(377, 337);
             this.chart1.TabIndex = 0;
-            chartTitle2.Text = "Computer #1";
-            chartTitle2.Visibility = DevExpress.Utils.DefaultBoolean.False;
+            chartTitle12.Text = "Computer #1";
+            chartTitle12.Visibility = DevExpress.Utils.DefaultBoolean.False;
             this.chart1.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
-            chartTitle2});
+            chartTitle12});
             this.chart1.CustomDrawSeriesPoint += new DevExpress.XtraCharts.CustomDrawSeriesPointEventHandler(this.chart_CustomDrawSeriesPoint);
             // 
             // chart2
@@ -1443,19 +1415,19 @@ namespace FORM
             this.chart2.PaletteRepository.Add("Palette 1", new DevExpress.XtraCharts.Palette("Palette 1", DevExpress.XtraCharts.PaletteScaleMode.Repeat, new DevExpress.XtraCharts.PaletteEntry[] {
                 new DevExpress.XtraCharts.PaletteEntry(System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(125)))), ((int)(((byte)(49))))), System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(125)))), ((int)(((byte)(49)))))),
                 new DevExpress.XtraCharts.PaletteEntry(System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(64))))), System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(64))))))}));
-            pieSeriesLabel3.TextPattern = "{V:#,0 }s : {VP:0%}";
-            series3.Label = pieSeriesLabel3;
-            series3.LegendName = "Default Legend";
-            series3.Name = "Computer1";
-            series3.View = pieSeriesView3;
+            pieSeriesLabel13.TextPattern = "{V:#,0 }s : {VP:0%}";
+            series13.Label = pieSeriesLabel13;
+            series13.LegendName = "Default Legend";
+            series13.Name = "Computer1";
+            series13.View = pieSeriesView13;
             this.chart2.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series3};
+        series13};
             this.chart2.Size = new System.Drawing.Size(377, 337);
             this.chart2.TabIndex = 0;
-            chartTitle3.Text = "Computer #1";
-            chartTitle3.Visibility = DevExpress.Utils.DefaultBoolean.False;
+            chartTitle13.Text = "Computer #1";
+            chartTitle13.Visibility = DevExpress.Utils.DefaultBoolean.False;
             this.chart2.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
-            chartTitle3});
+            chartTitle13});
             this.chart2.CustomDrawSeriesPoint += new DevExpress.XtraCharts.CustomDrawSeriesPointEventHandler(this.chart_CustomDrawSeriesPoint);
             // 
             // chart3
@@ -1474,19 +1446,19 @@ namespace FORM
             this.chart3.PaletteRepository.Add("Palette 1", new DevExpress.XtraCharts.Palette("Palette 1", DevExpress.XtraCharts.PaletteScaleMode.Repeat, new DevExpress.XtraCharts.PaletteEntry[] {
                 new DevExpress.XtraCharts.PaletteEntry(System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(125)))), ((int)(((byte)(49))))), System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(125)))), ((int)(((byte)(49)))))),
                 new DevExpress.XtraCharts.PaletteEntry(System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(64))))), System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(64))))))}));
-            pieSeriesLabel4.TextPattern = "{V:#,0 }s : {VP:0%}";
-            series4.Label = pieSeriesLabel4;
-            series4.LegendName = "Default Legend";
-            series4.Name = "Computer1";
-            series4.View = pieSeriesView4;
+            pieSeriesLabel14.TextPattern = "{V:#,0 }s : {VP:0%}";
+            series14.Label = pieSeriesLabel14;
+            series14.LegendName = "Default Legend";
+            series14.Name = "Computer1";
+            series14.View = pieSeriesView14;
             this.chart3.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series4};
+        series14};
             this.chart3.Size = new System.Drawing.Size(377, 337);
             this.chart3.TabIndex = 0;
-            chartTitle4.Text = "Computer #1";
-            chartTitle4.Visibility = DevExpress.Utils.DefaultBoolean.False;
+            chartTitle14.Text = "Computer #1";
+            chartTitle14.Visibility = DevExpress.Utils.DefaultBoolean.False;
             this.chart3.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
-            chartTitle4});
+            chartTitle14});
             this.chart3.CustomDrawSeriesPoint += new DevExpress.XtraCharts.CustomDrawSeriesPointEventHandler(this.chart_CustomDrawSeriesPoint);
             // 
             // chart4
@@ -1505,19 +1477,19 @@ namespace FORM
             this.chart4.PaletteRepository.Add("Palette 1", new DevExpress.XtraCharts.Palette("Palette 1", DevExpress.XtraCharts.PaletteScaleMode.Repeat, new DevExpress.XtraCharts.PaletteEntry[] {
                 new DevExpress.XtraCharts.PaletteEntry(System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(125)))), ((int)(((byte)(49))))), System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(125)))), ((int)(((byte)(49)))))),
                 new DevExpress.XtraCharts.PaletteEntry(System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(64))))), System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(64))))))}));
-            pieSeriesLabel5.TextPattern = "{V:#,0 }s : {VP:0%}";
-            series5.Label = pieSeriesLabel5;
-            series5.LegendName = "Default Legend";
-            series5.Name = "Computer1";
-            series5.View = pieSeriesView5;
+            pieSeriesLabel15.TextPattern = "{V:#,0 }s : {VP:0%}";
+            series15.Label = pieSeriesLabel15;
+            series15.LegendName = "Default Legend";
+            series15.Name = "Computer1";
+            series15.View = pieSeriesView15;
             this.chart4.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series5};
+        series15};
             this.chart4.Size = new System.Drawing.Size(380, 337);
             this.chart4.TabIndex = 0;
-            chartTitle5.Text = "Computer #1";
-            chartTitle5.Visibility = DevExpress.Utils.DefaultBoolean.False;
+            chartTitle15.Text = "Computer #1";
+            chartTitle15.Visibility = DevExpress.Utils.DefaultBoolean.False;
             this.chart4.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
-            chartTitle5});
+            chartTitle15});
             this.chart4.CustomDrawSeriesPoint += new DevExpress.XtraCharts.CustomDrawSeriesPointEventHandler(this.chart_CustomDrawSeriesPoint);
             // 
             // chart5
@@ -1536,19 +1508,19 @@ namespace FORM
             this.chart5.PaletteRepository.Add("Palette 1", new DevExpress.XtraCharts.Palette("Palette 1", DevExpress.XtraCharts.PaletteScaleMode.Repeat, new DevExpress.XtraCharts.PaletteEntry[] {
                 new DevExpress.XtraCharts.PaletteEntry(System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(125)))), ((int)(((byte)(49))))), System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(125)))), ((int)(((byte)(49)))))),
                 new DevExpress.XtraCharts.PaletteEntry(System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(64))))), System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(64))))))}));
-            pieSeriesLabel6.TextPattern = "{V:#,0 }s : {VP:0%}";
-            series6.Label = pieSeriesLabel6;
-            series6.LegendName = "Default Legend";
-            series6.Name = "Computer1";
-            series6.View = pieSeriesView6;
+            pieSeriesLabel16.TextPattern = "{V:#,0 }s : {VP:0%}";
+            series16.Label = pieSeriesLabel16;
+            series16.LegendName = "Default Legend";
+            series16.Name = "Computer1";
+            series16.View = pieSeriesView16;
             this.chart5.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series6};
+        series16};
             this.chart5.Size = new System.Drawing.Size(377, 380);
             this.chart5.TabIndex = 0;
-            chartTitle6.Text = "Computer #1";
-            chartTitle6.Visibility = DevExpress.Utils.DefaultBoolean.False;
+            chartTitle16.Text = "Computer #1";
+            chartTitle16.Visibility = DevExpress.Utils.DefaultBoolean.False;
             this.chart5.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
-            chartTitle6});
+            chartTitle16});
             this.chart5.CustomDrawSeriesPoint += new DevExpress.XtraCharts.CustomDrawSeriesPointEventHandler(this.chart_CustomDrawSeriesPoint);
             // 
             // chart6
@@ -1567,19 +1539,19 @@ namespace FORM
             this.chart6.PaletteRepository.Add("Palette 1", new DevExpress.XtraCharts.Palette("Palette 1", DevExpress.XtraCharts.PaletteScaleMode.Repeat, new DevExpress.XtraCharts.PaletteEntry[] {
                 new DevExpress.XtraCharts.PaletteEntry(System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(125)))), ((int)(((byte)(49))))), System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(125)))), ((int)(((byte)(49)))))),
                 new DevExpress.XtraCharts.PaletteEntry(System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(64))))), System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(64))))))}));
-            pieSeriesLabel7.TextPattern = "{V:#,0 }s : {VP:0%}";
-            series7.Label = pieSeriesLabel7;
-            series7.LegendName = "Default Legend";
-            series7.Name = "Computer1";
-            series7.View = pieSeriesView7;
+            pieSeriesLabel17.TextPattern = "{V:#,0 }s : {VP:0%}";
+            series17.Label = pieSeriesLabel17;
+            series17.LegendName = "Default Legend";
+            series17.Name = "Computer1";
+            series17.View = pieSeriesView17;
             this.chart6.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series7};
+        series17};
             this.chart6.Size = new System.Drawing.Size(377, 380);
             this.chart6.TabIndex = 0;
-            chartTitle7.Text = "Computer #1";
-            chartTitle7.Visibility = DevExpress.Utils.DefaultBoolean.False;
+            chartTitle17.Text = "Computer #1";
+            chartTitle17.Visibility = DevExpress.Utils.DefaultBoolean.False;
             this.chart6.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
-            chartTitle7});
+            chartTitle17});
             this.chart6.CustomDrawSeriesPoint += new DevExpress.XtraCharts.CustomDrawSeriesPointEventHandler(this.chart_CustomDrawSeriesPoint);
             // 
             // chart7
@@ -1598,19 +1570,19 @@ namespace FORM
             this.chart7.PaletteRepository.Add("Palette 1", new DevExpress.XtraCharts.Palette("Palette 1", DevExpress.XtraCharts.PaletteScaleMode.Repeat, new DevExpress.XtraCharts.PaletteEntry[] {
                 new DevExpress.XtraCharts.PaletteEntry(System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(125)))), ((int)(((byte)(49))))), System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(125)))), ((int)(((byte)(49)))))),
                 new DevExpress.XtraCharts.PaletteEntry(System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(64))))), System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(64))))))}));
-            pieSeriesLabel8.TextPattern = "{V:#,0 }s : {VP:0%}";
-            series8.Label = pieSeriesLabel8;
-            series8.LegendName = "Default Legend";
-            series8.Name = "Computer1";
-            series8.View = pieSeriesView8;
+            pieSeriesLabel18.TextPattern = "{V:#,0 }s : {VP:0%}";
+            series18.Label = pieSeriesLabel18;
+            series18.LegendName = "Default Legend";
+            series18.Name = "Computer1";
+            series18.View = pieSeriesView18;
             this.chart7.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series8};
+        series18};
             this.chart7.Size = new System.Drawing.Size(377, 380);
             this.chart7.TabIndex = 0;
-            chartTitle8.Text = "Computer #1";
-            chartTitle8.Visibility = DevExpress.Utils.DefaultBoolean.False;
+            chartTitle18.Text = "Computer #1";
+            chartTitle18.Visibility = DevExpress.Utils.DefaultBoolean.False;
             this.chart7.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
-            chartTitle8});
+            chartTitle18});
             this.chart7.CustomDrawSeriesPoint += new DevExpress.XtraCharts.CustomDrawSeriesPointEventHandler(this.chart_CustomDrawSeriesPoint);
             // 
             // chart8
@@ -1629,19 +1601,19 @@ namespace FORM
             this.chart8.PaletteRepository.Add("Palette 1", new DevExpress.XtraCharts.Palette("Palette 1", DevExpress.XtraCharts.PaletteScaleMode.Repeat, new DevExpress.XtraCharts.PaletteEntry[] {
                 new DevExpress.XtraCharts.PaletteEntry(System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(125)))), ((int)(((byte)(49))))), System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(125)))), ((int)(((byte)(49)))))),
                 new DevExpress.XtraCharts.PaletteEntry(System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(64))))), System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(64))))))}));
-            pieSeriesLabel9.TextPattern = "{V:#,0 }s : {VP:0%}";
-            series9.Label = pieSeriesLabel9;
-            series9.LegendName = "Default Legend";
-            series9.Name = "Computer1";
-            series9.View = pieSeriesView9;
+            pieSeriesLabel19.TextPattern = "{V:#,0 }s : {VP:0%}";
+            series19.Label = pieSeriesLabel19;
+            series19.LegendName = "Default Legend";
+            series19.Name = "Computer1";
+            series19.View = pieSeriesView19;
             this.chart8.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series9};
+        series19};
             this.chart8.Size = new System.Drawing.Size(377, 380);
             this.chart8.TabIndex = 0;
-            chartTitle9.Text = "Computer #1";
-            chartTitle9.Visibility = DevExpress.Utils.DefaultBoolean.False;
+            chartTitle19.Text = "Computer #1";
+            chartTitle19.Visibility = DevExpress.Utils.DefaultBoolean.False;
             this.chart8.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
-            chartTitle9});
+            chartTitle19});
             this.chart8.CustomDrawSeriesPoint += new DevExpress.XtraCharts.CustomDrawSeriesPointEventHandler(this.chart_CustomDrawSeriesPoint);
             // 
             // chart9
@@ -1660,19 +1632,19 @@ namespace FORM
             this.chart9.PaletteRepository.Add("Palette 1", new DevExpress.XtraCharts.Palette("Palette 1", DevExpress.XtraCharts.PaletteScaleMode.Repeat, new DevExpress.XtraCharts.PaletteEntry[] {
                 new DevExpress.XtraCharts.PaletteEntry(System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(125)))), ((int)(((byte)(49))))), System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(125)))), ((int)(((byte)(49)))))),
                 new DevExpress.XtraCharts.PaletteEntry(System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(64))))), System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(64))))))}));
-            pieSeriesLabel10.TextPattern = "{V:#,0 }s : {VP:0%}";
-            series10.Label = pieSeriesLabel10;
-            series10.LegendName = "Default Legend";
-            series10.Name = "Computer1";
-            series10.View = pieSeriesView10;
+            pieSeriesLabel20.TextPattern = "{V:#,0 }s : {VP:0%}";
+            series20.Label = pieSeriesLabel20;
+            series20.LegendName = "Default Legend";
+            series20.Name = "Computer1";
+            series20.View = pieSeriesView20;
             this.chart9.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series10};
+        series20};
             this.chart9.Size = new System.Drawing.Size(380, 380);
             this.chart9.TabIndex = 0;
-            chartTitle10.Text = "Computer #1";
-            chartTitle10.Visibility = DevExpress.Utils.DefaultBoolean.False;
+            chartTitle20.Text = "Computer #1";
+            chartTitle20.Visibility = DevExpress.Utils.DefaultBoolean.False;
             this.chart9.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
-            chartTitle10});
+            chartTitle20});
             this.chart9.CustomDrawSeriesPoint += new DevExpress.XtraCharts.CustomDrawSeriesPointEventHandler(this.chart_CustomDrawSeriesPoint);
             // 
             // FORM_COMPUTER_OEE
@@ -1700,9 +1672,9 @@ namespace FORM
             ((System.ComponentModel.ISupportInitialize)(this.dtpDateF.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtpDateF.Properties)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesView11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
@@ -1714,41 +1686,41 @@ namespace FORM
             this.tableLayoutPanel9.ResumeLayout(false);
             this.tableLayoutPanel10.ResumeLayout(false);
             this.tableLayoutPanel11.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesView12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesView13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesView4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesView14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesView5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesView15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesView6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesView16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesView7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesView17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesView8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesView18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesView9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesView19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesView10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesView20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart9)).EndInit();
             this.ResumeLayout(false);
 
@@ -1771,8 +1743,6 @@ namespace FORM
         private DateEdit dtpDateF;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Label lblFGALine;
-        private System.Windows.Forms.Label label3;
         private DateEdit dtpDateT;
         private System.Windows.Forms.Label label1;
         private ChartControl chart;

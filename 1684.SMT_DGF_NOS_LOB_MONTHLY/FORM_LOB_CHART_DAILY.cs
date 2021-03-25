@@ -207,7 +207,7 @@ namespace FORM
         {
             cCount++;
             lblDate.Text = string.Format(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
-            if (cCount >= 30)
+            if (cCount >= 20)
             {
 
                 loadData();
@@ -295,7 +295,7 @@ namespace FORM
                 _line = ComVar.Var._strValue1;//014
                 lblDate.Text = string.Format(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
                 dtpDate.EditValue = DateTime.Now.ToString("yyyy-MM");
-                lblFGALine.Text = _mLine;
+                //lblFGALine.Text = _mLine;
             }
             else
             {
@@ -313,7 +313,7 @@ namespace FORM
             _mLine = ComVar.Var._strValue2;
             _line = ComVar.Var._strValue1;//014
             lblDate.Text = string.Format(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
-            lblFGALine.Text = _mLine;
+            //lblFGALine.Text = _mLine;
 
         }
 
