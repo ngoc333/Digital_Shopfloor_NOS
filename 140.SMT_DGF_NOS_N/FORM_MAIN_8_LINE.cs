@@ -18,7 +18,7 @@ namespace FORM
         {
             InitializeComponent();
             // this.Text = "Insole";
-            Init_Form();
+            
         }
 
         #region Variant Global
@@ -54,6 +54,7 @@ namespace FORM
         {
             try
             {
+                btn_WS4.Visible = false;
                 if (ComVar.Var._Frm_Back == null || ComVar.Var._Frm_Back == "")
                 {
                     _IsMain = true;
@@ -67,6 +68,7 @@ namespace FORM
                     //else
                     //    ComVar.Var._strValue4 = "N";
                     cmdMGL.Visible = false;
+                    getConfigInfor();
                 }
                 else
                 {
@@ -76,7 +78,9 @@ namespace FORM
                     cmdTMS.Visible = !(ComVar.Var._Frm_Back=="900");
                     cmdQMS.Visible = false;// !(ComVar.Var._Frm_Back=="900");
                     cmdMGL.Visible = !(ComVar.Var._Frm_Back=="900");
+                    
                 }
+                Init_Form();
                 // add_Event_Click_Menu_Line();
                 //set_Header_Menu_And_Text();
             }
@@ -284,13 +288,13 @@ namespace FORM
         /// </summary>
         private void Init_Form()
         {
-            ComVar.Var._strValue1 = "099";
+           // ComVar.Var._strValue1 = "099";
             ComVar.Var._strValue3 = "En";
             // lblTitle.Text = _dtnInit["Title"];
 
             //  lbl_Line.Text = "Nos N";
             DataTable dt = dtPUPLayout();
-            DataTable dtModel = SEL_MODEL_NAME("Q", "099", "099");
+            DataTable dtModel = SEL_MODEL_NAME("Q", ComVar.Var._strValue1, ComVar.Var._strValue1);
             if (ccountN == 0)
             {
                 if (dt != null && dt.Rows.Count > 0)
@@ -329,14 +333,14 @@ namespace FORM
             dt.Columns.Add("LOC_ROW");
             dt.Columns.Add("LOC_COL");
 
-            dt.Rows.Add("099", "001", "Line 1", "0", "0");
-            dt.Rows.Add("099", "002", "Line 2", "0", "1");
-            dt.Rows.Add("099", "003", "Line 3", "0", "2");
-            dt.Rows.Add("099", "004", "Line 4", "0", "3");
-            dt.Rows.Add("099", "005", "Line 5", "1", "0");
-            dt.Rows.Add("099", "006", "Line 6", "1", "1");
-            dt.Rows.Add("099", "007", "Line 7", "1", "2");
-            dt.Rows.Add("099", "008", "Line 8", "1", "3");
+            dt.Rows.Add(ComVar.Var._strValue1, "001", "Line 1", "0", "0");
+            dt.Rows.Add(ComVar.Var._strValue1, "002", "Line 2", "0", "1");
+            dt.Rows.Add(ComVar.Var._strValue1, "003", "Line 3", "0", "2");
+            dt.Rows.Add(ComVar.Var._strValue1, "004", "Line 4", "0", "3");
+            dt.Rows.Add(ComVar.Var._strValue1, "005", "Line 5", "1", "0");
+            dt.Rows.Add(ComVar.Var._strValue1, "006", "Line 6", "1", "1");
+            dt.Rows.Add(ComVar.Var._strValue1, "007", "Line 7", "1", "2");
+            dt.Rows.Add(ComVar.Var._strValue1, "008", "Line 8", "1", "3");
 
 
             return dt;
@@ -757,6 +761,58 @@ namespace FORM
         }
         #endregion 
 
+
+        private void getConfigInfor()
+        {
+            try
+            {
+                //  _Line = ComVar.Var._strValue1;
+                if (_IsMain)
+                {
+                    //_dtXML = ComVar.Func.ReadXML(Application.StartupPath + @"\Config.xml", this.GetType().Name);
+                    // _dtQMS = ComVar.Func.ReadXML(Application.StartupPath + @"\Config.xml", "QMS");
+                    _dtGMES = ComVar.Func.ReadXML(Application.StartupPath + @"\Config.xml", "GMES");
+
+                    CXMLConfig conFig = new CXMLConfig(Application.StartupPath + @"\Config.xml");
+                    lineInstance.Line_cd = conFig.XmlReadValue("LINE_CD");
+                    ComVar.Var._strValue1 = conFig.XmlReadValue("LINE_CD");
+                    lineInstance.Line_Name = conFig.XmlReadValue("LINE_NAME");
+                    ComVar.Var._strValue4 = conFig.XmlReadValue("LINE_NAME");
+                    ComVar.Var._iValue4 = Convert.ToInt32(conFig.XmlReadValue("NUMBER_MLINE"));
+                    //for (int indexMLine = 1; indexMLine <= lineInstance.NumberMline; indexMLine++)
+                    //{
+                    //    lineInstance.setMLineName(indexMLine.ToString("000"), conFig.XmlReadValue("MLINE_CD_" + indexMLine, "NAME"));
+                    //    lineInstance.setMLinePicture(indexMLine.ToString("000"), conFig.XmlReadValue("MLINE_CD_" + indexMLine, "PICTURE"));
+                    //}
+                    lineInstance.buttonVisibleConfig = conFig.XmlReadValue("MENU_BUTTON");
+                    lineInstance.setButtonVisibleConfig();
+                    //Button[] arrButton = new Button[10];
+                    //arrButton[0] = cmdSmartAndon;
+                    //arrButton[1] = cmdGMES;
+                    //arrButton[2] = cmdCMMS;
+                    //arrButton[3] = cmdFEMS;
+                    //arrButton[4] = cmdQMS;
+                    //arrButton[5] = cmdMGL;
+                    //arrButton[6] = cmdEMD;
+                    //for (int i = 0; i < lineInstance.getNumberButton(); i++)
+                    //{
+                    //    if (arrButton[i] != null)
+                    //    {
+                    //        arrButton[i].Visible = lineInstance.getButtonVisible(i);
+                    //    }
+                    //}
+                }
+                else
+                {
+
+                }
+            }
+            catch (Exception ex)
+            {
+                ComVar.Var.writeToLog(this.GetType().Name + "-->getConfigInfor-->Err: " + ex.ToString());
+            }
+        }
+
         private void btnMoldWH_Click(object sender, EventArgs e)
         {
             ComVar.Var._Frm_Call = "3";
@@ -773,7 +829,10 @@ namespace FORM
         private void cmdTMS_Click(object sender, EventArgs e)
         {
             ComVar.Var._IsBack = true;
-            ComVar.Var.callForm = "641";
+            if (ComVar.Var._strValue1.Equals("202"))
+                ComVar.Var.callForm = "700";
+            else
+                ComVar.Var.callForm = "641";
         }
 
         private void btnDoc_Click(object sender, EventArgs e)
