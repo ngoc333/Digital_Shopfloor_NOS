@@ -495,7 +495,7 @@ namespace FORM
             loadData("TAKTTIME", ymd, plant, "", "002");
             loadData("HIGH_CT", ymd, plant, line, "002");
 
-            lblFGALine.Text = line;
+          //  lblFGALine.Text = line;
 
 
             GoFullscreen();

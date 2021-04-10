@@ -439,7 +439,7 @@ namespace FORM
             lblDate.Text = string.Format(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
             string ymdF = dtpDateF.DateTime.ToString("yyyyMMdd");
             string ymdT = dtpDateF.DateTime.ToString("yyyyMMdd");
-            if (cCount >= 30)
+            if (cCount >= 20)
             {
 
                 loadData("OEE", ymdF,ymdT, plant, line, "001");
@@ -706,7 +706,7 @@ namespace FORM
         private void FORM_COMPUTER_OEE_Load(object sender, EventArgs e)
         {
             lblDate.Text = string.Format(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
-            lblFGALine.Text = line;
+            //lblFGALine.Text = line;
 
             dtpDateF.EditValue = DateTime.Now.ToString("yyyy-MM-dd");
             dtpDateT.EditValue=DateTime.Now.ToString("yyyy-MM-dd");

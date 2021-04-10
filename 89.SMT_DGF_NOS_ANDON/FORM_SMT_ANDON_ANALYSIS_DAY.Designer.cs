@@ -495,7 +495,7 @@
             this.lblQual.Name = "lblQual";
             this.lblQual.Size = new System.Drawing.Size(285, 44);
             this.lblQual.TabIndex = 0;
-            this.lblQual.Text = "Quality  (Minutes)";
+            this.lblQual.Text = "Quality  (Times)";
             this.lblQual.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnMa

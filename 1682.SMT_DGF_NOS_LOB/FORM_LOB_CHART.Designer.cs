@@ -32,18 +32,18 @@ namespace FORM
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FORM_LOB_CHART));
-            DevExpress.XtraCharts.XYDiagram xyDiagram3 = new DevExpress.XtraCharts.XYDiagram();
-            DevExpress.XtraCharts.ConstantLine constantLine3 = new DevExpress.XtraCharts.ConstantLine();
-            DevExpress.XtraCharts.Series series3 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.StackedBarSeriesLabel stackedBarSeriesLabel3 = new DevExpress.XtraCharts.StackedBarSeriesLabel();
-            DevExpress.XtraCharts.StackedBarSeriesView stackedBarSeriesView3 = new DevExpress.XtraCharts.StackedBarSeriesView();
-            DevExpress.XtraCharts.ChartTitle chartTitle3 = new DevExpress.XtraCharts.ChartTitle();
-            DevExpress.XtraCharts.XYDiagram xyDiagram4 = new DevExpress.XtraCharts.XYDiagram();
-            DevExpress.XtraCharts.ConstantLine constantLine4 = new DevExpress.XtraCharts.ConstantLine();
-            DevExpress.XtraCharts.Series series4 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.StackedBarSeriesLabel stackedBarSeriesLabel4 = new DevExpress.XtraCharts.StackedBarSeriesLabel();
-            DevExpress.XtraCharts.StackedBarSeriesView stackedBarSeriesView4 = new DevExpress.XtraCharts.StackedBarSeriesView();
-            DevExpress.XtraCharts.ChartTitle chartTitle4 = new DevExpress.XtraCharts.ChartTitle();
+            DevExpress.XtraCharts.XYDiagram xyDiagram7 = new DevExpress.XtraCharts.XYDiagram();
+            DevExpress.XtraCharts.ConstantLine constantLine7 = new DevExpress.XtraCharts.ConstantLine();
+            DevExpress.XtraCharts.Series series7 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.StackedBarSeriesLabel stackedBarSeriesLabel7 = new DevExpress.XtraCharts.StackedBarSeriesLabel();
+            DevExpress.XtraCharts.StackedBarSeriesView stackedBarSeriesView7 = new DevExpress.XtraCharts.StackedBarSeriesView();
+            DevExpress.XtraCharts.ChartTitle chartTitle7 = new DevExpress.XtraCharts.ChartTitle();
+            DevExpress.XtraCharts.XYDiagram xyDiagram8 = new DevExpress.XtraCharts.XYDiagram();
+            DevExpress.XtraCharts.ConstantLine constantLine8 = new DevExpress.XtraCharts.ConstantLine();
+            DevExpress.XtraCharts.Series series8 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.StackedBarSeriesLabel stackedBarSeriesLabel8 = new DevExpress.XtraCharts.StackedBarSeriesLabel();
+            DevExpress.XtraCharts.StackedBarSeriesView stackedBarSeriesView8 = new DevExpress.XtraCharts.StackedBarSeriesView();
+            DevExpress.XtraCharts.ChartTitle chartTitle8 = new DevExpress.XtraCharts.ChartTitle();
             DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions3 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject9 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject10 = new DevExpress.Utils.SerializableAppearanceObject();
@@ -99,8 +99,6 @@ namespace FORM
             this.chart1 = new DevExpress.XtraCharts.ChartControl();
             this.dtpDate = new DevExpress.XtraEditors.DateEdit();
             this.label5 = new System.Windows.Forms.Label();
-            this.lblFGALine = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.pnHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -117,10 +115,10 @@ namespace FORM
             this.splitContainer3.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesLabel3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesLabel7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesView7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer4)).BeginInit();
             this.splitContainer4.Panel1.SuspendLayout();
             this.splitContainer4.Panel2.SuspendLayout();
@@ -131,10 +129,10 @@ namespace FORM
             this.splitContainer5.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesLabel4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesView4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesLabel8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesView8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtpDate.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtpDate.Properties)).BeginInit();
             this.SuspendLayout();
@@ -274,6 +272,7 @@ namespace FORM
             // 
             // tmrDate
             // 
+            this.tmrDate.Enabled = true;
             this.tmrDate.Interval = 1000;
             this.tmrDate.Tick += new System.EventHandler(this.tmrDate_Tick);
             // 
@@ -516,16 +515,16 @@ namespace FORM
             // chart
             // 
             this.chart.DataBindings = null;
-            xyDiagram3.AxisX.VisibleInPanesSerializable = "-1";
-            constantLine3.AxisValueSerializable = "1";
-            constantLine3.Color = System.Drawing.Color.LimeGreen;
-            constantLine3.LegendText = "Takt time";
-            constantLine3.LineStyle.Thickness = 3;
-            constantLine3.Name = "";
-            xyDiagram3.AxisY.ConstantLines.AddRange(new DevExpress.XtraCharts.ConstantLine[] {
-            constantLine3});
-            xyDiagram3.AxisY.VisibleInPanesSerializable = "-1";
-            this.chart.Diagram = xyDiagram3;
+            xyDiagram7.AxisX.VisibleInPanesSerializable = "-1";
+            constantLine7.AxisValueSerializable = "1";
+            constantLine7.Color = System.Drawing.Color.LimeGreen;
+            constantLine7.LegendText = "Takt time";
+            constantLine7.LineStyle.Thickness = 3;
+            constantLine7.Name = "";
+            xyDiagram7.AxisY.ConstantLines.AddRange(new DevExpress.XtraCharts.ConstantLine[] {
+            constantLine7});
+            xyDiagram7.AxisY.VisibleInPanesSerializable = "-1";
+            this.chart.Diagram = xyDiagram7;
             this.chart.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chart.Legend.AlignmentHorizontal = DevExpress.XtraCharts.LegendAlignmentHorizontal.Right;
             this.chart.Legend.AlignmentVertical = DevExpress.XtraCharts.LegendAlignmentVertical.TopOutside;
@@ -534,23 +533,23 @@ namespace FORM
             this.chart.Legend.Visibility = DevExpress.Utils.DefaultBoolean.True;
             this.chart.Location = new System.Drawing.Point(0, 0);
             this.chart.Name = "chart";
-            stackedBarSeriesLabel3.EnableAntialiasing = DevExpress.Utils.DefaultBoolean.True;
-            stackedBarSeriesLabel3.Position = DevExpress.XtraCharts.BarSeriesLabelPosition.TopInside;
-            stackedBarSeriesLabel3.TextPattern = "{V:#,0}";
-            series3.Label = stackedBarSeriesLabel3;
-            series3.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
-            series3.Name = "Cycle time";
-            series3.View = stackedBarSeriesView3;
+            stackedBarSeriesLabel7.EnableAntialiasing = DevExpress.Utils.DefaultBoolean.True;
+            stackedBarSeriesLabel7.Position = DevExpress.XtraCharts.BarSeriesLabelPosition.TopInside;
+            stackedBarSeriesLabel7.TextPattern = "{V:#,0}";
+            series7.Label = stackedBarSeriesLabel7;
+            series7.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
+            series7.Name = "Cycle time";
+            series7.View = stackedBarSeriesView7;
             this.chart.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series3};
+        series7};
             this.chart.Size = new System.Drawing.Size(931, 637);
             this.chart.TabIndex = 0;
-            chartTitle3.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartTitle3.Indent = 2;
-            chartTitle3.Text = "Yamazumi\r\n";
-            chartTitle3.Visibility = DevExpress.Utils.DefaultBoolean.True;
+            chartTitle7.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartTitle7.Indent = 2;
+            chartTitle7.Text = "Yamazumi\r\n";
+            chartTitle7.Visibility = DevExpress.Utils.DefaultBoolean.True;
             this.chart.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
-            chartTitle3});
+            chartTitle7});
             // 
             // splitContainer4
             // 
@@ -749,16 +748,16 @@ namespace FORM
             // chart1
             // 
             this.chart1.DataBindings = null;
-            xyDiagram4.AxisX.VisibleInPanesSerializable = "-1";
-            constantLine4.AxisValueSerializable = "1";
-            constantLine4.Color = System.Drawing.Color.LimeGreen;
-            constantLine4.LegendText = "Takt time";
-            constantLine4.LineStyle.Thickness = 3;
-            constantLine4.Name = "";
-            xyDiagram4.AxisY.ConstantLines.AddRange(new DevExpress.XtraCharts.ConstantLine[] {
-            constantLine4});
-            xyDiagram4.AxisY.VisibleInPanesSerializable = "-1";
-            this.chart1.Diagram = xyDiagram4;
+            xyDiagram8.AxisX.VisibleInPanesSerializable = "-1";
+            constantLine8.AxisValueSerializable = "1";
+            constantLine8.Color = System.Drawing.Color.LimeGreen;
+            constantLine8.LegendText = "Takt time";
+            constantLine8.LineStyle.Thickness = 3;
+            constantLine8.Name = "";
+            xyDiagram8.AxisY.ConstantLines.AddRange(new DevExpress.XtraCharts.ConstantLine[] {
+            constantLine8});
+            xyDiagram8.AxisY.VisibleInPanesSerializable = "-1";
+            this.chart1.Diagram = xyDiagram8;
             this.chart1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chart1.Legend.AlignmentHorizontal = DevExpress.XtraCharts.LegendAlignmentHorizontal.Right;
             this.chart1.Legend.AlignmentVertical = DevExpress.XtraCharts.LegendAlignmentVertical.TopOutside;
@@ -767,23 +766,23 @@ namespace FORM
             this.chart1.Legend.Visibility = DevExpress.Utils.DefaultBoolean.True;
             this.chart1.Location = new System.Drawing.Point(0, 0);
             this.chart1.Name = "chart1";
-            stackedBarSeriesLabel4.LineVisibility = DevExpress.Utils.DefaultBoolean.True;
-            stackedBarSeriesLabel4.Position = DevExpress.XtraCharts.BarSeriesLabelPosition.TopInside;
-            stackedBarSeriesLabel4.TextPattern = "{V:#,0}";
-            series4.Label = stackedBarSeriesLabel4;
-            series4.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
-            series4.Name = "Cycle time";
-            series4.View = stackedBarSeriesView4;
+            stackedBarSeriesLabel8.LineVisibility = DevExpress.Utils.DefaultBoolean.True;
+            stackedBarSeriesLabel8.Position = DevExpress.XtraCharts.BarSeriesLabelPosition.TopInside;
+            stackedBarSeriesLabel8.TextPattern = "{V:#,0}";
+            series8.Label = stackedBarSeriesLabel8;
+            series8.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
+            series8.Name = "Cycle time";
+            series8.View = stackedBarSeriesView8;
             this.chart1.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series4};
+        series8};
             this.chart1.Size = new System.Drawing.Size(989, 638);
             this.chart1.TabIndex = 1;
-            chartTitle4.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartTitle4.Indent = 2;
-            chartTitle4.Text = "Yamazumi\r\n";
-            chartTitle4.Visibility = DevExpress.Utils.DefaultBoolean.True;
+            chartTitle8.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartTitle8.Indent = 2;
+            chartTitle8.Text = "Yamazumi\r\n";
+            chartTitle8.Visibility = DevExpress.Utils.DefaultBoolean.True;
             this.chart1.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
-            chartTitle4});
+            chartTitle8});
             // 
             // dtpDate
             // 
@@ -920,38 +919,12 @@ namespace FORM
             this.label5.Text = "Date:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // lblFGALine
-            // 
-            this.lblFGALine.BackColor = System.Drawing.Color.Transparent;
-            this.lblFGALine.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblFGALine.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Bold);
-            this.lblFGALine.ForeColor = System.Drawing.Color.Black;
-            this.lblFGALine.Location = new System.Drawing.Point(564, 116);
-            this.lblFGALine.Name = "lblFGALine";
-            this.lblFGALine.Size = new System.Drawing.Size(148, 41);
-            this.lblFGALine.TabIndex = 305;
-            this.lblFGALine.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label8
-            // 
-            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.label8.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Bold);
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(366, 116);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(192, 41);
-            this.label8.TabIndex = 306;
-            this.label8.Text = "Assembly Line:";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // FORM_LOB_CHART
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1916, 1054);
-            this.Controls.Add(this.lblFGALine);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.dtpDate);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.splitContainer1);
@@ -977,10 +950,10 @@ namespace FORM
             this.splitContainer3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesLabel3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesLabel7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesView7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart)).EndInit();
             this.splitContainer4.Panel1.ResumeLayout(false);
             this.splitContainer4.Panel2.ResumeLayout(false);
@@ -992,10 +965,10 @@ namespace FORM
             this.splitContainer5.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesLabel4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesView4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesLabel8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesView8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtpDate.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtpDate.Properties)).EndInit();
@@ -1048,8 +1021,6 @@ namespace FORM
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private ChartControl chart1;
-        private System.Windows.Forms.Label lblFGALine;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
     }
