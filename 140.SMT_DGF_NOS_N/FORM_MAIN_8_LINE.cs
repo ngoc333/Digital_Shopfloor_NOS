@@ -55,7 +55,7 @@ namespace FORM
             try
             {
                 btn_WS4.Visible = false;
-                if (ComVar.Var._Frm_Back == null || ComVar.Var._Frm_Back == "")
+                if (!ComVar.Var._IsBack)
                 {
                     _IsMain = true;
                    // _dtnInit = ComVar.Func.getInitForm(this.GetType().Assembly.GetName().Name, this.GetType().Name);
@@ -67,17 +67,19 @@ namespace FORM
                     //}
                     //else
                     //    ComVar.Var._strValue4 = "N";
+                    cmdBack.Visible = false;
                     cmdMGL.Visible = false;
                     getConfigInfor();
                 }
                 else
                 {
+                    cmdBack.Visible = true;
                     _IsMain = false;
                     cmdMGL.Visible = true;
-                    cmdBack.Visible = ComVar.Var._Frm_Back=="900";
-                    cmdTMS.Visible = !(ComVar.Var._Frm_Back=="900");
+                    // cmdBack.Visible = ComVar.Var._Frm_Back=="900";
+                    cmdTMS.Visible = false;// !(ComVar.Var._Frm_Back=="900");
                     cmdQMS.Visible = false;// !(ComVar.Var._Frm_Back=="900");
-                    cmdMGL.Visible = !(ComVar.Var._Frm_Back=="900");
+                    cmdMGL.Visible = false;// !(ComVar.Var._Frm_Back=="900");
                     
                 }
                 Init_Form();

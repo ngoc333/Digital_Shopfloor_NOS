@@ -36,7 +36,7 @@ namespace FORM
 
             }
             insert_from(mold_prod);
-            if (ComVar.Var._strValue1 == "099" || ComVar.Var._iValue4 == 8)
+            if (ComVar.Var._strValue1 == "099" || ComVar.Var._strValue1 == "202" || ComVar.Var._iValue4 == 8)
                 insert_from(incoming_status_N);
             else
                 insert_from(incoming_status);

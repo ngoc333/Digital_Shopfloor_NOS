@@ -5867,7 +5867,7 @@
             this.cmdL1_Val10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmdL1_Val10.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.cmdL1_Val10.ForeColor = System.Drawing.Color.Black;
-            this.cmdL1_Val10.Location = new System.Drawing.Point(189, 143);
+            this.cmdL1_Val10.Location = new System.Drawing.Point(197, 143);
             this.cmdL1_Val10.Name = "cmdL1_Val10";
             this.cmdL1_Val10.Size = new System.Drawing.Size(62, 51);
             this.cmdL1_Val10.TabIndex = 176;

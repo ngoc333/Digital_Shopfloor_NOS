@@ -476,8 +476,22 @@ namespace FORM
 
         private void initForm()
         {
-            this.Mline = ComVar.Var._strValue2;
-            this.line = ComVar.Var._strValue2;
+            switch (ComVar.Var._strValue1)
+            {
+                case "001":
+                case "002":
+                case "003":
+                case "004":
+                case "005":
+                case "006":
+                    this.Mline = ComVar.Var._strValue1;
+                    break;
+                default:
+                    this.Mline = ComVar.Var._strValue2;
+                    break;
+            }
+
+            this.line = ComVar.Var._strValue1;
             this.Lang = ComVar.Var._strValue3;
             if (ComVar.Var._strValue3 == "Vn")
             {

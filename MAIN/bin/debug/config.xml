@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Base>
 	<MAIN>
-		<grpForm>DSF_NOS</grpForm>
+		<grpForm>DSF_NOS_N</grpForm>
 		<FlashScreen>true</FlashScreen>
 		<Auto_Download>false</Auto_Download>
 		<AREA>NOS</AREA>
@@ -10,7 +10,7 @@
 	</MAIN>
   
 	<Auto_Download>
-		<grpForm>DSF_NOS</grpForm>
+		<grpForm>DSF_NOS_N</grpForm>
 	</Auto_Download>
 	<GMES>
 		<PROCESS_NAME>JBrowser6</PROCESS_NAME>
@@ -24,9 +24,9 @@
   
 	<LANG>VN</LANG>
 	<MENU_BUTTON>T/T/T/T/T/T</MENU_BUTTON>
-	<LINE_CD>014</LINE_CD>	
-	<LINE_NAME>H</LINE_NAME>
-	<NUMBER_MLINE>4</NUMBER_MLINE>
+	<LINE_CD>202</LINE_CD>	
+	<LINE_NAME>LE</LINE_NAME>
+	<NUMBER_MLINE>8</NUMBER_MLINE>
 	<FRM_MAIN>
 		<frmMain>69</frmMain>
 	</FRM_MAIN>
