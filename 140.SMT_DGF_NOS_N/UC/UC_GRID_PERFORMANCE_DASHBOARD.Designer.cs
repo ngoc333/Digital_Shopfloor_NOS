@@ -85,8 +85,7 @@
             // 
             // UC_GRID_PERFORMANCE_DASHBOARD
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.axfpSpread1);
             this.Controls.Add(this.pnHeader);
             this.Name = "UC_GRID_PERFORMANCE_DASHBOARD";

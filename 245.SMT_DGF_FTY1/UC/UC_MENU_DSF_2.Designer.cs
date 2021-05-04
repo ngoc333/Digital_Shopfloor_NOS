@@ -56,6 +56,7 @@
             this.cmdHrm4 = new DevExpress.XtraEditors.SimpleButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.cmdHrm1 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdHrm3 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdHrm2 = new DevExpress.XtraEditors.SimpleButton();
             this.bsVQuality = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
@@ -72,7 +73,6 @@
             this.lblLine = new System.Windows.Forms.Label();
             this.grpProd = new FORM.GroupBoxEx();
             this.axfpSpread1 = new AxFPUSpreadADO.AxfpSpread();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.bsView)).BeginInit();
             this.bsView.SuspendLayout();
             this.backstageViewClientControl1.SuspendLayout();
@@ -772,6 +772,35 @@
             this.cmdHrm1.Click += new System.EventHandler(this.btnItem_Click);
             this.cmdHrm1.MouseLeave += new System.EventHandler(this.btnMoveLeave_Click);
             // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Appearance.BackColor = System.Drawing.Color.IndianRed;
+            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
+            this.simpleButton1.Appearance.ForeColor = System.Drawing.Color.White;
+            this.simpleButton1.Appearance.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.simpleButton1.Appearance.Options.UseBackColor = true;
+            this.simpleButton1.Appearance.Options.UseFont = true;
+            this.simpleButton1.Appearance.Options.UseForeColor = true;
+            this.simpleButton1.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.simpleButton1.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.simpleButton1.AppearanceHovered.Font = new System.Drawing.Font("Calibri", 16F, System.Drawing.FontStyle.Bold);
+            this.simpleButton1.AppearanceHovered.ForeColor = System.Drawing.Color.White;
+            this.simpleButton1.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.simpleButton1.AppearanceHovered.Options.UseBackColor = true;
+            this.simpleButton1.AppearanceHovered.Options.UseFont = true;
+            this.simpleButton1.AppearanceHovered.Options.UseForeColor = true;
+            this.simpleButton1.AppearancePressed.Font = new System.Drawing.Font("Calibri", 16F, System.Drawing.FontStyle.Bold);
+            this.simpleButton1.AppearancePressed.Options.UseFont = true;
+            this.simpleButton1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
+            this.simpleButton1.Location = new System.Drawing.Point(8, 272);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(200, 60);
+            this.simpleButton1.TabIndex = 4;
+            this.simpleButton1.Tag = "1681";
+            this.simpleButton1.Text = "Kaizen";
+            this.simpleButton1.Click += new System.EventHandler(this.btnItem_Click);
+            this.simpleButton1.MouseLeave += new System.EventHandler(this.btnMoveLeave_Click);
+            // 
             // cmdHrm3
             // 
             this.cmdHrm3.Appearance.BackColor = System.Drawing.Color.Teal;
@@ -1093,39 +1122,9 @@
             this.axfpSpread1.Size = new System.Drawing.Size(231, 175);
             this.axfpSpread1.TabIndex = 15;
             // 
-            // simpleButton1
-            // 
-            this.simpleButton1.Appearance.BackColor = System.Drawing.Color.IndianRed;
-            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
-            this.simpleButton1.Appearance.ForeColor = System.Drawing.Color.White;
-            this.simpleButton1.Appearance.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.simpleButton1.Appearance.Options.UseBackColor = true;
-            this.simpleButton1.Appearance.Options.UseFont = true;
-            this.simpleButton1.Appearance.Options.UseForeColor = true;
-            this.simpleButton1.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.simpleButton1.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.simpleButton1.AppearanceHovered.Font = new System.Drawing.Font("Calibri", 16F, System.Drawing.FontStyle.Bold);
-            this.simpleButton1.AppearanceHovered.ForeColor = System.Drawing.Color.White;
-            this.simpleButton1.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.simpleButton1.AppearanceHovered.Options.UseBackColor = true;
-            this.simpleButton1.AppearanceHovered.Options.UseFont = true;
-            this.simpleButton1.AppearanceHovered.Options.UseForeColor = true;
-            this.simpleButton1.AppearancePressed.Font = new System.Drawing.Font("Calibri", 16F, System.Drawing.FontStyle.Bold);
-            this.simpleButton1.AppearancePressed.Options.UseFont = true;
-            this.simpleButton1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
-            this.simpleButton1.Location = new System.Drawing.Point(8, 272);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(200, 60);
-            this.simpleButton1.TabIndex = 4;
-            this.simpleButton1.Tag = "1681";
-            this.simpleButton1.Text = "Kaizen";
-            this.simpleButton1.Click += new System.EventHandler(this.btnItem_Click);
-            this.simpleButton1.MouseLeave += new System.EventHandler(this.btnMoveLeave_Click);
-            // 
             // UC_MENU_DSF_2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.SlateGray;
             this.Controls.Add(this.lblLine);
             this.Controls.Add(this.picLine);
