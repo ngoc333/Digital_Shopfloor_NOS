@@ -96,7 +96,7 @@ namespace FORM
 
                     ((XYDiagram)chartControl2.Diagram).AxisX.ConstantLines[0].AxisValue = _str1;
                     ((XYDiagram)chartControl2.Diagram).AxisX.ConstantLines[1].AxisValue = _str2;
-                    ((XYDiagram)chartControl2.Diagram).AxisY.ConstantLines[0].AxisValue = 90;
+                    ((XYDiagram)chartControl2.Diagram).AxisY.ConstantLines[0].AxisValue = 100;
                     ((XYDiagram)chartControl2.Diagram).AxisY.ConstantLines[1].AxisValue = 60;
                     ((XYDiagram)chartControl2.Diagram).AxisY.WholeRange.AlwaysShowZeroLevel = false;
                     //((XYDiagram)chartControl2.Diagram).AxisY.WholeRange.MaxValue = 90;

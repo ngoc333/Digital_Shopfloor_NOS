@@ -173,7 +173,7 @@
             constantLine2});
             xyDiagram1.AxisX.Label.Font = new System.Drawing.Font("Calibri", 12F);
             xyDiagram1.AxisX.VisibleInPanesSerializable = "-1";
-            constantLine3.AxisValueSerializable = "90";
+            constantLine3.AxisValueSerializable = "100";
             constantLine3.Color = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             constantLine3.LineStyle.Thickness = 5;
             constantLine3.Name = "cyLine1";
@@ -189,6 +189,7 @@
             constantLine4.Title.Font = new System.Drawing.Font("Calibri", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             constantLine4.Title.ShowBelowLine = true;
             constantLine4.Title.Text = "ISB allow range";
+            constantLine4.Visible = false;
             xyDiagram1.AxisY.ConstantLines.AddRange(new DevExpress.XtraCharts.ConstantLine[] {
             constantLine3,
             constantLine4});
@@ -223,6 +224,7 @@
             series1.Name = "Series 1";
             series1.ShowInLegend = false;
             splineSeriesView1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            splineSeriesView1.LineStyle.DashStyle = DevExpress.XtraCharts.DashStyle.Dash;
             splineSeriesView1.LineStyle.Thickness = 4;
             series1.View = splineSeriesView1;
             series2.Name = "Series 2";
