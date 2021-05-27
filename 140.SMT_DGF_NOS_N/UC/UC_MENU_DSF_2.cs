@@ -128,7 +128,7 @@ namespace FORM.UC
         {
             for (int iRow = 1; iRow <= axfpSpread1.MaxRows; iRow++)
             {
-                axfpSpread1.SetText(2, iRow, "clear");
+                axfpSpread1.SetText(2, iRow, "");
             }
         }
         public void changeColor()

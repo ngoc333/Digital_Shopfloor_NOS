@@ -180,6 +180,15 @@ namespace FORM
             arg_chart.Legend.CustomItems.Clear();
             Series series2 = new Series("POD", ViewType.Bar);
 
+            double maxValue;
+            double.TryParse(arg_dt.Compute("MAX(POD)", "").ToString(), out maxValue);
+            double target;
+            double.TryParse(arg_dt.Rows[0]["TAR_GREEN"].ToString(), out target);
+            if (target > maxValue)
+            {
+                maxValue = target;
+            }
+
             //DevExpress.XtraCharts.XYSeriesBlowUpAnimation xySeriesBlowUpAnimation1 = new DevExpress.XtraCharts.XYSeriesBlowUpAnimation();
             DevExpress.XtraCharts.XYSeriesUnwindAnimation xySeriesUnwindAnimation1 = new DevExpress.XtraCharts.XYSeriesUnwindAnimation();
             //DevExpress.XtraCharts.XYSeriesUnwrapAnimation xySeriesUnwrapAnimation1 = new DevExpress.XtraCharts.XYSeriesUnwrapAnimation();
@@ -274,7 +283,7 @@ namespace FORM
             customLegendItem3,
             customLegendItem4});
 
-
+          //  ((XYDiagram)arg_chart.Diagram).AxisY.WholeRange.MaxValue = _iMaxChart + 3;
             //((XYDiagram)arg_chart.Diagram).AxisY.WholeRange.MinValue = 0; 
             //((XYDiagram)arg_chart.Diagram).AxisY.WholeRange.MaxValue = arg_dt.Rows[0]["TARGET"].ToString() + 10; 
             ((XYDiagram)arg_chart.Diagram).AxisY.ConstantLines.Clear();
@@ -290,6 +299,7 @@ namespace FORM
 
             ((XYDiagram)arg_chart.Diagram).AxisX.Title.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             ((XYDiagram)arg_chart.Diagram).AxisY.Title.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            ((XYDiagram)arg_chart.Diagram).AxisY.WholeRange.MaxValue = maxValue + 5;
 
             pn_body.Controls.Add(arg_chart);
         }

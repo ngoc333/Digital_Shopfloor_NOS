@@ -39,7 +39,7 @@ namespace FORM
 
 
 
-        private void loadData(string type, string ymd, string plant, string line, string mline)
+        private void loadData(string type, string ymdF, string ymdT, string plant, string line, string mline)
         {
             try
             {
@@ -50,9 +50,10 @@ namespace FORM
                 chart4.DataSource = null;
                 DataTable dtChart = null;
                 DataTable dtChart1 = null;
-                ymd = dtpDate.DateTime.ToString("yyyyMM");
+                ymdF = dtpDateF.DateTime.ToString("yyyyMMdd");
+                ymdT = dtpDateT.DateTime.ToString("yyyyMMdd");
 
-                dtChart = GET_DATA(type, ymd, plant, line, "001");
+                dtChart = GET_DATA1(type, ymdF,ymdT, plant, line, "001");
 
                 if (dtChart.Select("MACHINE = '001'", "MACHINE").Count() > 0) 
                 {
@@ -61,6 +62,24 @@ namespace FORM
                     chart.Series[0].ArgumentDataMember = "COL";
                     chart.Series[0].ValueDataMembers.AddRange(new string[] { "QTY" });
                     chart.Series[0].LegendTextPattern = "{A}";
+                    
+
+
+                   lbl_W1.Text ="MC Work: " + dtChart1.Rows[0]["MC_W_PER"] + "%" ;
+                   lbl_Idle1.Text = "MC Idle: " + dtChart1.Rows[0]["MC_I_PER"] + "%";
+
+                   if (double.Parse(dtChart1.Rows[0]["MC_W_PER"].ToString()) < 90)
+                   {
+                       lbl_W1.BackColor = Color.Red;
+                       lbl_W1.ForeColor = Color.White;
+                   }
+                   else
+                   {
+                       lbl_W1.BackColor = Color.Green;
+                       lbl_W1.ForeColor = Color.White;
+                   }
+
+
                 }
                 if (dtChart.Select("MACHINE = '002'", "MACHINE").Count() > 0)
                 {
@@ -69,6 +88,25 @@ namespace FORM
                     chart1.Series[0].ArgumentDataMember = "COL";
                     chart1.Series[0].ValueDataMembers.AddRange(new string[] { "QTY" });
                     chart1.Series[0].LegendTextPattern = "{A}";
+
+
+
+                    lbl_W2.Text = "MC Work: " + dtChart1.Rows[0]["MC_W_PER"] + "%";
+                    lbl_Idle2.Text = "MC Idle: " + dtChart1.Rows[0]["MC_I_PER"] + "%";
+
+                    if (double.Parse(dtChart1.Rows[0]["MC_W_PER"].ToString()) < 90)
+                    {
+                        lbl_W2.BackColor = Color.Red;
+                        lbl_W2.ForeColor = Color.White;
+                    }
+                    else
+                    {
+                        lbl_W2.BackColor = Color.Green;
+                        lbl_W2.ForeColor = Color.White;
+                    }
+
+
+
                 }
                 if (dtChart.Select("MACHINE = '003'", "MACHINE").Count() > 0)
                 {
@@ -77,6 +115,23 @@ namespace FORM
                     chart2.Series[0].ArgumentDataMember = "COL";
                     chart2.Series[0].ValueDataMembers.AddRange(new string[] { "QTY" });
                     chart2.Series[0].LegendTextPattern = "{A}";
+
+
+                    lbl_W3.Text = "MC Work: " + dtChart1.Rows[0]["MC_W_PER"] + "%";
+                    lbl_Idle3.Text = "MC Idle: " + dtChart1.Rows[0]["MC_I_PER"] + "%";
+
+                    if (double.Parse(dtChart1.Rows[0]["MC_W_PER"].ToString()) < 90)
+                    {
+                        lbl_W3.BackColor = Color.Red;
+                        lbl_W3.ForeColor = Color.White;
+                    }
+                    else
+                    {
+                        lbl_W3.BackColor = Color.Green;
+                        lbl_W3.ForeColor = Color.White;
+                    }
+
+
                 }
                 if (dtChart.Select("MACHINE = '004'", "MACHINE").Count() > 0)
                 {
@@ -85,6 +140,23 @@ namespace FORM
                     chart3.Series[0].ArgumentDataMember = "COL";
                     chart3.Series[0].ValueDataMembers.AddRange(new string[] { "QTY" });
                     chart3.Series[0].LegendTextPattern = "{A}";
+
+
+                    lbl_W4.Text = "MC Work: " + dtChart1.Rows[0]["MC_W_PER"] + "%";
+                    lbl_Idle4.Text = "MC Idle: " + dtChart1.Rows[0]["MC_I_PER"] + "%";
+
+                    if (double.Parse(dtChart1.Rows[0]["MC_W_PER"].ToString()) < 90)
+                    {
+                        lbl_W4.BackColor = Color.Red;
+                        lbl_W4.ForeColor = Color.White;
+                    }
+                    else
+                    {
+                        lbl_W4.BackColor = Color.Green;
+                        lbl_W4.ForeColor = Color.White;
+                    }
+
+
                 }
                 if (dtChart.Select("MACHINE = '005'", "MACHINE").Count() > 0)
                 {
@@ -93,6 +165,25 @@ namespace FORM
                     chart4.Series[0].ArgumentDataMember = "COL";
                     chart4.Series[0].ValueDataMembers.AddRange(new string[] { "QTY" });
                     chart4.Series[0].LegendTextPattern = "{A}";
+
+
+
+                    lbl_W5.Text = "MC Work: " + dtChart1.Rows[0]["MC_W_PER"] + "%";
+                    lbl_Idle5.Text = "MC Idle: " + dtChart1.Rows[0]["MC_I_PER"] + "%";
+
+                    if (double.Parse(dtChart1.Rows[0]["MC_W_PER"].ToString()) < 90)
+                    {
+                        lbl_W5.BackColor = Color.Red;
+                        lbl_W5.ForeColor = Color.White;
+                    }
+                    else
+                    {
+                        lbl_W5.BackColor = Color.Green;
+                        lbl_W5.ForeColor = Color.White;
+                    }
+
+
+
                 }
                 if (dtChart.Select("MACHINE = '006'", "MACHINE").Count() > 0)
                 {
@@ -101,6 +192,24 @@ namespace FORM
                     chart5.Series[0].ArgumentDataMember = "COL";
                     chart5.Series[0].ValueDataMembers.AddRange(new string[] { "QTY" });
                     chart5.Series[0].LegendTextPattern = "{A}";
+
+
+                    lbl_W6.Text = "MC Work: " + dtChart1.Rows[0]["MC_W_PER"] + "%";
+                    lbl_Idle6.Text = "MC Idle: " + dtChart1.Rows[0]["MC_I_PER"] + "%";
+
+                    if (double.Parse(dtChart1.Rows[0]["MC_W_PER"].ToString()) < 90)
+                    {
+                        lbl_W6.BackColor = Color.Red;
+                        lbl_W6.ForeColor = Color.White;
+                    }
+                    else
+                    {
+                        lbl_W6.BackColor = Color.Green;
+                        lbl_W6.ForeColor = Color.White;
+                    }
+
+
+
                 }
                 if (dtChart.Select("MACHINE = '007'", "MACHINE").Count() > 0)
                 {
@@ -109,6 +218,22 @@ namespace FORM
                     chart6.Series[0].ArgumentDataMember = "COL";
                     chart6.Series[0].ValueDataMembers.AddRange(new string[] { "QTY" });
                     chart6.Series[0].LegendTextPattern = "{A}";
+
+
+                    lbl_W7.Text = "MC Work: " + dtChart1.Rows[0]["MC_W_PER"] + "%";
+                    lbl_Idle7.Text = "MC Idle: " + dtChart1.Rows[0]["MC_I_PER"] + "%";
+
+                    if (double.Parse(dtChart1.Rows[0]["MC_W_PER"].ToString()) < 90)
+                    {
+                        lbl_W7.BackColor = Color.Red;
+                        lbl_W7.ForeColor = Color.White;
+                    }
+                    else
+                    {
+                        lbl_W7.BackColor = Color.Green;
+                        lbl_W7.ForeColor = Color.White;
+                    }
+
                 }
                 if (dtChart.Select("MACHINE = '008'", "MACHINE").Count() > 0)
                 {
@@ -117,6 +242,24 @@ namespace FORM
                     chart7.Series[0].ArgumentDataMember = "COL";
                     chart7.Series[0].ValueDataMembers.AddRange(new string[] { "QTY" });
                     chart7.Series[0].LegendTextPattern = "{A}";
+
+
+
+                    lbl_W8.Text = "MC Work: " + dtChart1.Rows[0]["MC_W_PER"] + "%";
+                    lbl_Idle8.Text = "MC Idle: " + dtChart1.Rows[0]["MC_I_PER"] + "%";
+
+                    if (double.Parse(dtChart1.Rows[0]["MC_W_PER"].ToString()) < 90)
+                    {
+                        lbl_W8.BackColor = Color.Red;
+                        lbl_W8.ForeColor = Color.White;
+                    }
+                    else
+                    {
+                        lbl_W8.BackColor = Color.Green;
+                        lbl_W8.ForeColor = Color.White;
+                    }
+
+
                 }
                 if (dtChart.Select("MACHINE = '009'", "MACHINE").Count() > 0)
                 {
@@ -125,6 +268,25 @@ namespace FORM
                     chart8.Series[0].ArgumentDataMember = "COL";
                     chart8.Series[0].ValueDataMembers.AddRange(new string[] { "QTY" });
                     chart8.Series[0].LegendTextPattern = "{A}";
+
+
+
+
+                    lbl_W9.Text = "MC Work: " + dtChart1.Rows[0]["MC_W_PER"] + "%";
+                    lbl_Idle9.Text = "MC Idle: " + dtChart1.Rows[0]["MC_I_PER"] + "%";
+
+                    if (double.Parse(dtChart1.Rows[0]["MC_W_PER"].ToString()) < 90)
+                    {
+                        lbl_W9.BackColor = Color.Red;
+                        lbl_W9.ForeColor = Color.White;
+                    }
+                    else
+                    {
+                        lbl_W9.BackColor = Color.Green;
+                        lbl_W9.ForeColor = Color.White;
+                    }
+
+
                 }
                 if (dtChart.Select("MACHINE = '010'", "MACHINE").Count() > 0)
                 {
@@ -133,6 +295,24 @@ namespace FORM
                     chart9.Series[0].ArgumentDataMember = "COL";
                     chart9.Series[0].ValueDataMembers.AddRange(new string[] { "QTY" });
                     chart9.Series[0].LegendTextPattern = "{A}";
+
+
+
+                    lbl_W10.Text = "MC Work: " + dtChart1.Rows[0]["MC_W_PER"] + "%";
+                    lbl_Idle10.Text = "MC Idle: " + dtChart1.Rows[0]["MC_I_PER"] + "%";
+
+                    if (double.Parse(dtChart1.Rows[0]["MC_W_PER"].ToString()) < 90)
+                    {
+                        lbl_W10.BackColor = Color.Red;
+                        lbl_W10.ForeColor = Color.White;
+                    }
+                    else
+                    {
+                        lbl_W10.BackColor = Color.Green;
+                        lbl_W10.ForeColor = Color.White;
+                    }
+
+
                 }
             }
             catch(Exception ex)
@@ -142,37 +322,7 @@ namespace FORM
         }
 
 
-        //private void SetChart2(DataTable argDtChart)
-        //{
-
-
-        //    chart2.Series[0].Points.Clear();
-        //    chart2.Series[1].Points.Clear();
-        //    chart2.Series[0].ArgumentScaleType = ScaleType.Qualitative;
-        //    chart2.Series[1].ArgumentScaleType = ScaleType.Qualitative;
-        //    if (argDtChart == null) return;
-        //    for (int i = 0; i <= argDtChart.Rows.Count - 1; i++)
-        //    {
-        //        chart2.Series[0].Points.Add(new SeriesPoint(argDtChart.Rows[i]["YMD"].ToString(), argDtChart.Rows[i]["LOB_RESULT"]));
-        //        chart2.Series[1].Points.Add(new SeriesPoint(argDtChart.Rows[i]["YMD"].ToString(), argDtChart.Rows[i]["LOB_TAR"]));
-
-        //        double lob;
-        //        double.TryParse(argDtChart.Rows[i]["LOB_RESULT"].ToString(), out lob); //out
-
-        //        if (lob > 85)
-        //        {
-        //            chart2.Series[0].Points[i].Color = Color.Green;
-        //        }
-        //        else if ((lob >= 75) && (lob <= 85))
-        //        {
-        //            chart2.Series[0].Points[i].Color = Color.Yellow;
-        //        }
-        //        else if (lob < 75)
-        //        {
-        //            chart2.Series[0].Points[i].Color = Color.Red;
-        //        }
-        //    }
-        //}
+       
 
         private void getDataByThread()
         {
@@ -229,7 +379,56 @@ namespace FORM
                 return null;
             }
         }
+        public DataTable GET_DATA1(string Type, string YMD1,string YMD2, string Plant, string FGA_Mline, string UPS_Mline)
+        {
+            COM.OraDB MyOraDB = new COM.OraDB();
+            DataSet ds_ret;
 
+            try
+            {
+                string process_name = "MES.PKG_SMT_PROD.SP_SMT_COMPUTER_OEE1";
+
+                MyOraDB.ReDim_Parameter(7);
+                MyOraDB.Process_Name = process_name;
+
+                MyOraDB.Parameter_Name[0] = "V_P_QTYPE";
+                MyOraDB.Parameter_Name[1] = "V_P_YMDF";
+                MyOraDB.Parameter_Name[2] = "V_P_YMDT";
+                MyOraDB.Parameter_Name[3] = "V_P_LINE";
+                MyOraDB.Parameter_Name[4] = "V_P_MLINE";
+                MyOraDB.Parameter_Name[5] = "V_P_UPS_MLINE";
+                MyOraDB.Parameter_Name[6] = "OUT_CURSOR";
+
+
+                MyOraDB.Parameter_Type[0] = (int)OracleType.VarChar;
+                MyOraDB.Parameter_Type[1] = (int)OracleType.VarChar;
+                MyOraDB.Parameter_Type[2] = (int)OracleType.VarChar;
+                MyOraDB.Parameter_Type[3] = (int)OracleType.VarChar;
+                MyOraDB.Parameter_Type[4] = (int)OracleType.VarChar;
+                MyOraDB.Parameter_Type[5] = (int)OracleType.VarChar;
+                MyOraDB.Parameter_Type[6] = (int)OracleType.Cursor;
+
+                MyOraDB.Parameter_Values[0] = Type;
+                MyOraDB.Parameter_Values[1] = YMD1;
+                MyOraDB.Parameter_Values[2] = YMD2;
+                MyOraDB.Parameter_Values[3] = Plant;
+                MyOraDB.Parameter_Values[4] = FGA_Mline;
+                MyOraDB.Parameter_Values[5] = UPS_Mline;
+                MyOraDB.Parameter_Values[6] = "";
+
+                MyOraDB.Add_Select_Parameter(true);
+                ds_ret = MyOraDB.Exe_Select_Procedure();
+
+                if (ds_ret == null) return null;
+                return ds_ret.Tables[process_name];
+
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex);
+                return null;
+            }
+        }
         #endregion DB
 
      
@@ -238,11 +437,12 @@ namespace FORM
         {
             cCount++;
             lblDate.Text = string.Format(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
-            string ymd = dtpDate.DateTime.ToString("yyyyMM");
-            if (cCount >= 30)
+            string ymdF = dtpDateF.DateTime.ToString("yyyyMMdd");
+            string ymdT = dtpDateF.DateTime.ToString("yyyyMMdd");
+            if (cCount >= 20)
             {
 
-                loadData("OEE", ymd, plant, line, "001");
+                loadData("OEE", ymdF,ymdT, plant, line, "001");
                 Thread t = new Thread(new ThreadStart(getDataByThread));
                 t.Start();
                 
@@ -323,10 +523,11 @@ namespace FORM
             {
                 cmdBack.Tag = ComVar.Var._Frm_Back;
                 lblDate.Text = string.Format(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
-                dtpDate.EditValue = DateTime.Now.ToString("yyyy-MM");
-                simpleButton1.Enabled = false;
+                dtpDateF.EditValue = DateTime.Now.ToString("yyyy-MM-dd");
+                dtpDateT.EditValue = DateTime.Now.ToString("yyyy-MM-dd");
+                simpleButton1.Enabled = true;
                 simpleButton2.Enabled = false;
-                simpleButton3.Enabled = true;
+                simpleButton3.Enabled = false;
                 simpleButton4.Enabled = false;
             }
             else
@@ -336,11 +537,7 @@ namespace FORM
             }
         }
 
-        private void btn_Search_Click(object sender, EventArgs e)
-        {
-            string ymd = dtpDate.DateTime.ToString("yyyyMM");
-            loadData("OEE", ymd, plant, line, "001");
-        }
+       
 
         private void chart_CustomDrawSeriesPoint(object sender, CustomDrawSeriesPointEventArgs e)
         {
@@ -348,13 +545,17 @@ namespace FORM
             if (drawOptions == null)
                 return;
             string sRating = e.SeriesPoint.Argument;
-            if (sRating.Contains("MACHINE_WORKING"))
+            if (sRating.Contains("MACHINE WORKING"))
             {
-                drawOptions.Color = Color.FromArgb(91,155,213);
+               // drawOptions.Color = Color.FromArgb(91,155,213);
+                drawOptions.Color = Color.Green;
+               // chart.Series[0].Legend.Border.Color = System.Drawing.Color.Green;
+               //chart.PaletteName = 
             }
             else
             {
                 drawOptions.Color = Color.FromArgb(237, 125, 49);
+                //drawOptions.Color = Color.Orange;
             }
         }
 
@@ -364,7 +565,7 @@ namespace FORM
             if (drawOptions == null)
                 return;
             string sRating = e.SeriesPoint.Argument;
-            if (sRating.Contains("MACHINE_WORKING"))
+            if (sRating.Contains("MACHINE WORKING"))
             {
                 drawOptions.Color = Color.FromArgb(91, 155, 213);
             }
@@ -380,7 +581,7 @@ namespace FORM
             if (drawOptions == null)
                 return;
             string sRating = e.SeriesPoint.Argument;
-            if (sRating.Contains("MACHINE_WORKING"))
+            if (sRating.Contains("MACHINE WORKING"))
             {
                 drawOptions.Color = Color.FromArgb(91, 155, 213);
             }
@@ -396,7 +597,7 @@ namespace FORM
             if (drawOptions == null)
                 return;
             string sRating = e.SeriesPoint.Argument;
-            if (sRating.Contains("MACHINE_WORKING"))
+            if (sRating.Contains("MACHINE WORKING"))
             {
                 drawOptions.Color = Color.FromArgb(91, 155, 213);
             }
@@ -412,7 +613,7 @@ namespace FORM
             if (drawOptions == null)
                 return;
             string sRating = e.SeriesPoint.Argument;
-            if (sRating.Contains("MACHINE_WORKING"))
+            if (sRating.Contains("MACHINE WORKING"))
             {
                 drawOptions.Color = Color.FromArgb(91, 155, 213);
             }
@@ -428,7 +629,7 @@ namespace FORM
             if (drawOptions == null)
                 return;
             string sRating = e.SeriesPoint.Argument;
-            if (sRating.Contains("MACHINE_WORKING"))
+            if (sRating.Contains("MACHINE WORKING"))
             {
                 drawOptions.Color = Color.FromArgb(91, 155, 213);
             }
@@ -444,7 +645,7 @@ namespace FORM
             if (drawOptions == null)
                 return;
             string sRating = e.SeriesPoint.Argument;
-            if (sRating.Contains("MACHINE_WORKING"))
+            if (sRating.Contains("MACHINE WORKING"))
             {
                 drawOptions.Color = Color.FromArgb(91, 155, 213);
             }
@@ -460,7 +661,7 @@ namespace FORM
             if (drawOptions == null)
                 return;
             string sRating = e.SeriesPoint.Argument;
-            if (sRating.Contains("MACHINE_WORKING"))
+            if (sRating.Contains("MACHINE WORKING"))
             {
                 drawOptions.Color = Color.FromArgb(91, 155, 213);
             }
@@ -476,7 +677,7 @@ namespace FORM
             if (drawOptions == null)
                 return;
             string sRating = e.SeriesPoint.Argument;
-            if (sRating.Contains("MACHINE_WORKING"))
+            if (sRating.Contains("MACHINE WORKING"))
             {
                 drawOptions.Color = Color.FromArgb(91, 155, 213);
             }
@@ -492,7 +693,7 @@ namespace FORM
             if (drawOptions == null)
                 return;
             string sRating = e.SeriesPoint.Argument;
-            if (sRating.Contains("MACHINE_WORKING"))
+            if (sRating.Contains("MACHINE WORKING"))
             {
                 drawOptions.Color = Color.FromArgb(91, 155, 213);
             }
@@ -505,14 +706,32 @@ namespace FORM
         private void FORM_COMPUTER_OEE_Load(object sender, EventArgs e)
         {
             lblDate.Text = string.Format(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
-            string ymd = dtpDate.DateTime.ToString("yyyyMM");
-            loadData("OEE", ymd, plant, line, "001");
+            //lblFGALine.Text = line;
+
+            dtpDateF.EditValue = DateTime.Now.ToString("yyyy-MM-dd");
+            dtpDateT.EditValue=DateTime.Now.ToString("yyyy-MM-dd");
+
+            string ymdF = dtpDateF.DateTime.ToString("yyyyMMdd");
+            string ymdT = dtpDateF.DateTime.ToString("yyyyMMdd");
+
+            loadData("OEE", ymdF,ymdT, plant, line, "001");
+
         }
 
-        private void dtpDate_EditValueChanged(object sender, EventArgs e)
+      
+
+        private void dtpDateT_EditValueChanged(object sender, EventArgs e)
         {
-            string ymd = dtpDate.DateTime.ToString("yyyyMM");
-            loadData("OEE", ymd, plant, line, "001");
+            string ymdF = dtpDateF.DateTime.ToString("yyyyMMdd");
+            string ymdT = dtpDateF.DateTime.ToString("yyyyMMdd");
+            loadData("OEE", ymdF, ymdT, plant, line, "001");
+        }
+
+        private void dtpDateF_EditValueChanged(object sender, EventArgs e)
+        {
+            string ymdF = dtpDateF.DateTime.ToString("yyyyMMdd");
+            string ymdT = dtpDateF.DateTime.ToString("yyyyMMdd");
+            loadData("OEE", ymdF, ymdT, plant, line, "001");
         }
     }
 }

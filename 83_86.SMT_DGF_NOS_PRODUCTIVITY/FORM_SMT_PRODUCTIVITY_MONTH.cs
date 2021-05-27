@@ -11,6 +11,7 @@ using System.Drawing.Drawing2D;
 using DevExpress.XtraCharts;
 using DevExpress.XtraGauges.Core.Model;
 using System.Runtime.InteropServices;
+using System.Diagnostics;
 //using Microsoft.VisualBasic.PowerPacks;
 //using C1.Win.C1FlexGrid;
 
@@ -140,107 +141,123 @@ namespace FORM
 
         private void CreateChartLine(ChartControl arg_chart, DataTable arg_dt, string arg_name)
         {
-            if (arg_dt == null || arg_dt.Rows.Count == 0) return;
-            arg_chart.Series.Clear();
-            arg_chart.Titles.Clear();
-            
-            //----------create--------------------
-            Series series2 = new Series("POD", ViewType.Spline);
-
-            DevExpress.XtraCharts.SplineSeriesView splineSeriesView1 = new DevExpress.XtraCharts.SplineSeriesView();
-            //DevExpress.XtraCharts.SideBySideBarSeriesView sideBySideBarSeriesView1 = new DevExpress.XtraCharts.SideBySideBarSeriesView();
-            //DevExpress.XtraCharts.PointSeriesLabel pointSeriesLabel1 = new DevExpress.XtraCharts.PointSeriesLabel();
-            //DevExpress.XtraCharts.BarWidenAnimation barWidenAnimation1 = new DevExpress.XtraCharts.BarWidenAnimation();
-            //DevExpress.XtraCharts.ElasticEasingFunction elasticEasingFunction1 = new DevExpress.XtraCharts.ElasticEasingFunction();
-            //DevExpress.XtraCharts.XYSeriesBlowUpAnimation xySeriesBlowUpAnimation1 = new DevExpress.XtraCharts.XYSeriesBlowUpAnimation();
-            DevExpress.XtraCharts.XYSeriesUnwindAnimation xySeriesUnwindAnimation1 = new DevExpress.XtraCharts.XYSeriesUnwindAnimation();
-            //DevExpress.XtraCharts.XYSeriesUnwrapAnimation xySeriesUnwrapAnimation1 = new DevExpress.XtraCharts.XYSeriesUnwrapAnimation();
-            //DevExpress.XtraCharts.PowerEasingFunction powerEasingFunction1 = new DevExpress.XtraCharts.PowerEasingFunction();
-            DevExpress.XtraCharts.SineEasingFunction sineEasingFunction1 = new DevExpress.XtraCharts.SineEasingFunction();
-            DevExpress.XtraCharts.ConstantLine constantLine1 = new DevExpress.XtraCharts.ConstantLine();
-
-            //--------- Add data Point------------
-            for (int i = 0; i < arg_dt.Rows.Count; i++)
+            try
             {
-                if (arg_dt.Rows[i]["POD"] == null || arg_dt.Rows[i]["POD"].ToString() == "")
-                    series2.Points.Add(new SeriesPoint(arg_dt.Rows[i]["LB"].ToString().Replace("_","\n") ));
-                else
-                    series2.Points.Add(new SeriesPoint(arg_dt.Rows[i]["LB"].ToString().Replace("_", "\n"), arg_dt.Rows[i]["POD"]));
+                if (arg_dt == null || arg_dt.Rows.Count == 0) return;
+                arg_chart.Series.Clear();
+                arg_chart.Titles.Clear();
+
+                //----------create--------------------
+                Series series2 = new Series("POD", ViewType.Spline);
+
+                DevExpress.XtraCharts.SplineSeriesView splineSeriesView1 = new DevExpress.XtraCharts.SplineSeriesView();
+                //DevExpress.XtraCharts.SideBySideBarSeriesView sideBySideBarSeriesView1 = new DevExpress.XtraCharts.SideBySideBarSeriesView();
+                //DevExpress.XtraCharts.PointSeriesLabel pointSeriesLabel1 = new DevExpress.XtraCharts.PointSeriesLabel();
+                //DevExpress.XtraCharts.BarWidenAnimation barWidenAnimation1 = new DevExpress.XtraCharts.BarWidenAnimation();
+                //DevExpress.XtraCharts.ElasticEasingFunction elasticEasingFunction1 = new DevExpress.XtraCharts.ElasticEasingFunction();
+                //DevExpress.XtraCharts.XYSeriesBlowUpAnimation xySeriesBlowUpAnimation1 = new DevExpress.XtraCharts.XYSeriesBlowUpAnimation();
+                DevExpress.XtraCharts.XYSeriesUnwindAnimation xySeriesUnwindAnimation1 = new DevExpress.XtraCharts.XYSeriesUnwindAnimation();
+                //DevExpress.XtraCharts.XYSeriesUnwrapAnimation xySeriesUnwrapAnimation1 = new DevExpress.XtraCharts.XYSeriesUnwrapAnimation();
+                //DevExpress.XtraCharts.PowerEasingFunction powerEasingFunction1 = new DevExpress.XtraCharts.PowerEasingFunction();
+                DevExpress.XtraCharts.SineEasingFunction sineEasingFunction1 = new DevExpress.XtraCharts.SineEasingFunction();
+                DevExpress.XtraCharts.ConstantLine constantLine1 = new DevExpress.XtraCharts.ConstantLine();
+
+                //--------- Add data Point------------
+                for (int i = 0; i < arg_dt.Rows.Count; i++)
+                {
+                    if (arg_dt.Rows[i]["POD"] == null || arg_dt.Rows[i]["POD"].ToString() == "")
+                        series2.Points.Add(new SeriesPoint(arg_dt.Rows[i]["LB"].ToString().Replace("_", "\n")));
+                    else
+                        series2.Points.Add(new SeriesPoint(arg_dt.Rows[i]["LB"].ToString().Replace("_", "\n"), arg_dt.Rows[i]["POD"]));
+                }
+
+                arg_chart.SeriesSerializable = new DevExpress.XtraCharts.Series[] { series2 };
+
+                double maxValue;
+                double.TryParse(arg_dt.Compute("MAX(POD)", "").ToString(), out maxValue);
+                double target;
+                double.TryParse(arg_dt.Rows[0]["TARGET"].ToString(), out target);
+                if (target > maxValue)
+                {
+                    maxValue = target;
+                }
+
+
+                //title
+                DevExpress.XtraCharts.ChartTitle chartTitle2 = new DevExpress.XtraCharts.ChartTitle();
+                chartTitle2.Alignment = System.Drawing.StringAlignment.Near;
+                chartTitle2.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold);
+                chartTitle2.Text = arg_name;
+                chartTitle2.TextColor = System.Drawing.Color.Black;
+                arg_chart.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] { chartTitle2 });
+
+
+                // format Series 
+                splineSeriesView1.MarkerVisibility = DevExpress.Utils.DefaultBoolean.True;
+                splineSeriesView1.Color = System.Drawing.Color.DodgerBlue;
+                splineSeriesView1.LineMarkerOptions.BorderColor = System.Drawing.Color.DodgerBlue;
+                splineSeriesView1.LineMarkerOptions.BorderVisible = false;
+                splineSeriesView1.LineMarkerOptions.Kind = DevExpress.XtraCharts.MarkerKind.Circle;
+                splineSeriesView1.LineMarkerOptions.Color = System.Drawing.Color.DodgerBlue;
+                splineSeriesView1.LineMarkerOptions.Size = 10;
+
+                splineSeriesView1.LineStyle.Thickness = 3;
+                series2.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
+                series2.Label.ResolveOverlappingMode = ResolveOverlappingMode.JustifyAllAroundPoint;
+                //series2.Label.TextPattern = "{V:#,0}";
+                series2.View = splineSeriesView1;
+
+                xySeriesUnwindAnimation1.EasingFunction = sineEasingFunction1;
+                splineSeriesView1.SeriesAnimation = xySeriesUnwindAnimation1;
+
+                arg_chart.Legend.Direction = LegendDirection.LeftToRight;
+
+                //Constant line
+                //constantLine1.ShowInLegend = false;
+                constantLine1.AxisValueSerializable = arg_dt.Rows[0]["TARGET"].ToString();
+                constantLine1.Color = System.Drawing.Color.Green;
+                constantLine1.Name = "Target";
+                // constantLine1.ShowBehind = false;
+                constantLine1.Title.Visible = false;
+                constantLine1.Title.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                //constantLine1.Title.Text = "Target";
+                constantLine1.LineStyle.Thickness = 2;
+                // constantLine1.Title.Alignment = DevExpress.XtraCharts.ConstantLineTitleAlignment.Far;
+                ((XYDiagram)arg_chart.Diagram).AxisY.ConstantLines.Clear();
+                ((XYDiagram)arg_chart.Diagram).AxisY.ConstantLines.AddRange(new DevExpress.XtraCharts.ConstantLine[] { constantLine1 });
+
+
+                //((XYDiagram)arg_chart.Diagram).AxisX.Tickmarks.MinorVisible = false;
+                ((XYDiagram)arg_chart.Diagram).AxisX.VisualRange.Auto = false;
+                ((XYDiagram)arg_chart.Diagram).AxisX.VisualRange.AutoSideMargins = false;
+                ((XYDiagram)arg_chart.Diagram).AxisX.VisualRange.SideMarginsValue = 2;
+                ((XYDiagram)arg_chart.Diagram).AxisX.Label.Angle = 0;
+                ((XYDiagram)arg_chart.Diagram).AxisX.Label.Font = new System.Drawing.Font("Tahoma", 10, System.Drawing.FontStyle.Bold);
+                ((XYDiagram)arg_chart.Diagram).AxisX.NumericScaleOptions.ScaleMode = DevExpress.XtraCharts.ScaleMode.Continuous;
+                ((XYDiagram)arg_chart.Diagram).AxisY.Label.Font = new System.Drawing.Font("Tahoma", 10, System.Drawing.FontStyle.Bold);
+                ((XYDiagram)arg_chart.Diagram).AxisX.Title.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                ((XYDiagram)arg_chart.Diagram).AxisY.Title.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
+                //--------Text AxisX/ AxisY
+                ((XYDiagram)arg_chart.Diagram).AxisY.Title.Text = "POD";
+                ((XYDiagram)arg_chart.Diagram).AxisY.Title.TextColor = System.Drawing.Color.Orange;
+                ((XYDiagram)arg_chart.Diagram).AxisY.Title.Visibility = DevExpress.Utils.DefaultBoolean.Default;
+                ((XYDiagram)arg_chart.Diagram).AxisX.Title.Text = "Date";
+                ((XYDiagram)arg_chart.Diagram).AxisX.Title.Visibility = DevExpress.Utils.DefaultBoolean.Default;
+                ((XYDiagram)arg_chart.Diagram).AxisX.Title.TextColor = System.Drawing.Color.Orange;
+                ((XYDiagram)arg_chart.Diagram).AxisY.WholeRange.MaxValue = maxValue + 5;
+
+
+
+
+                //---------------add chart in panel
+                pn_body.Controls.Add(arg_chart);
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex);
             }
             
-            arg_chart.SeriesSerializable = new DevExpress.XtraCharts.Series[] { series2 };
-
-            
-
-            //title
-            DevExpress.XtraCharts.ChartTitle chartTitle2 = new DevExpress.XtraCharts.ChartTitle();
-            chartTitle2.Alignment = System.Drawing.StringAlignment.Near;
-            chartTitle2.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold);
-            chartTitle2.Text = arg_name;
-            chartTitle2.TextColor = System.Drawing.Color.Black;
-            arg_chart.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] { chartTitle2 });
-
-
-            // format Series 
-            splineSeriesView1.MarkerVisibility = DevExpress.Utils.DefaultBoolean.True;
-            splineSeriesView1.Color = System.Drawing.Color.DodgerBlue;
-            splineSeriesView1.LineMarkerOptions.BorderColor = System.Drawing.Color.DodgerBlue;
-            splineSeriesView1.LineMarkerOptions.BorderVisible = false;
-            splineSeriesView1.LineMarkerOptions.Kind = DevExpress.XtraCharts.MarkerKind.Circle;
-            splineSeriesView1.LineMarkerOptions.Color = System.Drawing.Color.DodgerBlue;
-            splineSeriesView1.LineMarkerOptions.Size = 10;
-            
-            splineSeriesView1.LineStyle.Thickness = 3;
-            series2.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
-            series2.Label.ResolveOverlappingMode = ResolveOverlappingMode.JustifyAllAroundPoint;
-            //series2.Label.TextPattern = "{V:#,0}";
-            series2.View = splineSeriesView1;
-
-            xySeriesUnwindAnimation1.EasingFunction = sineEasingFunction1;
-            splineSeriesView1.SeriesAnimation = xySeriesUnwindAnimation1;
-
-            arg_chart.Legend.Direction = LegendDirection.LeftToRight;
-
-            //Constant line
-            //constantLine1.ShowInLegend = false;
-            constantLine1.AxisValueSerializable = arg_dt.Rows[0]["TARGET"].ToString();
-            constantLine1.Color = System.Drawing.Color.Green;
-            constantLine1.Name = "Target";
-           // constantLine1.ShowBehind = false;
-            constantLine1.Title.Visible = false;
-            constantLine1.Title.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            //constantLine1.Title.Text = "Target";
-            constantLine1.LineStyle.Thickness = 2;
-           // constantLine1.Title.Alignment = DevExpress.XtraCharts.ConstantLineTitleAlignment.Far;
-            ((XYDiagram)arg_chart.Diagram).AxisY.ConstantLines.Clear();
-            ((XYDiagram)arg_chart.Diagram).AxisY.ConstantLines.AddRange(new DevExpress.XtraCharts.ConstantLine[] { constantLine1 });
-
-
-            //((XYDiagram)arg_chart.Diagram).AxisX.Tickmarks.MinorVisible = false;
-            ((XYDiagram)arg_chart.Diagram).AxisX.VisualRange.Auto = false;
-            ((XYDiagram)arg_chart.Diagram).AxisX.VisualRange.AutoSideMargins = false;
-            ((XYDiagram)arg_chart.Diagram).AxisX.VisualRange.SideMarginsValue = 2;
-            ((XYDiagram)arg_chart.Diagram).AxisX.Label.Angle = 0;
-            ((XYDiagram)arg_chart.Diagram).AxisX.Label.Font = new System.Drawing.Font("Tahoma", 10, System.Drawing.FontStyle.Bold);
-            ((XYDiagram)arg_chart.Diagram).AxisX.NumericScaleOptions.ScaleMode = DevExpress.XtraCharts.ScaleMode.Continuous;
-           ((XYDiagram)arg_chart.Diagram).AxisY.Label.Font = new System.Drawing.Font("Tahoma", 10, System.Drawing.FontStyle.Bold);
-            ((XYDiagram)arg_chart.Diagram).AxisX.Title.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            ((XYDiagram)arg_chart.Diagram).AxisY.Title.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-
-            //--------Text AxisX/ AxisY
-            ((XYDiagram)arg_chart.Diagram).AxisY.Title.Text = "POD";
-            ((XYDiagram)arg_chart.Diagram).AxisY.Title.TextColor = System.Drawing.Color.Orange;
-            ((XYDiagram)arg_chart.Diagram).AxisY.Title.Visibility = DevExpress.Utils.DefaultBoolean.Default;
-            ((XYDiagram)arg_chart.Diagram).AxisX.Title.Text = "Date";
-            ((XYDiagram)arg_chart.Diagram).AxisX.Title.Visibility = DevExpress.Utils.DefaultBoolean.Default;
-            ((XYDiagram)arg_chart.Diagram).AxisX.Title.TextColor = System.Drawing.Color.Orange;
-
-
-
-
-            
-            //---------------add chart in panel
-            pn_body.Controls.Add(arg_chart);
         }
 
         private void CreateChartBar(ChartControl arg_chart, DataTable arg_dt, string arg_name)
@@ -495,18 +512,18 @@ namespace FORM
             switch (Lang)
             {
                 case "Vn":
-                      CreateChartLine(Chart1, ds.Tables[1], "Cắt");
-            CreateChartLine(Chart2, ds.Tables[3], "May 1");
-            CreateChartLine(Chart3, ds.Tables[5], "May 2");
-            CreateChartLine(Chart4, ds.Tables[2], "Chuẩn bị");           
-            CreateChartLine(Chart5, ds.Tables[4], "Lắp ráp");
-               break;
+                    CreateChartLine(Chart1, ds.Tables[1], "Cắt");
+                    CreateChartLine(Chart2, ds.Tables[3], "May 1");
+                    CreateChartLine(Chart3, ds.Tables[5], "May 2");
+                    CreateChartLine(Chart4, ds.Tables[2], "Chuẩn bị");           
+                    CreateChartLine(Chart5, ds.Tables[4], "Lắp ráp");
+                    break;
                 case "En":
-                      CreateChartLine(Chart1, ds.Tables[1], "Cutting");
-            CreateChartLine(Chart2, ds.Tables[3], "Stitching 1");
-            CreateChartLine(Chart3, ds.Tables[5], "Stitching 2");
-            CreateChartLine(Chart4, ds.Tables[2], "Stockfit");           
-            CreateChartLine(Chart5, ds.Tables[4], "Assembly");
+                    CreateChartLine(Chart1, ds.Tables[1], "Cutting");
+                    CreateChartLine(Chart2, ds.Tables[3], "Stitching 1");
+                    CreateChartLine(Chart3, ds.Tables[5], "Stitching 2");
+                    CreateChartLine(Chart4, ds.Tables[2], "Stockfit");           
+                    CreateChartLine(Chart5, ds.Tables[4], "Assembly");
                     break;
             }
 

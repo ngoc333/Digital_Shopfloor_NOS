@@ -103,6 +103,9 @@ namespace FORM
                     
                     if (cntrl != null)
                     {
+                        if (cntrl.Name.Contains("cmdL6"))
+                        { }
+
                         cntrl.Text = dt.Rows[i]["CON_VAL"].ToString();
                         switch (dt.Rows[i]["COLOR"].ToString())
                         {
@@ -514,10 +517,12 @@ namespace FORM
             
         }
 
-        private void SetControlName(string ArgLineFind, string ArgLineReplace)
+        private void SetControlName(GroupBox groupBox, string ArgLineFind, string ArgLineReplace)
         {
-            foreach (Control cnt in gpL1.Controls)
+            foreach (Control cnt in groupBox.Controls)
             {
+                if (cnt.Name == "cmdL2_Val10")
+                { }
                 cnt.Name = cnt.Name.Replace(ArgLineFind, ArgLineReplace);
             }
         }
@@ -656,11 +661,13 @@ namespace FORM
 
             if (ComVar.Var._strValue2 == "005" || ComVar.Var._strValue2 == "006" || ComVar.Var._strValue2 == "007" || ComVar.Var._strValue2 == "008")
             {
-                SetControlName("cmdL1", "cmdL5");
-                SetControlName("cmdL2", "cmdL6");
-                SetControlName("cmdL3", "cmdL7");
-                SetControlName("cmdL4", "cmdL8");
+                SetControlName(gpL1, "cmdL1", "cmdL5");
+                SetControlName(gpL2, "cmdL2", "cmdL6");
+                SetControlName(gpL3, "cmdL3", "cmdL7");
+                SetControlName(gpL4, "cmdL4", "cmdL8");
             }
+
+            Control ctr = this.Controls.Find("cmdL6_Val10", true).FirstOrDefault();
 
 
             //Setup Lang
@@ -680,10 +687,10 @@ namespace FORM
             //        break;
             //}
             //  pnBot.Location = new Point(138, 881);
-           // ClassLib.ComCtl.Form_Maximized(this, indexScreen); //2 man hinh tro len
-           // var dateStr = "20110321";
-           // DateTime dateTime = DateTime.ParseExact("20110321", "yyyyMMdd", System.Globalization.CultureInfo.CurrentCulture);
-           // groupBox1.Click += new EventHandler(Line1_Click);
+            // ClassLib.ComCtl.Form_Maximized(this, indexScreen); //2 man hinh tro len
+            // var dateStr = "20110321";
+            // DateTime dateTime = DateTime.ParseExact("20110321", "yyyyMMdd", System.Globalization.CultureInfo.CurrentCulture);
+            // groupBox1.Click += new EventHandler(Line1_Click);
         }
 
         //private void Line1_Click(object sendder, EventArgs e)

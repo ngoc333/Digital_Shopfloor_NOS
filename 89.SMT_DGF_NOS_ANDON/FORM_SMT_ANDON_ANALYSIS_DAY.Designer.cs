@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FORM_SMT_ANDON_ANALYSIS_DAY));
             DevExpress.XtraCharts.XYDiagram xyDiagram1 = new DevExpress.XtraCharts.XYDiagram();
             DevExpress.XtraCharts.HatchFillOptions hatchFillOptions1 = new DevExpress.XtraCharts.HatchFillOptions();
@@ -71,7 +72,7 @@
             this.cmdBack = new System.Windows.Forms.Button();
             this.lblDate = new System.Windows.Forms.Label();
             this.lblTitle = new DevExpress.XtraEditors.LabelControl();
-            this.tmrDate = new System.Windows.Forms.Timer();
+            this.tmrDate = new System.Windows.Forms.Timer(this.components);
             this.tblMain = new System.Windows.Forms.TableLayoutPanel();
             this.chartSumProd = new DevExpress.XtraCharts.ChartControl();
             this.chartProd = new DevExpress.XtraCharts.ChartControl();
@@ -88,7 +89,7 @@
             this.lblProd_DT = new System.Windows.Forms.Label();
             this.lblProd = new System.Windows.Forms.Label();
             this.chartQual = new DevExpress.XtraCharts.ChartControl();
-            this.tmrCount = new System.Windows.Forms.Timer();
+            this.tmrCount = new System.Windows.Forms.Timer(this.components);
             this.pnHeader.SuspendLayout();
             this.tblMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartSumProd)).BeginInit();
@@ -451,14 +452,14 @@
             this.chartSumQual.Location = new System.Drawing.Point(1271, 3);
             this.chartSumQual.Name = "chartSumQual";
             series5.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
-            series5.Name = "MTL. handler DownTime";
+            series5.Name = "Quality DownTime";
             lineSeriesView3.Color = System.Drawing.Color.Blue;
             series5.View = lineSeriesView3;
             this.chartSumQual.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series5};
             this.chartSumQual.Size = new System.Drawing.Size(630, 304);
             this.chartSumQual.TabIndex = 4;
-            chartTitle5.Text = "Material downtime";
+            chartTitle5.Text = "Quality downtime";
             chartTitle5.Visibility = DevExpress.Utils.DefaultBoolean.True;
             this.chartSumQual.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle5});
@@ -494,7 +495,7 @@
             this.lblQual.Name = "lblQual";
             this.lblQual.Size = new System.Drawing.Size(285, 44);
             this.lblQual.TabIndex = 0;
-            this.lblQual.Text = "MTL. handler  (Minutes)";
+            this.lblQual.Text = "Quality  (Times)";
             this.lblQual.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnMa
@@ -590,14 +591,14 @@
             sideBySideBarSeriesLabel3.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             series6.Label = sideBySideBarSeriesLabel3;
             series6.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
-            series6.Name = "MTL. handler DownTime";
+            series6.Name = "Quality DownTime";
             sideBySideBarSeriesView3.Color = System.Drawing.Color.Blue;
             series6.View = sideBySideBarSeriesView3;
             this.chartQual.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series6};
             this.chartQual.Size = new System.Drawing.Size(932, 304);
             this.chartQual.TabIndex = 3;
-            chartTitle6.Text = "Material downtime";
+            chartTitle6.Text = "Quality downtime";
             chartTitle6.Visibility = DevExpress.Utils.DefaultBoolean.True;
             this.chartQual.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle6});

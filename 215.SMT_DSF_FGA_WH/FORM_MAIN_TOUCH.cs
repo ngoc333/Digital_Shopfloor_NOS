@@ -33,13 +33,21 @@ namespace FORM
             {
                 DataTable dtXML = ComVar.Func.ReadXML(Application.StartupPath + "\\Config.XML", "MAIN");
                 ComVar.Var._strValue1 = dtXML.Rows[0]["WH_CD"].ToString();
-
+                ComVar.Var.writeToLog("initForm: " + ComVar.Var._strValue1);
             }
             insert_from(mold_prod);
-            if (ComVar.Var._strValue1 == "099")
+            if (ComVar.Var._strValue1 == "099" || ComVar.Var._strValue1 == "202" || ComVar.Var._iValue4 == 8)
+            {
+                ComVar.Var.writeToLog("initForm: incoming_status_N" + ComVar.Var._strValue1);
                 insert_from(incoming_status_N);
+            }
+                
             else
+            {
+                ComVar.Var.writeToLog("initForm: incoming_status" + ComVar.Var._strValue1);
                 insert_from(incoming_status);
+            }
+                
             insert_from(shipping_sche);
             insert_from(inventory);
             insert_from(delivery_tracking);
@@ -87,8 +95,9 @@ namespace FORM
                 pn_main.Controls.Add(arg_form);
 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                ComVar.Var.writeToLog("insert_from " + ex.Message);
             }
         }
 
@@ -179,7 +188,7 @@ namespace FORM
         private void cmd_incoming_status_Click(object sender, EventArgs e)
         {
             clickButton(cmd_incoming_status);
-            if (ComVar.Var._strValue1 == "099")
+            if (ComVar.Var._strValue1 == "099" || ComVar.Var._strValue1 == "202" || ComVar.Var._iValue4 == 8)
                 showform("FORM_INCOMING_STATUS_N");
             else
                 showform("FORM_INCOMING_STATUS");

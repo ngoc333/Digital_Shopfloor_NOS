@@ -30,6 +30,7 @@ namespace FORM
         {
             InitializeComponent();
             cmd_back.Visible = FORM.Var._Show_back_icon;
+            ComVar.Var.writeToLog(" init: ");
         }
 
         #region Func
@@ -137,8 +138,9 @@ namespace FORM
                 //    axSpear.ColMerge = FPUSpreadADO.MergeConstants.MergeAlways;
                 //}
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                ComVar.Var.writeToLog("load_data " + ex.Message);
             }
            
         }
@@ -215,6 +217,7 @@ namespace FORM
                 ds_ret = MyOraDB.Exe_Select_Procedure();
 
                 if (ds_ret == null) return null;
+                ComVar.Var.writeToLog(" count: " + ds_ret.Tables[process_name].Rows.Count);
                 return ds_ret.Tables[process_name];
             }
             catch

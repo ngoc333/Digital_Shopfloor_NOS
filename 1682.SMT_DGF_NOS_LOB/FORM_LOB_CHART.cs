@@ -265,37 +265,59 @@ namespace FORM
 
 
 
-                if (dt.Rows.Count > 0 && dt1.Rows.Count > 0)
+                if (dt.Rows.Count > 0)
                 {
                     if (type == "LOB_RESULT")
                     {
                         lblLobChart.Text = dt.Rows[0]["LOB_RESULT"].ToString() + "%";
-
-                        lblLC_002.Text = dt1.Rows[0]["LOB_RESULT"].ToString() + "%";
+                       
                     }
 
                     if (type == "MODEL")
                     {
                         lblModel.Text = dt.Rows[0]["MODEL_NAME"].ToString();
-                        lblStyle.Text = dt.Rows[0]["STYLE_NAME"].ToString();
-
-                        lblModel_002.Text = dt1.Rows[0]["MODEL_NAME"].ToString();
-                        lblStyle_002.Text = dt1.Rows[0]["STYLE_NAME"].ToString();
+                        lblStyle.Text = dt.Rows[0]["STYLE_CD"].ToString();
                     }
                     if (type == "TAKTTIME")
                     {
-                        lblTakttime.Text = dt.Rows[0]["TAKTTIME"].ToString();
+                        lblTakttime.Text = dt.Rows[0]["TAKTTIME"].ToString() + "''";
 
-                        lblTakttime_002.Text = dt1.Rows[0]["TAKTTIME"].ToString();
+                        
                     }
                     if (type == "HIGH_CT")
                     {
-                        lblHighest.Text = dt.Rows[0]["MAX_CYCLE_TIME"].ToString();
+                        lblHighest.Text = dt.Rows[0]["MAX_CYCLE_TIME"].ToString() +"''";
+                        
+                    }
 
-                        lblHighest_002.Text = dt1.Rows[0]["MAX_CYCLE_TIME"].ToString();
+                }
+                if(dt1.Rows.Count > 0)
+                {
+                    if (type == "LOB_RESULT")
+                    {
+                     
+                        lblLC_002.Text = dt1.Rows[0]["LOB_RESULT"].ToString() + "%";
+                    }
+
+                    if (type == "MODEL")
+                    {
+                     
+                        lblModel_002.Text = dt1.Rows[0]["MODEL_NAME"].ToString();
+                        lblStyle_002.Text = dt1.Rows[0]["STYLE_CD"].ToString();
+                    }
+                    if (type == "TAKTTIME")
+                    {
+                     
+                        lblTakttime_002.Text = dt1.Rows[0]["TAKTTIME"].ToString() +"''";
+                    }
+                    if (type == "HIGH_CT")
+                    {
+                     
+                        lblHighest_002.Text = dt1.Rows[0]["MAX_CYCLE_TIME"].ToString() +"''";
                     }
                 }
-                else
+
+                if (( dt.Rows.Count == 0)  && (dt1.Rows.Count == 0))
                 {
                     if (type == "LOB_RESULT")
                     {
@@ -322,29 +344,41 @@ namespace FORM
                         lblHighest_002.Text = "0";
                     }
                 }
-                if (dtChart == null) return;
-                if (dtChart1 == null) return;
+              
+               
 
                 if (dtChart.Rows.Count > 0)
                 {
-                    Series series1 = new Series("CYCLE TIME", ViewType.Bar);
+                    Series series1 = new Series("Cycle time", ViewType.Bar);
                     chart.Series[0].Points.Clear();
+                    chart.Series[0].DataSource = null;
+
                     for (int i = 0; i < dtChart.Rows.Count; i++)
                     {
                         series1.Points.Add(new SeriesPoint(dtChart.Rows[i]["PROCESS_NAME_VN"].ToString(), dtChart.Rows[i]["CYCLE_TIME"].ToString()));
 
-                        double CycleVal,TaktTimeVal;
+                        double CycleVal, TaktTimeVal;
                         double.TryParse(dtChart.Rows[i]["CYCLE_TIME"].ToString(), out CycleVal); //out
                         double.TryParse(dtChart.Rows[i]["TAKTTIME"].ToString(), out TaktTimeVal); //out
+
                         if (CycleVal > TaktTimeVal || CycleVal < (TaktTimeVal / 2))
                         {
                             series1.Points[i].Color = Color.Red;
+                            
                         }
 
                     }
-                    chart.SeriesSerializable = new DevExpress.XtraCharts.Series[] { series1};
+                    chart.SeriesSerializable = new DevExpress.XtraCharts.Series[] { series1 };
                     ((XYDiagram)chart.Diagram).AxisY.ConstantLines[0].AxisValue = dtChart.Rows[0]["TAKTTIME"].ToString();
 
+                }
+                else if (dtChart.Rows.Count == 0 )
+                {
+
+                    chart.DataSource = null;
+                    chart.Series[0].Points.Clear();
+                    //chart.Series[0].Points.Clear();
+                    //chart.Series[1].Points.Clear();
                 }
 
                 if (dtChart1.Rows.Count > 0)
@@ -371,6 +405,14 @@ namespace FORM
                     }
                     chart1.SeriesSerializable = new DevExpress.XtraCharts.Series[] { series1 };
                     ((XYDiagram)chart1.Diagram).AxisY.ConstantLines[0].AxisValue = dtChart1.Rows[0]["TAKTTIME"].ToString();
+                }
+                else if (dtChart1.Rows.Count == 0)
+                {
+
+                    chart1.DataSource = null;
+                    chart1.Series[0].Points.Clear();
+                    //chart.Series[0].Points.Clear();
+                    //chart.Series[1].Points.Clear();
                 }
 
                 //chartControl1.Series.Clear();
@@ -434,10 +476,10 @@ namespace FORM
 
         private void FORM_LOB_CHART_Load(object sender, EventArgs e)
         {
-            lblTitle.Text = "Daily LOB Chart - Line 1";
-            simpleButton1.Enabled = true;
+           // lblTitle.Text = "Daily LOB Chart - Line 1";
+            simpleButton1.Enabled = false;
             simpleButton2.Enabled = false;
-            simpleButton3.Enabled = false;
+            simpleButton3.Enabled = true;
             simpleButton4.Enabled = false;
             lblDate.Text = string.Format(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
             dtpDate.DateTime = DateTime.Now;
@@ -452,6 +494,8 @@ namespace FORM
             loadData("MODEL", ymd, plant, "", "002");
             loadData("TAKTTIME", ymd, plant, "", "002");
             loadData("HIGH_CT", ymd, plant, line, "002");
+
+          //  lblFGALine.Text = line;
 
 
             GoFullscreen();
@@ -480,6 +524,7 @@ namespace FORM
 
         private void FORM_LOB_CHART_VisibleChanged(object sender, EventArgs e)
         {
+            cmdBack.Tag = ComVar.Var._Frm_Back;
             if (this.Visible)
             {
                 string ymd = dtpDate.DateTime.ToString("yyyyMMdd");
@@ -553,7 +598,8 @@ namespace FORM
 
         private void menu_Click(object sender, EventArgs e)
         {
-
+            Control cnt = (Control)sender;
+            ComVar.Var.callForm = cnt.Tag == null ? "" : cnt.Tag.ToString();
         }
 
         private void cboLine_EditValueChanged(object sender, EventArgs e)
@@ -561,19 +607,7 @@ namespace FORM
 
         }
 
-        private void btn_Search_Click(object sender, EventArgs e)
-        {
-            string ymd = dtpDate.DateTime.ToString("yyyyMMdd");
-            loadData("LOB_RESULT", ymd, plant, line, "001");
-            loadData("MODEL", ymd, plant, "", "001");
-            loadData("TAKTTIME", ymd, plant, "", "001");
-            loadData("HIGH_CT", ymd, plant, line, "001");
-
-            loadData("LOB_RESULT", ymd, plant, line, "002");
-            loadData("MODEL", ymd, plant, "", "002");
-            loadData("TAKTTIME", ymd, plant, "", "002");
-            loadData("HIGH_CT", ymd, plant, line, "002");
-        }
+     
 
         #region  Get Config Data From Database
         /// <summary>
@@ -621,5 +655,20 @@ namespace FORM
 
         }
         #endregion 
+
+        private void dtpDate_EditValueChanged(object sender, EventArgs e)
+        {
+            string ymd = dtpDate.DateTime.ToString("yyyyMMdd");
+
+            loadData("LOB_RESULT", ymd, plant, line, "001");
+            loadData("MODEL", ymd, plant, "", "001");
+            loadData("TAKTTIME", ymd, plant, "", "001");
+            loadData("HIGH_CT", ymd, plant, line, "001");
+
+            loadData("LOB_RESULT", ymd, plant, line, "002");
+            loadData("MODEL", ymd, plant, "", "002");
+            loadData("TAKTTIME", ymd, plant, "", "002");
+            loadData("HIGH_CT", ymd, plant, line, "002");
+        }
     }
 }

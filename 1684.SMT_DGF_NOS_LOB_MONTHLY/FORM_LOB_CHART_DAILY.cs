@@ -207,7 +207,7 @@ namespace FORM
         {
             cCount++;
             lblDate.Text = string.Format(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
-            if (cCount >= 30)
+            if (cCount >= 20)
             {
 
                 loadData();
@@ -295,7 +295,7 @@ namespace FORM
                 _line = ComVar.Var._strValue1;//014
                 lblDate.Text = string.Format(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
                 dtpDate.EditValue = DateTime.Now.ToString("yyyy-MM");
-                lblFGALine.Text = _mLine;
+                //lblFGALine.Text = _mLine;
             }
             else
             {
@@ -306,16 +306,25 @@ namespace FORM
 
         private void FORM_LOB_CHART_DAILY_Load(object sender, EventArgs e)
         {
+            simpleButton1.Enabled = true;
+            simpleButton2.Enabled = false;
+            simpleButton3.Enabled = false;
+            simpleButton4.Enabled = false;
             _mLine = ComVar.Var._strValue2;
             _line = ComVar.Var._strValue1;//014
             lblDate.Text = string.Format(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
-            lblFGALine.Text = _mLine;
+            //lblFGALine.Text = _mLine;
 
         }
 
         private void dtpDate_EditValueChanged(object sender, EventArgs e)
         {
             loadData();
+        }
+        private void menu_Click(object sender, EventArgs e)
+        {
+            Control cnt = (Control)sender;
+            ComVar.Var.callForm = cnt.Tag == null ? "" : cnt.Tag.ToString();
         }
     }
 }
