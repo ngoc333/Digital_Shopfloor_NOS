@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C6DEF781-1060-4B96-B9C6-486F90118CA1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FORM</RootNamespace>
+    <AssemblyName>SMT_DGF_NOS_JOB_ROTATION</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\MAIN\bin\Debug\DLL\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.FPSpreadADO, Version=8.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\MAIN\bin\Debug\AxInterop.FPSpreadADO.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.FPUSpreadADO, Version=8.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\MAIN\bin\Debug\AxInterop.FPUSpreadADO.dll</HintPath>
+    </Reference>
+    <Reference Include="COM, Version=1.0.7735.26844, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\MAIN\bin\debug\COM.dll</HintPath>
+    </Reference>
+    <Reference Include="ComVar, Version=1.0.7735.26844, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\MAIN\bin\debug\ComVar.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\MAIN\bin\Debug\DevExpress.Charts.v17.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\MAIN\bin\Debug\DevExpress.Data.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\MAIN\bin\Debug\DevExpress.Printing.v17.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\MAIN\bin\Debug\DevExpress.Utils.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\MAIN\bin\Debug\DevExpress.XtraBars.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\MAIN\bin\Debug\DevExpress.XtraCharts.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v17.1.UI, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\MAIN\bin\Debug\DevExpress.XtraCharts.v17.1.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v17.1.Wizard, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\MAIN\bin\Debug\DevExpress.XtraCharts.v17.1.Wizard.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\MAIN\bin\Debug\DevExpress.XtraEditors.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\MAIN\bin\Debug\DevExpress.XtraGauges.v17.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v17.1.Win, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\MAIN\bin\Debug\DevExpress.XtraGauges.v17.1.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\MAIN\bin\Debug\DevExpress.XtraGrid.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\MAIN\bin\Debug\DevExpress.XtraLayout.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\MAIN\bin\Debug\DevExpress.XtraNavBar.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\MAIN\bin\Debug\DevExpress.XtraPrinting.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.FPSpreadADO">
+      <HintPath>..\MAIN\bin\Debug\Interop.FPSpreadADO.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.FPUSpreadADO">
+      <HintPath>..\MAIN\bin\Debug\Interop.FPUSpreadADO.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\MAIN\bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.dll</HintPath>
+    </Reference>
+    <Reference Include="msdatasrc, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\Windows\assembly\GAC\MSDATASRC\7.0.3300.0__b03f5f7f11d50a3a\msdatasrc.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClassLib\A1Panel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClassLib\A1Panel.designer.cs">
+      <DependentUpon>A1Panel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassLib\A1PanelGraphics.cs" />
+    <Compile Include="ClassLib\ComCtl.cs" />
+    <Compile Include="ClassLib\ComVar2.cs" />
+    <Compile Include="ClassLib\Var.cs" />
+    <Compile Include="ClassLib\Globals.cs" />
+    <Compile Include="ClassLib\GroupboxEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClassLib\LabelGradient.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClassLib\TransparentPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CXMLConfig.cs" />
+    <Compile Include="FORM_DSF_JOB_ROTATION.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM_DSF_JOB_ROTATION.Designer.cs">
+      <DependentUpon>FORM_DSF_JOB_ROTATION.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM_LOB_CHART_DAILY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM_LOB_CHART_DAILY.Designer.cs">
+      <DependentUpon>FORM_LOB_CHART_DAILY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM_MAIN_4_LINE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM_MAIN_4_LINE.designer.cs">
+      <DependentUpon>FORM_MAIN_4_LINE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\FORM_CMMS_DAILY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu\FORM_CMMS_DAILY.designer.cs">
+      <DependentUpon>FORM_CMMS_DAILY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\FRM_ANDON_DATA_ANALYSIS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu\FRM_ANDON_DATA_ANALYSIS.designer.cs">
+      <DependentUpon>FRM_ANDON_DATA_ANALYSIS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\FRM_MODEL_DETAIL_LW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu\FRM_MODEL_DETAIL_LW.designer.cs">
+      <DependentUpon>FRM_MODEL_DETAIL_LW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\FRM_PERFORMANCE_DASHBOARD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu\FRM_PERFORMANCE_DASHBOARD.Designer.cs">
+      <DependentUpon>FRM_PERFORMANCE_DASHBOARD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\FRM_SMT_FEMS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu\FRM_SMT_FEMS.designer.cs">
+      <DependentUpon>FRM_SMT_FEMS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="init.cs" />
+    <Compile Include="MODEL_LINE.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UC_GRID_PERFORMANCE_DASHBOARD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UC_GRID_PERFORMANCE_DASHBOARD.designer.cs">
+      <DependentUpon>UC_GRID_PERFORMANCE_DASHBOARD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UC_MENU_DSF_2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UC_MENU_DSF_2.Designer.cs">
+      <DependentUpon>UC_MENU_DSF_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UC_MONTH_SELECTION.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UC_MONTH_SELECTION.designer.cs">
+      <DependentUpon>UC_MONTH_SELECTION.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UC_YEAR_SELECTION.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UC_YEAR_SELECTION.Designer.cs">
+      <DependentUpon>UC_YEAR_SELECTION.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FORM_DSF_JOB_ROTATION.resx">
+      <DependentUpon>FORM_DSF_JOB_ROTATION.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM_LOB_CHART_DAILY.resx">
+      <DependentUpon>FORM_LOB_CHART_DAILY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM_MAIN_4_LINE.resx">
+      <DependentUpon>FORM_MAIN_4_LINE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\FORM_CMMS_DAILY.resx">
+      <DependentUpon>FORM_CMMS_DAILY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\FRM_ANDON_DATA_ANALYSIS.resx">
+      <DependentUpon>FRM_ANDON_DATA_ANALYSIS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\FRM_MODEL_DETAIL_LW.resx">
+      <DependentUpon>FRM_MODEL_DETAIL_LW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\FRM_PERFORMANCE_DASHBOARD.resx">
+      <DependentUpon>FRM_PERFORMANCE_DASHBOARD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\FRM_SMT_FEMS.resx">
+      <DependentUpon>FRM_SMT_FEMS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UC_GRID_PERFORMANCE_DASHBOARD.resx">
+      <DependentUpon>UC_GRID_PERFORMANCE_DASHBOARD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UC_MENU_DSF_2.resx">
+      <DependentUpon>UC_MENU_DSF_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UC_MONTH_SELECTION.resx">
+      <DependentUpon>UC_MONTH_SELECTION.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UC_YEAR_SELECTION.resx">
+      <DependentUpon>UC_YEAR_SELECTION.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\absent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ANDON.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bottom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\def.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\equip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\human.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invtorySub.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ip_icon_05_sample5e.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leadtime.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\load_round.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\multiskill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NPI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\osd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PFC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prod.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prodresult.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prodtivity.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Qual.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Qual_Rate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\triangle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\truck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warehouse_512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\workerScan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\whstoreage2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\75.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PanicButton2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Qua.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shoeProd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VieSel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enSel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\69.SMT_DGF_NOS\69.SMT_DGF_NOS.csproj">
+      <Project>{2861E896-40B0-4D81-8F20-68AFFCF6301B}</Project>
+      <Name>69.SMT_DGF_NOS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

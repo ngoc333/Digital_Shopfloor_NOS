@@ -50,6 +50,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lblLine01 = new System.Windows.Forms.Label();
             this.gaugeControl1 = new DevExpress.XtraGauges.Win.GaugeControl();
+            this.digitalGaugeLine1 = new DevExpress.XtraGauges.Win.Gauges.Digital.DigitalGauge();
             this.digitalBackgroundLayerComponent1 = new DevExpress.XtraGauges.Win.Gauges.Digital.DigitalBackgroundLayerComponent();
             this.picLine01 = new System.Windows.Forms.PictureBox();
             this.cmdQuaPer_Line1 = new DevExpress.XtraEditors.SimpleButton();
@@ -61,13 +62,13 @@
             this.cmdQua4_Line1 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdQua3_Line1 = new DevExpress.XtraEditors.SimpleButton();
             this.backstageViewClientControl2 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
+            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            this.cmdLOB_Line1 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdPro3_Line1 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdPro2_Line1 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdPro1_Line1 = new DevExpress.XtraEditors.SimpleButton();
             this.xtraUserControl1 = new DevExpress.XtraEditors.XtraUserControl();
             this.backstageViewClientControl4 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
-            this.cmdComputerOEE_Line1 = new DevExpress.XtraEditors.SimpleButton();
-            this.cmdLOB_Line1 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdEqu2_Line1 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdEqu1_Line1 = new DevExpress.XtraEditors.SimpleButton();
             this.backstageViewClientControl5 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
@@ -87,10 +88,20 @@
             this.bstLine1_Equip = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
             this.bstLine1_Inventory = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
             this.bstLine1_HR = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
+            this.gbExLine1 = new FORM.ClassLib.GroupBoxEx();
+            this.lblRate_line1 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.lblPlan_Line1 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.lblRPlan_Line1 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.lblProd_line1 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lblLine02 = new System.Windows.Forms.Label();
             this.picLine02 = new System.Windows.Forms.PictureBox();
             this.gaugeControl2 = new DevExpress.XtraGauges.Win.GaugeControl();
+            this.digitalGaugeLine2 = new DevExpress.XtraGauges.Win.Gauges.Digital.DigitalGauge();
             this.digitalBackgroundLayerComponent2 = new DevExpress.XtraGauges.Win.Gauges.Digital.DigitalBackgroundLayerComponent();
             this.cmdQuaPer_Line2 = new DevExpress.XtraEditors.SimpleButton();
             this.backstageViewControl2 = new DevExpress.XtraBars.Ribbon.BackstageViewControl();
@@ -101,12 +112,12 @@
             this.cmdQua4_Line2 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdQua3_Line2 = new DevExpress.XtraEditors.SimpleButton();
             this.backstageViewClientControl6 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
+            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdPro3_Line2 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdPro2_Line2 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdPro1_Line2 = new DevExpress.XtraEditors.SimpleButton();
             this.backstageViewClientControl8 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdEqu2_Line2 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdEqu1_Line2 = new DevExpress.XtraEditors.SimpleButton();
             this.backstageViewClientControl12 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
@@ -126,6 +137,15 @@
             this.bstLine2_Equip = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
             this.bstLine2_Inventory = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
             this.bstLine2_HR = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
+            this.groupBoxEx1 = new FORM.ClassLib.GroupBoxEx();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.lblPlan_Line2 = new System.Windows.Forms.Label();
+            this.lblRPlan_Line2 = new System.Windows.Forms.Label();
+            this.lblProd_line2 = new System.Windows.Forms.Label();
+            this.lblRate_line2 = new System.Windows.Forms.Label();
             this.backstageViewControl4 = new DevExpress.XtraBars.Ribbon.BackstageViewControl();
             this.backstageViewClientControl14 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
             this.cmdQua5_Line3 = new DevExpress.XtraEditors.SimpleButton();
@@ -134,12 +154,12 @@
             this.cmdQua4_Line3 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdQua3_Line3 = new DevExpress.XtraEditors.SimpleButton();
             this.backstageViewClientControl13 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
+            this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdPro3_Line3 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdPro2_Line3 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdPro1_Line3 = new DevExpress.XtraEditors.SimpleButton();
             this.backstageViewClientControl15 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
-            this.simpleButton13 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdEqu2_Line3 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdEqu1_Line3 = new DevExpress.XtraEditors.SimpleButton();
             this.label26 = new System.Windows.Forms.Label();
@@ -164,8 +184,18 @@
             this.lblLine03 = new System.Windows.Forms.Label();
             this.picLine03 = new System.Windows.Forms.PictureBox();
             this.gaugeControl3 = new DevExpress.XtraGauges.Win.GaugeControl();
+            this.digitalGaugeLine3 = new DevExpress.XtraGauges.Win.Gauges.Digital.DigitalGauge();
             this.digitalBackgroundLayerComponent3 = new DevExpress.XtraGauges.Win.Gauges.Digital.DigitalBackgroundLayerComponent();
             this.cmdQuaPer_Line3 = new DevExpress.XtraEditors.SimpleButton();
+            this.groupBoxEx2 = new FORM.ClassLib.GroupBoxEx();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.lblPlan_Line3 = new System.Windows.Forms.Label();
+            this.lblRPlan_Line3 = new System.Windows.Forms.Label();
+            this.lblProd_line3 = new System.Windows.Forms.Label();
+            this.lblRate_line3 = new System.Windows.Forms.Label();
             this.backstageViewControl3 = new DevExpress.XtraBars.Ribbon.BackstageViewControl();
             this.backstageViewClientControl18 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
             this.cmdQua5_Line4 = new DevExpress.XtraEditors.SimpleButton();
@@ -174,12 +204,12 @@
             this.cmdQua4_Line4 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdQua3_Line4 = new DevExpress.XtraEditors.SimpleButton();
             this.backstageViewClientControl17 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
+            this.simpleButton8 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton7 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdPro3_Line4 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdPro2_Line4 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdPro1_Line4 = new DevExpress.XtraEditors.SimpleButton();
             this.backstageViewClientControl19 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
-            this.simpleButton14 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton7 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdEqu2_Line4 = new DevExpress.XtraEditors.SimpleButton();
             this.cmdEqu1_Line4 = new DevExpress.XtraEditors.SimpleButton();
             this.backstageViewClientControl20 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
@@ -203,8 +233,18 @@
             this.lblLine04 = new System.Windows.Forms.Label();
             this.picLine04 = new System.Windows.Forms.PictureBox();
             this.gaugeControl4 = new DevExpress.XtraGauges.Win.GaugeControl();
+            this.digitalGaugeLine4 = new DevExpress.XtraGauges.Win.Gauges.Digital.DigitalGauge();
             this.digitalBackgroundLayerComponent4 = new DevExpress.XtraGauges.Win.Gauges.Digital.DigitalBackgroundLayerComponent();
             this.cmdQuaPer_Line4 = new DevExpress.XtraEditors.SimpleButton();
+            this.groupBoxEx3 = new FORM.ClassLib.GroupBoxEx();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.lblPlan_Line4 = new System.Windows.Forms.Label();
+            this.lblRPlan_Line4 = new System.Windows.Forms.Label();
+            this.lblProd_line4 = new System.Windows.Forms.Label();
+            this.lblRate_line4 = new System.Windows.Forms.Label();
             this.bstLine1_Inv = new DevExpress.XtraBars.Ribbon.BackstageViewButtonItem();
             this.bstLine1_Qua = new DevExpress.XtraBars.Ribbon.BackstageViewButtonItem();
             this.tmrDate = new System.Windows.Forms.Timer();
@@ -226,56 +266,13 @@
             this.label9 = new System.Windows.Forms.Label();
             this.tmrText = new System.Windows.Forms.Timer();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.cmdJob_Line1 = new DevExpress.XtraEditors.SimpleButton();
-            this.digitalGaugeLine4 = new DevExpress.XtraGauges.Win.Gauges.Digital.DigitalGauge();
-            this.groupBoxEx3 = new FORM.ClassLib.GroupBoxEx();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.lblPlan_Line4 = new System.Windows.Forms.Label();
-            this.lblRPlan_Line4 = new System.Windows.Forms.Label();
-            this.lblProd_line4 = new System.Windows.Forms.Label();
-            this.lblRate_line4 = new System.Windows.Forms.Label();
-            this.digitalGaugeLine1 = new DevExpress.XtraGauges.Win.Gauges.Digital.DigitalGauge();
-            this.gbExLine1 = new FORM.ClassLib.GroupBoxEx();
-            this.lblRate_line1 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.lblPlan_Line1 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.lblRPlan_Line1 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.lblProd_line1 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.digitalGaugeLine2 = new DevExpress.XtraGauges.Win.Gauges.Digital.DigitalGauge();
-            this.groupBoxEx1 = new FORM.ClassLib.GroupBoxEx();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.lblPlan_Line2 = new System.Windows.Forms.Label();
-            this.lblRPlan_Line2 = new System.Windows.Forms.Label();
-            this.lblProd_line2 = new System.Windows.Forms.Label();
-            this.lblRate_line2 = new System.Windows.Forms.Label();
-            this.digitalGaugeLine3 = new DevExpress.XtraGauges.Win.Gauges.Digital.DigitalGauge();
-            this.groupBoxEx2 = new FORM.ClassLib.GroupBoxEx();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.lblPlan_Line3 = new System.Windows.Forms.Label();
-            this.lblRPlan_Line3 = new System.Windows.Forms.Label();
-            this.lblProd_line3 = new System.Windows.Forms.Label();
-            this.lblRate_line3 = new System.Windows.Forms.Label();
             this.a1Panel1 = new FORM.A1Panel();
             this.a1Panel2 = new FORM.A1Panel();
             this.a1Panel3 = new FORM.A1Panel();
             this.a1Panel4 = new FORM.A1Panel();
-            this.cmdJob_Line2 = new DevExpress.XtraEditors.SimpleButton();
-            this.cmdJob_Line4 = new DevExpress.XtraEditors.SimpleButton();
-            this.cmdJob_Line3 = new DevExpress.XtraEditors.SimpleButton();
             this.pnHeader.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.digitalGaugeLine1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.digitalBackgroundLayerComponent1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLine01)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl1)).BeginInit();
@@ -285,8 +282,10 @@
             this.backstageViewClientControl4.SuspendLayout();
             this.backstageViewClientControl5.SuspendLayout();
             this.backstageViewClientControl21.SuspendLayout();
+            this.gbExLine1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLine02)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.digitalGaugeLine2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.digitalBackgroundLayerComponent2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl2)).BeginInit();
             this.backstageViewControl2.SuspendLayout();
@@ -295,6 +294,7 @@
             this.backstageViewClientControl8.SuspendLayout();
             this.backstageViewClientControl12.SuspendLayout();
             this.backstageViewClientControl22.SuspendLayout();
+            this.groupBoxEx1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl4)).BeginInit();
             this.backstageViewControl4.SuspendLayout();
             this.backstageViewClientControl14.SuspendLayout();
@@ -304,7 +304,9 @@
             this.backstageViewClientControl23.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLine03)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.digitalGaugeLine3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.digitalBackgroundLayerComponent3)).BeginInit();
+            this.groupBoxEx2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl3)).BeginInit();
             this.backstageViewControl3.SuspendLayout();
             this.backstageViewClientControl18.SuspendLayout();
@@ -314,16 +316,10 @@
             this.backstageViewClientControl24.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLine04)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.digitalBackgroundLayerComponent4)).BeginInit();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.digitalGaugeLine4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.digitalBackgroundLayerComponent4)).BeginInit();
             this.groupBoxEx3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.digitalGaugeLine1)).BeginInit();
-            this.gbExLine1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.digitalGaugeLine2)).BeginInit();
-            this.groupBoxEx1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.digitalGaugeLine3)).BeginInit();
-            this.groupBoxEx2.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnHeader
@@ -652,6 +648,17 @@
             this.gaugeControl1.Tag = "001";
             this.gaugeControl1.Click += new System.EventHandler(this.gaugeText_Click);
             // 
+            // digitalGaugeLine1
+            // 
+            this.digitalGaugeLine1.AppearanceOff.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:Black");
+            this.digitalGaugeLine1.AppearanceOn.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:Yellow");
+            this.digitalGaugeLine1.BackgroundLayers.AddRange(new DevExpress.XtraGauges.Win.Gauges.Digital.DigitalBackgroundLayerComponent[] {
+            this.digitalBackgroundLayerComponent1});
+            this.digitalGaugeLine1.Bounds = new System.Drawing.Rectangle(3, 4, 572, 58);
+            this.digitalGaugeLine1.DigitCount = 25;
+            this.digitalGaugeLine1.Name = "digitalGaugeLine1";
+            this.digitalGaugeLine1.Padding = new DevExpress.XtraGauges.Core.Base.TextSpacing(26, 20, 26, 20);
+            // 
             // digitalBackgroundLayerComponent1
             // 
             this.digitalBackgroundLayerComponent1.BottomRight = new DevExpress.XtraGauges.Core.Base.PointF2D(1225.063F, 99.9625F);
@@ -698,8 +705,8 @@
             this.backstageViewControl1.Location = new System.Drawing.Point(16, 68);
             this.backstageViewControl1.Name = "backstageViewControl1";
             this.backstageViewControl1.Office2013StyleOptions.AllowShowHideAnimation = false;
-            this.backstageViewControl1.SelectedTab = this.bstLine1_HR;
-            this.backstageViewControl1.SelectedTabIndex = 4;
+            this.backstageViewControl1.SelectedTab = this.bstLine1_Prod;
+            this.backstageViewControl1.SelectedTabIndex = 1;
             this.backstageViewControl1.Size = new System.Drawing.Size(639, 396);
             this.backstageViewControl1.TabIndex = 10;
             this.backstageViewControl1.Text = "backstageViewControl1";
@@ -843,6 +850,8 @@
             // 
             // backstageViewClientControl2
             // 
+            this.backstageViewClientControl2.Controls.Add(this.simpleButton2);
+            this.backstageViewClientControl2.Controls.Add(this.cmdLOB_Line1);
             this.backstageViewClientControl2.Controls.Add(this.cmdPro3_Line1);
             this.backstageViewClientControl2.Controls.Add(this.cmdPro2_Line1);
             this.backstageViewClientControl2.Controls.Add(this.cmdPro1_Line1);
@@ -854,6 +863,52 @@
             this.backstageViewClientControl2.Name = "backstageViewClientControl2";
             this.backstageViewClientControl2.Size = new System.Drawing.Size(302, 396);
             this.backstageViewClientControl2.TabIndex = 1;
+            // 
+            // simpleButton2
+            // 
+            this.simpleButton2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(84)))), ((int)(((byte)(106)))));
+            this.simpleButton2.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton2.Appearance.ForeColor = System.Drawing.Color.White;
+            this.simpleButton2.Appearance.Options.UseBackColor = true;
+            this.simpleButton2.Appearance.Options.UseFont = true;
+            this.simpleButton2.Appearance.Options.UseForeColor = true;
+            this.simpleButton2.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.simpleButton2.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.simpleButton2.AppearanceHovered.ForeColor = System.Drawing.Color.White;
+            this.simpleButton2.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.simpleButton2.AppearanceHovered.Options.UseBackColor = true;
+            this.simpleButton2.AppearanceHovered.Options.UseForeColor = true;
+            this.simpleButton2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.simpleButton2.Location = new System.Drawing.Point(31, 289);
+            this.simpleButton2.Name = "simpleButton2";
+            this.simpleButton2.Size = new System.Drawing.Size(245, 68);
+            this.simpleButton2.TabIndex = 6;
+            this.simpleButton2.Tag = "1684";
+            this.simpleButton2.Text = "Monthly LOB Chart";
+            this.simpleButton2.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
+            // 
+            // cmdLOB_Line1
+            // 
+            this.cmdLOB_Line1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
+            this.cmdLOB_Line1.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdLOB_Line1.Appearance.ForeColor = System.Drawing.Color.White;
+            this.cmdLOB_Line1.Appearance.Options.UseBackColor = true;
+            this.cmdLOB_Line1.Appearance.Options.UseFont = true;
+            this.cmdLOB_Line1.Appearance.Options.UseForeColor = true;
+            this.cmdLOB_Line1.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.cmdLOB_Line1.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.cmdLOB_Line1.AppearanceHovered.ForeColor = System.Drawing.Color.White;
+            this.cmdLOB_Line1.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.cmdLOB_Line1.AppearanceHovered.Options.UseBackColor = true;
+            this.cmdLOB_Line1.AppearanceHovered.Options.UseForeColor = true;
+            this.cmdLOB_Line1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.cmdLOB_Line1.Location = new System.Drawing.Point(31, 217);
+            this.cmdLOB_Line1.Name = "cmdLOB_Line1";
+            this.cmdLOB_Line1.Size = new System.Drawing.Size(245, 68);
+            this.cmdLOB_Line1.TabIndex = 6;
+            this.cmdLOB_Line1.Tag = "1682";
+            this.cmdLOB_Line1.Text = "Daily LOB Chart";
+            this.cmdLOB_Line1.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdPro3_Line1
             // 
@@ -870,9 +925,9 @@
             this.cmdPro3_Line1.AppearanceHovered.Options.UseBackColor = true;
             this.cmdPro3_Line1.AppearanceHovered.Options.UseForeColor = true;
             this.cmdPro3_Line1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdPro3_Line1.Location = new System.Drawing.Point(29, 239);
+            this.cmdPro3_Line1.Location = new System.Drawing.Point(31, 146);
             this.cmdPro3_Line1.Name = "cmdPro3_Line1";
-            this.cmdPro3_Line1.Size = new System.Drawing.Size(245, 78);
+            this.cmdPro3_Line1.Size = new System.Drawing.Size(245, 68);
             this.cmdPro3_Line1.TabIndex = 6;
             this.cmdPro3_Line1.Tag = "3";
             this.cmdPro3_Line1.Text = "BTS";
@@ -893,9 +948,9 @@
             this.cmdPro2_Line1.AppearanceHovered.Options.UseBackColor = true;
             this.cmdPro2_Line1.AppearanceHovered.Options.UseForeColor = true;
             this.cmdPro2_Line1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdPro2_Line1.Location = new System.Drawing.Point(31, 156);
+            this.cmdPro2_Line1.Location = new System.Drawing.Point(31, 72);
             this.cmdPro2_Line1.Name = "cmdPro2_Line1";
-            this.cmdPro2_Line1.Size = new System.Drawing.Size(245, 78);
+            this.cmdPro2_Line1.Size = new System.Drawing.Size(245, 68);
             this.cmdPro2_Line1.TabIndex = 5;
             this.cmdPro2_Line1.Tag = "2";
             this.cmdPro2_Line1.Text = "Productivity";
@@ -918,9 +973,9 @@
             this.cmdPro1_Line1.AppearanceHovered.Options.UseFont = true;
             this.cmdPro1_Line1.AppearanceHovered.Options.UseForeColor = true;
             this.cmdPro1_Line1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdPro1_Line1.Location = new System.Drawing.Point(31, 72);
+            this.cmdPro1_Line1.Location = new System.Drawing.Point(31, 0);
             this.cmdPro1_Line1.Name = "cmdPro1_Line1";
-            this.cmdPro1_Line1.Size = new System.Drawing.Size(245, 78);
+            this.cmdPro1_Line1.Size = new System.Drawing.Size(245, 68);
             this.cmdPro1_Line1.TabIndex = 4;
             this.cmdPro1_Line1.Tag = "1";
             this.cmdPro1_Line1.Text = "Prod. Result\r\n";
@@ -936,60 +991,12 @@
             // 
             // backstageViewClientControl4
             // 
-            this.backstageViewClientControl4.Controls.Add(this.cmdComputerOEE_Line1);
-            this.backstageViewClientControl4.Controls.Add(this.cmdLOB_Line1);
             this.backstageViewClientControl4.Controls.Add(this.cmdEqu2_Line1);
             this.backstageViewClientControl4.Controls.Add(this.cmdEqu1_Line1);
             this.backstageViewClientControl4.Location = new System.Drawing.Point(337, 0);
             this.backstageViewClientControl4.Name = "backstageViewClientControl4";
             this.backstageViewClientControl4.Size = new System.Drawing.Size(302, 396);
             this.backstageViewClientControl4.TabIndex = 3;
-            // 
-            // cmdComputerOEE_Line1
-            // 
-            this.cmdComputerOEE_Line1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.cmdComputerOEE_Line1.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdComputerOEE_Line1.Appearance.ForeColor = System.Drawing.Color.White;
-            this.cmdComputerOEE_Line1.Appearance.Options.UseBackColor = true;
-            this.cmdComputerOEE_Line1.Appearance.Options.UseFont = true;
-            this.cmdComputerOEE_Line1.Appearance.Options.UseForeColor = true;
-            this.cmdComputerOEE_Line1.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.cmdComputerOEE_Line1.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.cmdComputerOEE_Line1.AppearanceHovered.ForeColor = System.Drawing.Color.White;
-            this.cmdComputerOEE_Line1.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.cmdComputerOEE_Line1.AppearanceHovered.Options.UseBackColor = true;
-            this.cmdComputerOEE_Line1.AppearanceHovered.Options.UseForeColor = true;
-            this.cmdComputerOEE_Line1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdComputerOEE_Line1.Location = new System.Drawing.Point(36, 208);
-            this.cmdComputerOEE_Line1.Name = "cmdComputerOEE_Line1";
-            this.cmdComputerOEE_Line1.Size = new System.Drawing.Size(245, 63);
-            this.cmdComputerOEE_Line1.TabIndex = 7;
-            this.cmdComputerOEE_Line1.Tag = "1683";
-            this.cmdComputerOEE_Line1.Text = "Computer OEE";
-            this.cmdComputerOEE_Line1.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
-            // 
-            // cmdLOB_Line1
-            // 
-            this.cmdLOB_Line1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
-            this.cmdLOB_Line1.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdLOB_Line1.Appearance.ForeColor = System.Drawing.Color.White;
-            this.cmdLOB_Line1.Appearance.Options.UseBackColor = true;
-            this.cmdLOB_Line1.Appearance.Options.UseFont = true;
-            this.cmdLOB_Line1.Appearance.Options.UseForeColor = true;
-            this.cmdLOB_Line1.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.cmdLOB_Line1.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.cmdLOB_Line1.AppearanceHovered.ForeColor = System.Drawing.Color.White;
-            this.cmdLOB_Line1.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.cmdLOB_Line1.AppearanceHovered.Options.UseBackColor = true;
-            this.cmdLOB_Line1.AppearanceHovered.Options.UseForeColor = true;
-            this.cmdLOB_Line1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdLOB_Line1.Location = new System.Drawing.Point(36, 133);
-            this.cmdLOB_Line1.Name = "cmdLOB_Line1";
-            this.cmdLOB_Line1.Size = new System.Drawing.Size(245, 63);
-            this.cmdLOB_Line1.TabIndex = 9;
-            this.cmdLOB_Line1.Tag = "1682";
-            this.cmdLOB_Line1.Text = "LOB Chart";
-            this.cmdLOB_Line1.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdEqu2_Line1
             // 
@@ -1006,9 +1013,9 @@
             this.cmdEqu2_Line1.AppearanceHovered.Options.UseBackColor = true;
             this.cmdEqu2_Line1.AppearanceHovered.Options.UseForeColor = true;
             this.cmdEqu2_Line1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdEqu2_Line1.Location = new System.Drawing.Point(-136, 87);
+            this.cmdEqu2_Line1.Location = new System.Drawing.Point(29, 205);
             this.cmdEqu2_Line1.Name = "cmdEqu2_Line1";
-            this.cmdEqu2_Line1.Size = new System.Drawing.Size(245, 63);
+            this.cmdEqu2_Line1.Size = new System.Drawing.Size(245, 94);
             this.cmdEqu2_Line1.TabIndex = 6;
             this.cmdEqu2_Line1.Tag = "2";
             this.cmdEqu2_Line1.Text = "Alert Log";
@@ -1030,9 +1037,9 @@
             this.cmdEqu1_Line1.AppearanceHovered.Options.UseBackColor = true;
             this.cmdEqu1_Line1.AppearanceHovered.Options.UseForeColor = true;
             this.cmdEqu1_Line1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdEqu1_Line1.Location = new System.Drawing.Point(36, 62);
+            this.cmdEqu1_Line1.Location = new System.Drawing.Point(29, 78);
             this.cmdEqu1_Line1.Name = "cmdEqu1_Line1";
-            this.cmdEqu1_Line1.Size = new System.Drawing.Size(245, 63);
+            this.cmdEqu1_Line1.Size = new System.Drawing.Size(245, 94);
             this.cmdEqu1_Line1.TabIndex = 6;
             this.cmdEqu1_Line1.Tag = "2";
             this.cmdEqu1_Line1.Text = "Smart Andon";
@@ -1178,7 +1185,6 @@
             this.backstageViewClientControl21.Controls.Add(this.cmdHrm4_Line1);
             this.backstageViewClientControl21.Controls.Add(this.simpleButton9);
             this.backstageViewClientControl21.Controls.Add(this.cmdHrm3_Line1);
-            this.backstageViewClientControl21.Controls.Add(this.cmdJob_Line1);
             this.backstageViewClientControl21.Controls.Add(this.cmdHrm2_Line1);
             this.backstageViewClientControl21.Controls.Add(this.cmdHrm1_Line1);
             this.backstageViewClientControl21.Location = new System.Drawing.Point(337, 0);
@@ -1203,9 +1209,9 @@
             this.cmdHrm4_Line1.AppearanceHovered.Options.UseFont = true;
             this.cmdHrm4_Line1.AppearanceHovered.Options.UseForeColor = true;
             this.cmdHrm4_Line1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdHrm4_Line1.Location = new System.Drawing.Point(27, 15);
+            this.cmdHrm4_Line1.Location = new System.Drawing.Point(29, 0);
             this.cmdHrm4_Line1.Name = "cmdHrm4_Line1";
-            this.cmdHrm4_Line1.Size = new System.Drawing.Size(245, 55);
+            this.cmdHrm4_Line1.Size = new System.Drawing.Size(245, 68);
             this.cmdHrm4_Line1.TabIndex = 12;
             this.cmdHrm4_Line1.Tag = "1";
             this.cmdHrm4_Line1.Text = "TO/PO";
@@ -1228,9 +1234,9 @@
             this.simpleButton9.AppearanceHovered.Options.UseFont = true;
             this.simpleButton9.AppearanceHovered.Options.UseForeColor = true;
             this.simpleButton9.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.simpleButton9.Location = new System.Drawing.Point(25, 320);
+            this.simpleButton9.Location = new System.Drawing.Point(27, 293);
             this.simpleButton9.Name = "simpleButton9";
-            this.simpleButton9.Size = new System.Drawing.Size(245, 55);
+            this.simpleButton9.Size = new System.Drawing.Size(245, 68);
             this.simpleButton9.TabIndex = 10;
             this.simpleButton9.Tag = "1681";
             this.simpleButton9.Text = "Kaizen";
@@ -1253,9 +1259,9 @@
             this.cmdHrm3_Line1.AppearanceHovered.Options.UseFont = true;
             this.cmdHrm3_Line1.AppearanceHovered.Options.UseForeColor = true;
             this.cmdHrm3_Line1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdHrm3_Line1.Location = new System.Drawing.Point(27, 259);
+            this.cmdHrm3_Line1.Location = new System.Drawing.Point(29, 221);
             this.cmdHrm3_Line1.Name = "cmdHrm3_Line1";
-            this.cmdHrm3_Line1.Size = new System.Drawing.Size(245, 55);
+            this.cmdHrm3_Line1.Size = new System.Drawing.Size(245, 68);
             this.cmdHrm3_Line1.TabIndex = 10;
             this.cmdHrm3_Line1.Tag = "1";
             this.cmdHrm3_Line1.Text = "Multi Skill Ratio";
@@ -1276,9 +1282,9 @@
             this.cmdHrm2_Line1.AppearanceHovered.Options.UseBackColor = true;
             this.cmdHrm2_Line1.AppearanceHovered.Options.UseForeColor = true;
             this.cmdHrm2_Line1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdHrm2_Line1.Location = new System.Drawing.Point(27, 137);
+            this.cmdHrm2_Line1.Location = new System.Drawing.Point(29, 146);
             this.cmdHrm2_Line1.Name = "cmdHrm2_Line1";
-            this.cmdHrm2_Line1.Size = new System.Drawing.Size(245, 55);
+            this.cmdHrm2_Line1.Size = new System.Drawing.Size(245, 68);
             this.cmdHrm2_Line1.TabIndex = 9;
             this.cmdHrm2_Line1.Tag = "3";
             this.cmdHrm2_Line1.Text = "Multi skill\r\n";
@@ -1299,9 +1305,9 @@
             this.cmdHrm1_Line1.AppearanceHovered.Options.UseBackColor = true;
             this.cmdHrm1_Line1.AppearanceHovered.Options.UseForeColor = true;
             this.cmdHrm1_Line1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdHrm1_Line1.Location = new System.Drawing.Point(27, 76);
+            this.cmdHrm1_Line1.Location = new System.Drawing.Point(29, 74);
             this.cmdHrm1_Line1.Name = "cmdHrm1_Line1";
-            this.cmdHrm1_Line1.Size = new System.Drawing.Size(245, 55);
+            this.cmdHrm1_Line1.Size = new System.Drawing.Size(245, 68);
             this.cmdHrm1_Line1.TabIndex = 8;
             this.cmdHrm1_Line1.Tag = "2";
             this.cmdHrm1_Line1.Text = "Absenteeism";
@@ -1346,6 +1352,7 @@
             this.bstLine1_Prod.ContentControl = this.backstageViewClientControl2;
             this.bstLine1_Prod.Glyph = ((System.Drawing.Image)(resources.GetObject("bstLine1_Prod.Glyph")));
             this.bstLine1_Prod.Name = "bstLine1_Prod";
+            this.bstLine1_Prod.Selected = true;
             superToolTip1.AllowHtmlText = DevExpress.Utils.DefaultBoolean.True;
             superToolTip1.DistanceBetweenItems = 1;
             toolTipTitleItem1.Text = "Sản Xuất";
@@ -1406,7 +1413,122 @@
             this.bstLine1_HR.ContentControl = this.backstageViewClientControl21;
             this.bstLine1_HR.Glyph = global::FORM.Properties.Resources.user_icon;
             this.bstLine1_HR.Name = "bstLine1_HR";
-            this.bstLine1_HR.Selected = true;
+            // 
+            // gbExLine1
+            // 
+            this.gbExLine1.BackgroundPanelImage = null;
+            this.gbExLine1.Controls.Add(this.lblRate_line1);
+            this.gbExLine1.Controls.Add(this.label14);
+            this.gbExLine1.Controls.Add(this.lblPlan_Line1);
+            this.gbExLine1.Controls.Add(this.label18);
+            this.gbExLine1.Controls.Add(this.lblRPlan_Line1);
+            this.gbExLine1.Controls.Add(this.label19);
+            this.gbExLine1.Controls.Add(this.lblProd_line1);
+            this.gbExLine1.Controls.Add(this.label20);
+            this.gbExLine1.DrawGroupBorder = true;
+            this.gbExLine1.Font = new System.Drawing.Font("Calibri", 22F, System.Drawing.FontStyle.Bold);
+            this.gbExLine1.ForeColor = System.Drawing.Color.White;
+            this.gbExLine1.GroupBorderColor = System.Drawing.Color.Black;
+            this.gbExLine1.GroupPanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.gbExLine1.GroupPanelShape = FORM.ClassLib.GroupBoxEx.PanelType.Rounded;
+            this.gbExLine1.GroupPanelWith = 1F;
+            this.gbExLine1.Location = new System.Drawing.Point(661, 182);
+            this.gbExLine1.Name = "gbExLine1";
+            this.gbExLine1.Size = new System.Drawing.Size(272, 283);
+            this.gbExLine1.TabIndex = 9;
+            this.gbExLine1.TabStop = false;
+            this.gbExLine1.Text = "Production Status";
+            this.gbExLine1.TextBackColor = System.Drawing.Color.RoyalBlue;
+            this.gbExLine1.TextBorderColor = System.Drawing.Color.Black;
+            this.gbExLine1.TextBorderWith = 1F;
+            // 
+            // lblRate_line1
+            // 
+            this.lblRate_line1.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
+            this.lblRate_line1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.lblRate_line1.Location = new System.Drawing.Point(107, 237);
+            this.lblRate_line1.Name = "lblRate_line1";
+            this.lblRate_line1.Size = new System.Drawing.Size(157, 41);
+            this.lblRate_line1.TabIndex = 6;
+            this.lblRate_line1.Text = "0%";
+            this.lblRate_line1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label14
+            // 
+            this.label14.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.label14.Location = new System.Drawing.Point(-8, 47);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(121, 58);
+            this.label14.TabIndex = 4;
+            this.label14.Text = "D.Plan";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblPlan_Line1
+            // 
+            this.lblPlan_Line1.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
+            this.lblPlan_Line1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.lblPlan_Line1.Location = new System.Drawing.Point(114, 47);
+            this.lblPlan_Line1.Name = "lblPlan_Line1";
+            this.lblPlan_Line1.Size = new System.Drawing.Size(164, 58);
+            this.lblPlan_Line1.TabIndex = 4;
+            this.lblPlan_Line1.Text = "0 Prs";
+            this.lblPlan_Line1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label18
+            // 
+            this.label18.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
+            this.label18.ForeColor = System.Drawing.Color.Indigo;
+            this.label18.Location = new System.Drawing.Point(-16, 107);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(133, 58);
+            this.label18.TabIndex = 4;
+            this.label18.Text = "R.Plan";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblRPlan_Line1
+            // 
+            this.lblRPlan_Line1.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
+            this.lblRPlan_Line1.ForeColor = System.Drawing.Color.Indigo;
+            this.lblRPlan_Line1.Location = new System.Drawing.Point(113, 107);
+            this.lblRPlan_Line1.Name = "lblRPlan_Line1";
+            this.lblRPlan_Line1.Size = new System.Drawing.Size(164, 58);
+            this.lblRPlan_Line1.TabIndex = 4;
+            this.lblRPlan_Line1.Text = "0 Prs";
+            this.lblRPlan_Line1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label19
+            // 
+            this.label19.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
+            this.label19.ForeColor = System.Drawing.Color.Blue;
+            this.label19.Location = new System.Drawing.Point(-30, 179);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(147, 58);
+            this.label19.TabIndex = 5;
+            this.label19.Text = "Actual";
+            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblProd_line1
+            // 
+            this.lblProd_line1.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
+            this.lblProd_line1.ForeColor = System.Drawing.Color.Blue;
+            this.lblProd_line1.Location = new System.Drawing.Point(108, 179);
+            this.lblProd_line1.Name = "lblProd_line1";
+            this.lblProd_line1.Size = new System.Drawing.Size(170, 58);
+            this.lblProd_line1.TabIndex = 5;
+            this.lblProd_line1.Text = "0 Prs";
+            this.lblProd_line1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label20
+            // 
+            this.label20.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
+            this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.label20.Location = new System.Drawing.Point(-72, 231);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(163, 58);
+            this.label20.TabIndex = 6;
+            this.label20.Text = "Rate";
+            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // groupBox2
             // 
@@ -1459,6 +1581,17 @@
             this.gaugeControl2.Tag = "002";
             this.gaugeControl2.Click += new System.EventHandler(this.gaugeText_Click);
             // 
+            // digitalGaugeLine2
+            // 
+            this.digitalGaugeLine2.AppearanceOff.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:Black");
+            this.digitalGaugeLine2.AppearanceOn.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:Yellow");
+            this.digitalGaugeLine2.BackgroundLayers.AddRange(new DevExpress.XtraGauges.Win.Gauges.Digital.DigitalBackgroundLayerComponent[] {
+            this.digitalBackgroundLayerComponent2});
+            this.digitalGaugeLine2.Bounds = new System.Drawing.Rectangle(6, 6, 568, 58);
+            this.digitalGaugeLine2.DigitCount = 25;
+            this.digitalGaugeLine2.Name = "digitalGaugeLine2";
+            this.digitalGaugeLine2.Padding = new DevExpress.XtraGauges.Core.Base.TextSpacing(26, 20, 26, 20);
+            // 
             // digitalBackgroundLayerComponent2
             // 
             this.digitalBackgroundLayerComponent2.BottomRight = new DevExpress.XtraGauges.Core.Base.PointF2D(1225.063F, 99.9625F);
@@ -1497,8 +1630,8 @@
             this.backstageViewControl2.Name = "backstageViewControl2";
             this.backstageViewControl2.Office2013StyleOptions.AllowShowHideAnimation = false;
             this.backstageViewControl2.Office2013StyleOptions.LeftPaneContentVerticalOffset = 60;
-            this.backstageViewControl2.SelectedTab = this.bstLine2_HR;
-            this.backstageViewControl2.SelectedTabIndex = 4;
+            this.backstageViewControl2.SelectedTab = this.bstLine2_Prod;
+            this.backstageViewControl2.SelectedTabIndex = 1;
             this.backstageViewControl2.Size = new System.Drawing.Size(639, 396);
             this.backstageViewControl2.TabIndex = 10;
             this.backstageViewControl2.Text = "backstageViewControl2";
@@ -1638,6 +1771,8 @@
             // 
             // backstageViewClientControl6
             // 
+            this.backstageViewClientControl6.Controls.Add(this.simpleButton4);
+            this.backstageViewClientControl6.Controls.Add(this.simpleButton3);
             this.backstageViewClientControl6.Controls.Add(this.cmdPro3_Line2);
             this.backstageViewClientControl6.Controls.Add(this.cmdPro2_Line2);
             this.backstageViewClientControl6.Controls.Add(this.cmdPro1_Line2);
@@ -1646,6 +1781,52 @@
             this.backstageViewClientControl6.Name = "backstageViewClientControl6";
             this.backstageViewClientControl6.Size = new System.Drawing.Size(302, 396);
             this.backstageViewClientControl6.TabIndex = 1;
+            // 
+            // simpleButton4
+            // 
+            this.simpleButton4.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(84)))), ((int)(((byte)(106)))));
+            this.simpleButton4.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton4.Appearance.ForeColor = System.Drawing.Color.White;
+            this.simpleButton4.Appearance.Options.UseBackColor = true;
+            this.simpleButton4.Appearance.Options.UseFont = true;
+            this.simpleButton4.Appearance.Options.UseForeColor = true;
+            this.simpleButton4.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.simpleButton4.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.simpleButton4.AppearanceHovered.ForeColor = System.Drawing.Color.White;
+            this.simpleButton4.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.simpleButton4.AppearanceHovered.Options.UseBackColor = true;
+            this.simpleButton4.AppearanceHovered.Options.UseForeColor = true;
+            this.simpleButton4.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.simpleButton4.Location = new System.Drawing.Point(30, 289);
+            this.simpleButton4.Name = "simpleButton4";
+            this.simpleButton4.Size = new System.Drawing.Size(245, 68);
+            this.simpleButton4.TabIndex = 12;
+            this.simpleButton4.Tag = "1684";
+            this.simpleButton4.Text = "Monthly LOB Chart";
+            this.simpleButton4.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
+            // 
+            // simpleButton3
+            // 
+            this.simpleButton3.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
+            this.simpleButton3.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton3.Appearance.ForeColor = System.Drawing.Color.White;
+            this.simpleButton3.Appearance.Options.UseBackColor = true;
+            this.simpleButton3.Appearance.Options.UseFont = true;
+            this.simpleButton3.Appearance.Options.UseForeColor = true;
+            this.simpleButton3.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.simpleButton3.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.simpleButton3.AppearanceHovered.ForeColor = System.Drawing.Color.White;
+            this.simpleButton3.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.simpleButton3.AppearanceHovered.Options.UseBackColor = true;
+            this.simpleButton3.AppearanceHovered.Options.UseForeColor = true;
+            this.simpleButton3.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.simpleButton3.Location = new System.Drawing.Point(30, 217);
+            this.simpleButton3.Name = "simpleButton3";
+            this.simpleButton3.Size = new System.Drawing.Size(245, 68);
+            this.simpleButton3.TabIndex = 12;
+            this.simpleButton3.Tag = "1682";
+            this.simpleButton3.Text = "Daily LOB Chart";
+            this.simpleButton3.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdPro3_Line2
             // 
@@ -1662,9 +1843,9 @@
             this.cmdPro3_Line2.AppearanceHovered.Options.UseBackColor = true;
             this.cmdPro3_Line2.AppearanceHovered.Options.UseForeColor = true;
             this.cmdPro3_Line2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdPro3_Line2.Location = new System.Drawing.Point(30, 236);
+            this.cmdPro3_Line2.Location = new System.Drawing.Point(29, 146);
             this.cmdPro3_Line2.Name = "cmdPro3_Line2";
-            this.cmdPro3_Line2.Size = new System.Drawing.Size(245, 78);
+            this.cmdPro3_Line2.Size = new System.Drawing.Size(245, 68);
             this.cmdPro3_Line2.TabIndex = 12;
             this.cmdPro3_Line2.Tag = "3";
             this.cmdPro3_Line2.Text = "BTS";
@@ -1685,9 +1866,9 @@
             this.cmdPro2_Line2.AppearanceHovered.Options.UseBackColor = true;
             this.cmdPro2_Line2.AppearanceHovered.Options.UseForeColor = true;
             this.cmdPro2_Line2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdPro2_Line2.Location = new System.Drawing.Point(30, 152);
+            this.cmdPro2_Line2.Location = new System.Drawing.Point(29, 72);
             this.cmdPro2_Line2.Name = "cmdPro2_Line2";
-            this.cmdPro2_Line2.Size = new System.Drawing.Size(245, 78);
+            this.cmdPro2_Line2.Size = new System.Drawing.Size(245, 68);
             this.cmdPro2_Line2.TabIndex = 11;
             this.cmdPro2_Line2.Tag = "2";
             this.cmdPro2_Line2.Text = "Productivity";
@@ -1710,9 +1891,9 @@
             this.cmdPro1_Line2.AppearanceHovered.Options.UseFont = true;
             this.cmdPro1_Line2.AppearanceHovered.Options.UseForeColor = true;
             this.cmdPro1_Line2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdPro1_Line2.Location = new System.Drawing.Point(30, 68);
+            this.cmdPro1_Line2.Location = new System.Drawing.Point(29, 0);
             this.cmdPro1_Line2.Name = "cmdPro1_Line2";
-            this.cmdPro1_Line2.Size = new System.Drawing.Size(245, 78);
+            this.cmdPro1_Line2.Size = new System.Drawing.Size(245, 68);
             this.cmdPro1_Line2.TabIndex = 10;
             this.cmdPro1_Line2.Tag = "1";
             this.cmdPro1_Line2.Text = "Prod. Result\r\n";
@@ -1720,60 +1901,12 @@
             // 
             // backstageViewClientControl8
             // 
-            this.backstageViewClientControl8.Controls.Add(this.simpleButton2);
-            this.backstageViewClientControl8.Controls.Add(this.simpleButton3);
             this.backstageViewClientControl8.Controls.Add(this.cmdEqu2_Line2);
             this.backstageViewClientControl8.Controls.Add(this.cmdEqu1_Line2);
             this.backstageViewClientControl8.Location = new System.Drawing.Point(337, 0);
             this.backstageViewClientControl8.Name = "backstageViewClientControl8";
             this.backstageViewClientControl8.Size = new System.Drawing.Size(302, 396);
             this.backstageViewClientControl8.TabIndex = 3;
-            // 
-            // simpleButton2
-            // 
-            this.simpleButton2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.simpleButton2.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton2.Appearance.ForeColor = System.Drawing.Color.White;
-            this.simpleButton2.Appearance.Options.UseBackColor = true;
-            this.simpleButton2.Appearance.Options.UseFont = true;
-            this.simpleButton2.Appearance.Options.UseForeColor = true;
-            this.simpleButton2.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.simpleButton2.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.simpleButton2.AppearanceHovered.ForeColor = System.Drawing.Color.White;
-            this.simpleButton2.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.simpleButton2.AppearanceHovered.Options.UseBackColor = true;
-            this.simpleButton2.AppearanceHovered.Options.UseForeColor = true;
-            this.simpleButton2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.simpleButton2.Location = new System.Drawing.Point(30, 208);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(245, 63);
-            this.simpleButton2.TabIndex = 13;
-            this.simpleButton2.Tag = "1683";
-            this.simpleButton2.Text = "Computer OEE";
-            this.simpleButton2.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
-            // 
-            // simpleButton3
-            // 
-            this.simpleButton3.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
-            this.simpleButton3.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton3.Appearance.ForeColor = System.Drawing.Color.White;
-            this.simpleButton3.Appearance.Options.UseBackColor = true;
-            this.simpleButton3.Appearance.Options.UseFont = true;
-            this.simpleButton3.Appearance.Options.UseForeColor = true;
-            this.simpleButton3.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.simpleButton3.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.simpleButton3.AppearanceHovered.ForeColor = System.Drawing.Color.White;
-            this.simpleButton3.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.simpleButton3.AppearanceHovered.Options.UseBackColor = true;
-            this.simpleButton3.AppearanceHovered.Options.UseForeColor = true;
-            this.simpleButton3.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.simpleButton3.Location = new System.Drawing.Point(30, 133);
-            this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(245, 63);
-            this.simpleButton3.TabIndex = 15;
-            this.simpleButton3.Tag = "1682";
-            this.simpleButton3.Text = "LOB Chart";
-            this.simpleButton3.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdEqu2_Line2
             // 
@@ -1790,9 +1923,9 @@
             this.cmdEqu2_Line2.AppearanceHovered.Options.UseBackColor = true;
             this.cmdEqu2_Line2.AppearanceHovered.Options.UseForeColor = true;
             this.cmdEqu2_Line2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdEqu2_Line2.Location = new System.Drawing.Point(-144, 87);
+            this.cmdEqu2_Line2.Location = new System.Drawing.Point(32, 205);
             this.cmdEqu2_Line2.Name = "cmdEqu2_Line2";
-            this.cmdEqu2_Line2.Size = new System.Drawing.Size(245, 63);
+            this.cmdEqu2_Line2.Size = new System.Drawing.Size(245, 94);
             this.cmdEqu2_Line2.TabIndex = 8;
             this.cmdEqu2_Line2.Tag = "2";
             this.cmdEqu2_Line2.Text = "Alert Log";
@@ -1814,9 +1947,9 @@
             this.cmdEqu1_Line2.AppearanceHovered.Options.UseBackColor = true;
             this.cmdEqu1_Line2.AppearanceHovered.Options.UseForeColor = true;
             this.cmdEqu1_Line2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdEqu1_Line2.Location = new System.Drawing.Point(30, 62);
+            this.cmdEqu1_Line2.Location = new System.Drawing.Point(32, 78);
             this.cmdEqu1_Line2.Name = "cmdEqu1_Line2";
-            this.cmdEqu1_Line2.Size = new System.Drawing.Size(245, 63);
+            this.cmdEqu1_Line2.Size = new System.Drawing.Size(245, 94);
             this.cmdEqu1_Line2.TabIndex = 7;
             this.cmdEqu1_Line2.Tag = "2";
             this.cmdEqu1_Line2.Text = "Smart Andon";
@@ -1962,7 +2095,6 @@
             this.backstageViewClientControl22.Controls.Add(this.cmdHrm4_Line2);
             this.backstageViewClientControl22.Controls.Add(this.simpleButton10);
             this.backstageViewClientControl22.Controls.Add(this.cmdHrm3_Line2);
-            this.backstageViewClientControl22.Controls.Add(this.cmdJob_Line2);
             this.backstageViewClientControl22.Controls.Add(this.cmdHrm2_Line2);
             this.backstageViewClientControl22.Controls.Add(this.cmdHrm1_Line2);
             this.backstageViewClientControl22.Location = new System.Drawing.Point(337, 0);
@@ -1987,9 +2119,9 @@
             this.cmdHrm4_Line2.AppearanceHovered.Options.UseFont = true;
             this.cmdHrm4_Line2.AppearanceHovered.Options.UseForeColor = true;
             this.cmdHrm4_Line2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdHrm4_Line2.Location = new System.Drawing.Point(30, 15);
+            this.cmdHrm4_Line2.Location = new System.Drawing.Point(28, 0);
             this.cmdHrm4_Line2.Name = "cmdHrm4_Line2";
-            this.cmdHrm4_Line2.Size = new System.Drawing.Size(245, 55);
+            this.cmdHrm4_Line2.Size = new System.Drawing.Size(245, 68);
             this.cmdHrm4_Line2.TabIndex = 13;
             this.cmdHrm4_Line2.Tag = "1";
             this.cmdHrm4_Line2.Text = "TO/PO";
@@ -2012,9 +2144,9 @@
             this.simpleButton10.AppearanceHovered.Options.UseFont = true;
             this.simpleButton10.AppearanceHovered.Options.UseForeColor = true;
             this.simpleButton10.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.simpleButton10.Location = new System.Drawing.Point(32, 320);
+            this.simpleButton10.Location = new System.Drawing.Point(30, 295);
             this.simpleButton10.Name = "simpleButton10";
-            this.simpleButton10.Size = new System.Drawing.Size(245, 55);
+            this.simpleButton10.Size = new System.Drawing.Size(245, 68);
             this.simpleButton10.TabIndex = 10;
             this.simpleButton10.Tag = "1681";
             this.simpleButton10.Text = "Kaizen";
@@ -2037,9 +2169,9 @@
             this.cmdHrm3_Line2.AppearanceHovered.Options.UseFont = true;
             this.cmdHrm3_Line2.AppearanceHovered.Options.UseForeColor = true;
             this.cmdHrm3_Line2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdHrm3_Line2.Location = new System.Drawing.Point(32, 259);
+            this.cmdHrm3_Line2.Location = new System.Drawing.Point(30, 221);
             this.cmdHrm3_Line2.Name = "cmdHrm3_Line2";
-            this.cmdHrm3_Line2.Size = new System.Drawing.Size(245, 55);
+            this.cmdHrm3_Line2.Size = new System.Drawing.Size(245, 68);
             this.cmdHrm3_Line2.TabIndex = 10;
             this.cmdHrm3_Line2.Tag = "1";
             this.cmdHrm3_Line2.Text = "Multi Skill Ratio";
@@ -2060,9 +2192,9 @@
             this.cmdHrm2_Line2.AppearanceHovered.Options.UseBackColor = true;
             this.cmdHrm2_Line2.AppearanceHovered.Options.UseForeColor = true;
             this.cmdHrm2_Line2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdHrm2_Line2.Location = new System.Drawing.Point(32, 139);
+            this.cmdHrm2_Line2.Location = new System.Drawing.Point(30, 148);
             this.cmdHrm2_Line2.Name = "cmdHrm2_Line2";
-            this.cmdHrm2_Line2.Size = new System.Drawing.Size(245, 55);
+            this.cmdHrm2_Line2.Size = new System.Drawing.Size(245, 68);
             this.cmdHrm2_Line2.TabIndex = 12;
             this.cmdHrm2_Line2.Tag = "3";
             this.cmdHrm2_Line2.Text = "Multi skill\r\n";
@@ -2083,9 +2215,9 @@
             this.cmdHrm1_Line2.AppearanceHovered.Options.UseBackColor = true;
             this.cmdHrm1_Line2.AppearanceHovered.Options.UseForeColor = true;
             this.cmdHrm1_Line2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdHrm1_Line2.Location = new System.Drawing.Point(30, 78);
+            this.cmdHrm1_Line2.Location = new System.Drawing.Point(28, 74);
             this.cmdHrm1_Line2.Name = "cmdHrm1_Line2";
-            this.cmdHrm1_Line2.Size = new System.Drawing.Size(245, 55);
+            this.cmdHrm1_Line2.Size = new System.Drawing.Size(245, 68);
             this.cmdHrm1_Line2.TabIndex = 11;
             this.cmdHrm1_Line2.Tag = "2";
             this.cmdHrm1_Line2.Text = "Absenteeism\r\n";
@@ -2124,6 +2256,7 @@
             this.bstLine2_Prod.ContentControl = this.backstageViewClientControl6;
             this.bstLine2_Prod.Glyph = global::FORM.Properties.Resources.shoeProd;
             this.bstLine2_Prod.Name = "bstLine2_Prod";
+            this.bstLine2_Prod.Selected = true;
             // 
             // bstLine2_Equip
             // 
@@ -2175,7 +2308,122 @@
             this.bstLine2_HR.ContentControl = this.backstageViewClientControl22;
             this.bstLine2_HR.Glyph = global::FORM.Properties.Resources.user_icon;
             this.bstLine2_HR.Name = "bstLine2_HR";
-            this.bstLine2_HR.Selected = true;
+            // 
+            // groupBoxEx1
+            // 
+            this.groupBoxEx1.BackgroundPanelImage = null;
+            this.groupBoxEx1.Controls.Add(this.label21);
+            this.groupBoxEx1.Controls.Add(this.label22);
+            this.groupBoxEx1.Controls.Add(this.label23);
+            this.groupBoxEx1.Controls.Add(this.label24);
+            this.groupBoxEx1.Controls.Add(this.lblPlan_Line2);
+            this.groupBoxEx1.Controls.Add(this.lblRPlan_Line2);
+            this.groupBoxEx1.Controls.Add(this.lblProd_line2);
+            this.groupBoxEx1.Controls.Add(this.lblRate_line2);
+            this.groupBoxEx1.DrawGroupBorder = true;
+            this.groupBoxEx1.Font = new System.Drawing.Font("Calibri", 22F, System.Drawing.FontStyle.Bold);
+            this.groupBoxEx1.ForeColor = System.Drawing.Color.White;
+            this.groupBoxEx1.GroupBorderColor = System.Drawing.Color.Black;
+            this.groupBoxEx1.GroupPanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.groupBoxEx1.GroupPanelShape = FORM.ClassLib.GroupBoxEx.PanelType.Rounded;
+            this.groupBoxEx1.GroupPanelWith = 1F;
+            this.groupBoxEx1.Location = new System.Drawing.Point(661, 183);
+            this.groupBoxEx1.Name = "groupBoxEx1";
+            this.groupBoxEx1.Size = new System.Drawing.Size(272, 283);
+            this.groupBoxEx1.TabIndex = 9;
+            this.groupBoxEx1.TabStop = false;
+            this.groupBoxEx1.Text = "Production Status";
+            this.groupBoxEx1.TextBackColor = System.Drawing.Color.RoyalBlue;
+            this.groupBoxEx1.TextBorderColor = System.Drawing.Color.Black;
+            this.groupBoxEx1.TextBorderWith = 1F;
+            // 
+            // label21
+            // 
+            this.label21.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
+            this.label21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.label21.Location = new System.Drawing.Point(-6, 41);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(125, 58);
+            this.label21.TabIndex = 13;
+            this.label21.Text = "D.Plan";
+            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label22
+            // 
+            this.label22.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
+            this.label22.ForeColor = System.Drawing.Color.Indigo;
+            this.label22.Location = new System.Drawing.Point(-14, 98);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(133, 58);
+            this.label22.TabIndex = 12;
+            this.label22.Text = "R.Plan";
+            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label23
+            // 
+            this.label23.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
+            this.label23.ForeColor = System.Drawing.Color.Blue;
+            this.label23.Location = new System.Drawing.Point(-28, 167);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(144, 58);
+            this.label23.TabIndex = 14;
+            this.label23.Text = "Actual";
+            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label24
+            // 
+            this.label24.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
+            this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.label24.Location = new System.Drawing.Point(-70, 228);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(163, 58);
+            this.label24.TabIndex = 15;
+            this.label24.Text = "Rate";
+            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblPlan_Line2
+            // 
+            this.lblPlan_Line2.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
+            this.lblPlan_Line2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.lblPlan_Line2.Location = new System.Drawing.Point(109, 41);
+            this.lblPlan_Line2.Name = "lblPlan_Line2";
+            this.lblPlan_Line2.Size = new System.Drawing.Size(164, 58);
+            this.lblPlan_Line2.TabIndex = 7;
+            this.lblPlan_Line2.Text = "0 Prs";
+            this.lblPlan_Line2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblRPlan_Line2
+            // 
+            this.lblRPlan_Line2.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
+            this.lblRPlan_Line2.ForeColor = System.Drawing.Color.Indigo;
+            this.lblRPlan_Line2.Location = new System.Drawing.Point(109, 98);
+            this.lblRPlan_Line2.Name = "lblRPlan_Line2";
+            this.lblRPlan_Line2.Size = new System.Drawing.Size(164, 58);
+            this.lblRPlan_Line2.TabIndex = 11;
+            this.lblRPlan_Line2.Text = "0 Prs";
+            this.lblRPlan_Line2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblProd_line2
+            // 
+            this.lblProd_line2.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
+            this.lblProd_line2.ForeColor = System.Drawing.Color.Blue;
+            this.lblProd_line2.Location = new System.Drawing.Point(106, 164);
+            this.lblProd_line2.Name = "lblProd_line2";
+            this.lblProd_line2.Size = new System.Drawing.Size(170, 58);
+            this.lblProd_line2.TabIndex = 8;
+            this.lblProd_line2.Text = "0 Prs";
+            this.lblProd_line2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblRate_line2
+            // 
+            this.lblRate_line2.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
+            this.lblRate_line2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.lblRate_line2.Location = new System.Drawing.Point(104, 235);
+            this.lblRate_line2.Name = "lblRate_line2";
+            this.lblRate_line2.Size = new System.Drawing.Size(157, 41);
+            this.lblRate_line2.TabIndex = 9;
+            this.lblRate_line2.Text = "0%";
+            this.lblRate_line2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // backstageViewControl4
             // 
@@ -2192,8 +2440,8 @@
             this.backstageViewControl4.ItemsContentPadding = new System.Windows.Forms.Padding(0, 4, 0, 4);
             this.backstageViewControl4.Location = new System.Drawing.Point(16, 68);
             this.backstageViewControl4.Name = "backstageViewControl4";
-            this.backstageViewControl4.SelectedTab = this.bstLine3_HR;
-            this.backstageViewControl4.SelectedTabIndex = 4;
+            this.backstageViewControl4.SelectedTab = this.bstLine3_Prod;
+            this.backstageViewControl4.SelectedTabIndex = 1;
             this.backstageViewControl4.Size = new System.Drawing.Size(639, 414);
             this.backstageViewControl4.TabIndex = 10;
             this.backstageViewControl4.Text = "backstageViewControl4";
@@ -2333,6 +2581,8 @@
             // 
             // backstageViewClientControl13
             // 
+            this.backstageViewClientControl13.Controls.Add(this.simpleButton6);
+            this.backstageViewClientControl13.Controls.Add(this.simpleButton5);
             this.backstageViewClientControl13.Controls.Add(this.cmdPro3_Line3);
             this.backstageViewClientControl13.Controls.Add(this.cmdPro2_Line3);
             this.backstageViewClientControl13.Controls.Add(this.cmdPro1_Line3);
@@ -2340,6 +2590,52 @@
             this.backstageViewClientControl13.Name = "backstageViewClientControl13";
             this.backstageViewClientControl13.Size = new System.Drawing.Size(302, 414);
             this.backstageViewClientControl13.TabIndex = 1;
+            // 
+            // simpleButton6
+            // 
+            this.simpleButton6.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(84)))), ((int)(((byte)(106)))));
+            this.simpleButton6.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton6.Appearance.ForeColor = System.Drawing.Color.White;
+            this.simpleButton6.Appearance.Options.UseBackColor = true;
+            this.simpleButton6.Appearance.Options.UseFont = true;
+            this.simpleButton6.Appearance.Options.UseForeColor = true;
+            this.simpleButton6.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.simpleButton6.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.simpleButton6.AppearanceHovered.ForeColor = System.Drawing.Color.White;
+            this.simpleButton6.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.simpleButton6.AppearanceHovered.Options.UseBackColor = true;
+            this.simpleButton6.AppearanceHovered.Options.UseForeColor = true;
+            this.simpleButton6.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.simpleButton6.Location = new System.Drawing.Point(31, 296);
+            this.simpleButton6.Name = "simpleButton6";
+            this.simpleButton6.Size = new System.Drawing.Size(245, 68);
+            this.simpleButton6.TabIndex = 9;
+            this.simpleButton6.Tag = "1684";
+            this.simpleButton6.Text = "Monthly LOB Chart";
+            this.simpleButton6.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
+            // 
+            // simpleButton5
+            // 
+            this.simpleButton5.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
+            this.simpleButton5.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton5.Appearance.ForeColor = System.Drawing.Color.White;
+            this.simpleButton5.Appearance.Options.UseBackColor = true;
+            this.simpleButton5.Appearance.Options.UseFont = true;
+            this.simpleButton5.Appearance.Options.UseForeColor = true;
+            this.simpleButton5.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.simpleButton5.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.simpleButton5.AppearanceHovered.ForeColor = System.Drawing.Color.White;
+            this.simpleButton5.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.simpleButton5.AppearanceHovered.Options.UseBackColor = true;
+            this.simpleButton5.AppearanceHovered.Options.UseForeColor = true;
+            this.simpleButton5.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.simpleButton5.Location = new System.Drawing.Point(31, 222);
+            this.simpleButton5.Name = "simpleButton5";
+            this.simpleButton5.Size = new System.Drawing.Size(245, 68);
+            this.simpleButton5.TabIndex = 9;
+            this.simpleButton5.Tag = "1682";
+            this.simpleButton5.Text = "Daily LOB Chart";
+            this.simpleButton5.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdPro3_Line3
             // 
@@ -2356,9 +2652,9 @@
             this.cmdPro3_Line3.AppearanceHovered.Options.UseBackColor = true;
             this.cmdPro3_Line3.AppearanceHovered.Options.UseForeColor = true;
             this.cmdPro3_Line3.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdPro3_Line3.Location = new System.Drawing.Point(29, 239);
+            this.cmdPro3_Line3.Location = new System.Drawing.Point(31, 148);
             this.cmdPro3_Line3.Name = "cmdPro3_Line3";
-            this.cmdPro3_Line3.Size = new System.Drawing.Size(245, 73);
+            this.cmdPro3_Line3.Size = new System.Drawing.Size(245, 68);
             this.cmdPro3_Line3.TabIndex = 9;
             this.cmdPro3_Line3.Tag = "3";
             this.cmdPro3_Line3.Text = "BTS";
@@ -2379,9 +2675,9 @@
             this.cmdPro2_Line3.AppearanceHovered.Options.UseBackColor = true;
             this.cmdPro2_Line3.AppearanceHovered.Options.UseForeColor = true;
             this.cmdPro2_Line3.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdPro2_Line3.Location = new System.Drawing.Point(29, 160);
+            this.cmdPro2_Line3.Location = new System.Drawing.Point(31, 74);
             this.cmdPro2_Line3.Name = "cmdPro2_Line3";
-            this.cmdPro2_Line3.Size = new System.Drawing.Size(245, 73);
+            this.cmdPro2_Line3.Size = new System.Drawing.Size(245, 68);
             this.cmdPro2_Line3.TabIndex = 8;
             this.cmdPro2_Line3.Tag = "2";
             this.cmdPro2_Line3.Text = "Productivity\r\n";
@@ -2404,9 +2700,9 @@
             this.cmdPro1_Line3.AppearanceHovered.Options.UseFont = true;
             this.cmdPro1_Line3.AppearanceHovered.Options.UseForeColor = true;
             this.cmdPro1_Line3.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdPro1_Line3.Location = new System.Drawing.Point(29, 81);
+            this.cmdPro1_Line3.Location = new System.Drawing.Point(31, 0);
             this.cmdPro1_Line3.Name = "cmdPro1_Line3";
-            this.cmdPro1_Line3.Size = new System.Drawing.Size(245, 73);
+            this.cmdPro1_Line3.Size = new System.Drawing.Size(245, 68);
             this.cmdPro1_Line3.TabIndex = 7;
             this.cmdPro1_Line3.Tag = "1";
             this.cmdPro1_Line3.Text = "Prod. Result\r\n";
@@ -2414,8 +2710,6 @@
             // 
             // backstageViewClientControl15
             // 
-            this.backstageViewClientControl15.Controls.Add(this.simpleButton13);
-            this.backstageViewClientControl15.Controls.Add(this.simpleButton5);
             this.backstageViewClientControl15.Controls.Add(this.cmdEqu2_Line3);
             this.backstageViewClientControl15.Controls.Add(this.cmdEqu1_Line3);
             this.backstageViewClientControl15.Controls.Add(this.label26);
@@ -2423,52 +2717,6 @@
             this.backstageViewClientControl15.Name = "backstageViewClientControl15";
             this.backstageViewClientControl15.Size = new System.Drawing.Size(302, 414);
             this.backstageViewClientControl15.TabIndex = 3;
-            // 
-            // simpleButton13
-            // 
-            this.simpleButton13.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.simpleButton13.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton13.Appearance.ForeColor = System.Drawing.Color.White;
-            this.simpleButton13.Appearance.Options.UseBackColor = true;
-            this.simpleButton13.Appearance.Options.UseFont = true;
-            this.simpleButton13.Appearance.Options.UseForeColor = true;
-            this.simpleButton13.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.simpleButton13.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.simpleButton13.AppearanceHovered.ForeColor = System.Drawing.Color.White;
-            this.simpleButton13.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.simpleButton13.AppearanceHovered.Options.UseBackColor = true;
-            this.simpleButton13.AppearanceHovered.Options.UseForeColor = true;
-            this.simpleButton13.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.simpleButton13.Location = new System.Drawing.Point(27, 211);
-            this.simpleButton13.Name = "simpleButton13";
-            this.simpleButton13.Size = new System.Drawing.Size(245, 63);
-            this.simpleButton13.TabIndex = 11;
-            this.simpleButton13.Tag = "1683";
-            this.simpleButton13.Text = "Computer OEE";
-            this.simpleButton13.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
-            // 
-            // simpleButton5
-            // 
-            this.simpleButton5.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
-            this.simpleButton5.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton5.Appearance.ForeColor = System.Drawing.Color.White;
-            this.simpleButton5.Appearance.Options.UseBackColor = true;
-            this.simpleButton5.Appearance.Options.UseFont = true;
-            this.simpleButton5.Appearance.Options.UseForeColor = true;
-            this.simpleButton5.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.simpleButton5.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.simpleButton5.AppearanceHovered.ForeColor = System.Drawing.Color.White;
-            this.simpleButton5.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.simpleButton5.AppearanceHovered.Options.UseBackColor = true;
-            this.simpleButton5.AppearanceHovered.Options.UseForeColor = true;
-            this.simpleButton5.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.simpleButton5.Location = new System.Drawing.Point(27, 135);
-            this.simpleButton5.Name = "simpleButton5";
-            this.simpleButton5.Size = new System.Drawing.Size(245, 63);
-            this.simpleButton5.TabIndex = 13;
-            this.simpleButton5.Tag = "1682";
-            this.simpleButton5.Text = "LOB Chart";
-            this.simpleButton5.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdEqu2_Line3
             // 
@@ -2485,9 +2733,9 @@
             this.cmdEqu2_Line3.AppearanceHovered.Options.UseBackColor = true;
             this.cmdEqu2_Line3.AppearanceHovered.Options.UseForeColor = true;
             this.cmdEqu2_Line3.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdEqu2_Line3.Location = new System.Drawing.Point(-154, 98);
+            this.cmdEqu2_Line3.Location = new System.Drawing.Point(29, 205);
             this.cmdEqu2_Line3.Name = "cmdEqu2_Line3";
-            this.cmdEqu2_Line3.Size = new System.Drawing.Size(245, 63);
+            this.cmdEqu2_Line3.Size = new System.Drawing.Size(245, 94);
             this.cmdEqu2_Line3.TabIndex = 10;
             this.cmdEqu2_Line3.Tag = "2";
             this.cmdEqu2_Line3.Text = "Alert Log";
@@ -2509,9 +2757,9 @@
             this.cmdEqu1_Line3.AppearanceHovered.Options.UseBackColor = true;
             this.cmdEqu1_Line3.AppearanceHovered.Options.UseForeColor = true;
             this.cmdEqu1_Line3.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdEqu1_Line3.Location = new System.Drawing.Point(27, 65);
+            this.cmdEqu1_Line3.Location = new System.Drawing.Point(29, 79);
             this.cmdEqu1_Line3.Name = "cmdEqu1_Line3";
-            this.cmdEqu1_Line3.Size = new System.Drawing.Size(245, 63);
+            this.cmdEqu1_Line3.Size = new System.Drawing.Size(245, 94);
             this.cmdEqu1_Line3.TabIndex = 9;
             this.cmdEqu1_Line3.Tag = "2";
             this.cmdEqu1_Line3.Text = "Smart Andon";
@@ -2521,7 +2769,7 @@
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(18, 162);
+            this.label26.Location = new System.Drawing.Point(22, 193);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(252, 33);
             this.label26.TabIndex = 1;
@@ -2664,7 +2912,6 @@
             // 
             // backstageViewClientControl23
             // 
-            this.backstageViewClientControl23.Controls.Add(this.cmdJob_Line3);
             this.backstageViewClientControl23.Controls.Add(this.cmdHrm4_Line3);
             this.backstageViewClientControl23.Controls.Add(this.simpleButton11);
             this.backstageViewClientControl23.Controls.Add(this.cmdHrm3_Line3);
@@ -2692,9 +2939,9 @@
             this.cmdHrm4_Line3.AppearanceHovered.Options.UseFont = true;
             this.cmdHrm4_Line3.AppearanceHovered.Options.UseForeColor = true;
             this.cmdHrm4_Line3.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdHrm4_Line3.Location = new System.Drawing.Point(29, 17);
+            this.cmdHrm4_Line3.Location = new System.Drawing.Point(29, 0);
             this.cmdHrm4_Line3.Name = "cmdHrm4_Line3";
-            this.cmdHrm4_Line3.Size = new System.Drawing.Size(245, 55);
+            this.cmdHrm4_Line3.Size = new System.Drawing.Size(245, 68);
             this.cmdHrm4_Line3.TabIndex = 15;
             this.cmdHrm4_Line3.Tag = "1";
             this.cmdHrm4_Line3.Text = "TO/PO";
@@ -2717,9 +2964,9 @@
             this.simpleButton11.AppearanceHovered.Options.UseFont = true;
             this.simpleButton11.AppearanceHovered.Options.UseForeColor = true;
             this.simpleButton11.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.simpleButton11.Location = new System.Drawing.Point(27, 317);
+            this.simpleButton11.Location = new System.Drawing.Point(29, 296);
             this.simpleButton11.Name = "simpleButton11";
-            this.simpleButton11.Size = new System.Drawing.Size(245, 55);
+            this.simpleButton11.Size = new System.Drawing.Size(245, 68);
             this.simpleButton11.TabIndex = 14;
             this.simpleButton11.Tag = "1681";
             this.simpleButton11.Text = "Kaizen";
@@ -2742,9 +2989,9 @@
             this.cmdHrm3_Line3.AppearanceHovered.Options.UseFont = true;
             this.cmdHrm3_Line3.AppearanceHovered.Options.UseForeColor = true;
             this.cmdHrm3_Line3.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdHrm3_Line3.Location = new System.Drawing.Point(29, 257);
+            this.cmdHrm3_Line3.Location = new System.Drawing.Point(29, 222);
             this.cmdHrm3_Line3.Name = "cmdHrm3_Line3";
-            this.cmdHrm3_Line3.Size = new System.Drawing.Size(245, 55);
+            this.cmdHrm3_Line3.Size = new System.Drawing.Size(245, 68);
             this.cmdHrm3_Line3.TabIndex = 14;
             this.cmdHrm3_Line3.Tag = "1";
             this.cmdHrm3_Line3.Text = "Multi Skill Ratio";
@@ -2765,9 +3012,9 @@
             this.cmdHrm2_Line3.AppearanceHovered.Options.UseBackColor = true;
             this.cmdHrm2_Line3.AppearanceHovered.Options.UseForeColor = true;
             this.cmdHrm2_Line3.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdHrm2_Line3.Location = new System.Drawing.Point(29, 137);
+            this.cmdHrm2_Line3.Location = new System.Drawing.Point(29, 148);
             this.cmdHrm2_Line3.Name = "cmdHrm2_Line3";
-            this.cmdHrm2_Line3.Size = new System.Drawing.Size(245, 55);
+            this.cmdHrm2_Line3.Size = new System.Drawing.Size(245, 68);
             this.cmdHrm2_Line3.TabIndex = 9;
             this.cmdHrm2_Line3.Tag = "3";
             this.cmdHrm2_Line3.Text = "Multi skill";
@@ -2788,9 +3035,9 @@
             this.cmdHrm1_Line3.AppearanceHovered.Options.UseBackColor = true;
             this.cmdHrm1_Line3.AppearanceHovered.Options.UseForeColor = true;
             this.cmdHrm1_Line3.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdHrm1_Line3.Location = new System.Drawing.Point(29, 77);
+            this.cmdHrm1_Line3.Location = new System.Drawing.Point(29, 74);
             this.cmdHrm1_Line3.Name = "cmdHrm1_Line3";
-            this.cmdHrm1_Line3.Size = new System.Drawing.Size(245, 55);
+            this.cmdHrm1_Line3.Size = new System.Drawing.Size(245, 68);
             this.cmdHrm1_Line3.TabIndex = 8;
             this.cmdHrm1_Line3.Tag = "2";
             this.cmdHrm1_Line3.Text = "Absenteeism";
@@ -2829,6 +3076,7 @@
             this.bstLine3_Prod.ContentControl = this.backstageViewClientControl13;
             this.bstLine3_Prod.Glyph = global::FORM.Properties.Resources.shoeProd;
             this.bstLine3_Prod.Name = "bstLine3_Prod";
+            this.bstLine3_Prod.Selected = true;
             // 
             // bstLine3_Equip
             // 
@@ -2880,7 +3128,6 @@
             this.bstLine3_HR.ContentControl = this.backstageViewClientControl23;
             this.bstLine3_HR.Glyph = global::FORM.Properties.Resources.user_icon;
             this.bstLine3_HR.Name = "bstLine3_HR";
-            this.bstLine3_HR.Selected = true;
             // 
             // groupBox3
             // 
@@ -2933,6 +3180,17 @@
             this.gaugeControl3.Tag = "003";
             this.gaugeControl3.Click += new System.EventHandler(this.gaugeText_Click);
             // 
+            // digitalGaugeLine3
+            // 
+            this.digitalGaugeLine3.AppearanceOff.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:Black");
+            this.digitalGaugeLine3.AppearanceOn.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:Yellow");
+            this.digitalGaugeLine3.BackgroundLayers.AddRange(new DevExpress.XtraGauges.Win.Gauges.Digital.DigitalBackgroundLayerComponent[] {
+            this.digitalBackgroundLayerComponent3});
+            this.digitalGaugeLine3.Bounds = new System.Drawing.Rectangle(6, 6, 568, 58);
+            this.digitalGaugeLine3.DigitCount = 25;
+            this.digitalGaugeLine3.Name = "digitalGaugeLine3";
+            this.digitalGaugeLine3.Padding = new DevExpress.XtraGauges.Core.Base.TextSpacing(26, 20, 26, 20);
+            // 
             // digitalBackgroundLayerComponent3
             // 
             this.digitalBackgroundLayerComponent3.BottomRight = new DevExpress.XtraGauges.Core.Base.PointF2D(1225.063F, 99.9625F);
@@ -2954,6 +3212,122 @@
             this.cmdQuaPer_Line3.Text = "Quarterly\r\nPerformance\r\n";
             this.cmdQuaPer_Line3.Click += new System.EventHandler(this.cmdQuaPer_Click);
             // 
+            // groupBoxEx2
+            // 
+            this.groupBoxEx2.BackgroundPanelImage = null;
+            this.groupBoxEx2.Controls.Add(this.label31);
+            this.groupBoxEx2.Controls.Add(this.label32);
+            this.groupBoxEx2.Controls.Add(this.label33);
+            this.groupBoxEx2.Controls.Add(this.label34);
+            this.groupBoxEx2.Controls.Add(this.lblPlan_Line3);
+            this.groupBoxEx2.Controls.Add(this.lblRPlan_Line3);
+            this.groupBoxEx2.Controls.Add(this.lblProd_line3);
+            this.groupBoxEx2.Controls.Add(this.lblRate_line3);
+            this.groupBoxEx2.DrawGroupBorder = true;
+            this.groupBoxEx2.Font = new System.Drawing.Font("Calibri", 22F, System.Drawing.FontStyle.Bold);
+            this.groupBoxEx2.ForeColor = System.Drawing.Color.White;
+            this.groupBoxEx2.GroupBorderColor = System.Drawing.Color.Black;
+            this.groupBoxEx2.GroupPanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.groupBoxEx2.GroupPanelShape = FORM.ClassLib.GroupBoxEx.PanelType.Rounded;
+            this.groupBoxEx2.GroupPanelWith = 1F;
+            this.groupBoxEx2.Location = new System.Drawing.Point(660, 184);
+            this.groupBoxEx2.Name = "groupBoxEx2";
+            this.groupBoxEx2.Size = new System.Drawing.Size(272, 283);
+            this.groupBoxEx2.TabIndex = 9;
+            this.groupBoxEx2.TabStop = false;
+            this.groupBoxEx2.Text = "Production Status";
+            this.groupBoxEx2.TextBackColor = System.Drawing.Color.RoyalBlue;
+            this.groupBoxEx2.TextBorderColor = System.Drawing.Color.Black;
+            this.groupBoxEx2.TextBorderWith = 1F;
+            // 
+            // label31
+            // 
+            this.label31.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
+            this.label31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.label31.Location = new System.Drawing.Point(-8, 46);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(123, 58);
+            this.label31.TabIndex = 22;
+            this.label31.Text = "D.Plan";
+            this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label32
+            // 
+            this.label32.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
+            this.label32.ForeColor = System.Drawing.Color.Indigo;
+            this.label32.Location = new System.Drawing.Point(-18, 101);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(133, 58);
+            this.label32.TabIndex = 21;
+            this.label32.Text = "R.Plan";
+            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label33
+            // 
+            this.label33.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
+            this.label33.ForeColor = System.Drawing.Color.Blue;
+            this.label33.Location = new System.Drawing.Point(-33, 166);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(145, 58);
+            this.label33.TabIndex = 23;
+            this.label33.Text = "Actual";
+            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label34
+            // 
+            this.label34.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
+            this.label34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.label34.Location = new System.Drawing.Point(-72, 229);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(163, 58);
+            this.label34.TabIndex = 24;
+            this.label34.Text = "Rate";
+            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblPlan_Line3
+            // 
+            this.lblPlan_Line3.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
+            this.lblPlan_Line3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.lblPlan_Line3.Location = new System.Drawing.Point(108, 46);
+            this.lblPlan_Line3.Name = "lblPlan_Line3";
+            this.lblPlan_Line3.Size = new System.Drawing.Size(164, 58);
+            this.lblPlan_Line3.TabIndex = 10;
+            this.lblPlan_Line3.Text = "0 Prs";
+            this.lblPlan_Line3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblRPlan_Line3
+            // 
+            this.lblRPlan_Line3.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
+            this.lblRPlan_Line3.ForeColor = System.Drawing.Color.Indigo;
+            this.lblRPlan_Line3.Location = new System.Drawing.Point(101, 102);
+            this.lblRPlan_Line3.Name = "lblRPlan_Line3";
+            this.lblRPlan_Line3.Size = new System.Drawing.Size(168, 58);
+            this.lblRPlan_Line3.TabIndex = 14;
+            this.lblRPlan_Line3.Text = "0 Prs";
+            this.lblRPlan_Line3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblProd_line3
+            // 
+            this.lblProd_line3.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
+            this.lblProd_line3.ForeColor = System.Drawing.Color.Blue;
+            this.lblProd_line3.Location = new System.Drawing.Point(101, 167);
+            this.lblProd_line3.Name = "lblProd_line3";
+            this.lblProd_line3.Size = new System.Drawing.Size(170, 58);
+            this.lblProd_line3.TabIndex = 11;
+            this.lblProd_line3.Text = "0 Prs";
+            this.lblProd_line3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblRate_line3
+            // 
+            this.lblRate_line3.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
+            this.lblRate_line3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.lblRate_line3.Location = new System.Drawing.Point(107, 236);
+            this.lblRate_line3.Name = "lblRate_line3";
+            this.lblRate_line3.Size = new System.Drawing.Size(157, 41);
+            this.lblRate_line3.TabIndex = 12;
+            this.lblRate_line3.Text = "0%";
+            this.lblRate_line3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // backstageViewControl3
             // 
             this.backstageViewControl3.Controls.Add(this.backstageViewClientControl18);
@@ -2969,8 +3343,8 @@
             this.backstageViewControl3.ItemsContentPadding = new System.Windows.Forms.Padding(0, 4, 0, 4);
             this.backstageViewControl3.Location = new System.Drawing.Point(15, 68);
             this.backstageViewControl3.Name = "backstageViewControl3";
-            this.backstageViewControl3.SelectedTab = this.bstLine4_HR;
-            this.backstageViewControl3.SelectedTabIndex = 4;
+            this.backstageViewControl3.SelectedTab = this.bstLine4_Prod;
+            this.backstageViewControl3.SelectedTabIndex = 1;
             this.backstageViewControl3.Size = new System.Drawing.Size(639, 414);
             this.backstageViewControl3.TabIndex = 10;
             this.backstageViewControl3.Text = "backstageViewControl3";
@@ -3110,6 +3484,8 @@
             // 
             // backstageViewClientControl17
             // 
+            this.backstageViewClientControl17.Controls.Add(this.simpleButton8);
+            this.backstageViewClientControl17.Controls.Add(this.simpleButton7);
             this.backstageViewClientControl17.Controls.Add(this.cmdPro3_Line4);
             this.backstageViewClientControl17.Controls.Add(this.cmdPro2_Line4);
             this.backstageViewClientControl17.Controls.Add(this.cmdPro1_Line4);
@@ -3117,6 +3493,52 @@
             this.backstageViewClientControl17.Name = "backstageViewClientControl17";
             this.backstageViewClientControl17.Size = new System.Drawing.Size(302, 414);
             this.backstageViewClientControl17.TabIndex = 1;
+            // 
+            // simpleButton8
+            // 
+            this.simpleButton8.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(84)))), ((int)(((byte)(106)))));
+            this.simpleButton8.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton8.Appearance.ForeColor = System.Drawing.Color.White;
+            this.simpleButton8.Appearance.Options.UseBackColor = true;
+            this.simpleButton8.Appearance.Options.UseFont = true;
+            this.simpleButton8.Appearance.Options.UseForeColor = true;
+            this.simpleButton8.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.simpleButton8.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.simpleButton8.AppearanceHovered.ForeColor = System.Drawing.Color.White;
+            this.simpleButton8.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.simpleButton8.AppearanceHovered.Options.UseBackColor = true;
+            this.simpleButton8.AppearanceHovered.Options.UseForeColor = true;
+            this.simpleButton8.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.simpleButton8.Location = new System.Drawing.Point(30, 296);
+            this.simpleButton8.Name = "simpleButton8";
+            this.simpleButton8.Size = new System.Drawing.Size(245, 68);
+            this.simpleButton8.TabIndex = 15;
+            this.simpleButton8.Tag = "1684";
+            this.simpleButton8.Text = "Monthly LOB Chart";
+            this.simpleButton8.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
+            // 
+            // simpleButton7
+            // 
+            this.simpleButton7.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
+            this.simpleButton7.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton7.Appearance.ForeColor = System.Drawing.Color.White;
+            this.simpleButton7.Appearance.Options.UseBackColor = true;
+            this.simpleButton7.Appearance.Options.UseFont = true;
+            this.simpleButton7.Appearance.Options.UseForeColor = true;
+            this.simpleButton7.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.simpleButton7.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.simpleButton7.AppearanceHovered.ForeColor = System.Drawing.Color.White;
+            this.simpleButton7.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.simpleButton7.AppearanceHovered.Options.UseBackColor = true;
+            this.simpleButton7.AppearanceHovered.Options.UseForeColor = true;
+            this.simpleButton7.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.simpleButton7.Location = new System.Drawing.Point(30, 222);
+            this.simpleButton7.Name = "simpleButton7";
+            this.simpleButton7.Size = new System.Drawing.Size(245, 68);
+            this.simpleButton7.TabIndex = 15;
+            this.simpleButton7.Tag = "1682";
+            this.simpleButton7.Text = "Daily LOB Chart";
+            this.simpleButton7.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdPro3_Line4
             // 
@@ -3133,9 +3555,9 @@
             this.cmdPro3_Line4.AppearanceHovered.Options.UseBackColor = true;
             this.cmdPro3_Line4.AppearanceHovered.Options.UseForeColor = true;
             this.cmdPro3_Line4.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdPro3_Line4.Location = new System.Drawing.Point(30, 234);
+            this.cmdPro3_Line4.Location = new System.Drawing.Point(30, 148);
             this.cmdPro3_Line4.Name = "cmdPro3_Line4";
-            this.cmdPro3_Line4.Size = new System.Drawing.Size(245, 78);
+            this.cmdPro3_Line4.Size = new System.Drawing.Size(245, 68);
             this.cmdPro3_Line4.TabIndex = 15;
             this.cmdPro3_Line4.Tag = "3";
             this.cmdPro3_Line4.Text = "BTS";
@@ -3156,9 +3578,9 @@
             this.cmdPro2_Line4.AppearanceHovered.Options.UseBackColor = true;
             this.cmdPro2_Line4.AppearanceHovered.Options.UseForeColor = true;
             this.cmdPro2_Line4.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdPro2_Line4.Location = new System.Drawing.Point(30, 150);
+            this.cmdPro2_Line4.Location = new System.Drawing.Point(30, 74);
             this.cmdPro2_Line4.Name = "cmdPro2_Line4";
-            this.cmdPro2_Line4.Size = new System.Drawing.Size(245, 78);
+            this.cmdPro2_Line4.Size = new System.Drawing.Size(245, 68);
             this.cmdPro2_Line4.TabIndex = 14;
             this.cmdPro2_Line4.Tag = "2";
             this.cmdPro2_Line4.Text = "Productivity";
@@ -3181,9 +3603,9 @@
             this.cmdPro1_Line4.AppearanceHovered.Options.UseFont = true;
             this.cmdPro1_Line4.AppearanceHovered.Options.UseForeColor = true;
             this.cmdPro1_Line4.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdPro1_Line4.Location = new System.Drawing.Point(30, 66);
+            this.cmdPro1_Line4.Location = new System.Drawing.Point(30, 0);
             this.cmdPro1_Line4.Name = "cmdPro1_Line4";
-            this.cmdPro1_Line4.Size = new System.Drawing.Size(245, 78);
+            this.cmdPro1_Line4.Size = new System.Drawing.Size(245, 68);
             this.cmdPro1_Line4.TabIndex = 13;
             this.cmdPro1_Line4.Tag = "1";
             this.cmdPro1_Line4.Text = "Prod. Result";
@@ -3191,60 +3613,12 @@
             // 
             // backstageViewClientControl19
             // 
-            this.backstageViewClientControl19.Controls.Add(this.simpleButton14);
-            this.backstageViewClientControl19.Controls.Add(this.simpleButton7);
             this.backstageViewClientControl19.Controls.Add(this.cmdEqu2_Line4);
             this.backstageViewClientControl19.Controls.Add(this.cmdEqu1_Line4);
             this.backstageViewClientControl19.Location = new System.Drawing.Point(337, 0);
             this.backstageViewClientControl19.Name = "backstageViewClientControl19";
             this.backstageViewClientControl19.Size = new System.Drawing.Size(302, 414);
             this.backstageViewClientControl19.TabIndex = 3;
-            // 
-            // simpleButton14
-            // 
-            this.simpleButton14.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.simpleButton14.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton14.Appearance.ForeColor = System.Drawing.Color.White;
-            this.simpleButton14.Appearance.Options.UseBackColor = true;
-            this.simpleButton14.Appearance.Options.UseFont = true;
-            this.simpleButton14.Appearance.Options.UseForeColor = true;
-            this.simpleButton14.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.simpleButton14.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.simpleButton14.AppearanceHovered.ForeColor = System.Drawing.Color.White;
-            this.simpleButton14.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.simpleButton14.AppearanceHovered.Options.UseBackColor = true;
-            this.simpleButton14.AppearanceHovered.Options.UseForeColor = true;
-            this.simpleButton14.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.simpleButton14.Location = new System.Drawing.Point(36, 211);
-            this.simpleButton14.Name = "simpleButton14";
-            this.simpleButton14.Size = new System.Drawing.Size(245, 63);
-            this.simpleButton14.TabIndex = 16;
-            this.simpleButton14.Tag = "1683";
-            this.simpleButton14.Text = "Computer OEE";
-            this.simpleButton14.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
-            // 
-            // simpleButton7
-            // 
-            this.simpleButton7.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
-            this.simpleButton7.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton7.Appearance.ForeColor = System.Drawing.Color.White;
-            this.simpleButton7.Appearance.Options.UseBackColor = true;
-            this.simpleButton7.Appearance.Options.UseFont = true;
-            this.simpleButton7.Appearance.Options.UseForeColor = true;
-            this.simpleButton7.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.simpleButton7.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.simpleButton7.AppearanceHovered.ForeColor = System.Drawing.Color.White;
-            this.simpleButton7.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.simpleButton7.AppearanceHovered.Options.UseBackColor = true;
-            this.simpleButton7.AppearanceHovered.Options.UseForeColor = true;
-            this.simpleButton7.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.simpleButton7.Location = new System.Drawing.Point(36, 135);
-            this.simpleButton7.Name = "simpleButton7";
-            this.simpleButton7.Size = new System.Drawing.Size(245, 63);
-            this.simpleButton7.TabIndex = 18;
-            this.simpleButton7.Tag = "1682";
-            this.simpleButton7.Text = "LOB Chart";
-            this.simpleButton7.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
             // 
             // cmdEqu2_Line4
             // 
@@ -3261,9 +3635,9 @@
             this.cmdEqu2_Line4.AppearanceHovered.Options.UseBackColor = true;
             this.cmdEqu2_Line4.AppearanceHovered.Options.UseForeColor = true;
             this.cmdEqu2_Line4.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdEqu2_Line4.Location = new System.Drawing.Point(-144, 97);
+            this.cmdEqu2_Line4.Location = new System.Drawing.Point(32, 203);
             this.cmdEqu2_Line4.Name = "cmdEqu2_Line4";
-            this.cmdEqu2_Line4.Size = new System.Drawing.Size(245, 63);
+            this.cmdEqu2_Line4.Size = new System.Drawing.Size(245, 94);
             this.cmdEqu2_Line4.TabIndex = 9;
             this.cmdEqu2_Line4.Tag = "2";
             this.cmdEqu2_Line4.Text = "Alert Log";
@@ -3285,9 +3659,9 @@
             this.cmdEqu1_Line4.AppearanceHovered.Options.UseBackColor = true;
             this.cmdEqu1_Line4.AppearanceHovered.Options.UseForeColor = true;
             this.cmdEqu1_Line4.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdEqu1_Line4.Location = new System.Drawing.Point(36, 64);
+            this.cmdEqu1_Line4.Location = new System.Drawing.Point(32, 79);
             this.cmdEqu1_Line4.Name = "cmdEqu1_Line4";
-            this.cmdEqu1_Line4.Size = new System.Drawing.Size(245, 63);
+            this.cmdEqu1_Line4.Size = new System.Drawing.Size(245, 94);
             this.cmdEqu1_Line4.TabIndex = 8;
             this.cmdEqu1_Line4.Tag = "2";
             this.cmdEqu1_Line4.Text = "Smart Andon";
@@ -3430,7 +3804,6 @@
             // 
             // backstageViewClientControl24
             // 
-            this.backstageViewClientControl24.Controls.Add(this.cmdJob_Line4);
             this.backstageViewClientControl24.Controls.Add(this.cmdHrm4_Line4);
             this.backstageViewClientControl24.Controls.Add(this.simpleButton12);
             this.backstageViewClientControl24.Controls.Add(this.cmdHrm3_Line4);
@@ -3458,9 +3831,9 @@
             this.cmdHrm4_Line4.AppearanceHovered.Options.UseFont = true;
             this.cmdHrm4_Line4.AppearanceHovered.Options.UseForeColor = true;
             this.cmdHrm4_Line4.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdHrm4_Line4.Location = new System.Drawing.Point(30, 17);
+            this.cmdHrm4_Line4.Location = new System.Drawing.Point(28, 0);
             this.cmdHrm4_Line4.Name = "cmdHrm4_Line4";
-            this.cmdHrm4_Line4.Size = new System.Drawing.Size(245, 55);
+            this.cmdHrm4_Line4.Size = new System.Drawing.Size(245, 68);
             this.cmdHrm4_Line4.TabIndex = 14;
             this.cmdHrm4_Line4.Tag = "1";
             this.cmdHrm4_Line4.Text = "TO/PO";
@@ -3483,9 +3856,9 @@
             this.simpleButton12.AppearanceHovered.Options.UseFont = true;
             this.simpleButton12.AppearanceHovered.Options.UseForeColor = true;
             this.simpleButton12.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.simpleButton12.Location = new System.Drawing.Point(30, 317);
+            this.simpleButton12.Location = new System.Drawing.Point(30, 296);
             this.simpleButton12.Name = "simpleButton12";
-            this.simpleButton12.Size = new System.Drawing.Size(245, 55);
+            this.simpleButton12.Size = new System.Drawing.Size(245, 68);
             this.simpleButton12.TabIndex = 13;
             this.simpleButton12.Tag = "1681";
             this.simpleButton12.Text = "Kaizen";
@@ -3508,9 +3881,9 @@
             this.cmdHrm3_Line4.AppearanceHovered.Options.UseFont = true;
             this.cmdHrm3_Line4.AppearanceHovered.Options.UseForeColor = true;
             this.cmdHrm3_Line4.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdHrm3_Line4.Location = new System.Drawing.Point(30, 257);
+            this.cmdHrm3_Line4.Location = new System.Drawing.Point(28, 222);
             this.cmdHrm3_Line4.Name = "cmdHrm3_Line4";
-            this.cmdHrm3_Line4.Size = new System.Drawing.Size(245, 55);
+            this.cmdHrm3_Line4.Size = new System.Drawing.Size(245, 68);
             this.cmdHrm3_Line4.TabIndex = 13;
             this.cmdHrm3_Line4.Tag = "1";
             this.cmdHrm3_Line4.Text = "Multi Skill Ratio";
@@ -3531,9 +3904,9 @@
             this.cmdHrm2_Line4.AppearanceHovered.Options.UseBackColor = true;
             this.cmdHrm2_Line4.AppearanceHovered.Options.UseForeColor = true;
             this.cmdHrm2_Line4.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdHrm2_Line4.Location = new System.Drawing.Point(30, 137);
+            this.cmdHrm2_Line4.Location = new System.Drawing.Point(28, 148);
             this.cmdHrm2_Line4.Name = "cmdHrm2_Line4";
-            this.cmdHrm2_Line4.Size = new System.Drawing.Size(245, 55);
+            this.cmdHrm2_Line4.Size = new System.Drawing.Size(245, 68);
             this.cmdHrm2_Line4.TabIndex = 12;
             this.cmdHrm2_Line4.Tag = "3";
             this.cmdHrm2_Line4.Text = "Multi skill\r\n";
@@ -3554,9 +3927,9 @@
             this.cmdHrm1_Line4.AppearanceHovered.Options.UseBackColor = true;
             this.cmdHrm1_Line4.AppearanceHovered.Options.UseForeColor = true;
             this.cmdHrm1_Line4.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdHrm1_Line4.Location = new System.Drawing.Point(30, 77);
+            this.cmdHrm1_Line4.Location = new System.Drawing.Point(28, 74);
             this.cmdHrm1_Line4.Name = "cmdHrm1_Line4";
-            this.cmdHrm1_Line4.Size = new System.Drawing.Size(245, 55);
+            this.cmdHrm1_Line4.Size = new System.Drawing.Size(245, 68);
             this.cmdHrm1_Line4.TabIndex = 11;
             this.cmdHrm1_Line4.Tag = "2";
             this.cmdHrm1_Line4.Text = "Absenteeism";
@@ -3595,6 +3968,7 @@
             this.bstLine4_Prod.ContentControl = this.backstageViewClientControl17;
             this.bstLine4_Prod.Glyph = global::FORM.Properties.Resources.shoeProd;
             this.bstLine4_Prod.Name = "bstLine4_Prod";
+            this.bstLine4_Prod.Selected = true;
             // 
             // bstLine4_Equip
             // 
@@ -3646,7 +4020,6 @@
             this.bstLine4_HR.ContentControl = this.backstageViewClientControl24;
             this.bstLine4_HR.Glyph = global::FORM.Properties.Resources.user_icon;
             this.bstLine4_HR.Name = "bstLine4_HR";
-            this.bstLine4_HR.Selected = true;
             // 
             // groupBox4
             // 
@@ -3700,6 +4073,17 @@
             this.gaugeControl4.Tag = "004";
             this.gaugeControl4.Click += new System.EventHandler(this.gaugeText_Click);
             // 
+            // digitalGaugeLine4
+            // 
+            this.digitalGaugeLine4.AppearanceOff.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:Black");
+            this.digitalGaugeLine4.AppearanceOn.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:Yellow");
+            this.digitalGaugeLine4.BackgroundLayers.AddRange(new DevExpress.XtraGauges.Win.Gauges.Digital.DigitalBackgroundLayerComponent[] {
+            this.digitalBackgroundLayerComponent4});
+            this.digitalGaugeLine4.Bounds = new System.Drawing.Rectangle(6, 6, 568, 58);
+            this.digitalGaugeLine4.DigitCount = 25;
+            this.digitalGaugeLine4.Name = "digitalGaugeLine4";
+            this.digitalGaugeLine4.Padding = new DevExpress.XtraGauges.Core.Base.TextSpacing(26, 20, 26, 20);
+            // 
             // digitalBackgroundLayerComponent4
             // 
             this.digitalBackgroundLayerComponent4.BottomRight = new DevExpress.XtraGauges.Core.Base.PointF2D(1225.063F, 99.9625F);
@@ -3720,6 +4104,122 @@
             this.cmdQuaPer_Line4.Tag = "004";
             this.cmdQuaPer_Line4.Text = "Quarterly\r\nPerformance\r\n";
             this.cmdQuaPer_Line4.Click += new System.EventHandler(this.cmdQuaPer_Click);
+            // 
+            // groupBoxEx3
+            // 
+            this.groupBoxEx3.BackgroundPanelImage = null;
+            this.groupBoxEx3.Controls.Add(this.label27);
+            this.groupBoxEx3.Controls.Add(this.label28);
+            this.groupBoxEx3.Controls.Add(this.label29);
+            this.groupBoxEx3.Controls.Add(this.label30);
+            this.groupBoxEx3.Controls.Add(this.lblPlan_Line4);
+            this.groupBoxEx3.Controls.Add(this.lblRPlan_Line4);
+            this.groupBoxEx3.Controls.Add(this.lblProd_line4);
+            this.groupBoxEx3.Controls.Add(this.lblRate_line4);
+            this.groupBoxEx3.DrawGroupBorder = true;
+            this.groupBoxEx3.Font = new System.Drawing.Font("Calibri", 22F, System.Drawing.FontStyle.Bold);
+            this.groupBoxEx3.ForeColor = System.Drawing.Color.White;
+            this.groupBoxEx3.GroupBorderColor = System.Drawing.Color.Black;
+            this.groupBoxEx3.GroupPanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.groupBoxEx3.GroupPanelShape = FORM.ClassLib.GroupBoxEx.PanelType.Rounded;
+            this.groupBoxEx3.GroupPanelWith = 1F;
+            this.groupBoxEx3.Location = new System.Drawing.Point(662, 186);
+            this.groupBoxEx3.Name = "groupBoxEx3";
+            this.groupBoxEx3.Size = new System.Drawing.Size(266, 283);
+            this.groupBoxEx3.TabIndex = 9;
+            this.groupBoxEx3.TabStop = false;
+            this.groupBoxEx3.Text = "Production Status";
+            this.groupBoxEx3.TextBackColor = System.Drawing.Color.RoyalBlue;
+            this.groupBoxEx3.TextBorderColor = System.Drawing.Color.Black;
+            this.groupBoxEx3.TextBorderWith = 1F;
+            // 
+            // label27
+            // 
+            this.label27.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
+            this.label27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.label27.Location = new System.Drawing.Point(-7, 43);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(121, 58);
+            this.label27.TabIndex = 18;
+            this.label27.Text = "D.Plan";
+            this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label28
+            // 
+            this.label28.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
+            this.label28.ForeColor = System.Drawing.Color.Indigo;
+            this.label28.Location = new System.Drawing.Point(-13, 99);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(127, 58);
+            this.label28.TabIndex = 17;
+            this.label28.Text = "R.Plan";
+            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label29
+            // 
+            this.label29.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
+            this.label29.ForeColor = System.Drawing.Color.Blue;
+            this.label29.Location = new System.Drawing.Point(-36, 159);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(150, 58);
+            this.label29.TabIndex = 19;
+            this.label29.Text = "Actual";
+            this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label30
+            // 
+            this.label30.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
+            this.label30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.label30.Location = new System.Drawing.Point(-71, 228);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(163, 58);
+            this.label30.TabIndex = 20;
+            this.label30.Text = "Rate";
+            this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblPlan_Line4
+            // 
+            this.lblPlan_Line4.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
+            this.lblPlan_Line4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.lblPlan_Line4.Location = new System.Drawing.Point(108, 43);
+            this.lblPlan_Line4.Name = "lblPlan_Line4";
+            this.lblPlan_Line4.Size = new System.Drawing.Size(164, 58);
+            this.lblPlan_Line4.TabIndex = 10;
+            this.lblPlan_Line4.Text = "0 Prs";
+            this.lblPlan_Line4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblRPlan_Line4
+            // 
+            this.lblRPlan_Line4.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
+            this.lblRPlan_Line4.ForeColor = System.Drawing.Color.Indigo;
+            this.lblRPlan_Line4.Location = new System.Drawing.Point(107, 99);
+            this.lblRPlan_Line4.Name = "lblRPlan_Line4";
+            this.lblRPlan_Line4.Size = new System.Drawing.Size(164, 58);
+            this.lblRPlan_Line4.TabIndex = 16;
+            this.lblRPlan_Line4.Text = "0 Prs";
+            this.lblRPlan_Line4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblProd_line4
+            // 
+            this.lblProd_line4.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
+            this.lblProd_line4.ForeColor = System.Drawing.Color.Blue;
+            this.lblProd_line4.Location = new System.Drawing.Point(107, 159);
+            this.lblProd_line4.Name = "lblProd_line4";
+            this.lblProd_line4.Size = new System.Drawing.Size(170, 58);
+            this.lblProd_line4.TabIndex = 11;
+            this.lblProd_line4.Text = "0 Prs";
+            this.lblProd_line4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblRate_line4
+            // 
+            this.lblRate_line4.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
+            this.lblRate_line4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.lblRate_line4.Location = new System.Drawing.Point(104, 234);
+            this.lblRate_line4.Name = "lblRate_line4";
+            this.lblRate_line4.Size = new System.Drawing.Size(157, 41);
+            this.lblRate_line4.TabIndex = 12;
+            this.lblRate_line4.Text = "0%";
+            this.lblRate_line4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // bstLine1_Inv
             // 
@@ -3935,537 +4435,6 @@
             this.panel1.Size = new System.Drawing.Size(1916, 1080);
             this.panel1.TabIndex = 18;
             // 
-            // cmdJob_Line1
-            // 
-            this.cmdJob_Line1.Appearance.BackColor = System.Drawing.Color.Yellow;
-            this.cmdJob_Line1.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdJob_Line1.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.cmdJob_Line1.Appearance.Options.UseBackColor = true;
-            this.cmdJob_Line1.Appearance.Options.UseFont = true;
-            this.cmdJob_Line1.Appearance.Options.UseForeColor = true;
-            this.cmdJob_Line1.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.cmdJob_Line1.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.cmdJob_Line1.AppearanceHovered.ForeColor = System.Drawing.Color.White;
-            this.cmdJob_Line1.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.cmdJob_Line1.AppearanceHovered.Options.UseBackColor = true;
-            this.cmdJob_Line1.AppearanceHovered.Options.UseForeColor = true;
-            this.cmdJob_Line1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdJob_Line1.Location = new System.Drawing.Point(27, 198);
-            this.cmdJob_Line1.Name = "cmdJob_Line1";
-            this.cmdJob_Line1.Size = new System.Drawing.Size(245, 55);
-            this.cmdJob_Line1.TabIndex = 9;
-            this.cmdJob_Line1.Tag = "10410";
-            this.cmdJob_Line1.Text = "Job Rotation";
-            this.cmdJob_Line1.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
-            // 
-            // digitalGaugeLine4
-            // 
-            this.digitalGaugeLine4.AppearanceOff.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:Black");
-            this.digitalGaugeLine4.AppearanceOn.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:Yellow");
-            this.digitalGaugeLine4.BackgroundLayers.AddRange(new DevExpress.XtraGauges.Win.Gauges.Digital.DigitalBackgroundLayerComponent[] {
-            this.digitalBackgroundLayerComponent4});
-            this.digitalGaugeLine4.Bounds = new System.Drawing.Rectangle(6, 6, 568, 58);
-            this.digitalGaugeLine4.DigitCount = 25;
-            this.digitalGaugeLine4.Name = "digitalGaugeLine4";
-            this.digitalGaugeLine4.Padding = new DevExpress.XtraGauges.Core.Base.TextSpacing(26, 20, 26, 20);
-            // 
-            // groupBoxEx3
-            // 
-            this.groupBoxEx3.BackgroundPanelImage = null;
-            this.groupBoxEx3.Controls.Add(this.label27);
-            this.groupBoxEx3.Controls.Add(this.label28);
-            this.groupBoxEx3.Controls.Add(this.label29);
-            this.groupBoxEx3.Controls.Add(this.label30);
-            this.groupBoxEx3.Controls.Add(this.lblPlan_Line4);
-            this.groupBoxEx3.Controls.Add(this.lblRPlan_Line4);
-            this.groupBoxEx3.Controls.Add(this.lblProd_line4);
-            this.groupBoxEx3.Controls.Add(this.lblRate_line4);
-            this.groupBoxEx3.DrawGroupBorder = true;
-            this.groupBoxEx3.Font = new System.Drawing.Font("Calibri", 22F, System.Drawing.FontStyle.Bold);
-            this.groupBoxEx3.ForeColor = System.Drawing.Color.White;
-            this.groupBoxEx3.GroupBorderColor = System.Drawing.Color.Black;
-            this.groupBoxEx3.GroupPanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.groupBoxEx3.GroupPanelShape = FORM.ClassLib.GroupBoxEx.PanelType.Rounded;
-            this.groupBoxEx3.GroupPanelWith = 1F;
-            this.groupBoxEx3.Location = new System.Drawing.Point(662, 186);
-            this.groupBoxEx3.Name = "groupBoxEx3";
-            this.groupBoxEx3.Size = new System.Drawing.Size(266, 283);
-            this.groupBoxEx3.TabIndex = 9;
-            this.groupBoxEx3.TabStop = false;
-            this.groupBoxEx3.Text = "Production Status";
-            this.groupBoxEx3.TextBackColor = System.Drawing.Color.RoyalBlue;
-            this.groupBoxEx3.TextBorderColor = System.Drawing.Color.Black;
-            this.groupBoxEx3.TextBorderWith = 1F;
-            // 
-            // label27
-            // 
-            this.label27.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
-            this.label27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label27.Location = new System.Drawing.Point(-7, 43);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(121, 58);
-            this.label27.TabIndex = 18;
-            this.label27.Text = "D.Plan";
-            this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label28
-            // 
-            this.label28.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
-            this.label28.ForeColor = System.Drawing.Color.Indigo;
-            this.label28.Location = new System.Drawing.Point(-13, 99);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(127, 58);
-            this.label28.TabIndex = 17;
-            this.label28.Text = "R.Plan";
-            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label29
-            // 
-            this.label29.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
-            this.label29.ForeColor = System.Drawing.Color.Blue;
-            this.label29.Location = new System.Drawing.Point(-36, 159);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(150, 58);
-            this.label29.TabIndex = 19;
-            this.label29.Text = "Actual";
-            this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label30
-            // 
-            this.label30.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
-            this.label30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.label30.Location = new System.Drawing.Point(-71, 228);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(163, 58);
-            this.label30.TabIndex = 20;
-            this.label30.Text = "Rate";
-            this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lblPlan_Line4
-            // 
-            this.lblPlan_Line4.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
-            this.lblPlan_Line4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.lblPlan_Line4.Location = new System.Drawing.Point(108, 43);
-            this.lblPlan_Line4.Name = "lblPlan_Line4";
-            this.lblPlan_Line4.Size = new System.Drawing.Size(164, 58);
-            this.lblPlan_Line4.TabIndex = 10;
-            this.lblPlan_Line4.Text = "0 Prs";
-            this.lblPlan_Line4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lblRPlan_Line4
-            // 
-            this.lblRPlan_Line4.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
-            this.lblRPlan_Line4.ForeColor = System.Drawing.Color.Indigo;
-            this.lblRPlan_Line4.Location = new System.Drawing.Point(107, 99);
-            this.lblRPlan_Line4.Name = "lblRPlan_Line4";
-            this.lblRPlan_Line4.Size = new System.Drawing.Size(164, 58);
-            this.lblRPlan_Line4.TabIndex = 16;
-            this.lblRPlan_Line4.Text = "0 Prs";
-            this.lblRPlan_Line4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lblProd_line4
-            // 
-            this.lblProd_line4.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
-            this.lblProd_line4.ForeColor = System.Drawing.Color.Blue;
-            this.lblProd_line4.Location = new System.Drawing.Point(107, 159);
-            this.lblProd_line4.Name = "lblProd_line4";
-            this.lblProd_line4.Size = new System.Drawing.Size(170, 58);
-            this.lblProd_line4.TabIndex = 11;
-            this.lblProd_line4.Text = "0 Prs";
-            this.lblProd_line4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lblRate_line4
-            // 
-            this.lblRate_line4.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
-            this.lblRate_line4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.lblRate_line4.Location = new System.Drawing.Point(104, 234);
-            this.lblRate_line4.Name = "lblRate_line4";
-            this.lblRate_line4.Size = new System.Drawing.Size(157, 41);
-            this.lblRate_line4.TabIndex = 12;
-            this.lblRate_line4.Text = "0%";
-            this.lblRate_line4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // digitalGaugeLine1
-            // 
-            this.digitalGaugeLine1.AppearanceOff.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:Black");
-            this.digitalGaugeLine1.AppearanceOn.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:Yellow");
-            this.digitalGaugeLine1.BackgroundLayers.AddRange(new DevExpress.XtraGauges.Win.Gauges.Digital.DigitalBackgroundLayerComponent[] {
-            this.digitalBackgroundLayerComponent1});
-            this.digitalGaugeLine1.Bounds = new System.Drawing.Rectangle(3, 4, 572, 58);
-            this.digitalGaugeLine1.DigitCount = 25;
-            this.digitalGaugeLine1.Name = "digitalGaugeLine1";
-            this.digitalGaugeLine1.Padding = new DevExpress.XtraGauges.Core.Base.TextSpacing(26, 20, 26, 20);
-            // 
-            // gbExLine1
-            // 
-            this.gbExLine1.BackgroundPanelImage = null;
-            this.gbExLine1.Controls.Add(this.lblRate_line1);
-            this.gbExLine1.Controls.Add(this.label14);
-            this.gbExLine1.Controls.Add(this.lblPlan_Line1);
-            this.gbExLine1.Controls.Add(this.label18);
-            this.gbExLine1.Controls.Add(this.lblRPlan_Line1);
-            this.gbExLine1.Controls.Add(this.label19);
-            this.gbExLine1.Controls.Add(this.lblProd_line1);
-            this.gbExLine1.Controls.Add(this.label20);
-            this.gbExLine1.DrawGroupBorder = true;
-            this.gbExLine1.Font = new System.Drawing.Font("Calibri", 22F, System.Drawing.FontStyle.Bold);
-            this.gbExLine1.ForeColor = System.Drawing.Color.White;
-            this.gbExLine1.GroupBorderColor = System.Drawing.Color.Black;
-            this.gbExLine1.GroupPanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.gbExLine1.GroupPanelShape = FORM.ClassLib.GroupBoxEx.PanelType.Rounded;
-            this.gbExLine1.GroupPanelWith = 1F;
-            this.gbExLine1.Location = new System.Drawing.Point(661, 182);
-            this.gbExLine1.Name = "gbExLine1";
-            this.gbExLine1.Size = new System.Drawing.Size(272, 283);
-            this.gbExLine1.TabIndex = 9;
-            this.gbExLine1.TabStop = false;
-            this.gbExLine1.Text = "Production Status";
-            this.gbExLine1.TextBackColor = System.Drawing.Color.RoyalBlue;
-            this.gbExLine1.TextBorderColor = System.Drawing.Color.Black;
-            this.gbExLine1.TextBorderWith = 1F;
-            // 
-            // lblRate_line1
-            // 
-            this.lblRate_line1.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
-            this.lblRate_line1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.lblRate_line1.Location = new System.Drawing.Point(107, 237);
-            this.lblRate_line1.Name = "lblRate_line1";
-            this.lblRate_line1.Size = new System.Drawing.Size(157, 41);
-            this.lblRate_line1.TabIndex = 6;
-            this.lblRate_line1.Text = "0%";
-            this.lblRate_line1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label14
-            // 
-            this.label14.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
-            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label14.Location = new System.Drawing.Point(-8, 47);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(121, 58);
-            this.label14.TabIndex = 4;
-            this.label14.Text = "D.Plan";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lblPlan_Line1
-            // 
-            this.lblPlan_Line1.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
-            this.lblPlan_Line1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.lblPlan_Line1.Location = new System.Drawing.Point(114, 47);
-            this.lblPlan_Line1.Name = "lblPlan_Line1";
-            this.lblPlan_Line1.Size = new System.Drawing.Size(164, 58);
-            this.lblPlan_Line1.TabIndex = 4;
-            this.lblPlan_Line1.Text = "0 Prs";
-            this.lblPlan_Line1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label18
-            // 
-            this.label18.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
-            this.label18.ForeColor = System.Drawing.Color.Indigo;
-            this.label18.Location = new System.Drawing.Point(-16, 107);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(133, 58);
-            this.label18.TabIndex = 4;
-            this.label18.Text = "R.Plan";
-            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lblRPlan_Line1
-            // 
-            this.lblRPlan_Line1.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
-            this.lblRPlan_Line1.ForeColor = System.Drawing.Color.Indigo;
-            this.lblRPlan_Line1.Location = new System.Drawing.Point(113, 107);
-            this.lblRPlan_Line1.Name = "lblRPlan_Line1";
-            this.lblRPlan_Line1.Size = new System.Drawing.Size(164, 58);
-            this.lblRPlan_Line1.TabIndex = 4;
-            this.lblRPlan_Line1.Text = "0 Prs";
-            this.lblRPlan_Line1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label19
-            // 
-            this.label19.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
-            this.label19.ForeColor = System.Drawing.Color.Blue;
-            this.label19.Location = new System.Drawing.Point(-30, 179);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(147, 58);
-            this.label19.TabIndex = 5;
-            this.label19.Text = "Actual";
-            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lblProd_line1
-            // 
-            this.lblProd_line1.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
-            this.lblProd_line1.ForeColor = System.Drawing.Color.Blue;
-            this.lblProd_line1.Location = new System.Drawing.Point(108, 179);
-            this.lblProd_line1.Name = "lblProd_line1";
-            this.lblProd_line1.Size = new System.Drawing.Size(170, 58);
-            this.lblProd_line1.TabIndex = 5;
-            this.lblProd_line1.Text = "0 Prs";
-            this.lblProd_line1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label20
-            // 
-            this.label20.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
-            this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.label20.Location = new System.Drawing.Point(-72, 231);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(163, 58);
-            this.label20.TabIndex = 6;
-            this.label20.Text = "Rate";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // digitalGaugeLine2
-            // 
-            this.digitalGaugeLine2.AppearanceOff.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:Black");
-            this.digitalGaugeLine2.AppearanceOn.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:Yellow");
-            this.digitalGaugeLine2.BackgroundLayers.AddRange(new DevExpress.XtraGauges.Win.Gauges.Digital.DigitalBackgroundLayerComponent[] {
-            this.digitalBackgroundLayerComponent2});
-            this.digitalGaugeLine2.Bounds = new System.Drawing.Rectangle(6, 6, 568, 58);
-            this.digitalGaugeLine2.DigitCount = 25;
-            this.digitalGaugeLine2.Name = "digitalGaugeLine2";
-            this.digitalGaugeLine2.Padding = new DevExpress.XtraGauges.Core.Base.TextSpacing(26, 20, 26, 20);
-            // 
-            // groupBoxEx1
-            // 
-            this.groupBoxEx1.BackgroundPanelImage = null;
-            this.groupBoxEx1.Controls.Add(this.label21);
-            this.groupBoxEx1.Controls.Add(this.label22);
-            this.groupBoxEx1.Controls.Add(this.label23);
-            this.groupBoxEx1.Controls.Add(this.label24);
-            this.groupBoxEx1.Controls.Add(this.lblPlan_Line2);
-            this.groupBoxEx1.Controls.Add(this.lblRPlan_Line2);
-            this.groupBoxEx1.Controls.Add(this.lblProd_line2);
-            this.groupBoxEx1.Controls.Add(this.lblRate_line2);
-            this.groupBoxEx1.DrawGroupBorder = true;
-            this.groupBoxEx1.Font = new System.Drawing.Font("Calibri", 22F, System.Drawing.FontStyle.Bold);
-            this.groupBoxEx1.ForeColor = System.Drawing.Color.White;
-            this.groupBoxEx1.GroupBorderColor = System.Drawing.Color.Black;
-            this.groupBoxEx1.GroupPanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.groupBoxEx1.GroupPanelShape = FORM.ClassLib.GroupBoxEx.PanelType.Rounded;
-            this.groupBoxEx1.GroupPanelWith = 1F;
-            this.groupBoxEx1.Location = new System.Drawing.Point(661, 183);
-            this.groupBoxEx1.Name = "groupBoxEx1";
-            this.groupBoxEx1.Size = new System.Drawing.Size(272, 283);
-            this.groupBoxEx1.TabIndex = 9;
-            this.groupBoxEx1.TabStop = false;
-            this.groupBoxEx1.Text = "Production Status";
-            this.groupBoxEx1.TextBackColor = System.Drawing.Color.RoyalBlue;
-            this.groupBoxEx1.TextBorderColor = System.Drawing.Color.Black;
-            this.groupBoxEx1.TextBorderWith = 1F;
-            // 
-            // label21
-            // 
-            this.label21.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
-            this.label21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label21.Location = new System.Drawing.Point(-6, 41);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(125, 58);
-            this.label21.TabIndex = 13;
-            this.label21.Text = "D.Plan";
-            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label22
-            // 
-            this.label22.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
-            this.label22.ForeColor = System.Drawing.Color.Indigo;
-            this.label22.Location = new System.Drawing.Point(-14, 98);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(133, 58);
-            this.label22.TabIndex = 12;
-            this.label22.Text = "R.Plan";
-            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label23
-            // 
-            this.label23.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
-            this.label23.ForeColor = System.Drawing.Color.Blue;
-            this.label23.Location = new System.Drawing.Point(-28, 167);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(144, 58);
-            this.label23.TabIndex = 14;
-            this.label23.Text = "Actual";
-            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label24
-            // 
-            this.label24.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
-            this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.label24.Location = new System.Drawing.Point(-70, 228);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(163, 58);
-            this.label24.TabIndex = 15;
-            this.label24.Text = "Rate";
-            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lblPlan_Line2
-            // 
-            this.lblPlan_Line2.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
-            this.lblPlan_Line2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.lblPlan_Line2.Location = new System.Drawing.Point(109, 41);
-            this.lblPlan_Line2.Name = "lblPlan_Line2";
-            this.lblPlan_Line2.Size = new System.Drawing.Size(164, 58);
-            this.lblPlan_Line2.TabIndex = 7;
-            this.lblPlan_Line2.Text = "0 Prs";
-            this.lblPlan_Line2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lblRPlan_Line2
-            // 
-            this.lblRPlan_Line2.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
-            this.lblRPlan_Line2.ForeColor = System.Drawing.Color.Indigo;
-            this.lblRPlan_Line2.Location = new System.Drawing.Point(109, 98);
-            this.lblRPlan_Line2.Name = "lblRPlan_Line2";
-            this.lblRPlan_Line2.Size = new System.Drawing.Size(164, 58);
-            this.lblRPlan_Line2.TabIndex = 11;
-            this.lblRPlan_Line2.Text = "0 Prs";
-            this.lblRPlan_Line2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lblProd_line2
-            // 
-            this.lblProd_line2.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
-            this.lblProd_line2.ForeColor = System.Drawing.Color.Blue;
-            this.lblProd_line2.Location = new System.Drawing.Point(106, 164);
-            this.lblProd_line2.Name = "lblProd_line2";
-            this.lblProd_line2.Size = new System.Drawing.Size(170, 58);
-            this.lblProd_line2.TabIndex = 8;
-            this.lblProd_line2.Text = "0 Prs";
-            this.lblProd_line2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lblRate_line2
-            // 
-            this.lblRate_line2.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
-            this.lblRate_line2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.lblRate_line2.Location = new System.Drawing.Point(104, 235);
-            this.lblRate_line2.Name = "lblRate_line2";
-            this.lblRate_line2.Size = new System.Drawing.Size(157, 41);
-            this.lblRate_line2.TabIndex = 9;
-            this.lblRate_line2.Text = "0%";
-            this.lblRate_line2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // digitalGaugeLine3
-            // 
-            this.digitalGaugeLine3.AppearanceOff.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:Black");
-            this.digitalGaugeLine3.AppearanceOn.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:Yellow");
-            this.digitalGaugeLine3.BackgroundLayers.AddRange(new DevExpress.XtraGauges.Win.Gauges.Digital.DigitalBackgroundLayerComponent[] {
-            this.digitalBackgroundLayerComponent3});
-            this.digitalGaugeLine3.Bounds = new System.Drawing.Rectangle(6, 6, 568, 58);
-            this.digitalGaugeLine3.DigitCount = 25;
-            this.digitalGaugeLine3.Name = "digitalGaugeLine3";
-            this.digitalGaugeLine3.Padding = new DevExpress.XtraGauges.Core.Base.TextSpacing(26, 20, 26, 20);
-            // 
-            // groupBoxEx2
-            // 
-            this.groupBoxEx2.BackgroundPanelImage = null;
-            this.groupBoxEx2.Controls.Add(this.label31);
-            this.groupBoxEx2.Controls.Add(this.label32);
-            this.groupBoxEx2.Controls.Add(this.label33);
-            this.groupBoxEx2.Controls.Add(this.label34);
-            this.groupBoxEx2.Controls.Add(this.lblPlan_Line3);
-            this.groupBoxEx2.Controls.Add(this.lblRPlan_Line3);
-            this.groupBoxEx2.Controls.Add(this.lblProd_line3);
-            this.groupBoxEx2.Controls.Add(this.lblRate_line3);
-            this.groupBoxEx2.DrawGroupBorder = true;
-            this.groupBoxEx2.Font = new System.Drawing.Font("Calibri", 22F, System.Drawing.FontStyle.Bold);
-            this.groupBoxEx2.ForeColor = System.Drawing.Color.White;
-            this.groupBoxEx2.GroupBorderColor = System.Drawing.Color.Black;
-            this.groupBoxEx2.GroupPanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.groupBoxEx2.GroupPanelShape = FORM.ClassLib.GroupBoxEx.PanelType.Rounded;
-            this.groupBoxEx2.GroupPanelWith = 1F;
-            this.groupBoxEx2.Location = new System.Drawing.Point(660, 184);
-            this.groupBoxEx2.Name = "groupBoxEx2";
-            this.groupBoxEx2.Size = new System.Drawing.Size(272, 283);
-            this.groupBoxEx2.TabIndex = 9;
-            this.groupBoxEx2.TabStop = false;
-            this.groupBoxEx2.Text = "Production Status";
-            this.groupBoxEx2.TextBackColor = System.Drawing.Color.RoyalBlue;
-            this.groupBoxEx2.TextBorderColor = System.Drawing.Color.Black;
-            this.groupBoxEx2.TextBorderWith = 1F;
-            // 
-            // label31
-            // 
-            this.label31.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
-            this.label31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label31.Location = new System.Drawing.Point(-8, 46);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(123, 58);
-            this.label31.TabIndex = 22;
-            this.label31.Text = "D.Plan";
-            this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label32
-            // 
-            this.label32.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
-            this.label32.ForeColor = System.Drawing.Color.Indigo;
-            this.label32.Location = new System.Drawing.Point(-18, 101);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(133, 58);
-            this.label32.TabIndex = 21;
-            this.label32.Text = "R.Plan";
-            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label33
-            // 
-            this.label33.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
-            this.label33.ForeColor = System.Drawing.Color.Blue;
-            this.label33.Location = new System.Drawing.Point(-33, 166);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(145, 58);
-            this.label33.TabIndex = 23;
-            this.label33.Text = "Actual";
-            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label34
-            // 
-            this.label34.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
-            this.label34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.label34.Location = new System.Drawing.Point(-72, 229);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(163, 58);
-            this.label34.TabIndex = 24;
-            this.label34.Text = "Rate";
-            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lblPlan_Line3
-            // 
-            this.lblPlan_Line3.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
-            this.lblPlan_Line3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.lblPlan_Line3.Location = new System.Drawing.Point(108, 46);
-            this.lblPlan_Line3.Name = "lblPlan_Line3";
-            this.lblPlan_Line3.Size = new System.Drawing.Size(164, 58);
-            this.lblPlan_Line3.TabIndex = 10;
-            this.lblPlan_Line3.Text = "0 Prs";
-            this.lblPlan_Line3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lblRPlan_Line3
-            // 
-            this.lblRPlan_Line3.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
-            this.lblRPlan_Line3.ForeColor = System.Drawing.Color.Indigo;
-            this.lblRPlan_Line3.Location = new System.Drawing.Point(101, 102);
-            this.lblRPlan_Line3.Name = "lblRPlan_Line3";
-            this.lblRPlan_Line3.Size = new System.Drawing.Size(168, 58);
-            this.lblRPlan_Line3.TabIndex = 14;
-            this.lblRPlan_Line3.Text = "0 Prs";
-            this.lblRPlan_Line3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lblProd_line3
-            // 
-            this.lblProd_line3.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
-            this.lblProd_line3.ForeColor = System.Drawing.Color.Blue;
-            this.lblProd_line3.Location = new System.Drawing.Point(101, 167);
-            this.lblProd_line3.Name = "lblProd_line3";
-            this.lblProd_line3.Size = new System.Drawing.Size(170, 58);
-            this.lblProd_line3.TabIndex = 11;
-            this.lblProd_line3.Text = "0 Prs";
-            this.lblProd_line3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lblRate_line3
-            // 
-            this.lblRate_line3.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
-            this.lblRate_line3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.lblRate_line3.Location = new System.Drawing.Point(107, 236);
-            this.lblRate_line3.Name = "lblRate_line3";
-            this.lblRate_line3.Size = new System.Drawing.Size(157, 41);
-            this.lblRate_line3.TabIndex = 12;
-            this.lblRate_line3.Text = "0%";
-            this.lblRate_line3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // a1Panel1
             // 
             this.a1Panel1.BorderColor = System.Drawing.Color.Green;
@@ -4514,75 +4483,6 @@
             this.a1Panel4.Size = new System.Drawing.Size(257, 355);
             this.a1Panel4.TabIndex = 1;
             // 
-            // cmdJob_Line2
-            // 
-            this.cmdJob_Line2.Appearance.BackColor = System.Drawing.Color.Yellow;
-            this.cmdJob_Line2.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdJob_Line2.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.cmdJob_Line2.Appearance.Options.UseBackColor = true;
-            this.cmdJob_Line2.Appearance.Options.UseFont = true;
-            this.cmdJob_Line2.Appearance.Options.UseForeColor = true;
-            this.cmdJob_Line2.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.cmdJob_Line2.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.cmdJob_Line2.AppearanceHovered.ForeColor = System.Drawing.Color.White;
-            this.cmdJob_Line2.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.cmdJob_Line2.AppearanceHovered.Options.UseBackColor = true;
-            this.cmdJob_Line2.AppearanceHovered.Options.UseForeColor = true;
-            this.cmdJob_Line2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdJob_Line2.Location = new System.Drawing.Point(32, 200);
-            this.cmdJob_Line2.Name = "cmdJob_Line2";
-            this.cmdJob_Line2.Size = new System.Drawing.Size(245, 55);
-            this.cmdJob_Line2.TabIndex = 9;
-            this.cmdJob_Line2.Tag = "10410";
-            this.cmdJob_Line2.Text = "Job Rotation";
-            this.cmdJob_Line2.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
-            // 
-            // cmdJob_Line4
-            // 
-            this.cmdJob_Line4.Appearance.BackColor = System.Drawing.Color.Yellow;
-            this.cmdJob_Line4.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdJob_Line4.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.cmdJob_Line4.Appearance.Options.UseBackColor = true;
-            this.cmdJob_Line4.Appearance.Options.UseFont = true;
-            this.cmdJob_Line4.Appearance.Options.UseForeColor = true;
-            this.cmdJob_Line4.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.cmdJob_Line4.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.cmdJob_Line4.AppearanceHovered.ForeColor = System.Drawing.Color.White;
-            this.cmdJob_Line4.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.cmdJob_Line4.AppearanceHovered.Options.UseBackColor = true;
-            this.cmdJob_Line4.AppearanceHovered.Options.UseForeColor = true;
-            this.cmdJob_Line4.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdJob_Line4.Location = new System.Drawing.Point(30, 197);
-            this.cmdJob_Line4.Name = "cmdJob_Line4";
-            this.cmdJob_Line4.Size = new System.Drawing.Size(245, 55);
-            this.cmdJob_Line4.TabIndex = 15;
-            this.cmdJob_Line4.Tag = "10410";
-            this.cmdJob_Line4.Text = "Job Rotation";
-            this.cmdJob_Line4.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
-            // 
-            // cmdJob_Line3
-            // 
-            this.cmdJob_Line3.Appearance.BackColor = System.Drawing.Color.Yellow;
-            this.cmdJob_Line3.Appearance.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdJob_Line3.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.cmdJob_Line3.Appearance.Options.UseBackColor = true;
-            this.cmdJob_Line3.Appearance.Options.UseFont = true;
-            this.cmdJob_Line3.Appearance.Options.UseForeColor = true;
-            this.cmdJob_Line3.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.cmdJob_Line3.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.cmdJob_Line3.AppearanceHovered.ForeColor = System.Drawing.Color.White;
-            this.cmdJob_Line3.AppearanceHovered.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.cmdJob_Line3.AppearanceHovered.Options.UseBackColor = true;
-            this.cmdJob_Line3.AppearanceHovered.Options.UseForeColor = true;
-            this.cmdJob_Line3.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.cmdJob_Line3.Location = new System.Drawing.Point(29, 198);
-            this.cmdJob_Line3.Name = "cmdJob_Line3";
-            this.cmdJob_Line3.Size = new System.Drawing.Size(245, 55);
-            this.cmdJob_Line3.TabIndex = 15;
-            this.cmdJob_Line3.Tag = "10410";
-            this.cmdJob_Line3.Text = "Job Rotation";
-            this.cmdJob_Line3.Click += new System.EventHandler(this.cmdLOB_Line1_Click);
-            // 
             // FORM_MAIN_4_LINE
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -4592,12 +4492,12 @@
             this.DoubleBuffered = true;
             this.Name = "FORM_MAIN_4_LINE";
             this.Text = "Smart Factory Pilot";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FORM_MAIN_Load);
             this.VisibleChanged += new System.EventHandler(this.HOMEPAGE_V4_VN_VisibleChanged);
             this.pnHeader.ResumeLayout(false);
             this.pnHeader.PerformLayout();
             this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.digitalGaugeLine1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.digitalBackgroundLayerComponent1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLine01)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl1)).EndInit();
@@ -4607,8 +4507,10 @@
             this.backstageViewClientControl4.ResumeLayout(false);
             this.backstageViewClientControl5.ResumeLayout(false);
             this.backstageViewClientControl21.ResumeLayout(false);
+            this.gbExLine1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picLine02)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.digitalGaugeLine2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.digitalBackgroundLayerComponent2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl2)).EndInit();
             this.backstageViewControl2.ResumeLayout(false);
@@ -4617,6 +4519,7 @@
             this.backstageViewClientControl8.ResumeLayout(false);
             this.backstageViewClientControl12.ResumeLayout(false);
             this.backstageViewClientControl22.ResumeLayout(false);
+            this.groupBoxEx1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl4)).EndInit();
             this.backstageViewControl4.ResumeLayout(false);
             this.backstageViewClientControl14.ResumeLayout(false);
@@ -4627,7 +4530,9 @@
             this.backstageViewClientControl23.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picLine03)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.digitalGaugeLine3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.digitalBackgroundLayerComponent3)).EndInit();
+            this.groupBoxEx2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl3)).EndInit();
             this.backstageViewControl3.ResumeLayout(false);
             this.backstageViewClientControl18.ResumeLayout(false);
@@ -4637,16 +4542,10 @@
             this.backstageViewClientControl24.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picLine04)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.digitalBackgroundLayerComponent4)).EndInit();
-            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.digitalGaugeLine4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.digitalBackgroundLayerComponent4)).EndInit();
             this.groupBoxEx3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.digitalGaugeLine1)).EndInit();
-            this.gbExLine1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.digitalGaugeLine2)).EndInit();
-            this.groupBoxEx1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.digitalGaugeLine3)).EndInit();
-            this.groupBoxEx2.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -4888,21 +4787,17 @@
         private DevExpress.XtraEditors.SimpleButton cmdInv5_Line3;
         private System.Windows.Forms.Button cmdBack;
         private System.Windows.Forms.Button btnDoc;
-        private DevExpress.XtraEditors.SimpleButton simpleButton9;
-        private DevExpress.XtraEditors.SimpleButton simpleButton10;
-        private DevExpress.XtraEditors.SimpleButton simpleButton11;
-        private DevExpress.XtraEditors.SimpleButton simpleButton12;
-        private DevExpress.XtraEditors.SimpleButton cmdComputerOEE_Line1;
-        private DevExpress.XtraEditors.SimpleButton cmdLOB_Line1;
         private DevExpress.XtraEditors.SimpleButton simpleButton2;
+        private DevExpress.XtraEditors.SimpleButton cmdLOB_Line1;
+        private DevExpress.XtraEditors.SimpleButton simpleButton9;
+        private DevExpress.XtraEditors.SimpleButton simpleButton4;
         private DevExpress.XtraEditors.SimpleButton simpleButton3;
-        private DevExpress.XtraEditors.SimpleButton simpleButton13;
+        private DevExpress.XtraEditors.SimpleButton simpleButton10;
+        private DevExpress.XtraEditors.SimpleButton simpleButton6;
         private DevExpress.XtraEditors.SimpleButton simpleButton5;
-        private DevExpress.XtraEditors.SimpleButton simpleButton14;
+        private DevExpress.XtraEditors.SimpleButton simpleButton11;
+        private DevExpress.XtraEditors.SimpleButton simpleButton8;
         private DevExpress.XtraEditors.SimpleButton simpleButton7;
-        private DevExpress.XtraEditors.SimpleButton cmdJob_Line1;
-        private DevExpress.XtraEditors.SimpleButton cmdJob_Line2;
-        private DevExpress.XtraEditors.SimpleButton cmdJob_Line4;
-        private DevExpress.XtraEditors.SimpleButton cmdJob_Line3;
+        private DevExpress.XtraEditors.SimpleButton simpleButton12;
     }
 }

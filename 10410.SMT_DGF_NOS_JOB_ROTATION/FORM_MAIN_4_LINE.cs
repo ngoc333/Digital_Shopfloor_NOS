@@ -62,7 +62,6 @@ namespace FORM
         //  string _Line = "";
         bool _IsMain = true;
         bool _FirstFrom = false;
-        bool _IsBack = false;
         // Dictionary<string, string> _dtnInit = new Dictionary<string, string>();
 
         #endregion
@@ -71,16 +70,11 @@ namespace FORM
         #region Load/Visible/Timer
         private void FORM_MAIN_Load(object sender, EventArgs e)
         {
-            bstLine1_Qual.Selected = true;
-            bstLine2_Qual.Selected = true;
-            bstLine3_Qual.Selected = true;
-            bstLine4_Qual.Selected = true;
             _arrGaugeText = new DevExpress.XtraGauges.Win.Gauges.Digital.DigitalGauge[4];
             _arrGaugeText[0] = digitalGaugeLine1;
             _arrGaugeText[1] = digitalGaugeLine2;
             _arrGaugeText[2] = digitalGaugeLine3;
             _arrGaugeText[3] = digitalGaugeLine4;
-            _IsBack = ComVar.Var._IsBack;
             if (ComVar.Var._Frm_Back == null || ComVar.Var._Frm_Back == "")
             {
                 ComVar.Var._bValue5 = true;
@@ -94,18 +88,6 @@ namespace FORM
 
                 //_IsMain = true;
                 //  formFullScreen();
-                if (_IsBack)
-                {
-                    _IsMain = false;
-                    cmdBack.Visible = true;
-                }
-                else
-                {
-                    cmdBack.Visible = false;
-                    _IsMain = true;
-
-                }
-                setConfigForm();
                 getConfigInfor();
                 //setConfigForm();
                 //initDefault();
@@ -129,7 +111,9 @@ namespace FORM
             if (Visible)
             {
 
-                if (_IsBack)
+
+
+                if (ComVar.Var._IsBack)
                 {
                     _IsMain = false;
                     cmdBack.Visible = true;

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Base>
 	<MAIN>
-		<grpForm>DSF_NOS_N</grpForm>
+		<grpForm>DSF_NOS</grpForm>
 		<FlashScreen>true</FlashScreen>
 		<Auto_Download>false</Auto_Download>
 		<AREA>NOS</AREA>
@@ -10,7 +10,7 @@
 	</MAIN>
   
 	<Auto_Download>
-		<grpForm>DSF_NOS_N</grpForm>
+		<grpForm>DSF_NOS</grpForm>
 	</Auto_Download>
 	<GMES>
 		<PROCESS_NAME>JBrowser6</PROCESS_NAME>
